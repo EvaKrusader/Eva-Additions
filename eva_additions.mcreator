@@ -2537,7 +2537,7 @@
       "name": "Hc",
       "type": "procedure",
       "sortid": 161,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "hc",
       "metadata": {
