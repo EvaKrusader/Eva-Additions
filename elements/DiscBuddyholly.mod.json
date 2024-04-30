@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disk_weezer",
+    "description": "Weezer - Buddy Holly",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:record_buddyholly"
+    },
+    "lengthInTicks": 3180,
+    "analogOutput": 0
+  }
+}

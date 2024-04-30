@@ -1,0 +1,44 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/dev_antibody_anim"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:antibody_antibody_level": 0
+      },
+      "model": "eva_additions:item/antibody_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:antibody_antibody_level": 1
+      },
+      "model": "eva_additions:item/antibody_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:antibody_antibody_level": 2
+      },
+      "model": "eva_additions:item/antibody_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:antibody_antibody_level": 3
+      },
+      "model": "eva_additions:item/antibody_3"
+    },
+    {
+      "predicate": {
+        "eva_additions:antibody_antibody_level": 4
+      },
+      "model": "eva_additions:item/antibody_4"
+    },
+    {
+      "predicate": {
+        "eva_additions:antibody_antibody_level": 5
+      },
+      "model": "eva_additions:item/antibody_5"
+    }
+  ]
+}

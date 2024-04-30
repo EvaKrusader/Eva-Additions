@@ -1,0 +1,9 @@
+{
+  "parent": "eva_additions:custom/miningaid",
+  "textures": {
+    "all": "eva_additions:block/miningaid_wood_good",
+    "particle": "eva_additions:block/miningaid_wood_good",
+    "0": "eva_additions:block/miningaid_wood_good"
+  },
+  "render_type": "cutout_mipped"
+}

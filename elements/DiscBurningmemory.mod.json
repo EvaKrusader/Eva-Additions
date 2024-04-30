@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disk_burningmemory",
+    "description": "The Caretaker - It's just a burning memory",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:record_burningmemory"
+    },
+    "lengthInTicks": 4240,
+    "analogOutput": 0
+  }
+}

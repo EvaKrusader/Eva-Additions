@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:entomologist_epiphany"
+    },
+    "title": {
+      "translate": "advancements.entomologist.title"
+    },
+    "description": {
+      "translate": "advancements.entomologist.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "entomologist": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "eva_additions:entities/loot_entomologist"
+    ]
+  },
+  "parent": "eva_additions:adv_tortoisebeetle"
+}

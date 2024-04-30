@@ -1,0 +1,31 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "EntityZoglin"
+      },
+      {
+        "value": "EntityZombie"
+      },
+      {
+        "value": "EntityZombieHorse"
+      },
+      {
+        "value": "EntityZombieVillager"
+      },
+      {
+        "value": "EntityPigZombie"
+      }
+    ],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "unholy_mobs",
+    "namespace": "minecraft"
+  }
+}

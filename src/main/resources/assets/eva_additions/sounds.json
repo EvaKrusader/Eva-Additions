@@ -1,0 +1,146 @@
+{
+  "record_weevil": {
+    "sounds": [
+      {
+        "name": "eva_additions:1_-_weevil",
+        "stream": true
+      }
+    ]
+  },
+  "record_butterfly": {
+    "sounds": [
+      {
+        "name": "eva_additions:2_-_butterfly",
+        "stream": true
+      }
+    ]
+  },
+  "record_treehopper": {
+    "sounds": [
+      {
+        "name": "eva_additions:3_-_treehopper",
+        "stream": true
+      }
+    ]
+  },
+  "record_moth": {
+    "sounds": [
+      {
+        "name": "eva_additions:4_-_moth",
+        "stream": true
+      }
+    ]
+  },
+  "record_isopod": {
+    "sounds": [
+      {
+        "name": "eva_additions:5_-_isopod",
+        "stream": true
+      }
+    ]
+  },
+  "record_bumblebee": {
+    "sounds": [
+      {
+        "name": "eva_additions:6_-_bumblebee",
+        "stream": true
+      }
+    ]
+  },
+  "record_scarab": {
+    "sounds": [
+      {
+        "name": "eva_additions:7_-_scarab",
+        "stream": true
+      }
+    ]
+  },
+  "record_spinyspider": {
+    "sounds": [
+      {
+        "name": "eva_additions:8_-_spiny_spider",
+        "stream": true
+      }
+    ]
+  },
+  "record_tortoisebeetle": {
+    "sounds": [
+      {
+        "name": "eva_additions:9_-_tortoise_beetle",
+        "stream": true
+      }
+    ]
+  },
+  "enderlink_ping": {
+    "sounds": [
+      {
+        "name": "eva_additions:angelbot3",
+        "stream": false
+      },
+      {
+        "name": "eva_additions:angelbot2",
+        "stream": false
+      },
+      {
+        "name": "eva_additions:angelbot1",
+        "stream": false
+      }
+    ]
+  },
+  "record_yournewhome": {
+    "sounds": [
+      {
+        "name": "eva_additions:spotifymate.com_-_your_new_home_-_gooseworx",
+        "stream": true
+      }
+    ]
+  },
+  "record_roundabout": {
+    "sounds": [
+      {
+        "name": "eva_additions:02._roundabout_instrumental_mix",
+        "stream": true
+      }
+    ]
+  },
+  "record_libetsdelay": {
+    "sounds": [
+      {
+        "name": "eva_additions:the_caretaker_-_an_empty_bliss_beyond_this_world_-_04_libets_delay",
+        "stream": true
+      }
+    ]
+  },
+  "record_burningmemory": {
+    "sounds": [
+      {
+        "name": "eva_additions:the_caretaker_-_everywhere_at_the_end_of_time_-_01_a1_-_its_just_a_burning_memory",
+        "stream": true
+      }
+    ]
+  },
+  "record_buddyholly": {
+    "sounds": [
+      {
+        "name": "eva_additions:weezer_buddy_holly_instrumental_mix",
+        "stream": true
+      }
+    ]
+  },
+  "record_cryostasis": {
+    "sounds": [
+      {
+        "name": "eva_additions:p_u_d_e_r_p_o_l_l_i_-_cryostasis",
+        "stream": true
+      }
+    ]
+  },
+  "heartbeat": {
+    "sounds": [
+      {
+        "name": "eva_additions:heart-beat-137135",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "antibody_test.png",
+    "width": 64,
+    "height": 64,
+    "title": "Makeshift Infirmary",
+    "author": "EvaKrusader"
+  }
+}

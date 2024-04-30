@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "bliss2.png",
+    "width": 32,
+    "height": 16,
+    "title": "Bliss",
+    "author": "Charles O'Rear"
+  }
+}

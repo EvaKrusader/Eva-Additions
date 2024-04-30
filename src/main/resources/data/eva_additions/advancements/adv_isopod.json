@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:disc_isopod"
+    },
+    "title": {
+      "translate": "advancements.adv_isopod.title"
+    },
+    "description": {
+      "translate": "advancements.adv_isopod.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_isopod": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "eva_additions:loot_isopod"
+    ]
+  },
+  "parent": "eva_additions:adv_moth"
+}

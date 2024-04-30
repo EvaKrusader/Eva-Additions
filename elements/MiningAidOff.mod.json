@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.VOID_AIR"
+      },
+      {
+        "value": "Blocks.CAVE_AIR"
+      },
+      {
+        "value": "Blocks.FLOWING_LAVA"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "mining_aid_off",
+    "namespace": "minecraft"
+  }
+}

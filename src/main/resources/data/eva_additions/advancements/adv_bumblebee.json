@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:disc_bumblebee"
+    },
+    "title": {
+      "translate": "advancements.adv_bumblebee.title"
+    },
+    "description": {
+      "translate": "advancements.adv_bumblebee.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_bumblebee": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "eva_additions:loot_bumblebee"
+    ]
+  },
+  "parent": "eva_additions:adv_isopod"
+}

@@ -1,0 +1,27 @@
+{
+  "_fv": 57,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Critter",
+    "achievementDescription": "Mow the lawn",
+    "achievementIcon": {
+      "value": "CUSTOM:DiscScarab"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [
+      "LootScarab"
+    ],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:AdvBumblebee"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"27\" y=\"42\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

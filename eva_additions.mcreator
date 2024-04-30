@@ -1,0 +1,3073 @@
+{
+  "mod_elements": [
+    {
+      "name": "DiscWeevil",
+      "type": "musicdisc",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_weevil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscWeevilItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_weevil.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/1_Weevil"
+    },
+    {
+      "name": "DiscButterfly",
+      "type": "musicdisc",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_butterfly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscButterflyItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_butterfly.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/2_Butterfly"
+    },
+    {
+      "name": "DiscTreehopper",
+      "type": "musicdisc",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_treehopper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/disc_treehopper.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscTreehopperItem.java"
+        ]
+      },
+      "path": "~/Discs/music for bugs/3_Treehopper"
+    },
+    {
+      "name": "DiscMoth",
+      "type": "musicdisc",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_moth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscMothItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_moth.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/4_Moth"
+    },
+    {
+      "name": "DiscIsopod",
+      "type": "musicdisc",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_isopod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscIsopodItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_isopod.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/5_Isopod"
+    },
+    {
+      "name": "DiscBumblebee",
+      "type": "musicdisc",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_bumblebee",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscBumblebeeItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_bumblebee.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/6_Bumblebee"
+    },
+    {
+      "name": "DiscScarab",
+      "type": "musicdisc",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_scarab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscScarabItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_scarab.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/7_Scarab"
+    },
+    {
+      "name": "DiscSpinyspider",
+      "type": "musicdisc",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_spinyspider",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/disc_spinyspider.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscSpinyspiderItem.java"
+        ]
+      },
+      "path": "~/Discs/music for bugs/8_SpinySpider"
+    },
+    {
+      "name": "DiscTortoisebeetle",
+      "type": "musicdisc",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_tortoisebeetle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscTortoisebeetleItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_tortoisebeetle.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/9_TortoiseBeetle"
+    },
+    {
+      "name": "LootWeevil",
+      "type": "loottable",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_weevil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/entities/loot_weevil.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/1_Weevil"
+    },
+    {
+      "name": "LootButterfly",
+      "type": "loottable",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_butterfly",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/loot_butterfly.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/2_Butterfly"
+    },
+    {
+      "name": "LootTreehopper",
+      "type": "loottable",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_treehopper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/loot_treehopper.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/3_Treehopper"
+    },
+    {
+      "name": "LootMoth",
+      "type": "loottable",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_moth",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/loot_moth.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/4_Moth"
+    },
+    {
+      "name": "LootIsopod",
+      "type": "loottable",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_isopod",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/loot_isopod.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/5_Isopod"
+    },
+    {
+      "name": "LootBumblebee",
+      "type": "loottable",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_bumblebee",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/loot_bumblebee.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/6_Bumblebee"
+    },
+    {
+      "name": "LootScarab",
+      "type": "loottable",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_scarab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/loot_scarab.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/7_Scarab"
+    },
+    {
+      "name": "LootSpinyspider",
+      "type": "loottable",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_spinyspider",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/loot_spinyspider.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/8_SpinySpider"
+    },
+    {
+      "name": "LootTortoisebeetle",
+      "type": "loottable",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_tortoisebeetle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/loot_tortoisebeetle.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/9_TortoiseBeetle"
+    },
+    {
+      "name": "AdvWeevil",
+      "type": "achievement",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_weevil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_weevil.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/1_Weevil"
+    },
+    {
+      "name": "AdvButterfly",
+      "type": "achievement",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_butterfly",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_butterfly.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/2_Butterfly"
+    },
+    {
+      "name": "AdvTreehopper",
+      "type": "achievement",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_treehopper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_treehopper.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/3_Treehopper"
+    },
+    {
+      "name": "AdvMoth",
+      "type": "achievement",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_moth",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_moth.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/4_Moth"
+    },
+    {
+      "name": "AdvIsopod",
+      "type": "achievement",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_isopod",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_isopod.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/5_Isopod"
+    },
+    {
+      "name": "AdvBumblebee",
+      "type": "achievement",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_bumblebee",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_bumblebee.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/6_Bumblebee"
+    },
+    {
+      "name": "AdvScarab",
+      "type": "achievement",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_scarab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_scarab.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/7_Scarab"
+    },
+    {
+      "name": "AdvSpinyspider",
+      "type": "achievement",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_spinyspider",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_spinyspider.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/8_SpinySpider"
+    },
+    {
+      "name": "AdvTortoisebeetle",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_tortoisebeetle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_tortoisebeetle.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/9_TortoiseBeetle"
+    },
+    {
+      "name": "DiscographyItem",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "discography_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscographyItemItem.java",
+          "src/main/resources/assets/eva_additions/models/item/discography_item.json"
+        ]
+      },
+      "path": "~/Discs"
+    },
+    {
+      "name": "Discography",
+      "type": "achievement",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "discography",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/discography.json"
+        ]
+      },
+      "path": "~/Discs"
+    },
+    {
+      "name": "EntomologistEpiphany",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entomologist_epiphany",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/entomologist_epiphany.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/EntomologistEpiphanyItem.java"
+        ]
+      },
+      "path": "~/Discs/music for bugs"
+    },
+    {
+      "name": "Entomologist",
+      "type": "achievement",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entomologist",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/entomologist.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs"
+    },
+    {
+      "name": "DiscItems",
+      "type": "tag",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/disc_items.json"
+        ]
+      },
+      "path": "~/Discs"
+    },
+    {
+      "name": "LootEntomologist",
+      "type": "loottable",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_entomologist",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/entities/loot_entomologist.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs"
+    },
+    {
+      "name": "GetEntomologist",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_entomologist",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetEntomologistProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs"
+    },
+    {
+      "name": "WeevilBlocks",
+      "type": "tag",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weevil_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/weevil_blocks.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/1_Weevil"
+    },
+    {
+      "name": "GetWeevil",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_weevil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetWeevilProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/1_Weevil"
+    },
+    {
+      "name": "GetButterfly",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_butterfly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetButterflyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/2_Butterfly"
+    },
+    {
+      "name": "GetTreehopper",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_treehopper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetTreehopperProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/3_Treehopper"
+    },
+    {
+      "name": "GetMoth",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_moth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetMothProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/4_Moth"
+    },
+    {
+      "name": "Treeblocks",
+      "type": "tag",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "treeblocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/treeblocks.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/3_Treehopper"
+    },
+    {
+      "name": "GetIsopod",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_isopod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetIsopodProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/5_Isopod"
+    },
+    {
+      "name": "GetBumblebee",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_bumblebee",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetBumblebeeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/6_Bumblebee"
+    },
+    {
+      "name": "GetScarab",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_scarab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetScarabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/7_Scarab"
+    },
+    {
+      "name": "ScarabBlocks",
+      "type": "tag",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scarab_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/scarab_blocks.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/7_Scarab"
+    },
+    {
+      "name": "GetSpinyspider",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_spinyspider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetSpinyspiderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/8_SpinySpider"
+    },
+    {
+      "name": "GetTortoisebeetle",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_tortoisebeetle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetTortoisebeetleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs/9_TortoiseBeetle"
+    },
+    {
+      "name": "Flowers",
+      "type": "tag",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flowers",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/flowers.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs/9_TortoiseBeetle"
+    },
+    {
+      "name": "BugBiomes",
+      "type": "tag",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bug_biomes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/worldgen/biome/bug_biomes.json"
+        ]
+      },
+      "path": "~/Discs/music for bugs"
+    },
+    {
+      "name": "GamemodeSwitcherOnKeyPressed",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_switcher_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GamemodeSwitcherOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "GamemodeSwitcher",
+      "type": "keybind",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_switcher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/network/GamemodeSwitcherMessage.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "GetEnderlink",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_enderlink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetEnderlinkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "UncomfortablePeriod",
+      "type": "painting",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uncomfortable_period",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "StoryOfUndertale",
+      "type": "painting",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "story_of_undertale",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Bliss",
+      "type": "painting",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bliss",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Diane1",
+      "type": "painting",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diane_1",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Diane2",
+      "type": "painting",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diane_2",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Diane3",
+      "type": "painting",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diane_3",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Diane4",
+      "type": "painting",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diane_4",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "DiscPomni",
+      "type": "musicdisc",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_pomni",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/disc_pomni.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscPomniItem.java"
+        ]
+      },
+      "path": "~/Discs/TADC"
+    },
+    {
+      "name": "LootPomni",
+      "type": "loottable",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_pomni",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/entities/loot_pomni.json"
+        ]
+      },
+      "path": "~/Discs/TADC"
+    },
+    {
+      "name": "AdvPomni",
+      "type": "achievement",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_pomni",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_pomni.json"
+        ]
+      },
+      "path": "~/Discs/TADC"
+    },
+    {
+      "name": "GetPomni",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_pomni",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetPomniProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/TADC"
+    },
+    {
+      "name": "MiningAid",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_aid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/block/mining_aid.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/MiningAidBlock.java",
+          "src/main/resources/assets/eva_additions/blockstates/mining_aid.json",
+          "src/main/resources/assets/eva_additions/models/item/mining_aid.json"
+        ]
+      },
+      "path": "~/MiningAid"
+    },
+    {
+      "name": "MiningAidStop",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_aid_stop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/block/MiningAidStopBlock.java",
+          "src/main/resources/assets/eva_additions/blockstates/mining_aid_stop.json",
+          "src/main/resources/assets/eva_additions/models/block/mining_aid_stop.json",
+          "src/main/resources/assets/eva_additions/models/item/mining_aid_stop.json"
+        ]
+      },
+      "path": "~/MiningAid"
+    },
+    {
+      "name": "Poli",
+      "type": "painting",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poli",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "MiningAidNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_aid_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/MiningAidNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MiningAid"
+    },
+    {
+      "name": "MiningAidBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_aid_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/MiningAidBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MiningAid"
+    },
+    {
+      "name": "MiningAidStopNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_aid_stop_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/MiningAidStopNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MiningAid"
+    },
+    {
+      "name": "MiningAidOff",
+      "type": "tag",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_aid_off",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/mining_aid_off.json"
+        ]
+      },
+      "path": "~/MiningAid"
+    },
+    {
+      "name": "MiningAidBlocks",
+      "type": "tag",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_aid_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/mining_aid_blocks.json"
+        ]
+      },
+      "path": "~/MiningAid"
+    },
+    {
+      "name": "GetDiscography",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_discography",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetDiscographyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs"
+    },
+    {
+      "name": "AdvRoundabout",
+      "type": "achievement",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_roundabout",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/adv_roundabout.json"
+        ]
+      },
+      "path": "~/Discs/Roundabout"
+    },
+    {
+      "name": "DiscRoundabout",
+      "type": "musicdisc",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_roundabout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscRoundaboutItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_roundabout.json"
+        ]
+      },
+      "path": "~/Discs/Roundabout"
+    },
+    {
+      "name": "LootRoundabout",
+      "type": "loottable",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_roundabout",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/entities/loot_roundabout.json"
+        ]
+      },
+      "path": "~/Discs/Roundabout"
+    },
+    {
+      "name": "GetRoundabout",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_roundabout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetRoundaboutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/Roundabout"
+    },
+    {
+      "name": "BlackHole",
+      "type": "painting",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_hole",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Einstein",
+      "type": "painting",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "einstein",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "DiscLibet",
+      "type": "musicdisc",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_libet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/disc_libet.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscLibetItem.java"
+        ]
+      },
+      "path": "~/Discs/Caretaker"
+    },
+    {
+      "name": "Diane5",
+      "type": "painting",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diane_5",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Diane6",
+      "type": "painting",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diane_6",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "GreatAttraction",
+      "type": "painting",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_attraction",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "LCLSea",
+      "type": "painting",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lcl_sea",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "DiscBurningmemory",
+      "type": "musicdisc",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_burningmemory",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/disc_burningmemory.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscBurningmemoryItem.java"
+        ]
+      },
+      "path": "~/Discs/Caretaker"
+    },
+    {
+      "name": "DiscBuddyholly",
+      "type": "musicdisc",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disc_buddyholly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DiscBuddyhollyItem.java",
+          "src/main/resources/assets/eva_additions/models/item/disc_buddyholly.json"
+        ]
+      },
+      "path": "~/Discs/Weezer"
+    },
+    {
+      "name": "CreeperDropMusicDiscs",
+      "type": "tag",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_drop_music_discs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/creeper_drop_music_discs.json"
+        ]
+      },
+      "path": "~/Discs"
+    },
+    {
+      "name": "Cryostasis",
+      "type": "musicdisc",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryostasis",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/cryostasis.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/CryostasisItem.java"
+        ]
+      },
+      "path": "~/Discs/Fake Music"
+    },
+    {
+      "name": "CryostasisAdv",
+      "type": "achievement",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryostasis_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/cryostasis_adv.json"
+        ]
+      },
+      "path": "~/Discs/Fake Music"
+    },
+    {
+      "name": "GetCryostasis",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_cryostasis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetCryostasisProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Discs/Fake Music"
+    },
+    {
+      "name": "GiveCryostasis",
+      "type": "loottable",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_cryostasis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/entities/give_cryostasis.json"
+        ]
+      },
+      "path": "~/Discs/Fake Music"
+    },
+    {
+      "name": "Snap",
+      "type": "painting",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snap",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "QuartzTiles",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/block/quartz_tiles.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/QuartzTilesBlock.java",
+          "src/main/resources/assets/eva_additions/models/item/quartz_tiles.json",
+          "src/main/resources/assets/eva_additions/blockstates/quartz_tiles.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LapisTiles",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles.json",
+          "src/main/resources/assets/eva_additions/models/block/lapis_tiles.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTilesBlock.java",
+          "src/main/resources/assets/eva_additions/models/item/lapis_tiles.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "QuartzTiles2",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_tiles_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/block/quartz_tiles_2.json",
+          "src/main/resources/assets/eva_additions/models/item/quartz_tiles_2.json",
+          "src/main/resources/assets/eva_additions/blockstates/quartz_tiles_2.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/QuartzTiles2Block.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LapisTiles2",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_tiles_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTiles2Block.java",
+          "src/main/resources/assets/eva_additions/models/item/lapis_tiles_2.json",
+          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles_2.json",
+          "src/main/resources/assets/eva_additions/models/block/lapis_tiles_2.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "QuartzTiles3",
+      "type": "block",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_tiles_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/quartz_tiles_3.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/QuartzTiles3Block.java",
+          "src/main/resources/assets/eva_additions/models/block/quartz_tiles_3.json",
+          "src/main/resources/assets/eva_additions/blockstates/quartz_tiles_3.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LapisTiles3",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_tiles_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles_3.json",
+          "src/main/resources/assets/eva_additions/models/block/lapis_tiles_3.json",
+          "src/main/resources/assets/eva_additions/models/item/lapis_tiles_3.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTiles3Block.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LiveleakDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liveleak_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/LiveleakDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "Liveleak",
+      "type": "overlay",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liveleak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/screens/LiveleakOverlay.java"
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "PrematureDeath",
+      "type": "potioneffect",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "premature_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/potion/PrematureDeathMobEffect.java"
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "LiveleakDamage",
+      "type": "damagetype",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liveleak_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/damage_type/liveleak_damage.json"
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "PrematureDeathEffectExpires",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "premature_death_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/PrematureDeathEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "PrematureDeathEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "premature_death_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/PrematureDeathEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "CanGiveDeath",
+      "type": "tag",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "can_give_death",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/tags/entity_types/can_give_death.json"
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "GiveDeath",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GiveDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "DevLiveleak",
+      "type": "item",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_liveleak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/DevLiveleakItem.java",
+          "src/main/resources/assets/eva_additions/models/item/dev_liveleak.json"
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "LiveleakRewardScreenDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liveleak_reward_screen_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/LiveleakRewardScreenDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "LiveleakRewardTable",
+      "type": "loottable",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liveleak_reward_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/entities/liveleak_reward_table.json"
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "LiveleakDeath",
+      "type": "achievement",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liveleak_death",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/liveleak_death.json"
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "Antibody",
+      "type": "curiosbauble",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/antibody_4.json",
+          "src/main/resources/assets/eva_additions/models/item/antibody_1.json",
+          "src/main/resources/assets/eva_additions/models/item/antibody.json",
+          "src/main/resources/assets/eva_additions/models/item/antibody_0.json",
+          "src/main/resources/assets/eva_additions/models/item/antibody_2.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/AntibodyItem.java",
+          "src/main/resources/assets/eva_additions/models/item/antibody_5.json",
+          "src/main/resources/assets/eva_additions/models/item/antibody_3.json"
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_while_bauble_is_equipped_tick",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyTooltip",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyPropertyValueProvider",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyPropertyValueProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "WhenHurtAntibody",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_hurt_antibody",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/WhenHurtAntibodyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "LapisTiles4",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_tiles_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/block/lapis_tiles_4.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTiles4Block.java",
+          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles_4.json",
+          "src/main/resources/assets/eva_additions/models/item/lapis_tiles_4.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LapisTiles5",
+      "type": "block",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_tiles_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/lapis_tiles_5.json",
+          "src/main/resources/assets/eva_additions/models/block/lapis_tiles_5.json",
+          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles_5.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTiles5Block.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Dungeon",
+      "type": "loottable",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dungeon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_tables/chests/simple_dungeon.json"
+        ]
+      }
+    },
+    {
+      "name": "NightVision",
+      "type": "curiosbauble",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_vision",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/renderer/NightVisionRenderer.java",
+          "src/main/java/net/mcreator/evaadditionsforge/item/NightVisionItem.java",
+          "src/main/resources/assets/eva_additions/models/item/night_vision.json"
+        ]
+      },
+      "path": "~/Curio/NightVision"
+    },
+    {
+      "name": "AntibodyHurtOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_hurt_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyHurtOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyHurtOverlay",
+      "type": "overlay",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_hurt_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/screens/AntibodyHurtOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "NightVisionWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_vision_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/NightVisionWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/NightVision"
+    },
+    {
+      "name": "DisplayAntibody",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_antibody",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/DisplayAntibodyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "DoHurtAntibody",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "do_hurt_antibody",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/DoHurtAntibodyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyFullDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_full_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyFullDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyFull",
+      "type": "overlay",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_full",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/screens/AntibodyFullOverlay.java"
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyStep1",
+      "type": "overlay",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_step_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/screens/AntibodyStep1Overlay.java"
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyStep2",
+      "type": "overlay",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_step_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/screens/AntibodyStep2Overlay.java"
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyStep3",
+      "type": "overlay",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_step_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/screens/AntibodyStep3Overlay.java"
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyStep4",
+      "type": "overlay",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_step_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/screens/AntibodyStep4Overlay.java"
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyOVLStep1",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_ovl_step_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyOVLStep1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyOVLStep2",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_ovl_step_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyOVLStep2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyOVLStep3",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_ovl_step_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyOVLStep3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyOVLStep4",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_ovl_step_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyOVLStep4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "AntibodyAdv",
+      "type": "achievement",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/antibody_adv.json"
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "DevAntibodyItem",
+      "type": "item",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_antibody_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/dev_antibody_item.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/DevAntibodyItemItem.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "EnderlinkLiveleak",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderlink_liveleak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/EnderlinkLiveleakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Liveleak"
+    },
+    {
+      "name": "AntibodyEnderlink",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_enderlink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyEnderlinkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "Blessing",
+      "type": "enchantment",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blessing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/BlessingEnchantment.java"
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "UnholyMobs",
+      "type": "tag",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unholy_mobs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/entity_types/unholy_mobs.json"
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "BlessingEnchProd",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blessing_ench_prod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/BlessingEnchProdProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "Meds",
+      "type": "enchantment",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meds",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/MedsEnchantment.java"
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "AntibodyTest",
+      "type": "painting",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibody_test",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "EnderlinkAssistant",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "null"
+    },
+    {
+      "name": "SpiderKilled",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "advName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "BugHints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ShowLiveleak",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "WillFixNextIllness",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "weaknessNum",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "poisonNum",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "witherNum",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "blindnessNum",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "nauseaNum",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "AntibodyLevel",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "doDamageAntibody",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "AntibodyMedsLVL",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "hasMeds",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "record_weevil",
+      "files": [
+        "1_-_weevil"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_butterfly",
+      "files": [
+        "2_-_butterfly"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_treehopper",
+      "files": [
+        "3_-_treehopper"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_moth",
+      "files": [
+        "4_-_moth"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_isopod",
+      "files": [
+        "5_-_isopod"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_bumblebee",
+      "files": [
+        "6_-_bumblebee"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_scarab",
+      "files": [
+        "7_-_scarab"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_spinyspider",
+      "files": [
+        "8_-_spiny_spider"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_tortoisebeetle",
+      "files": [
+        "9_-_tortoise_beetle"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "enderlink_ping",
+      "files": [
+        "angelbot3",
+        "angelbot2",
+        "angelbot1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "record_yournewhome",
+      "files": [
+        "spotifymate.com_-_your_new_home_-_gooseworx"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_roundabout",
+      "files": [
+        "02._roundabout_instrumental_mix"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_libetsdelay",
+      "files": [
+        "the_caretaker_-_an_empty_bliss_beyond_this_world_-_04_libets_delay"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_burningmemory",
+      "files": [
+        "the_caretaker_-_everywhere_at_the_end_of_time_-_01_a1_-_its_just_a_burning_memory"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_buddyholly",
+      "files": [
+        "weezer_buddy_holly_instrumental_mix"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_cryostasis",
+      "files": [
+        "p_u_d_e_r_p_o_l_l_i_-_cryostasis"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "heartbeat",
+      "files": [
+        "heart-beat-137135"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "advancements.adv_tortoisebeetle.title": "A Bouquet For You!",
+      "item.eva_additions_forge.disc_scarab.desc": "camiidae - scarab",
+      "painting.eva_additions.diane_2.author": "???",
+      "painting.eva_additions.diane_3.author": "???",
+      "item.eva_additions.disc_roundabout.desc": "Yes - Roundabout",
+      "advancements.cryostasis_adv.title": "Cryostasis Adv",
+      "item.eva_additions.disc_treehopper.desc": "camiidae - treehopper",
+      "advancements.adv_weevil.descr": "Dig up some dirt",
+      "painting.eva_additions.diane_1.author": "???",
+      "painting.eva_additions.diane_4.author": "???",
+      "item.eva_additions.disc_libet.desc": "The Caretaker - Libet\u0027s Delay",
+      "painting.eva_additions.diane_5.author": "???",
+      "item.eva_additions_forge.disc_weevil.desc": "camiidae - weevil",
+      "advancements.liveleak_death.title": "Quick \u0026 Painful",
+      "subtitles.record_tortoisebeetle": "",
+      "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
+      "advancements.adv_isopod.title": "Tough Shell",
+      "subtitles.record_spinyspider": "",
+      "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
+      "painting.eva_additions.einstein.author": "Poli",
+      "item.eva_additions_forge.disc_moth": "Music Disc",
+      "item.eva_additions.disc_butterfly": "Music Disc",
+      "item.eva_additions.cryostasis": "Music Disc",
+      "painting.eva_additions_forge.diane_3.title": "Diane 3",
+      "subtitles.record_treehopper": "",
+      "item.eva_additions.disc_butterfly.desc": "camiidae - butterfly",
+      "item.eva_additions.entomologist_epiphany": "Entomologist Epiphany",
+      "item.eva_additions.disc_spinyspider.desc": "camiidae - spiny spider",
+      "painting.eva_additions.snap.title": "The One Who Snaps",
+      "key.eva_additions_forge.show_patch_notes": "Show Patch Notes",
+      "advancements.adv_bumblebee.descr": "Get stung by a bee",
+      "item.eva_additions_forge.disc_isopod": "Music Disc",
+      "advancements.adv_treehopper.descr": "Cut down some trees",
+      "subtitles.heartbeat": "",
+      "block.eva_additions.mining_aid": "Mining Aid",
+      "advancements.adv_pomni.descr": "Wake up in your new home",
+      "item.eva_additions.disc_burningmemory.desc": "The Caretaker - It\u0027s just a burning memory",
+      "advancements.antibody_adv.descr": "Add some supplements to your immune system",
+      "painting.eva_additions.diane_6.author": "Flait13",
+      "item.eva_additions_forge.discography_item": "Discography Item",
+      "death.attack.liveleak_damage.item": "%1$s was killed by %2$s using %3$s",
+      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
+      "advancements.adv_roundabout.title": "To Be Continued",
+      "item.eva_additions_forge.disc_weevil": "Music Disc",
+      "painting.eva_additions.great_attraction.title": "Great Attraction",
+      "painting.eva_additions.story_of_undertale.title": "Story Of Undertale",
+      "painting.eva_additions.diane_5.title": "Diane 5",
+      "painting.eva_additions_forge.diane_2.title": "Diane 2",
+      "item.eva_additions.disc_tortoisebeetle": "Music Disc",
+      "advancements.adv_moth.descr": "Get burned in a bug infested biome",
+      "painting.eva_additions_forge.story_of_undertale.author": "LHUGUENY",
+      "painting.eva_additions.great_attraction.author": "LHUGUENY",
+      "painting.eva_additions.diane_1.title": "Diane 1",
+      "block.eva_additions.mining_aid_stop": "Mining Aid",
+      "enchantment.eva_additions.meds": "Meds",
+      "painting.eva_additions.story_of_undertale.author": "LHUGUENY",
+      "subtitles.record_yournewhome": "",
+      "subtitles.record_butterfly": "",
+      "subtitles.record_burningmemory": "",
+      "item.eva_additions_forge.disc_tortoisebeetle.desc": "camiidae - tortoise beetle",
+      "advancements.adv_scarab.title": "Critter",
+      "painting.eva_additions_forge.story_of_undertale.title": "Story Of Undertale",
+      "painting.eva_additions_forge.bliss.title": "Bliss",
+      "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
+      "subtitles.record_cryostasis": "",
+      "block.eva_additions.quartz_tiles_3": "Quartz Tiles",
+      "painting.eva_additions.uncomfortable_period.author": "Toby",
+      "block.eva_additions.quartz_tiles_2": "Quartz Tiles",
+      "advancements.adv_bumblebee.title": "Buzz",
+      "item.eva_additions.disc_libet": "Music Disc",
+      "advancements.liveleak_death.descr": "Get too unlucky",
+      "painting.eva_additions.antibody_test.title": "Makeshift Infirmary",
+      "painting.eva_additions.diane_6.title": "A Handful",
+      "advancements.adv_roundabout.descr": "Continue playing later...",
+      "painting.eva_additions.black_hole.author": "Poli",
+      "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
+      "painting.eva_additions_forge.bliss.author": "Charles O\u0027Rear",
+      "enchantment.eva_additions.blessing": "Blessing",
+      "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
+      "painting.eva_additions.black_hole.title": "Black Hole",
+      "painting.eva_additions.einstein.title": "Einstein",
+      "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
+      "subtitles.enderlink_ping": "",
+      "painting.eva_additions_forge.diane_4.title": "Diane 4",
+      "key.eva_additions.gamemode_switcher": "Gamemode Switcher",
+      "item.eva_additions_forge.disc_treehopper": "Music Disc",
+      "item.eva_additions.dev_antibody_item": "Dev Antibody Item",
+      "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
+      "item.eva_additions.disc_isopod": "Music Disc",
+      "item.eva_additions.night_vision": "Night Vision",
+      "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
+      "item.eva_additions.disc_moth.desc": "camiidae - moth",
+      "advancements.adv_weevil.title": "Evil Weevil",
+      "item.eva_additions.disc_burningmemory": "Music Disc",
+      "advancements.adv_butterfly.title": "Fly High",
+      "subtitles.record_moth": "",
+      "item.eva_additions.disc_treehopper": "Music Disc",
+      "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
+      "item.eva_additions.discography_item": "Discography Item",
+      "painting.eva_additions_forge.diane_3.author": "???",
+      "painting.eva_additions_forge.diane_2.author": "???",
+      "painting.eva_additions_forge.diane_4.author": "???",
+      "painting.eva_additions.poli.title": "Poli",
+      "painting.eva_additions_forge.diane_1.title": "Diane 1",
+      "painting.eva_additions_forge.diane_1.author": "???",
+      "item.eva_additions.disc_bumblebee": "Music Disc",
+      "painting.eva_additions.bliss.title": "Bliss",
+      "item.eva_additions.disc_moth": "Music Disc",
+      "painting.eva_additions.diane_4.title": "Diane 4",
+      "advancements.adv_isopod.descr": "Dig up some wet sand",
+      "advancements.discography.title": "Discography",
+      "subtitles.record_roundabout": "",
+      "painting.eva_additions.lcl_sea.author": "Hideaki Anno",
+      "item.eva_additions_forge.disc_scarab": "Music Disc",
+      "item.eva_additions.disc_scarab.desc": "camiidae - scarab",
+      "item.eva_additions.disc_weevil.desc": "camiidae - weevil",
+      "item.eva_additions.disc_pomni": "Music Disc",
+      "advancements.adv_spinyspider.descr": "Smash 10 Spider eyes while wearing armor",
+      "item.eva_additions_forge.disc_butterfly.desc": "camiidae - butterfly",
+      "block.eva_additions.quartz_tiles": "Quartz Tiles",
+      "item.eva_additions.disc_isopod.desc": "camiidae - isopod",
+      "painting.eva_additions.bliss.author": "Charles O\u0027Rear",
+      "subtitles.record_isopod": "",
+      "painting.eva_additions.poli.author": "Poli",
+      "effect.eva_additions.premature_death": "Premature Death",
+      "advancements.antibody_adv.title": "Placebo",
+      "advancements.entomologist.title": "Entomologist",
+      "painting.eva_additions_forge.uncomfortable_period.title": "Uncomfortable Period",
+      "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
+      "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
+      "subtitles.record_bumblebee": "",
+      "item.eva_additions.disc_spinyspider": "Music Disc",
+      "advancements.adv_scarab.descr": "Mow the lawn",
+      "item.eva_additions.disc_buddyholly": "Music Disc",
+      "item.eva_additions.disc_weevil": "Music Disc",
+      "painting.eva_additions.diane_2.title": "Diane 2",
+      "item.eva_additions_forge.disc_butterfly": "Music Disc",
+      "advancements.adv_moth.title": "Too Close To The Sun",
+      "block.eva_additions.lapis_tiles": "Lapis Tiles",
+      "item.eva_additions.cryostasis.desc": "??? - cryostasis",
+      "item.eva_additions_forge.disc_spinyspider.desc": "camiidae - spiny spider",
+      "item.eva_additions_forge.disc_tortoisebeetle": "Music Disc",
+      "painting.eva_additions.snap.author": "EvaKrusader",
+      "painting.eva_additions_forge.uncomfortable_period.author": "Toby",
+      "subtitles.record_scarab": "",
+      "item.eva_additions.disc_scarab": "Music Disc",
+      "subtitles.record_buddyholly": "",
+      "item.eva_additions_forge.disc_bumblebee": "Music Disc",
+      "item.eva_additions.antibody": "Foreign Antibodies",
+      "item.eva_additions_forge.disc_spinyspider": "Music Disc",
+      "advancements.discography.descr": "Obtain your first music disc",
+      "item.eva_additions.disc_tortoisebeetle.desc": "camiidae - tortoise beetle",
+      "painting.eva_additions.lcl_sea.title": "Near Fourth Impact LCL Sea",
+      "advancements.adv_pomni.title": "Your New Home",
+      "subtitles.record_libetsdelay": "",
+      "item.eva_additions.dev_liveleak": "Dev Liveleak",
+      "subtitles.record_weevil": "",
+      "block.eva_additions.lapis_tiles_3": "Lapis Tiles",
+      "advancements.adv_spinyspider.title": "Tough Exoskeleton",
+      "block.eva_additions.lapis_tiles_4": "Lapis Tiles",
+      "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
+      "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
+      "block.eva_additions.lapis_tiles_5": "Lapis Tiles",
+      "painting.eva_additions.antibody_test.author": "EvaKrusader",
+      "painting.eva_additions.uncomfortable_period.title": "Uncomfortable Period",
+      "item.eva_additions_forge.disc_isopod.desc": "camiidae - isopod",
+      "advancements.adv_treehopper.title": "From Tree To Tree",
+      "item.eva_additions.disc_roundabout": "Music Disc",
+      "painting.eva_additions.diane_3.title": "Diane 3",
+      "block.eva_additions.lapis_tiles_2": "Lapis Tiles"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Discs",
+        "children": [
+          {
+            "name": "TADC",
+            "children": []
+          },
+          {
+            "name": "music for bugs",
+            "children": [
+              {
+                "name": "1_Weevil",
+                "children": []
+              },
+              {
+                "name": "3_Treehopper",
+                "children": []
+              },
+              {
+                "name": "4_Moth",
+                "children": []
+              },
+              {
+                "name": "5_Isopod",
+                "children": []
+              },
+              {
+                "name": "6_Bumblebee",
+                "children": []
+              },
+              {
+                "name": "7_Scarab",
+                "children": []
+              },
+              {
+                "name": "8_SpinySpider",
+                "children": []
+              },
+              {
+                "name": "9_TortoiseBeetle",
+                "children": []
+              },
+              {
+                "name": "2_Butterfly",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Roundabout",
+            "children": []
+          },
+          {
+            "name": "Caretaker",
+            "children": []
+          },
+          {
+            "name": "Weezer",
+            "children": []
+          },
+          {
+            "name": "Fake Music",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Dev",
+        "children": []
+      },
+      {
+        "name": "Paintings",
+        "children": []
+      },
+      {
+        "name": "MiningAid",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Liveleak",
+        "children": []
+      },
+      {
+        "name": "Curio",
+        "children": [
+          {
+            "name": "Antibodies",
+            "children": []
+          },
+          {
+            "name": "NightVision",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Enchants",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "eva_additions",
+    "modName": "Eva Additions Forge",
+    "version": "1.7.5",
+    "author": "saver, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.evaadditionsforge",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:disc_treehopper"
+    },
+    "title": {
+      "translate": "advancements.adv_treehopper.title"
+    },
+    "description": {
+      "translate": "advancements.adv_treehopper.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_treehopper": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "eva_additions:loot_treehopper"
+    ]
+  },
+  "parent": "eva_additions:adv_butterfly"
+}

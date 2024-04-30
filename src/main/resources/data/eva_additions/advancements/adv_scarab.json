@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:disc_scarab"
+    },
+    "title": {
+      "translate": "advancements.adv_scarab.title"
+    },
+    "description": {
+      "translate": "advancements.adv_scarab.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_scarab": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "eva_additions:loot_scarab"
+    ]
+  },
+  "parent": "eva_additions:adv_bumblebee"
+}

@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disk_pomni",
+    "description": "Evan Alderete - Your New Home",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:record_yournewhome"
+    },
+    "lengthInTicks": 1300,
+    "analogOutput": 5
+  }
+}

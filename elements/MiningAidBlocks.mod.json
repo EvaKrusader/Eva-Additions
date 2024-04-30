@@ -1,0 +1,94 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.COAL_ORE"
+      },
+      {
+        "value": "Blocks.IRON_ORE"
+      },
+      {
+        "value": "Blocks.REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.LIT_REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.GOLD_ORE"
+      },
+      {
+        "value": "Blocks.LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.EMERALD_ORE"
+      },
+      {
+        "value": "Blocks.COPPER_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_COAL_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_IRON_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_GOLD_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_EMERALD_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_COPPER_ORE"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "Blocks.DEEPSLATE"
+      },
+      {
+        "value": "Blocks.COBBLED_DEEPSLATE"
+      },
+      {
+        "value": "Blocks.TUFF"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "mining_aid_blocks",
+    "namespace": "minecraft"
+  }
+}

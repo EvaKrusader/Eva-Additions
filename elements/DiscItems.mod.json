@@ -1,0 +1,91 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DiscWeevil"
+      },
+      {
+        "value": "CUSTOM:DiscButterfly"
+      },
+      {
+        "value": "CUSTOM:DiscTreehopper"
+      },
+      {
+        "value": "CUSTOM:DiscMoth"
+      },
+      {
+        "value": "CUSTOM:DiscIsopod"
+      },
+      {
+        "value": "CUSTOM:DiscBumblebee"
+      },
+      {
+        "value": "CUSTOM:DiscScarab"
+      },
+      {
+        "value": "CUSTOM:DiscSpinyspider"
+      },
+      {
+        "value": "CUSTOM:DiscTortoisebeetle"
+      },
+      {
+        "value": "Items.RECORD_13"
+      },
+      {
+        "value": "Items.RECORD_CAT"
+      },
+      {
+        "value": "Items.RECORD_BLOCKS"
+      },
+      {
+        "value": "Items.RECORD_CHIRP"
+      },
+      {
+        "value": "Items.RECORD_FAR"
+      },
+      {
+        "value": "Items.RECORD_MALL"
+      },
+      {
+        "value": "Items.RECORD_MELLOHI"
+      },
+      {
+        "value": "Items.RECORD_STAL"
+      },
+      {
+        "value": "Items.RECORD_STRAD"
+      },
+      {
+        "value": "Items.RECORD_WARD"
+      },
+      {
+        "value": "Items.RECORD_11"
+      },
+      {
+        "value": "Items.RECORD_WAIT"
+      },
+      {
+        "value": "Items.MUSIC_DISC_OTHERSIDE"
+      },
+      {
+        "value": "Items.MUSIC_DISC_5"
+      },
+      {
+        "value": "Items.MUSIC_DISC_PIGSTEP"
+      },
+      {
+        "value": "Items.MUSIC_DISC_RELIC"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "disc_items",
+    "namespace": "minecraft"
+  }
+}

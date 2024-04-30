@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "miningaid_wood"
+      },
+      "name": "default"
+    },
+    "bad": {
+      "map": {
+        "0": "miningaid_wood_bad"
+      },
+      "name": "bad"
+    },
+    "good": {
+      "map": {
+        "0": "miningaid_wood_good"
+      },
+      "name": "good"
+    }
+  }
+}

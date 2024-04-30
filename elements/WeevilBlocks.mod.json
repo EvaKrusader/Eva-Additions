@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.ROOTED_DIRT"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "weevil_blocks",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:disc_moth"
+    },
+    "title": {
+      "translate": "advancements.adv_moth.title"
+    },
+    "description": {
+      "translate": "advancements.adv_moth.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_moth": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "eva_additions:loot_moth"
+    ]
+  },
+  "parent": "eva_additions:adv_treehopper"
+}

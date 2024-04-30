@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "eva_additions:block/lapis_tiles5",
+    "particle": "eva_additions:block/lapis_tiles5"
+  },
+  "render_type": "solid"
+}

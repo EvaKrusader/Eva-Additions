@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "disk_scarab",
+    "description": "camiidae - scarab",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:record_scarab"
+    },
+    "lengthInTicks": 3880,
+    "analogOutput": 7
+  }
+}

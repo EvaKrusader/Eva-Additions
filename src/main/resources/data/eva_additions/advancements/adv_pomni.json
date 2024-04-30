@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:disc_pomni"
+    },
+    "title": {
+      "translate": "advancements.adv_pomni.title"
+    },
+    "description": {
+      "translate": "advancements.adv_pomni.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "adv_pomni": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "eva_additions:entities/loot_pomni"
+    ]
+  },
+  "parent": "eva_additions:discography"
+}

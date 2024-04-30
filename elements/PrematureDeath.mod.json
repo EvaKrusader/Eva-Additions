@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Premature Death",
+    "icon": "premature_death.png",
+    "color": {
+      "value": -7077887,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "PrematureDeathEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "PrematureDeathEffectExpires"
+    }
+  }
+}

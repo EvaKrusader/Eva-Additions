@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DiscRoundabout"
+      },
+      {
+        "value": "CUSTOM:DiscLibet"
+      },
+      {
+        "value": "CUSTOM:DiscBurningmemory"
+      },
+      {
+        "value": "CUSTOM:DiscBuddyholly"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "creeper_drop_music_discs",
+    "namespace": "minecraft"
+  }
+}

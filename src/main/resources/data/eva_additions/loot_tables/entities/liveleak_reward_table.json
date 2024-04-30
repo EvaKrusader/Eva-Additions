@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:advancement_reward",
+  "pools": [],
+  "random_sequence": "eva_additions:entities/liveleak_reward_table"
+}

@@ -1,0 +1,184 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "EntityArrow"
+      },
+      {
+        "value": "EntityBee"
+      },
+      {
+        "value": "EntityBlaze"
+      },
+      {
+        "value": "EntityCaveSpider"
+      },
+      {
+        "value": "EntityCreeper"
+      },
+      {
+        "value": "EntityDragon"
+      },
+      {
+        "value": "EntityDragonFireball"
+      },
+      {
+        "value": "EntityDrowned"
+      },
+      {
+        "value": "EntityElderGuardian"
+      },
+      {
+        "value": "EntityEnderCrystal"
+      },
+      {
+        "value": "EntityEnderman"
+      },
+      {
+        "value": "EntityEndermite"
+      },
+      {
+        "value": "EntityEvoker"
+      },
+      {
+        "value": "EntityEvokerFangs"
+      },
+      {
+        "value": "EntityFallingBlock"
+      },
+      {
+        "value": "EntityFireball"
+      },
+      {
+        "value": "EntityGhast"
+      },
+      {
+        "value": "EntityGiantZombie"
+      },
+      {
+        "value": "EntityGuardian"
+      },
+      {
+        "value": "EntityHoglin"
+      },
+      {
+        "value": "EntityHusk"
+      },
+      {
+        "value": "EntityIllusionIllager"
+      },
+      {
+        "value": "EntityIronGolem"
+      },
+      {
+        "value": "EntityLlama"
+      },
+      {
+        "value": "EntityLlamaSpit"
+      },
+      {
+        "value": "EntityMinecartTNT"
+      },
+      {
+        "value": "EntityPhantom"
+      },
+      {
+        "value": "EntityPiglin"
+      },
+      {
+        "value": "EntityPiglinBrute"
+      },
+      {
+        "value": "EntityPillager"
+      },
+      {
+        "value": "EntityPolarBear"
+      },
+      {
+        "value": "EntityPufferfish"
+      },
+      {
+        "value": "EntityRavager"
+      },
+      {
+        "value": "EntityShulker"
+      },
+      {
+        "value": "EntityShulkerBullet"
+      },
+      {
+        "value": "EntitySilverfish"
+      },
+      {
+        "value": "EntitySlime"
+      },
+      {
+        "value": "EntitySmallFireball"
+      },
+      {
+        "value": "EntitySpectralArrow"
+      },
+      {
+        "value": "EntitySpider"
+      },
+      {
+        "value": "EntityStray"
+      },
+      {
+        "value": "EntityTNTPrimed"
+      },
+      {
+        "value": "EntityTrident"
+      },
+      {
+        "value": "EntityVex"
+      },
+      {
+        "value": "EntityVindicator"
+      },
+      {
+        "value": "EntityWarden"
+      },
+      {
+        "value": "EntityWitch"
+      },
+      {
+        "value": "EntityWither"
+      },
+      {
+        "value": "EntityWitherSkeleton"
+      },
+      {
+        "value": "EntityWitherSkull"
+      },
+      {
+        "value": "EntityWolf"
+      },
+      {
+        "value": "EntityZoglin"
+      },
+      {
+        "value": "EntityZombie"
+      },
+      {
+        "value": "EntityZombieHorse"
+      },
+      {
+        "value": "EntityZombieVillager"
+      },
+      {
+        "value": "EntityPigZombie"
+      }
+    ],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "can_give_death",
+    "namespace": "mod"
+  }
+}
