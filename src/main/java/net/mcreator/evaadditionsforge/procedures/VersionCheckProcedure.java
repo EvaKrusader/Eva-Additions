@@ -37,9 +37,9 @@ public class VersionCheckProcedure {
 		File file = new File("");
 		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
 		String url = "";
-		ver1 = 1;
-		ver2 = 7;
-		ver3 = 6;
+		ver1 = 2;
+		ver2 = 0;
+		ver3 = 0;
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
 		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
 		try {
@@ -59,8 +59,8 @@ public class VersionCheckProcedure {
 				json = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
 				if (json.get("ver1").getAsDouble() > ver1 || json.get("ver2").getAsDouble() > ver2 || json.get("ver3").getAsDouble() > ver3) {
 					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(
-								Component.literal(("The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble()) + " of this mod is out!")), false);
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Hey Poli!!! This version of the mod is outdated! The version " + Math.round(json.get("ver1").getAsDouble()) + "."
+								+ Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble()) + " of this mod is out!")), false);
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
