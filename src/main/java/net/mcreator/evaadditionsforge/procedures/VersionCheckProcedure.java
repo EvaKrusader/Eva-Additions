@@ -20,7 +20,7 @@ import java.io.BufferedReader;
 import com.google.gson.Gson;
 
 @Mod.EventBusSubscriber
-public class HcProcedure {
+public class VersionCheckProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		execute(event, event.getEntity().level());
@@ -41,7 +41,7 @@ public class HcProcedure {
 		ver2 = 7;
 		ver3 = 6;
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
-		url = "https://github.com/EvaKrusader/Eva-Additions/blob/master/src/main/modver.json";
+		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
 		try {
 			org.apache.commons.io.FileUtils.copyURLToFile(new URL(url), file, 1000, 1000);
 		} catch (IOException e) {

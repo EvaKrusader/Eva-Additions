@@ -2534,15 +2534,15 @@
       "path": "~/Paintings"
     },
     {
-      "name": "Hc",
+      "name": "VersionCheck",
       "type": "procedure",
-      "sortid": 161,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hc",
+      "registry_name": "version_check",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/evaadditionsforge/procedures/HcProcedure.java"
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/VersionCheckProcedure.java"
         ],
         "dependencies": [
           {
