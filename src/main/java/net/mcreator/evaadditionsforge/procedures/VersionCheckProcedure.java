@@ -57,8 +57,8 @@ public class VersionCheckProcedure {
 				}
 				bufferedReader.close();
 				json = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-				if (json.get("ver1").getAsDouble() > ver1 || json.get("ver2").getAsDouble() > ver2 && json.get("ver1").getAsDouble() > ver1
-						|| json.get("ver3").getAsDouble() > ver3 && json.get("ver2").getAsDouble() > ver2 && json.get("ver1").getAsDouble() > ver1) {
+				if (json.get("ver1").getAsDouble() > ver1 || json.get("ver2").getAsDouble() > ver2 && json.get("ver1").getAsDouble() >= ver1
+						|| json.get("ver3").getAsDouble() > ver3 && json.get("ver2").getAsDouble() >= ver2 && json.get("ver1").getAsDouble() >= ver1) {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList()
 								.broadcastSystemMessage(Component.literal((("Hey Poli!!! This version of the mod is outdated! The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
