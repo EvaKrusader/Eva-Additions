@@ -2537,14 +2537,19 @@
       "name": "Hc",
       "type": "procedure",
       "sortid": 161,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "hc",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/HcProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Dev"
     }
@@ -3066,7 +3071,7 @@
   "workspaceSettings": {
     "modid": "eva_additions",
     "modName": "Eva Additions Forge",
-    "version": "1.7.5",
+    "version": "1.7.4",
     "author": "saver, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
