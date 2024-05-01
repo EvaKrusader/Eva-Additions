@@ -2,5 +2,43 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "eva_additions:item/night_vision"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 0
+      },
+      "model": "eva_additions:item/night_vision_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 1
+      },
+      "model": "eva_additions:item/night_vision_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 2
+      },
+      "model": "eva_additions:item/night_vision_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 3
+      },
+      "model": "eva_additions:item/night_vision_3"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 4
+      },
+      "model": "eva_additions:item/night_vision_4"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 5
+      },
+      "model": "eva_additions:item/night_vision_5"
+    }
+  ]
 }

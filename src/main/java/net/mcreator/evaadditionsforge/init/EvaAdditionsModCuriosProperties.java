@@ -17,6 +17,10 @@ public class EvaAdditionsModCuriosProperties {
 		event.enqueueWork(() -> {
 			ItemProperties.register(EvaAdditionsModItems.ANTIBODY.get(), new ResourceLocation("eva_additions:antibody_antibody_level"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(EvaAdditionsModItems.NIGHT_VISION.get(), new ResourceLocation("eva_additions:night_vision_baublepower"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(EvaAdditionsModItems.SMARTASS.get(), new ResourceLocation("eva_additions:smartass_baublepower"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
 		});
 	}
 }

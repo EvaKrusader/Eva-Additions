@@ -12,8 +12,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.evaadditionsforge.item.SmartassItem;
+import net.mcreator.evaadditionsforge.item.PowerUpperItem;
 import net.mcreator.evaadditionsforge.item.NightVisionItem;
 import net.mcreator.evaadditionsforge.item.EntomologistEpiphanyItem;
+import net.mcreator.evaadditionsforge.item.EndWingsItem;
 import net.mcreator.evaadditionsforge.item.DiscographyItemItem;
 import net.mcreator.evaadditionsforge.item.DiscWeevilItem;
 import net.mcreator.evaadditionsforge.item.DiscTreehopperItem;
@@ -32,6 +35,7 @@ import net.mcreator.evaadditionsforge.item.DiscBuddyhollyItem;
 import net.mcreator.evaadditionsforge.item.DevLiveleakItem;
 import net.mcreator.evaadditionsforge.item.DevAntibodyItemItem;
 import net.mcreator.evaadditionsforge.item.CryostasisItem;
+import net.mcreator.evaadditionsforge.item.AptitudeChangerItem;
 import net.mcreator.evaadditionsforge.item.AntibodyItem;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 
@@ -57,17 +61,19 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> DISC_BUDDYHOLLY = REGISTRY.register("disc_buddyholly", () -> new DiscBuddyhollyItem());
 	public static final RegistryObject<Item> CRYOSTASIS = REGISTRY.register("cryostasis", () -> new CryostasisItem());
 	public static final RegistryObject<Item> QUARTZ_TILES = block(EvaAdditionsModBlocks.QUARTZ_TILES);
-	public static final RegistryObject<Item> LAPIS_TILES = block(EvaAdditionsModBlocks.LAPIS_TILES);
 	public static final RegistryObject<Item> QUARTZ_TILES_2 = block(EvaAdditionsModBlocks.QUARTZ_TILES_2);
-	public static final RegistryObject<Item> LAPIS_TILES_2 = block(EvaAdditionsModBlocks.LAPIS_TILES_2);
 	public static final RegistryObject<Item> QUARTZ_TILES_3 = block(EvaAdditionsModBlocks.QUARTZ_TILES_3);
-	public static final RegistryObject<Item> LAPIS_TILES_3 = block(EvaAdditionsModBlocks.LAPIS_TILES_3);
 	public static final RegistryObject<Item> DEV_LIVELEAK = REGISTRY.register("dev_liveleak", () -> new DevLiveleakItem());
 	public static final RegistryObject<Item> ANTIBODY = REGISTRY.register("antibody", () -> new AntibodyItem());
-	public static final RegistryObject<Item> LAPIS_TILES_4 = block(EvaAdditionsModBlocks.LAPIS_TILES_4);
 	public static final RegistryObject<Item> LAPIS_TILES_5 = block(EvaAdditionsModBlocks.LAPIS_TILES_5);
 	public static final RegistryObject<Item> NIGHT_VISION = REGISTRY.register("night_vision", () -> new NightVisionItem());
 	public static final RegistryObject<Item> DEV_ANTIBODY_ITEM = REGISTRY.register("dev_antibody_item", () -> new DevAntibodyItemItem());
+	public static final RegistryObject<Item> END_WINGS = REGISTRY.register("end_wings", () -> new EndWingsItem());
+	public static final RegistryObject<Item> COLD_OBSIDIAN = block(EvaAdditionsModBlocks.COLD_OBSIDIAN);
+	public static final RegistryObject<Item> CRACKING_OBSIDIAN = block(EvaAdditionsModBlocks.CRACKING_OBSIDIAN);
+	public static final RegistryObject<Item> SMARTASS = REGISTRY.register("smartass", () -> new SmartassItem());
+	public static final RegistryObject<Item> POWER_UPPER = REGISTRY.register("power_upper", () -> new PowerUpperItem());
+	public static final RegistryObject<Item> APTITUDE_CHANGER = REGISTRY.register("aptitude_changer", () -> new AptitudeChangerItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

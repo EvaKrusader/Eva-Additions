@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "night_vision",
     "customModelName": "Normal",
-    "name": "Night Vision",
+    "name": "Night Vision Goggles",
     "rarity": "COMMON",
     "slotType": "HEAD",
     "baubleModel": "ModelNightVision",
@@ -17,7 +17,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 250,
     "recipeRemainder": {
       "value": ""
     },
@@ -32,14 +32,118 @@
       "fixedValue": []
     },
     "hasGlow": false,
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "baublepower": {
+        "name": "AntibodyPropertyValueProvider"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "night_vision",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "disk_weevil",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "disk_scarab",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "disk_weezer",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "disk_butterfly",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 4.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "disk_roundabout",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 5.0
+          }
+        ]
+      }
+    ],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "slotAmount": 1,
     "curioTick": {
       "name": "NightVisionWhileBaubleIsEquippedTick"
+    },
+    "onEquip": {
+      "name": "NightVisionBaubleIsEquipped"
     },
     "isFood": false,
     "friendlyPigs": false,

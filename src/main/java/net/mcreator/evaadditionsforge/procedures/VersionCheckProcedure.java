@@ -39,7 +39,7 @@ public class VersionCheckProcedure {
 		String url = "";
 		ver1 = 1;
 		ver2 = 8;
-		ver3 = 1;
+		ver3 = 3;
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
 		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
 		try {
@@ -61,11 +61,19 @@ public class VersionCheckProcedure {
 						|| json.get("ver3").getAsDouble() > ver3 && json.get("ver2").getAsDouble() >= ver2 && json.get("ver1").getAsDouble() >= ver1) {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList()
-								.broadcastSystemMessage(Component.literal((("Hey Poli!!! This version of the mod is outdated! The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
-										+ Math.round(json.get("ver3").getAsDouble()) + " of this mod is out!") + ""
-										+ (" (You are using the version " + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
-												+ " of this mod) (I forgot to mention it in the final 1.8.0 build but this is automated, you will see this current message in the next update you receive)"))),
+								.broadcastSystemMessage(
+										Component.literal((("Hey Poli!!! This version of the mod is outdated! The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
+												+ Math.round(json.get("ver3").getAsDouble()) + " of this mod is out!") + "" + (" (You are using the version " + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3) + " of this mod)"))),
 										false);
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Please send me \"Lalatina.\" if this message appeared, so I know if this worked correctly"), false);
+				}
+				if (json.get("ver1").getAsDouble() == ver1 && json.get("ver2").getAsDouble() == ver2 && json.get("ver3").getAsDouble() == ver3) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(
+								Component.literal(("You are using the right version (" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble()) + ")")), false);
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("You will probably never see this message, but in case you do, it's cool :)"), false);
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

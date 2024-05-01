@@ -70,6 +70,10 @@ public class EvaAdditionsModVariables {
 			clone.SpiderKilled = original.SpiderKilled;
 			clone.advName = original.advName;
 			clone.BugHints = original.BugHints;
+			clone.knowledgeLVL = original.knowledgeLVL;
+			clone.hasAptitude = original.hasAptitude;
+			clone.aptitudeChance = original.aptitudeChance;
+			clone.aptitudePower = original.aptitudePower;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -132,6 +136,10 @@ public class EvaAdditionsModVariables {
 		public boolean doDamageAntibody = false;
 		public double AntibodyMedsLVL = 0;
 		public boolean hasMeds = false;
+		public double knowledgeLVL = -1.0;
+		public boolean hasAptitude = false;
+		public double aptitudeChance = 0;
+		public double aptitudePower = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -155,6 +163,10 @@ public class EvaAdditionsModVariables {
 			nbt.putBoolean("doDamageAntibody", doDamageAntibody);
 			nbt.putDouble("AntibodyMedsLVL", AntibodyMedsLVL);
 			nbt.putBoolean("hasMeds", hasMeds);
+			nbt.putDouble("knowledgeLVL", knowledgeLVL);
+			nbt.putBoolean("hasAptitude", hasAptitude);
+			nbt.putDouble("aptitudeChance", aptitudeChance);
+			nbt.putDouble("aptitudePower", aptitudePower);
 			return nbt;
 		}
 
@@ -175,6 +187,10 @@ public class EvaAdditionsModVariables {
 			doDamageAntibody = nbt.getBoolean("doDamageAntibody");
 			AntibodyMedsLVL = nbt.getDouble("AntibodyMedsLVL");
 			hasMeds = nbt.getBoolean("hasMeds");
+			knowledgeLVL = nbt.getDouble("knowledgeLVL");
+			hasAptitude = nbt.getBoolean("hasAptitude");
+			aptitudeChance = nbt.getDouble("aptitudeChance");
+			aptitudePower = nbt.getDouble("aptitudePower");
 		}
 	}
 
@@ -214,6 +230,10 @@ public class EvaAdditionsModVariables {
 					variables.doDamageAntibody = message.data.doDamageAntibody;
 					variables.AntibodyMedsLVL = message.data.AntibodyMedsLVL;
 					variables.hasMeds = message.data.hasMeds;
+					variables.knowledgeLVL = message.data.knowledgeLVL;
+					variables.hasAptitude = message.data.hasAptitude;
+					variables.aptitudeChance = message.data.aptitudeChance;
+					variables.aptitudePower = message.data.aptitudePower;
 				}
 			});
 			context.setPacketHandled(true);

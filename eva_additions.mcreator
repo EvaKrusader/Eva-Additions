@@ -1533,23 +1533,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "LapisTiles",
-      "type": "block",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lapis_tiles",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles.json",
-          "src/main/resources/assets/eva_additions/models/block/lapis_tiles.json",
-          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTilesBlock.java",
-          "src/main/resources/assets/eva_additions/models/item/lapis_tiles.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "QuartzTiles2",
       "type": "block",
       "sortid": 104,
@@ -1567,23 +1550,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "LapisTiles2",
-      "type": "block",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lapis_tiles_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTiles2Block.java",
-          "src/main/resources/assets/eva_additions/models/item/lapis_tiles_2.json",
-          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles_2.json",
-          "src/main/resources/assets/eva_additions/models/block/lapis_tiles_2.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "QuartzTiles3",
       "type": "block",
       "sortid": 106,
@@ -1596,23 +1562,6 @@
           "src/main/java/net/mcreator/evaadditionsforge/block/QuartzTiles3Block.java",
           "src/main/resources/assets/eva_additions/models/block/quartz_tiles_3.json",
           "src/main/resources/assets/eva_additions/blockstates/quartz_tiles_3.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "LapisTiles3",
-      "type": "block",
-      "sortid": 107,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lapis_tiles_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles_3.json",
-          "src/main/resources/assets/eva_additions/models/block/lapis_tiles_3.json",
-          "src/main/resources/assets/eva_additions/models/item/lapis_tiles_3.json",
-          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTiles3Block.java"
         ]
       },
       "path": "~/Blocks"
@@ -2006,23 +1955,6 @@
       "path": "~/Curio/Antibodies"
     },
     {
-      "name": "LapisTiles4",
-      "type": "block",
-      "sortid": 133,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lapis_tiles_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/eva_additions/models/block/lapis_tiles_4.json",
-          "src/main/java/net/mcreator/evaadditionsforge/block/LapisTiles4Block.java",
-          "src/main/resources/assets/eva_additions/blockstates/lapis_tiles_4.json",
-          "src/main/resources/assets/eva_additions/models/item/lapis_tiles_4.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "LapisTiles5",
       "type": "block",
       "sortid": 134,
@@ -2062,8 +1994,14 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/client/renderer/NightVisionRenderer.java",
+          "src/main/resources/assets/eva_additions/models/item/night_vision_4.json",
           "src/main/java/net/mcreator/evaadditionsforge/item/NightVisionItem.java",
-          "src/main/resources/assets/eva_additions/models/item/night_vision.json"
+          "src/main/resources/assets/eva_additions/models/item/night_vision.json",
+          "src/main/resources/assets/eva_additions/models/item/night_vision_3.json",
+          "src/main/resources/assets/eva_additions/models/item/night_vision_0.json",
+          "src/main/resources/assets/eva_additions/models/item/night_vision_2.json",
+          "src/main/resources/assets/eva_additions/models/item/night_vision_1.json",
+          "src/main/resources/assets/eva_additions/models/item/night_vision_5.json"
         ]
       },
       "path": "~/Curio/NightVision"
@@ -2118,6 +2056,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2552,6 +2498,643 @@
         ]
       },
       "path": "~/Dev"
+    },
+    {
+      "name": "Claustrophobia",
+      "type": "dimension",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "claustrophobia",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/dimension/claustrophobia.json",
+          "src/main/java/net/mcreator/evaadditionsforge/world/dimension/ClaustrophobiaDimension.java",
+          "src/main/resources/data/eva_additions/dimension_type/claustrophobia.json"
+        ]
+      }
+    },
+    {
+      "name": "EndWings",
+      "type": "curiosbauble",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_wings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/EndWingsItem.java",
+          "src/main/resources/assets/eva_additions/models/item/end_wings.json"
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "EndWingsWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_wings_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/EndWingsWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "EndWingsUppies",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_wings_uppies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/EndWingsUppiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "ColdObsidian",
+      "type": "block",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cold_obsidian",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/cold_obsidian.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/ColdObsidianBlock.java",
+          "src/main/resources/assets/eva_additions/blockstates/cold_obsidian.json",
+          "src/main/resources/assets/eva_additions/models/block/cold_obsidian.json"
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "CrackingObsidian",
+      "type": "block",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracking_obsidian",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/block/CrackingObsidianBlock.java",
+          "src/main/resources/assets/eva_additions/blockstates/cracking_obsidian.json",
+          "src/main/resources/assets/eva_additions/models/item/cracking_obsidian.json",
+          "src/main/resources/assets/eva_additions/models/block/cracking_obsidian.json"
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "EndWingsBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_wings_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/EndWingsBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "EndWingsTooltip",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_wings_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/EndWingsTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "NightVisionBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_vision_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/NightVisionBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/NightVision"
+    },
+    {
+      "name": "NightVisionTooltip",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_vision_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/NightVisionTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/NightVision"
+    },
+    {
+      "name": "Aptitude",
+      "type": "curiosslot",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitude",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curios/tags/items/aptitude.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "Smartass",
+      "type": "curiosbauble",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/smartass_3.json",
+          "src/main/resources/assets/eva_additions/models/item/smartass_5.json",
+          "src/main/resources/assets/eva_additions/models/item/smartass.json",
+          "src/main/resources/assets/eva_additions/models/item/smartass_0.json",
+          "src/main/resources/assets/eva_additions/models/item/smartass_2.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/SmartassItem.java",
+          "src/main/resources/assets/eva_additions/models/item/smartass_1.json",
+          "src/main/resources/assets/eva_additions/models/item/smartass_4.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Smartass"
+    },
+    {
+      "name": "ChooseAptitude",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_aptitude",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/ChooseAptitudeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "AptitudesRemoveGlow",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitudes_remove_glow",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AptitudesRemoveGlowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "PlayerDiesAptitude",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_dies_aptitude",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/PlayerDiesAptitudeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "SmartassBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/SmartassBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Smartass"
+    },
+    {
+      "name": "SmartassTooltip",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/SmartassTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Smartass"
+    },
+    {
+      "name": "SmartassAdv",
+      "type": "achievement",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/smartass_adv.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Smartass"
+    },
+    {
+      "name": "AptitudeAdv",
+      "type": "achievement",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitude_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/aptitude_adv.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "SmartassEnderlink",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass_enderlink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/SmartassEnderlinkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Smartass"
+    },
+    {
+      "name": "SmartassRightclicked",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/SmartassRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Smartass"
+    },
+    {
+      "name": "SmartassBaubleIsUnequipped",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/SmartassBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Smartass"
+    },
+    {
+      "name": "Aptitudes",
+      "type": "tag",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitudes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/aptitudes.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "PowerUpper",
+      "type": "item",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_upper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/power_upper.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/PowerUpperItem.java"
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "PowerUpperRightclicked",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_upper_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/PowerUpperRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "AtributePropertyValue",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atribute_property_value",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AtributePropertyValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "PowerUpperTooltip",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_upper_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/PowerUpperTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "AptitudeChanger",
+      "type": "item",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitude_changer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/aptitude_changer.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/AptitudeChangerItem.java"
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "AptitudeChangerRightClicked",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitude_changer_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AptitudeChangerRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
     }
   ],
   "variable_elements": [
@@ -2644,6 +3227,30 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "knowledgeLVL",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
+    },
+    {
+      "name": "hasAptitude",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "aptitudeChance",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "aptitudePower",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2829,6 +3436,7 @@
       "painting.eva_additions.diane_6.author": "Flait13",
       "item.eva_additions_forge.discography_item": "Discography Item",
       "death.attack.liveleak_damage.item": "%1$s was killed by %2$s using %3$s",
+      "advancements.smartass_adv.descr": "Placeholder",
       "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
       "advancements.adv_roundabout.title": "To Be Continued",
       "item.eva_additions_forge.disc_weevil": "Music Disc",
@@ -2853,6 +3461,7 @@
       "painting.eva_additions_forge.bliss.title": "Bliss",
       "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
       "subtitles.record_cryostasis": "",
+      "item.eva_additions.end_wings": "End Wings",
       "block.eva_additions.quartz_tiles_3": "Quartz Tiles",
       "painting.eva_additions.uncomfortable_period.author": "Toby",
       "block.eva_additions.quartz_tiles_2": "Quartz Tiles",
@@ -2866,6 +3475,7 @@
       "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
       "painting.eva_additions_forge.bliss.author": "Charles O\u0027Rear",
       "enchantment.eva_additions.blessing": "Blessing",
+      "curios.identifier.aptitude": "Aptitude",
       "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
       "painting.eva_additions.black_hole.title": "Black Hole",
       "painting.eva_additions.einstein.title": "Einstein",
@@ -2877,10 +3487,12 @@
       "item.eva_additions.dev_antibody_item": "Dev Antibody Item",
       "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
       "item.eva_additions.disc_isopod": "Music Disc",
-      "item.eva_additions.night_vision": "Night Vision",
+      "item.eva_additions.night_vision": "Night Vision Goggles",
       "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
       "item.eva_additions.disc_moth.desc": "camiidae - moth",
       "advancements.adv_weevil.title": "Evil Weevil",
+      "item.eva_additions.power_upper": "Power Upper",
+      "item.eva_additions.aptitude_changer": "Aptitude Changer",
       "item.eva_additions.disc_burningmemory": "Music Disc",
       "advancements.adv_butterfly.title": "Fly High",
       "subtitles.record_moth": "",
@@ -2894,6 +3506,7 @@
       "painting.eva_additions_forge.diane_1.title": "Diane 1",
       "painting.eva_additions_forge.diane_1.author": "???",
       "item.eva_additions.disc_bumblebee": "Music Disc",
+      "block.eva_additions.cold_obsidian": "Cold Obsidian",
       "painting.eva_additions.bliss.title": "Bliss",
       "item.eva_additions.disc_moth": "Music Disc",
       "painting.eva_additions.diane_4.title": "Diane 4",
@@ -2915,6 +3528,7 @@
       "effect.eva_additions.premature_death": "Premature Death",
       "advancements.antibody_adv.title": "Placebo",
       "advancements.entomologist.title": "Entomologist",
+      "advancements.aptitude_adv.title": "Aptitude Adv",
       "painting.eva_additions_forge.uncomfortable_period.title": "Uncomfortable Period",
       "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
       "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
@@ -2926,7 +3540,6 @@
       "painting.eva_additions.diane_2.title": "Diane 2",
       "item.eva_additions_forge.disc_butterfly": "Music Disc",
       "advancements.adv_moth.title": "Too Close To The Sun",
-      "block.eva_additions.lapis_tiles": "Lapis Tiles",
       "item.eva_additions.cryostasis.desc": "??? - cryostasis",
       "item.eva_additions_forge.disc_spinyspider.desc": "camiidae - spiny spider",
       "item.eva_additions_forge.disc_tortoisebeetle": "Music Disc",
@@ -2945,19 +3558,20 @@
       "subtitles.record_libetsdelay": "",
       "item.eva_additions.dev_liveleak": "Dev Liveleak",
       "subtitles.record_weevil": "",
-      "block.eva_additions.lapis_tiles_3": "Lapis Tiles",
+      "item.eva_additions.smartass": "Smartass",
       "advancements.adv_spinyspider.title": "Tough Exoskeleton",
-      "block.eva_additions.lapis_tiles_4": "Lapis Tiles",
       "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
       "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
       "block.eva_additions.lapis_tiles_5": "Lapis Tiles",
       "painting.eva_additions.antibody_test.author": "EvaKrusader",
+      "advancements.aptitude_adv.descr": "Discover your aptitude",
       "painting.eva_additions.uncomfortable_period.title": "Uncomfortable Period",
+      "advancements.smartass_adv.title": "Smartass Adv",
       "item.eva_additions_forge.disc_isopod.desc": "camiidae - isopod",
       "advancements.adv_treehopper.title": "From Tree To Tree",
       "item.eva_additions.disc_roundabout": "Music Disc",
-      "painting.eva_additions.diane_3.title": "Diane 3",
-      "block.eva_additions.lapis_tiles_2": "Lapis Tiles"
+      "block.eva_additions.cracking_obsidian": "Cold Obsidian",
+      "painting.eva_additions.diane_3.title": "Diane 3"
     }
   },
   "foldersRoot": {
@@ -3059,6 +3673,23 @@
           {
             "name": "NightVision",
             "children": []
+          },
+          {
+            "name": "EndWings",
+            "children": []
+          },
+          {
+            "name": "LavaWalker",
+            "children": []
+          },
+          {
+            "name": "Aptitudes",
+            "children": [
+              {
+                "name": "Smartass",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -3071,7 +3702,7 @@
   "workspaceSettings": {
     "modid": "eva_additions",
     "modName": "Eva Additions Forge",
-    "version": "1.8.0",
+    "version": "1.8.3",
     "author": "saver, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",

@@ -24,12 +24,8 @@ public class EvaAdditionsModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(EvaAdditionsModBlocks.QUARTZ_TILES.get().asItem());
-			tabData.accept(EvaAdditionsModBlocks.LAPIS_TILES.get().asItem());
 			tabData.accept(EvaAdditionsModBlocks.QUARTZ_TILES_2.get().asItem());
-			tabData.accept(EvaAdditionsModBlocks.LAPIS_TILES_2.get().asItem());
 			tabData.accept(EvaAdditionsModBlocks.QUARTZ_TILES_3.get().asItem());
-			tabData.accept(EvaAdditionsModBlocks.LAPIS_TILES_3.get().asItem());
-			tabData.accept(EvaAdditionsModBlocks.LAPIS_TILES_4.get().asItem());
 			tabData.accept(EvaAdditionsModBlocks.LAPIS_TILES_5.get().asItem());
 		}
 
@@ -59,6 +55,10 @@ public class EvaAdditionsModTabs {
 			tabData.accept(EvaAdditionsModItems.CRYOSTASIS.get());
 			tabData.accept(EvaAdditionsModItems.ANTIBODY.get());
 			tabData.accept(EvaAdditionsModItems.NIGHT_VISION.get());
+			tabData.accept(EvaAdditionsModItems.END_WINGS.get());
+			tabData.accept(EvaAdditionsModItems.SMARTASS.get());
+			tabData.accept(EvaAdditionsModItems.POWER_UPPER.get());
+			tabData.accept(EvaAdditionsModItems.APTITUDE_CHANGER.get());
 		}
 	}
 }

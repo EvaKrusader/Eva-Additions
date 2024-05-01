@@ -13,12 +13,13 @@ import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.evaadditionsforge.procedures.NightVisionWhileBaubleIsEquippedTickProcedure;
+import net.mcreator.evaadditionsforge.procedures.NightVisionBaubleIsEquippedProcedure;
 
 import java.util.List;
 
 public class NightVisionItem extends Item implements ICurioItem {
 	public NightVisionItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(250).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -33,6 +34,11 @@ public class NightVisionItem extends Item implements ICurioItem {
 
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		NightVisionWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
+		NightVisionWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+	}
+
+	@Override
+	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
+		NightVisionBaubleIsEquippedProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
 	}
 }
