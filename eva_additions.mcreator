@@ -1886,6 +1886,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -3039,10 +3043,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3251,6 +3251,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "aptitudeItem",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
     }
   ],
   "sound_elements": [
@@ -3558,7 +3564,7 @@
       "subtitles.record_libetsdelay": "",
       "item.eva_additions.dev_liveleak": "Dev Liveleak",
       "subtitles.record_weevil": "",
-      "item.eva_additions.smartass": "Smartass",
+      "item.eva_additions.smartass": "Cognition",
       "advancements.adv_spinyspider.title": "Tough Exoskeleton",
       "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
       "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",

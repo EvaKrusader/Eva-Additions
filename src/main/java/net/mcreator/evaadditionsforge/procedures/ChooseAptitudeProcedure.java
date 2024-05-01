@@ -48,7 +48,7 @@ public class ChooseAptitudeProcedure {
 				});
 			}
 		} else {
-			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0.8) {
+			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0) {
 				{
 					Entity _ent = entity;
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {

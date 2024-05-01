@@ -39,7 +39,7 @@ public class VersionCheckProcedure {
 		String url = "";
 		ver1 = 1;
 		ver2 = 8;
-		ver3 = 3;
+		ver3 = 5;
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
 		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
 		try {

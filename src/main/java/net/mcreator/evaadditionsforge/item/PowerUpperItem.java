@@ -35,7 +35,7 @@ public class PowerUpperItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		PowerUpperRightclickedProcedure.execute(world, entity);
+		PowerUpperRightclickedProcedure.execute(entity);
 		return retval;
 	}
 }

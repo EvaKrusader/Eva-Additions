@@ -17,6 +17,13 @@ public class SmartassBaubleIsEquippedProcedure {
 			return;
 		String itemName = "";
 		double baubleChance = 0;
+		{
+			ItemStack _setval = itemstack;
+			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.aptitudeItem = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		itemName = "Knowledge";
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 0) {
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.95) {
@@ -37,7 +44,7 @@ public class SmartassBaubleIsEquippedProcedure {
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7aCommon \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7bGood \u00A7r\u00A7f" + itemName)));
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7bHigher \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7dAdvanced \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {

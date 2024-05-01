@@ -15,6 +15,7 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
@@ -74,6 +75,7 @@ public class EvaAdditionsModVariables {
 			clone.hasAptitude = original.hasAptitude;
 			clone.aptitudeChance = original.aptitudeChance;
 			clone.aptitudePower = original.aptitudePower;
+			clone.aptitudeItem = original.aptitudeItem;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -140,6 +142,7 @@ public class EvaAdditionsModVariables {
 		public boolean hasAptitude = false;
 		public double aptitudeChance = 0;
 		public double aptitudePower = 0;
+		public ItemStack aptitudeItem = ItemStack.EMPTY;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -167,6 +170,7 @@ public class EvaAdditionsModVariables {
 			nbt.putBoolean("hasAptitude", hasAptitude);
 			nbt.putDouble("aptitudeChance", aptitudeChance);
 			nbt.putDouble("aptitudePower", aptitudePower);
+			nbt.put("aptitudeItem", aptitudeItem.save(new CompoundTag()));
 			return nbt;
 		}
 
@@ -191,6 +195,7 @@ public class EvaAdditionsModVariables {
 			hasAptitude = nbt.getBoolean("hasAptitude");
 			aptitudeChance = nbt.getDouble("aptitudeChance");
 			aptitudePower = nbt.getDouble("aptitudePower");
+			aptitudeItem = ItemStack.of(nbt.getCompound("aptitudeItem"));
 		}
 	}
 
@@ -234,6 +239,7 @@ public class EvaAdditionsModVariables {
 					variables.hasAptitude = message.data.hasAptitude;
 					variables.aptitudeChance = message.data.aptitudeChance;
 					variables.aptitudePower = message.data.aptitudePower;
+					variables.aptitudeItem = message.data.aptitudeItem;
 				}
 			});
 			context.setPacketHandled(true);
