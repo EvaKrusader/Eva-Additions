@@ -74,6 +74,8 @@ public class VersionCheckProcedure {
 								Component.literal(("You are using the right version (" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble()) + ")")), false);
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("You will probably never see this message, but in case you do, it's cool :)"), false);
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Please send me \"Mcdowell\" if this message appeared, so I know if this worked correctly"), false);
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
