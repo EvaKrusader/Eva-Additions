@@ -21,7 +21,7 @@ public class PowerUpperItem extends Item {
 
 	@Override
 	public int getUseDuration(ItemStack itemstack) {
-		return 100;
+		return 10;
 	}
 
 	@Override

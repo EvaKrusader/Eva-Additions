@@ -5,7 +5,7 @@
     "achievementName": "Placebo",
     "achievementDescription": "Add some supplements to your immune system",
     "achievementIcon": {
-      "value": "CUSTOM:DevAntibodyItem"
+      "value": "CUSTOM:Antibody"
     },
     "background": "Default",
     "disableDisplay": false,

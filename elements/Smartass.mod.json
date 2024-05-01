@@ -3,7 +3,7 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "aptitude_smartass",
+    "texture": "dev_smartass_anim",
     "customModelName": "Normal",
     "name": "Cognition",
     "rarity": "COMMON",
@@ -43,7 +43,7 @@
     "states": [
       {
         "renderType": 0,
-        "texture": "aptitude_smartass",
+        "texture": "aptitude_smartass0",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -59,7 +59,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_smartass0",
+        "texture": "aptitude_smartass1",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -75,7 +75,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_smartass25",
+        "texture": "aptitude_smartass2",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -91,7 +91,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_smartass50",
+        "texture": "aptitude_smartass3",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -107,7 +107,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_smartass75",
+        "texture": "aptitude_smartass4",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -123,7 +123,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_smartass100",
+        "texture": "aptitude_smartass5",
         "customModelName": "Normal",
         "stateMap": [
           {

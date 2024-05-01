@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.evaadditionsforge.item.SmartassItem;
 import net.mcreator.evaadditionsforge.item.PowerUpperItem;
 import net.mcreator.evaadditionsforge.item.NightVisionItem;
+import net.mcreator.evaadditionsforge.item.HigherSensesItem;
 import net.mcreator.evaadditionsforge.item.EntomologistEpiphanyItem;
 import net.mcreator.evaadditionsforge.item.EndWingsItem;
 import net.mcreator.evaadditionsforge.item.DiscographyItemItem;
@@ -32,6 +33,7 @@ import net.mcreator.evaadditionsforge.item.DiscButterflyItem;
 import net.mcreator.evaadditionsforge.item.DiscBurningmemoryItem;
 import net.mcreator.evaadditionsforge.item.DiscBumblebeeItem;
 import net.mcreator.evaadditionsforge.item.DiscBuddyhollyItem;
+import net.mcreator.evaadditionsforge.item.DevSmartassItemItem;
 import net.mcreator.evaadditionsforge.item.DevLiveleakItem;
 import net.mcreator.evaadditionsforge.item.DevAntibodyItemItem;
 import net.mcreator.evaadditionsforge.item.CryostasisItem;
@@ -74,6 +76,8 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> SMARTASS = REGISTRY.register("smartass", () -> new SmartassItem());
 	public static final RegistryObject<Item> POWER_UPPER = REGISTRY.register("power_upper", () -> new PowerUpperItem());
 	public static final RegistryObject<Item> APTITUDE_CHANGER = REGISTRY.register("aptitude_changer", () -> new AptitudeChangerItem());
+	public static final RegistryObject<Item> DEV_SMARTASS_ITEM = REGISTRY.register("dev_smartass_item", () -> new DevSmartassItemItem());
+	public static final RegistryObject<Item> HIGHER_SENSES = REGISTRY.register("higher_senses", () -> new HigherSensesItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

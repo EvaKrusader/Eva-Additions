@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "eva_additions:item/antibody75"
+    "layer0": "eva_additions:item/curio_antibody4"
   }
 }

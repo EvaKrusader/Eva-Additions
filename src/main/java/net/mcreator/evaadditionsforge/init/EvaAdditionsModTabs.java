@@ -59,6 +59,7 @@ public class EvaAdditionsModTabs {
 			tabData.accept(EvaAdditionsModItems.SMARTASS.get());
 			tabData.accept(EvaAdditionsModItems.POWER_UPPER.get());
 			tabData.accept(EvaAdditionsModItems.APTITUDE_CHANGER.get());
+			tabData.accept(EvaAdditionsModItems.HIGHER_SENSES.get());
 		}
 	}
 }

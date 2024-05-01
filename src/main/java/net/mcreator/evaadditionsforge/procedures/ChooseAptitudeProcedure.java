@@ -48,7 +48,7 @@ public class ChooseAptitudeProcedure {
 				});
 			}
 		} else {
-			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0) {
+			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0.5) {
 				{
 					Entity _ent = entity;
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -59,15 +59,14 @@ public class ChooseAptitudeProcedure {
 										("curios replace aptitude 0 @s with " + ForgeRegistries.ITEMS.getKey(EvaAdditionsModItems.SMARTASS.get()).toString() + "{Enchantments:[{lvl:1,id:binding_curse}],HideFlags:1}"));
 					}
 				}
-			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0.6) {
+			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0) {
 				{
 					Entity _ent = entity;
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands()
-								.performPrefixedCommand(
-										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
-												_ent.getDisplayName(), _ent.level().getServer(), _ent),
-										("curios replace aptitude 0 @s with " + ForgeRegistries.ITEMS.getKey(EvaAdditionsModItems.ANTIBODY.get()).toString() + "{Enchantments:[{lvl:1,id:binding_curse}],HideFlags:1}"));
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+										_ent.level().getServer(), _ent),
+								("curios replace aptitude 0 @s with " + ForgeRegistries.ITEMS.getKey(EvaAdditionsModItems.HIGHER_SENSES.get()).toString() + "{Enchantments:[{lvl:1,id:binding_curse}],HideFlags:1}"));
 					}
 				}
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0.4) {

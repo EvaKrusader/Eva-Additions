@@ -2,16 +2,16 @@
   "_fv": 57,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Aptitude Adv",
+    "achievementName": "Better Than Average",
     "achievementDescription": "Discover your aptitude",
     "achievementIcon": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:AptitudeChanger"
     },
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
-    "hideIfNotCompleted": false,
+    "hideIfNotCompleted": true,
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",

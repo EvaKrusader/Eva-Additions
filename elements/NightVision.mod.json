@@ -3,7 +3,7 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "night_vision",
+    "texture": "dev_nightvision_anim",
     "customModelName": "Normal",
     "name": "Night Vision Goggles",
     "rarity": "COMMON",
@@ -40,7 +40,7 @@
     "states": [
       {
         "renderType": 0,
-        "texture": "night_vision",
+        "texture": "curio_night_vision0",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -56,7 +56,7 @@
       },
       {
         "renderType": 0,
-        "texture": "disk_weevil",
+        "texture": "curio_night_vision1",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -72,7 +72,7 @@
       },
       {
         "renderType": 0,
-        "texture": "disk_scarab",
+        "texture": "curio_night_vision2",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -88,7 +88,7 @@
       },
       {
         "renderType": 0,
-        "texture": "disk_weezer",
+        "texture": "curio_night_vision3",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -104,7 +104,7 @@
       },
       {
         "renderType": 0,
-        "texture": "disk_butterfly",
+        "texture": "curio_night_vision4",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -120,7 +120,7 @@
       },
       {
         "renderType": 0,
-        "texture": "disk_roundabout",
+        "texture": "curio_night_vision5",
         "customModelName": "Normal",
         "stateMap": [
           {

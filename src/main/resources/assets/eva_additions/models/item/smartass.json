@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "eva_additions:item/aptitude_smartass"
+    "layer0": "eva_additions:item/dev_smartass_anim"
   },
   "overrides": [
     {

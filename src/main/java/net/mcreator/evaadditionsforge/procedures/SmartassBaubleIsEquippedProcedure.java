@@ -26,13 +26,13 @@ public class SmartassBaubleIsEquippedProcedure {
 		}
 		itemName = "Knowledge";
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 0) {
-			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.95) {
+			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.98) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 5);
-			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.8) {
+			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.9) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 4);
-			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.6) {
+			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.76) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 3);
-			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.25) {
+			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.31) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 2);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 1);
@@ -40,15 +40,15 @@ public class SmartassBaubleIsEquippedProcedure {
 			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
 		}
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
-			itemstack.setHoverName(Component.literal(("\u00A7r\u00A77Nonexistant \u00A7r\u00A7f" + itemName)));
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A77" + "Nonexistant" + " \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
-			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7aCommon \u00A7r\u00A7f" + itemName)));
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7a" + "Common" + " \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7bHigher \u00A7r\u00A7f" + itemName)));
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7b" + "Higher" + " \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7dAdvanced \u00A7r\u00A7f" + itemName)));
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7d" + "Advanced" + " \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76Esoteric \u00A7r\u00A7f" + itemName)));
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76" + "Esoteric" + " \u00A7r\u00A7f" + itemName)));
 		}
 		SmartassEnderlinkProcedure.execute(world, x, y, z, entity);
 		if (entity instanceof ServerPlayer _player) {

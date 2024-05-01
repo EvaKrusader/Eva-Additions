@@ -40,7 +40,7 @@ public class SmartassTooltipProcedure {
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
 					tooltip.add(Component.literal("You understand \u00A7b\u00A7nmost things\u00A7r\u00A7f about artifacts but you will miss some \u00A7d\u00A7ndetails\u00A7r\u00A7f."));
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-					tooltip.add(Component.literal("You understand \u00A7d\u00A7nalmost everything\u00A7r\u00A7f but about artifacts but you can miss some \u00A76\u00A7nfiner details\u00A7r\u00A7f."));
+					tooltip.add(Component.literal("You understand \u00A7d\u00A7nalmost everything\u00A7r\u00A7f about artifacts but you can miss some \u00A76\u00A7nfiner details\u00A7r\u00A7f."));
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 					tooltip.add(Component.literal("You understand \u00A76\u00A7neverything perfectly\u00A7r\u00A7f, nothing is a problem to you."));
 				}

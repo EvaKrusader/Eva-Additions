@@ -2,8 +2,8 @@
   "_fv": 57,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Smartass Adv",
-    "achievementDescription": "Placeholder",
+    "achievementName": "Superior Cognition",
+    "achievementDescription": "Be born enlightened",
     "achievementIcon": {
       "value": "CUSTOM:Smartass"
     },

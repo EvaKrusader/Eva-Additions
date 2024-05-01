@@ -2960,26 +2960,6 @@
       "path": "~/Curio/Aptitudes/Smartass"
     },
     {
-      "name": "SmartassRightclicked",
-      "type": "procedure",
-      "sortid": 185,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "smartass_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/evaadditionsforge/procedures/SmartassRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Curio/Aptitudes/Smartass"
-    },
-    {
       "name": "SmartassBaubleIsUnequipped",
       "type": "procedure",
       "sortid": 186,
@@ -3135,6 +3115,184 @@
         ]
       },
       "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "DevSmartassItem",
+      "type": "item",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_smartass_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/dev_smartass_item.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/DevSmartassItemItem.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "HighSensesBaubleEquipped",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_senses_bauble_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/HighSensesBaubleEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Hightened Senses"
+    },
+    {
+      "name": "HighSensesTooltip",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_senses_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/HighSensesTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Hightened Senses"
+    },
+    {
+      "name": "HighSensesEnderlin",
+      "type": "procedure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_senses_enderlin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/HighSensesEnderlinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Hightened Senses"
+    },
+    {
+      "name": "HighSensesAdv",
+      "type": "achievement",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_senses_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/high_senses_adv.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Hightened Senses"
+    },
+    {
+      "name": "HigherSenses",
+      "type": "curiosbauble",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "higher_senses",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/higher_senses_5.json",
+          "src/main/resources/assets/eva_additions/models/item/higher_senses_2.json",
+          "src/main/resources/assets/eva_additions/models/item/higher_senses.json",
+          "src/main/resources/assets/eva_additions/models/item/higher_senses_1.json",
+          "src/main/resources/assets/eva_additions/models/item/higher_senses_3.json",
+          "src/main/resources/assets/eva_additions/models/item/higher_senses_0.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/HigherSensesItem.java",
+          "src/main/resources/assets/eva_additions/models/item/higher_senses_4.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Hightened Senses"
+    },
+    {
+      "name": "HighSensesMaxLVLAdv",
+      "type": "achievement",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_senses_max_lvl_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/high_senses_max_lvl_adv.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Hightened Senses"
+    },
+    {
+      "name": "SmartassMaxLVLAdv",
+      "type": "achievement",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass_max_lvl_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/smartass_max_lvl_adv.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes/Smartass"
     }
   ],
   "variable_elements": [
@@ -3415,9 +3573,12 @@
       "advancements.adv_weevil.descr": "Dig up some dirt",
       "item.eva_additions_forge.disc_weevil.desc": "camiidae - weevil",
       "advancements.liveleak_death.title": "Quick \u0026 Painful",
+      "item.eva_additions.dev_smartass_item": "Dev Antibody Item",
       "subtitles.record_tortoisebeetle": "",
+      "advancements.high_senses_max_lvl_adv.descr": "Be born with higher sensitivity",
       "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
       "advancements.adv_isopod.title": "Tough Shell",
+      "advancements.high_senses_adv.title": "Superior ",
       "subtitles.record_spinyspider": "",
       "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
       "painting.eva_additions.einstein.author": "Poli",
@@ -3442,7 +3603,8 @@
       "painting.eva_additions.diane_6.author": "Flait13",
       "item.eva_additions_forge.discography_item": "Discography Item",
       "death.attack.liveleak_damage.item": "%1$s was killed by %2$s using %3$s",
-      "advancements.smartass_adv.descr": "Placeholder",
+      "advancements.smartass_adv.descr": "Be born enlightened",
+      "advancements.smartass_max_lvl_adv.descr": "Be born enlightened",
       "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
       "advancements.adv_roundabout.title": "To Be Continued",
       "item.eva_additions_forge.disc_weevil": "Music Disc",
@@ -3504,6 +3666,8 @@
       "subtitles.record_moth": "",
       "item.eva_additions.disc_treehopper": "Music Disc",
       "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
+      "advancements.high_senses_max_lvl_adv.title": "Superior ",
+      "advancements.high_senses_adv.descr": "Be born with higher sensitivity",
       "item.eva_additions.discography_item": "Discography Item",
       "painting.eva_additions_forge.diane_3.author": "???",
       "painting.eva_additions_forge.diane_2.author": "???",
@@ -3534,7 +3698,7 @@
       "effect.eva_additions.premature_death": "Premature Death",
       "advancements.antibody_adv.title": "Placebo",
       "advancements.entomologist.title": "Entomologist",
-      "advancements.aptitude_adv.title": "Aptitude Adv",
+      "advancements.aptitude_adv.title": "Better Than Average",
       "painting.eva_additions_forge.uncomfortable_period.title": "Uncomfortable Period",
       "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
       "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
@@ -3563,6 +3727,7 @@
       "advancements.adv_pomni.title": "Your New Home",
       "subtitles.record_libetsdelay": "",
       "item.eva_additions.dev_liveleak": "Dev Liveleak",
+      "item.eva_additions.higher_senses": "High Senses",
       "subtitles.record_weevil": "",
       "item.eva_additions.smartass": "Cognition",
       "advancements.adv_spinyspider.title": "Tough Exoskeleton",
@@ -3570,9 +3735,10 @@
       "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
       "block.eva_additions.lapis_tiles_5": "Lapis Tiles",
       "painting.eva_additions.antibody_test.author": "EvaKrusader",
+      "advancements.smartass_max_lvl_adv.title": "Superior Cognition",
       "advancements.aptitude_adv.descr": "Discover your aptitude",
       "painting.eva_additions.uncomfortable_period.title": "Uncomfortable Period",
-      "advancements.smartass_adv.title": "Smartass Adv",
+      "advancements.smartass_adv.title": "Superior Cognition",
       "item.eva_additions_forge.disc_isopod.desc": "camiidae - isopod",
       "advancements.adv_treehopper.title": "From Tree To Tree",
       "item.eva_additions.disc_roundabout": "Music Disc",
@@ -3693,6 +3859,10 @@
             "children": [
               {
                 "name": "Smartass",
+                "children": []
+              },
+              {
+                "name": "Hightened Senses",
                 "children": []
               }
             ]
