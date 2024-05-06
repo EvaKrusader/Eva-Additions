@@ -76,6 +76,7 @@ public class EvaAdditionsModVariables {
 			clone.aptitudeChance = original.aptitudeChance;
 			clone.aptitudePower = original.aptitudePower;
 			clone.aptitudeItem = original.aptitudeItem;
+			clone.playerCycle = original.playerCycle;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -88,6 +89,7 @@ public class EvaAdditionsModVariables {
 				clone.doDamageAntibody = original.doDamageAntibody;
 				clone.AntibodyMedsLVL = original.AntibodyMedsLVL;
 				clone.hasMeds = original.hasMeds;
+				clone.VoidWingsSlow = original.VoidWingsSlow;
 			}
 		}
 	}
@@ -143,6 +145,8 @@ public class EvaAdditionsModVariables {
 		public double aptitudeChance = 0;
 		public double aptitudePower = 0;
 		public ItemStack aptitudeItem = ItemStack.EMPTY;
+		public boolean playerCycle = false;
+		public boolean VoidWingsSlow = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -171,6 +175,8 @@ public class EvaAdditionsModVariables {
 			nbt.putDouble("aptitudeChance", aptitudeChance);
 			nbt.putDouble("aptitudePower", aptitudePower);
 			nbt.put("aptitudeItem", aptitudeItem.save(new CompoundTag()));
+			nbt.putBoolean("playerCycle", playerCycle);
+			nbt.putBoolean("VoidWingsSlow", VoidWingsSlow);
 			return nbt;
 		}
 
@@ -196,6 +202,8 @@ public class EvaAdditionsModVariables {
 			aptitudeChance = nbt.getDouble("aptitudeChance");
 			aptitudePower = nbt.getDouble("aptitudePower");
 			aptitudeItem = ItemStack.of(nbt.getCompound("aptitudeItem"));
+			playerCycle = nbt.getBoolean("playerCycle");
+			VoidWingsSlow = nbt.getBoolean("VoidWingsSlow");
 		}
 	}
 
@@ -240,6 +248,8 @@ public class EvaAdditionsModVariables {
 					variables.aptitudeChance = message.data.aptitudeChance;
 					variables.aptitudePower = message.data.aptitudePower;
 					variables.aptitudeItem = message.data.aptitudeItem;
+					variables.playerCycle = message.data.playerCycle;
+					variables.VoidWingsSlow = message.data.VoidWingsSlow;
 				}
 			});
 			context.setPacketHandled(true);

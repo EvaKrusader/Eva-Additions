@@ -7,16 +7,27 @@ package net.mcreator.evaadditionsforge.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.item.ItemProperties;
 
+import net.mcreator.evaadditionsforge.procedures.EnterClaustrophobiaPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.item.SmartassItem;
+import net.mcreator.evaadditionsforge.item.RequiemItem;
 import net.mcreator.evaadditionsforge.item.PowerUpperItem;
 import net.mcreator.evaadditionsforge.item.NightVisionItem;
 import net.mcreator.evaadditionsforge.item.HigherSensesItem;
+import net.mcreator.evaadditionsforge.item.GiveNewAptitudeItem;
+import net.mcreator.evaadditionsforge.item.EquinoxItem;
 import net.mcreator.evaadditionsforge.item.EntomologistEpiphanyItem;
+import net.mcreator.evaadditionsforge.item.EnterClaustrophobiaItem;
 import net.mcreator.evaadditionsforge.item.EndWingsItem;
 import net.mcreator.evaadditionsforge.item.DiscographyItemItem;
 import net.mcreator.evaadditionsforge.item.DiscWeevilItem;
@@ -41,6 +52,7 @@ import net.mcreator.evaadditionsforge.item.AptitudeChangerItem;
 import net.mcreator.evaadditionsforge.item.AntibodyItem;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class EvaAdditionsModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, EvaAdditionsMod.MODID);
 	public static final RegistryObject<Item> DISC_WEEVIL = REGISTRY.register("disc_weevil", () -> new DiscWeevilItem());
@@ -62,9 +74,6 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> DISC_BURNINGMEMORY = REGISTRY.register("disc_burningmemory", () -> new DiscBurningmemoryItem());
 	public static final RegistryObject<Item> DISC_BUDDYHOLLY = REGISTRY.register("disc_buddyholly", () -> new DiscBuddyhollyItem());
 	public static final RegistryObject<Item> CRYOSTASIS = REGISTRY.register("cryostasis", () -> new CryostasisItem());
-	public static final RegistryObject<Item> QUARTZ_TILES = block(EvaAdditionsModBlocks.QUARTZ_TILES);
-	public static final RegistryObject<Item> QUARTZ_TILES_2 = block(EvaAdditionsModBlocks.QUARTZ_TILES_2);
-	public static final RegistryObject<Item> QUARTZ_TILES_3 = block(EvaAdditionsModBlocks.QUARTZ_TILES_3);
 	public static final RegistryObject<Item> DEV_LIVELEAK = REGISTRY.register("dev_liveleak", () -> new DevLiveleakItem());
 	public static final RegistryObject<Item> ANTIBODY = REGISTRY.register("antibody", () -> new AntibodyItem());
 	public static final RegistryObject<Item> LAPIS_TILES_5 = block(EvaAdditionsModBlocks.LAPIS_TILES_5);
@@ -78,8 +87,21 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> APTITUDE_CHANGER = REGISTRY.register("aptitude_changer", () -> new AptitudeChangerItem());
 	public static final RegistryObject<Item> DEV_SMARTASS_ITEM = REGISTRY.register("dev_smartass_item", () -> new DevSmartassItemItem());
 	public static final RegistryObject<Item> HIGHER_SENSES = REGISTRY.register("higher_senses", () -> new HigherSensesItem());
+	public static final RegistryObject<Item> REQUIEM = REGISTRY.register("requiem", () -> new RequiemItem());
+	public static final RegistryObject<Item> EQUINOX = REGISTRY.register("equinox", () -> new EquinoxItem());
+	public static final RegistryObject<Item> ENTER_CLAUSTROPHOBIA = REGISTRY.register("enter_claustrophobia", () -> new EnterClaustrophobiaItem());
+	public static final RegistryObject<Item> GIVE_NEW_APTITUDE = REGISTRY.register("give_new_aptitude", () -> new GiveNewAptitudeItem());
+	public static final RegistryObject<Item> QUARTZ_TILES_5 = block(EvaAdditionsModBlocks.QUARTZ_TILES_5);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
+
+	@SubscribeEvent
+	public static void clientLoad(FMLClientSetupEvent event) {
+		event.enqueueWork(() -> {
+			ItemProperties.register(ENTER_CLAUSTROPHOBIA.get(), new ResourceLocation("eva_additions:enter_claustrophobia_readytoenter"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnterClaustrophobiaPropertyValueProviderProcedure.execute(entity != null ? entity.level() : clientWorld, entity));
+		});
 	}
 }

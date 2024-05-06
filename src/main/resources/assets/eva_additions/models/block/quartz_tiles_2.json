@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "eva_additions:block/quartz_tiles2",
-    "particle": "eva_additions:block/quartz_tiles2"
-  },
-  "render_type": "solid"
-}

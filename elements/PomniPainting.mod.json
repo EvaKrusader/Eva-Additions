@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "pomni.png",
+    "width": 48,
+    "height": 64,
+    "title": "Bridge",
+    "author": "amba_si"
+  }
+}

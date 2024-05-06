@@ -1,0 +1,44 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/aptitude_dev0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:requiem_baublepower": 0
+      },
+      "model": "eva_additions:item/requiem_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:requiem_baublepower": 1
+      },
+      "model": "eva_additions:item/requiem_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:requiem_baublepower": 2
+      },
+      "model": "eva_additions:item/requiem_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:requiem_baublepower": 3
+      },
+      "model": "eva_additions:item/requiem_3"
+    },
+    {
+      "predicate": {
+        "eva_additions:requiem_baublepower": 4
+      },
+      "model": "eva_additions:item/requiem_4"
+    },
+    {
+      "predicate": {
+        "eva_additions:requiem_baublepower": 5
+      },
+      "model": "eva_additions:item/requiem_5"
+    }
+  ]
+}

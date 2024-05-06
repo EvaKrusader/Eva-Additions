@@ -1,0 +1,92 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/aptitude_dev0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 0,
+        "eva_additions:equinox_cycle": 1
+      },
+      "model": "eva_additions:item/equinox_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 1,
+        "eva_additions:equinox_cycle": 1
+      },
+      "model": "eva_additions:item/equinox_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 2,
+        "eva_additions:equinox_cycle": 1
+      },
+      "model": "eva_additions:item/equinox_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 3,
+        "eva_additions:equinox_cycle": 1
+      },
+      "model": "eva_additions:item/equinox_3"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 4,
+        "eva_additions:equinox_cycle": 1
+      },
+      "model": "eva_additions:item/equinox_4"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 5,
+        "eva_additions:equinox_cycle": 1
+      },
+      "model": "eva_additions:item/equinox_5"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 0,
+        "eva_additions:equinox_cycle": 2
+      },
+      "model": "eva_additions:item/equinox_6"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 1,
+        "eva_additions:equinox_cycle": 2
+      },
+      "model": "eva_additions:item/equinox_7"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 2,
+        "eva_additions:equinox_cycle": 2
+      },
+      "model": "eva_additions:item/equinox_8"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 3,
+        "eva_additions:equinox_cycle": 2
+      },
+      "model": "eva_additions:item/equinox_9"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 4,
+        "eva_additions:equinox_cycle": 2
+      },
+      "model": "eva_additions:item/equinox_10"
+    },
+    {
+      "predicate": {
+        "eva_additions:equinox_baublepower": 5,
+        "eva_additions:equinox_cycle": 2
+      },
+      "model": "eva_additions:item/equinox_11"
+    }
+  ]
+}

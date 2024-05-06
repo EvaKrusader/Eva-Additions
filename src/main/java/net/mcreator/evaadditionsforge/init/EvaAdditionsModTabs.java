@@ -23,10 +23,8 @@ public class EvaAdditionsModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(EvaAdditionsModBlocks.QUARTZ_TILES.get().asItem());
-			tabData.accept(EvaAdditionsModBlocks.QUARTZ_TILES_2.get().asItem());
-			tabData.accept(EvaAdditionsModBlocks.QUARTZ_TILES_3.get().asItem());
 			tabData.accept(EvaAdditionsModBlocks.LAPIS_TILES_5.get().asItem());
+			tabData.accept(EvaAdditionsModBlocks.QUARTZ_TILES_5.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
@@ -60,6 +58,10 @@ public class EvaAdditionsModTabs {
 			tabData.accept(EvaAdditionsModItems.POWER_UPPER.get());
 			tabData.accept(EvaAdditionsModItems.APTITUDE_CHANGER.get());
 			tabData.accept(EvaAdditionsModItems.HIGHER_SENSES.get());
+			tabData.accept(EvaAdditionsModItems.REQUIEM.get());
+			tabData.accept(EvaAdditionsModItems.EQUINOX.get());
+			tabData.accept(EvaAdditionsModItems.ENTER_CLAUSTROPHOBIA.get());
+			tabData.accept(EvaAdditionsModItems.GIVE_NEW_APTITUDE.get());
 		}
 	}
 }

@@ -15,7 +15,7 @@ public class EndWingsBaubleIsEquippedProcedure {
 			return;
 		String itemName = "";
 		double baubleChance = 0;
-		itemName = "Immune System";
+		itemName = "Void Wings";
 		baubleChance = Math.random();
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 0) {
 			if (baubleChance > 0.95) {
@@ -41,9 +41,9 @@ public class EndWingsBaubleIsEquippedProcedure {
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76Perfect \u00A7r\u00A7f" + itemName)));
 		}
-		AntibodyEnderlinkProcedure.execute(world, x, y, z, entity);
+		EndWingsEnderlinkProcedure.execute(world, x, y, z, entity);
 		if (entity instanceof ServerPlayer _player) {
-			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:antibody_adv"));
+			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:ender_wings_adv"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 			if (!_ap.isDone()) {
 				for (String criteria : _ap.getRemainingCriteria())

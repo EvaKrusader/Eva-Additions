@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/disk_paris"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:enter_claustrophobia_readytoenter": 0
+      },
+      "model": "eva_additions:item/enter_claustrophobia_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:enter_claustrophobia_readytoenter": 1
+      },
+      "model": "eva_additions:item/enter_claustrophobia_1"
+    }
+  ]
+}

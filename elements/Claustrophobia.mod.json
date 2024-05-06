@@ -4,15 +4,19 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "deep_dark"
+        "value": "CUSTOM:Noctua"
       }
     ],
-    "worldGenType": "Nether like gen",
+    "worldGenType": "Normal world gen",
     "mainFillerBlock": {
       "value": "Blocks.BLACKSTONE"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.VOID_AIR"
+    },
+    "airColor": {
+      "value": -16777216,
+      "falpha": 0.0
     },
     "canRespawnHere": false,
     "hasFog": true,
