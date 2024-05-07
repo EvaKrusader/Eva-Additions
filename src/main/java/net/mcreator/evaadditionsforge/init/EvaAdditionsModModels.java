@@ -10,11 +10,13 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.evaadditionsforge.client.model.ModelNightVision;
+import net.mcreator.evaadditionsforge.client.model.ModelLavaWalker;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class EvaAdditionsModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelNightVision.LAYER_LOCATION, ModelNightVision::createBodyLayer);
+		event.registerLayerDefinition(ModelLavaWalker.LAYER_LOCATION, ModelLavaWalker::createBodyLayer);
 	}
 }

@@ -11,13 +11,13 @@
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Artifacts"
     },
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 25,
     "recipeRemainder": {
       "value": ""
     },
@@ -40,7 +40,7 @@
     "states": [
       {
         "renderType": 0,
-        "texture": "aptitude_dev0",
+        "texture": "curio_voidwings0",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -56,7 +56,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev1",
+        "texture": "curio_voidwings1",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -72,7 +72,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev2",
+        "texture": "curio_voidwings2",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -88,7 +88,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev3",
+        "texture": "curio_voidwings3",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -104,7 +104,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev4",
+        "texture": "curio_voidwings4",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -120,7 +120,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev5",
+        "texture": "curio_voidwings5",
         "customModelName": "Normal",
         "stateMap": [
           {

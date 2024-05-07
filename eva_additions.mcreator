@@ -138,7 +138,7 @@
     {
       "name": "LootWeevil",
       "type": "loottable",
-      "sortid": 10,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_weevil",
@@ -152,7 +152,7 @@
     {
       "name": "LootButterfly",
       "type": "loottable",
-      "sortid": 11,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_butterfly",
@@ -166,7 +166,7 @@
     {
       "name": "LootTreehopper",
       "type": "loottable",
-      "sortid": 12,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_treehopper",
@@ -180,7 +180,7 @@
     {
       "name": "LootMoth",
       "type": "loottable",
-      "sortid": 13,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_moth",
@@ -194,7 +194,7 @@
     {
       "name": "LootIsopod",
       "type": "loottable",
-      "sortid": 14,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_isopod",
@@ -208,7 +208,7 @@
     {
       "name": "LootBumblebee",
       "type": "loottable",
-      "sortid": 15,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_bumblebee",
@@ -222,7 +222,7 @@
     {
       "name": "LootScarab",
       "type": "loottable",
-      "sortid": 16,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_scarab",
@@ -236,7 +236,7 @@
     {
       "name": "LootSpinyspider",
       "type": "loottable",
-      "sortid": 17,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_spinyspider",
@@ -250,7 +250,7 @@
     {
       "name": "LootTortoisebeetle",
       "type": "loottable",
-      "sortid": 18,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_tortoisebeetle",
@@ -264,7 +264,7 @@
     {
       "name": "AdvWeevil",
       "type": "achievement",
-      "sortid": 19,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_weevil",
@@ -278,7 +278,7 @@
     {
       "name": "AdvButterfly",
       "type": "achievement",
-      "sortid": 20,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_butterfly",
@@ -292,7 +292,7 @@
     {
       "name": "AdvTreehopper",
       "type": "achievement",
-      "sortid": 21,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_treehopper",
@@ -306,7 +306,7 @@
     {
       "name": "AdvMoth",
       "type": "achievement",
-      "sortid": 22,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_moth",
@@ -320,7 +320,7 @@
     {
       "name": "AdvIsopod",
       "type": "achievement",
-      "sortid": 23,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_isopod",
@@ -334,7 +334,7 @@
     {
       "name": "AdvBumblebee",
       "type": "achievement",
-      "sortid": 24,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_bumblebee",
@@ -348,7 +348,7 @@
     {
       "name": "AdvScarab",
       "type": "achievement",
-      "sortid": 25,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_scarab",
@@ -362,7 +362,7 @@
     {
       "name": "AdvSpinyspider",
       "type": "achievement",
-      "sortid": 26,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_spinyspider",
@@ -376,7 +376,7 @@
     {
       "name": "AdvTortoisebeetle",
       "type": "achievement",
-      "sortid": 27,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_tortoisebeetle",
@@ -390,7 +390,7 @@
     {
       "name": "DiscographyItem",
       "type": "item",
-      "sortid": 28,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "discography_item",
@@ -405,9 +405,9 @@
     {
       "name": "Discography",
       "type": "achievement",
-      "sortid": 29,
+      "sortid": 52,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "discography",
       "metadata": {
         "files": [
@@ -419,7 +419,7 @@
     {
       "name": "EntomologistEpiphany",
       "type": "item",
-      "sortid": 30,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "entomologist_epiphany",
@@ -434,7 +434,7 @@
     {
       "name": "Entomologist",
       "type": "achievement",
-      "sortid": 31,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "entomologist",
@@ -448,7 +448,7 @@
     {
       "name": "DiscItems",
       "type": "tag",
-      "sortid": 32,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc_items",
@@ -462,7 +462,7 @@
     {
       "name": "LootEntomologist",
       "type": "loottable",
-      "sortid": 33,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_entomologist",
@@ -476,7 +476,7 @@
     {
       "name": "GetEntomologist",
       "type": "procedure",
-      "sortid": 34,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_entomologist",
@@ -496,7 +496,7 @@
     {
       "name": "WeevilBlocks",
       "type": "tag",
-      "sortid": 35,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "weevil_blocks",
@@ -510,7 +510,7 @@
     {
       "name": "GetWeevil",
       "type": "procedure",
-      "sortid": 36,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_weevil",
@@ -534,7 +534,7 @@
     {
       "name": "GetButterfly",
       "type": "procedure",
-      "sortid": 37,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_butterfly",
@@ -570,7 +570,7 @@
     {
       "name": "GetTreehopper",
       "type": "procedure",
-      "sortid": 38,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_treehopper",
@@ -594,7 +594,7 @@
     {
       "name": "GetMoth",
       "type": "procedure",
-      "sortid": 39,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_moth",
@@ -634,7 +634,7 @@
     {
       "name": "Treeblocks",
       "type": "tag",
-      "sortid": 40,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "treeblocks",
@@ -648,7 +648,7 @@
     {
       "name": "GetIsopod",
       "type": "procedure",
-      "sortid": 41,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_isopod",
@@ -688,7 +688,7 @@
     {
       "name": "GetBumblebee",
       "type": "procedure",
-      "sortid": 42,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_bumblebee",
@@ -728,7 +728,7 @@
     {
       "name": "GetScarab",
       "type": "procedure",
-      "sortid": 43,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_scarab",
@@ -752,7 +752,7 @@
     {
       "name": "ScarabBlocks",
       "type": "tag",
-      "sortid": 44,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "scarab_blocks",
@@ -766,7 +766,7 @@
     {
       "name": "GetSpinyspider",
       "type": "procedure",
-      "sortid": 45,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_spinyspider",
@@ -786,7 +786,7 @@
     {
       "name": "GetTortoisebeetle",
       "type": "procedure",
-      "sortid": 46,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_tortoisebeetle",
@@ -810,7 +810,7 @@
     {
       "name": "Flowers",
       "type": "tag",
-      "sortid": 47,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flowers",
@@ -824,7 +824,7 @@
     {
       "name": "BugBiomes",
       "type": "tag",
-      "sortid": 48,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bug_biomes",
@@ -838,7 +838,7 @@
     {
       "name": "GamemodeSwitcherOnKeyPressed",
       "type": "procedure",
-      "sortid": 49,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gamemode_switcher_on_key_pressed",
@@ -874,7 +874,7 @@
     {
       "name": "GamemodeSwitcher",
       "type": "keybind",
-      "sortid": 50,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gamemode_switcher",
@@ -888,7 +888,7 @@
     {
       "name": "GetEnderlink",
       "type": "procedure",
-      "sortid": 51,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_enderlink",
@@ -908,7 +908,7 @@
     {
       "name": "UncomfortablePeriod",
       "type": "painting",
-      "sortid": 52,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "uncomfortable_period",
@@ -920,7 +920,7 @@
     {
       "name": "StoryOfUndertale",
       "type": "painting",
-      "sortid": 53,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "story_of_undertale",
@@ -932,7 +932,7 @@
     {
       "name": "Bliss",
       "type": "painting",
-      "sortid": 54,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bliss",
@@ -944,7 +944,7 @@
     {
       "name": "Diane1",
       "type": "painting",
-      "sortid": 55,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_1",
@@ -956,7 +956,7 @@
     {
       "name": "Diane2",
       "type": "painting",
-      "sortid": 56,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_2",
@@ -968,7 +968,7 @@
     {
       "name": "Diane3",
       "type": "painting",
-      "sortid": 60,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_3",
@@ -980,7 +980,7 @@
     {
       "name": "Diane4",
       "type": "painting",
-      "sortid": 61,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_4",
@@ -992,7 +992,7 @@
     {
       "name": "DiscPomni",
       "type": "musicdisc",
-      "sortid": 63,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc_pomni",
@@ -1007,7 +1007,7 @@
     {
       "name": "LootPomni",
       "type": "loottable",
-      "sortid": 64,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_pomni",
@@ -1021,7 +1021,7 @@
     {
       "name": "AdvPomni",
       "type": "achievement",
-      "sortid": 65,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_pomni",
@@ -1035,7 +1035,7 @@
     {
       "name": "GetPomni",
       "type": "procedure",
-      "sortid": 66,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_pomni",
@@ -1055,7 +1055,7 @@
     {
       "name": "MiningAid",
       "type": "block",
-      "sortid": 67,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid",
@@ -1072,7 +1072,7 @@
     {
       "name": "MiningAidStop",
       "type": "block",
-      "sortid": 68,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_stop",
@@ -1089,7 +1089,7 @@
     {
       "name": "Poli",
       "type": "painting",
-      "sortid": 69,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poli",
@@ -1101,7 +1101,7 @@
     {
       "name": "MiningAidNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 74,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_neighbour_block_changes",
@@ -1133,7 +1133,7 @@
     {
       "name": "MiningAidBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_block_destroyed_by_player",
@@ -1165,7 +1165,7 @@
     {
       "name": "MiningAidStopNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 76,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_stop_neighbour_block_changes",
@@ -1197,7 +1197,7 @@
     {
       "name": "MiningAidOff",
       "type": "tag",
-      "sortid": 77,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_off",
@@ -1211,7 +1211,7 @@
     {
       "name": "MiningAidBlocks",
       "type": "tag",
-      "sortid": 78,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_blocks",
@@ -1225,7 +1225,7 @@
     {
       "name": "GetDiscography",
       "type": "procedure",
-      "sortid": 79,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_discography",
@@ -1245,7 +1245,7 @@
     {
       "name": "AdvRoundabout",
       "type": "achievement",
-      "sortid": 80,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_roundabout",
@@ -1259,7 +1259,7 @@
     {
       "name": "DiscRoundabout",
       "type": "musicdisc",
-      "sortid": 81,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc_roundabout",
@@ -1274,7 +1274,7 @@
     {
       "name": "LootRoundabout",
       "type": "loottable",
-      "sortid": 82,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_roundabout",
@@ -1288,7 +1288,7 @@
     {
       "name": "GetRoundabout",
       "type": "procedure",
-      "sortid": 83,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_roundabout",
@@ -1308,7 +1308,7 @@
     {
       "name": "BlackHole",
       "type": "painting",
-      "sortid": 86,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_hole",
@@ -1320,7 +1320,7 @@
     {
       "name": "Einstein",
       "type": "painting",
-      "sortid": 87,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "einstein",
@@ -1332,7 +1332,7 @@
     {
       "name": "DiscLibet",
       "type": "musicdisc",
-      "sortid": 88,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc_libet",
@@ -1347,7 +1347,7 @@
     {
       "name": "Diane5",
       "type": "painting",
-      "sortid": 90,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_5",
@@ -1359,7 +1359,7 @@
     {
       "name": "Diane6",
       "type": "painting",
-      "sortid": 91,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_6",
@@ -1371,7 +1371,7 @@
     {
       "name": "GreatAttraction",
       "type": "painting",
-      "sortid": 92,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "great_attraction",
@@ -1383,7 +1383,7 @@
     {
       "name": "LCLSea",
       "type": "painting",
-      "sortid": 93,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lcl_sea",
@@ -1395,7 +1395,7 @@
     {
       "name": "DiscBurningmemory",
       "type": "musicdisc",
-      "sortid": 94,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc_burningmemory",
@@ -1410,7 +1410,7 @@
     {
       "name": "DiscBuddyholly",
       "type": "musicdisc",
-      "sortid": 95,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc_buddyholly",
@@ -1425,7 +1425,7 @@
     {
       "name": "CreeperDropMusicDiscs",
       "type": "tag",
-      "sortid": 96,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "creeper_drop_music_discs",
@@ -1439,7 +1439,7 @@
     {
       "name": "Cryostasis",
       "type": "musicdisc",
-      "sortid": 97,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cryostasis",
@@ -1454,7 +1454,7 @@
     {
       "name": "CryostasisAdv",
       "type": "achievement",
-      "sortid": 98,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cryostasis_adv",
@@ -1468,7 +1468,7 @@
     {
       "name": "GetCryostasis",
       "type": "procedure",
-      "sortid": 99,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_cryostasis",
@@ -1492,7 +1492,7 @@
     {
       "name": "GiveCryostasis",
       "type": "loottable",
-      "sortid": 100,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "give_cryostasis",
@@ -1506,7 +1506,7 @@
     {
       "name": "Snap",
       "type": "painting",
-      "sortid": 101,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "snap",
@@ -1518,7 +1518,7 @@
     {
       "name": "LiveleakDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 108,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "liveleak_display_overlay_ingame",
@@ -1539,7 +1539,7 @@
     {
       "name": "Liveleak",
       "type": "overlay",
-      "sortid": 109,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "liveleak",
@@ -1553,7 +1553,7 @@
     {
       "name": "PrematureDeath",
       "type": "potioneffect",
-      "sortid": 110,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "premature_death",
@@ -1567,7 +1567,7 @@
     {
       "name": "LiveleakDamage",
       "type": "damagetype",
-      "sortid": 111,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "liveleak_damage",
@@ -1581,7 +1581,7 @@
     {
       "name": "PrematureDeathEffectExpires",
       "type": "procedure",
-      "sortid": 112,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "premature_death_effect_expires",
@@ -1617,7 +1617,7 @@
     {
       "name": "PrematureDeathEffectStartedapplied",
       "type": "procedure",
-      "sortid": 113,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "premature_death_effect_startedapplied",
@@ -1637,7 +1637,7 @@
     {
       "name": "CanGiveDeath",
       "type": "tag",
-      "sortid": 114,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "can_give_death",
@@ -1651,7 +1651,7 @@
     {
       "name": "GiveDeath",
       "type": "procedure",
-      "sortid": 116,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "give_death",
@@ -1675,7 +1675,7 @@
     {
       "name": "DevLiveleak",
       "type": "item",
-      "sortid": 117,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_liveleak",
@@ -1690,7 +1690,7 @@
     {
       "name": "LiveleakRewardScreenDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 119,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "liveleak_reward_screen_display_overlay_ingame",
@@ -1711,7 +1711,7 @@
     {
       "name": "LiveleakRewardTable",
       "type": "loottable",
-      "sortid": 121,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "liveleak_reward_table",
@@ -1725,7 +1725,7 @@
     {
       "name": "LiveleakDeath",
       "type": "achievement",
-      "sortid": 122,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "liveleak_death",
@@ -1739,7 +1739,7 @@
     {
       "name": "Antibody",
       "type": "curiosbauble",
-      "sortid": 124,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody",
@@ -1760,7 +1760,7 @@
     {
       "name": "AntibodyWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 125,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_while_bauble_is_equipped_tick",
@@ -1785,7 +1785,7 @@
     {
       "name": "AntibodyBaubleIsEquipped",
       "type": "procedure",
-      "sortid": 126,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_bauble_is_equipped",
@@ -1825,7 +1825,7 @@
     {
       "name": "AntibodyTooltip",
       "type": "procedure",
-      "sortid": 127,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_tooltip",
@@ -1853,7 +1853,7 @@
     {
       "name": "AntibodyPropertyValueProvider",
       "type": "procedure",
-      "sortid": 128,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_property_value_provider",
@@ -1874,7 +1874,7 @@
     {
       "name": "WhenHurtAntibody",
       "type": "procedure",
-      "sortid": 132,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "when_hurt_antibody",
@@ -1910,7 +1910,7 @@
     {
       "name": "LapisTiles5",
       "type": "block",
-      "sortid": 134,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lapis_tiles_5",
@@ -1927,7 +1927,7 @@
     {
       "name": "Dungeon",
       "type": "loottable",
-      "sortid": 135,
+      "sortid": 123,
       "compiles": true,
       "locked_code": true,
       "registry_name": "dungeon",
@@ -1940,7 +1940,7 @@
     {
       "name": "NightVision",
       "type": "curiosbauble",
-      "sortid": 136,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision",
@@ -1962,7 +1962,7 @@
     {
       "name": "AntibodyHurtOverlayDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 137,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_hurt_overlay_display_overlay_ingame",
@@ -1983,7 +1983,7 @@
     {
       "name": "AntibodyHurtOverlay",
       "type": "overlay",
-      "sortid": 138,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_hurt_overlay",
@@ -1997,7 +1997,7 @@
     {
       "name": "NightVisionWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 139,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_while_bauble_is_equipped_tick",
@@ -2025,7 +2025,7 @@
     {
       "name": "DisplayAntibody",
       "type": "procedure",
-      "sortid": 140,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "display_antibody",
@@ -2045,7 +2045,7 @@
     {
       "name": "DoHurtAntibody",
       "type": "procedure",
-      "sortid": 141,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "do_hurt_antibody",
@@ -2081,7 +2081,7 @@
     {
       "name": "AntibodyFullDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_full_display_overlay_ingame",
@@ -2102,7 +2102,7 @@
     {
       "name": "AntibodyFull",
       "type": "overlay",
-      "sortid": 143,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_full",
@@ -2116,7 +2116,7 @@
     {
       "name": "AntibodyStep1",
       "type": "overlay",
-      "sortid": 144,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_step_1",
@@ -2130,7 +2130,7 @@
     {
       "name": "AntibodyStep2",
       "type": "overlay",
-      "sortid": 145,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_step_2",
@@ -2144,7 +2144,7 @@
     {
       "name": "AntibodyStep3",
       "type": "overlay",
-      "sortid": 146,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_step_3",
@@ -2158,7 +2158,7 @@
     {
       "name": "AntibodyStep4",
       "type": "overlay",
-      "sortid": 147,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_step_4",
@@ -2172,7 +2172,7 @@
     {
       "name": "AntibodyOVLStep1",
       "type": "procedure",
-      "sortid": 148,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_ovl_step_1",
@@ -2193,7 +2193,7 @@
     {
       "name": "AntibodyOVLStep2",
       "type": "procedure",
-      "sortid": 149,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_ovl_step_2",
@@ -2214,7 +2214,7 @@
     {
       "name": "AntibodyOVLStep3",
       "type": "procedure",
-      "sortid": 150,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_ovl_step_3",
@@ -2235,7 +2235,7 @@
     {
       "name": "AntibodyOVLStep4",
       "type": "procedure",
-      "sortid": 151,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_ovl_step_4",
@@ -2256,7 +2256,7 @@
     {
       "name": "AntibodyAdv",
       "type": "achievement",
-      "sortid": 152,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_adv",
@@ -2270,7 +2270,7 @@
     {
       "name": "DevAntibodyItem",
       "type": "item",
-      "sortid": 153,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_antibody_item",
@@ -2285,7 +2285,7 @@
     {
       "name": "EnderlinkLiveleak",
       "type": "procedure",
-      "sortid": 154,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderlink_liveleak",
@@ -2321,7 +2321,7 @@
     {
       "name": "AntibodyEnderlink",
       "type": "procedure",
-      "sortid": 155,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_enderlink",
@@ -2357,7 +2357,7 @@
     {
       "name": "Blessing",
       "type": "enchantment",
-      "sortid": 156,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blessing",
@@ -2371,7 +2371,7 @@
     {
       "name": "UnholyMobs",
       "type": "tag",
-      "sortid": 157,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "unholy_mobs",
@@ -2385,7 +2385,7 @@
     {
       "name": "BlessingEnchProd",
       "type": "procedure",
-      "sortid": 158,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blessing_ench_prod",
@@ -2409,7 +2409,7 @@
     {
       "name": "Meds",
       "type": "enchantment",
-      "sortid": 159,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meds",
@@ -2423,7 +2423,7 @@
     {
       "name": "AntibodyTest",
       "type": "painting",
-      "sortid": 160,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_test",
@@ -2435,7 +2435,7 @@
     {
       "name": "VersionCheck",
       "type": "procedure",
-      "sortid": 162,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "version_check",
@@ -2455,7 +2455,7 @@
     {
       "name": "Claustrophobia",
       "type": "dimension",
-      "sortid": 163,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "claustrophobia",
@@ -2471,7 +2471,7 @@
     {
       "name": "EndWings",
       "type": "curiosbauble",
-      "sortid": 164,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings",
@@ -2492,7 +2492,7 @@
     {
       "name": "EndWingsWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 165,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_while_bauble_is_equipped_tick",
@@ -2516,7 +2516,7 @@
     {
       "name": "EndWingsUppies",
       "type": "procedure",
-      "sortid": 166,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_uppies",
@@ -2536,7 +2536,7 @@
     {
       "name": "ColdObsidian",
       "type": "block",
-      "sortid": 167,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cold_obsidian",
@@ -2553,7 +2553,7 @@
     {
       "name": "CrackingObsidian",
       "type": "block",
-      "sortid": 168,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cracking_obsidian",
@@ -2570,7 +2570,7 @@
     {
       "name": "EndWingsBaubleIsEquipped",
       "type": "procedure",
-      "sortid": 169,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_bauble_is_equipped",
@@ -2610,7 +2610,7 @@
     {
       "name": "EndWingsTooltip",
       "type": "procedure",
-      "sortid": 170,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_tooltip",
@@ -2619,6 +2619,10 @@
           "src/main/java/net/mcreator/evaadditionsforge/procedures/EndWingsTooltipProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -2634,7 +2638,7 @@
     {
       "name": "NightVisionBaubleIsEquipped",
       "type": "procedure",
-      "sortid": 171,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_bauble_is_equipped",
@@ -2674,7 +2678,7 @@
     {
       "name": "NightVisionTooltip",
       "type": "procedure",
-      "sortid": 172,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_tooltip",
@@ -2698,7 +2702,7 @@
     {
       "name": "Aptitude",
       "type": "curiosslot",
-      "sortid": 173,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitude",
@@ -2712,7 +2716,7 @@
     {
       "name": "Smartass",
       "type": "curiosbauble",
-      "sortid": 174,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass",
@@ -2733,7 +2737,7 @@
     {
       "name": "ChooseAptitude",
       "type": "procedure",
-      "sortid": 177,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "choose_aptitude",
@@ -2753,7 +2757,7 @@
     {
       "name": "AptitudesRemoveGlow",
       "type": "procedure",
-      "sortid": 178,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitudes_remove_glow",
@@ -2774,7 +2778,7 @@
     {
       "name": "PlayerDiesAptitude",
       "type": "procedure",
-      "sortid": 179,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_dies_aptitude",
@@ -2794,7 +2798,7 @@
     {
       "name": "SmartassBaubleIsEquipped",
       "type": "procedure",
-      "sortid": 180,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_bauble_is_equipped",
@@ -2834,7 +2838,7 @@
     {
       "name": "SmartassTooltip",
       "type": "procedure",
-      "sortid": 181,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_tooltip",
@@ -2858,7 +2862,7 @@
     {
       "name": "SmartassAdv",
       "type": "achievement",
-      "sortid": 182,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_adv",
@@ -2872,7 +2876,7 @@
     {
       "name": "AptitudeAdv",
       "type": "achievement",
-      "sortid": 183,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitude_adv",
@@ -2886,7 +2890,7 @@
     {
       "name": "SmartassEnderlink",
       "type": "procedure",
-      "sortid": 184,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_enderlink",
@@ -2922,7 +2926,7 @@
     {
       "name": "SmartassBaubleIsUnequipped",
       "type": "procedure",
-      "sortid": 186,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_bauble_is_unequipped",
@@ -2942,7 +2946,7 @@
     {
       "name": "Aptitudes",
       "type": "tag",
-      "sortid": 187,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitudes",
@@ -2956,7 +2960,7 @@
     {
       "name": "PowerUpper",
       "type": "item",
-      "sortid": 188,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "power_upper",
@@ -2971,7 +2975,7 @@
     {
       "name": "PowerUpperRightclicked",
       "type": "procedure",
-      "sortid": 189,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "power_upper_rightclicked",
@@ -2991,7 +2995,7 @@
     {
       "name": "AtributePropertyValue",
       "type": "procedure",
-      "sortid": 190,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "atribute_property_value",
@@ -3012,7 +3016,7 @@
     {
       "name": "PowerUpperTooltip",
       "type": "procedure",
-      "sortid": 191,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "power_upper_tooltip",
@@ -3040,7 +3044,7 @@
     {
       "name": "AptitudeChanger",
       "type": "item",
-      "sortid": 192,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitude_changer",
@@ -3055,7 +3059,7 @@
     {
       "name": "AptitudeChangerRightClicked",
       "type": "procedure",
-      "sortid": 193,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitude_changer_right_clicked",
@@ -3079,7 +3083,7 @@
     {
       "name": "DevSmartassItem",
       "type": "item",
-      "sortid": 194,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_smartass_item",
@@ -3094,7 +3098,7 @@
     {
       "name": "HighSensesBaubleEquipped",
       "type": "procedure",
-      "sortid": 195,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_bauble_equipped",
@@ -3134,7 +3138,7 @@
     {
       "name": "HighSensesTooltip",
       "type": "procedure",
-      "sortid": 196,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_tooltip",
@@ -3158,7 +3162,7 @@
     {
       "name": "HighSensesEnderlin",
       "type": "procedure",
-      "sortid": 197,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_enderlin",
@@ -3194,7 +3198,7 @@
     {
       "name": "HighSensesAdv",
       "type": "achievement",
-      "sortid": 198,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_adv",
@@ -3208,7 +3212,7 @@
     {
       "name": "HigherSenses",
       "type": "curiosbauble",
-      "sortid": 200,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "higher_senses",
@@ -3229,7 +3233,7 @@
     {
       "name": "HighSensesMaxLVLAdv",
       "type": "achievement",
-      "sortid": 201,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_max_lvl_adv",
@@ -3243,7 +3247,7 @@
     {
       "name": "SmartassMaxLVLAdv",
       "type": "achievement",
-      "sortid": 202,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_max_lvl_adv",
@@ -3257,7 +3261,7 @@
     {
       "name": "Requiem",
       "type": "curiosbauble",
-      "sortid": 203,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem",
@@ -3278,7 +3282,7 @@
     {
       "name": "RequiemBaubleEquipped",
       "type": "procedure",
-      "sortid": 204,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem_bauble_equipped",
@@ -3318,7 +3322,7 @@
     {
       "name": "RequiemTooltip",
       "type": "procedure",
-      "sortid": 205,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem_tooltip",
@@ -3342,7 +3346,7 @@
     {
       "name": "RequiemEnderlink",
       "type": "procedure",
-      "sortid": 206,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem_enderlink",
@@ -3378,7 +3382,7 @@
     {
       "name": "RequiemAdv",
       "type": "achievement",
-      "sortid": 207,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem_adv",
@@ -3392,7 +3396,7 @@
     {
       "name": "Equinox",
       "type": "curiosbauble",
-      "sortid": 208,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox",
@@ -3419,7 +3423,7 @@
     {
       "name": "EquinoxBaubleEquipped",
       "type": "procedure",
-      "sortid": 209,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_bauble_equipped",
@@ -3459,7 +3463,7 @@
     {
       "name": "EquinoxTooltip",
       "type": "procedure",
-      "sortid": 210,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_tooltip",
@@ -3483,7 +3487,7 @@
     {
       "name": "EquinoxEnderlink",
       "type": "procedure",
-      "sortid": 211,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_enderlink",
@@ -3519,7 +3523,7 @@
     {
       "name": "EquinoxAdv",
       "type": "achievement",
-      "sortid": 212,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_adv",
@@ -3533,7 +3537,7 @@
     {
       "name": "EquinoxPropertyValueProvider",
       "type": "procedure",
-      "sortid": 213,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_property_value_provider",
@@ -3554,7 +3558,7 @@
     {
       "name": "EquinoxWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 214,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_while_bauble_is_equipped_tick",
@@ -3562,14 +3566,27 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/EquinoxWhileBaubleIsEquippedTickProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Curio/Aptitudes/Equinox"
     },
     {
       "name": "CactusRightClick",
       "type": "procedure",
-      "sortid": 215,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_right_click",
@@ -3593,7 +3610,7 @@
     {
       "name": "Noctua",
       "type": "biome",
-      "sortid": 216,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "noctua",
@@ -3607,7 +3624,7 @@
     {
       "name": "EnterClaustrophobia",
       "type": "item",
-      "sortid": 217,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enter_claustrophobia",
@@ -3624,7 +3641,7 @@
     {
       "name": "EnterClaustrophobiaPropertyValueProvider",
       "type": "procedure",
-      "sortid": 218,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enter_claustrophobia_property_value_provider",
@@ -3649,7 +3666,7 @@
     {
       "name": "EnterClaustrophobiaItemInHandTick",
       "type": "procedure",
-      "sortid": 219,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enter_claustrophobia_item_in_hand_tick",
@@ -3677,7 +3694,7 @@
     {
       "name": "EquinoxItemInInventoryTick",
       "type": "procedure",
-      "sortid": 220,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_item_in_inventory_tick",
@@ -3692,7 +3709,7 @@
     {
       "name": "CycleChange",
       "type": "procedure",
-      "sortid": 221,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cycle_change",
@@ -3716,7 +3733,7 @@
     {
       "name": "GiveNewAptitude",
       "type": "item",
-      "sortid": 222,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "give_new_aptitude",
@@ -3731,7 +3748,7 @@
     {
       "name": "GiveNewAptitudeRightclicked",
       "type": "procedure",
-      "sortid": 223,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "give_new_aptitude_rightclicked",
@@ -3755,7 +3772,7 @@
     {
       "name": "PomniPainting",
       "type": "painting",
-      "sortid": 225,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pomni_painting",
@@ -3767,7 +3784,7 @@
     {
       "name": "EndWingsEnderlink",
       "type": "procedure",
-      "sortid": 226,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_enderlink",
@@ -3803,7 +3820,7 @@
     {
       "name": "EnderWingsAdv",
       "type": "achievement",
-      "sortid": 227,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ender_wings_adv",
@@ -3817,7 +3834,7 @@
     {
       "name": "QuartzTiles5",
       "type": "block",
-      "sortid": 228,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quartz_tiles_5",
@@ -3830,6 +3847,156 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "LavaWalker",
+      "type": "curiosbauble",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_walker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/LavaWalkerItem.java",
+          "src/main/resources/assets/eva_additions/models/item/lava_walker_1.json",
+          "src/main/resources/assets/eva_additions/models/item/lava_walker_2.json",
+          "src/main/resources/assets/eva_additions/models/item/lava_walker_5.json",
+          "src/main/resources/assets/eva_additions/models/item/lava_walker.json",
+          "src/main/resources/assets/eva_additions/models/item/lava_walker_0.json",
+          "src/main/resources/assets/eva_additions/models/item/lava_walker_3.json",
+          "src/main/java/net/mcreator/evaadditionsforge/client/renderer/LavaWalkerRenderer.java",
+          "src/main/resources/assets/eva_additions/models/item/lava_walker_4.json"
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "LavaWalkerBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_walker_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/LavaWalkerBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "LavaWalkerTooltip",
+      "type": "procedure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_walker_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/LavaWalkerTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "Artifacts",
+      "type": "tab",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "artifacts",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "AptitudesTab",
+      "type": "tab",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitudes_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "DevItems",
+      "type": "tab",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_items",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "PlumeShield",
+      "type": "enchantment",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plume_shield",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/PlumeShieldEnchantment.java"
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "CurioAdv",
+      "type": "achievement",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curio_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/curio_adv.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
     }
   ],
   "variable_elements": [
@@ -3964,6 +4131,18 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "dev_rarity",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "dev_name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -4108,6 +4287,7 @@
   ],
   "language_map": {
     "en_us": {
+      "item_group.eva_additions.dev_items": "Dev Items",
       "painting.eva_additions.diane_2.author": "???",
       "item.eva_additions.disc_roundabout.desc": "Yes - Roundabout",
       "item.eva_additions.disc_treehopper.desc": "camiidae - treehopper",
@@ -4146,8 +4326,8 @@
       "painting.eva_additions.pomni_painting.title": "Bridge",
       "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
       "curios.identifier.aptitude": "Aptitude",
-      "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
       "painting.eva_additions.black_hole.title": "Black Hole",
+      "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
       "painting.eva_additions.einstein.title": "Einstein",
       "subtitles.enderlink_ping": "",
       "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
@@ -4171,16 +4351,18 @@
       "item.eva_additions.disc_moth": "Music Disc",
       "painting.eva_additions.diane_4.title": "Diane 4",
       "painting.eva_additions.lcl_sea.author": "Hideaki Anno",
-      "advancements.ender_wings_adv.descr": "Add some supplements to your immune system",
+      "advancements.ender_wings_adv.descr": "Save yourself from falling in the void",
       "item.eva_additions.disc_pomni": "Music Disc",
       "item.eva_additions.disc_isopod.desc": "camiidae - isopod",
       "subtitles.record_isopod": "",
+      "item_group.eva_additions.aptitudes_tab": "Aptitudes",
       "advancements.aptitude_adv.title": "Better Than Average",
       "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
       "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
       "item.eva_additions.disc_weevil": "Music Disc",
       "painting.eva_additions.diane_2.title": "Diane 2",
       "item.eva_additions.give_new_aptitude": "Give New Aptitude",
+      "advancements.curio_adv.title": "Curio Adv",
       "item.eva_additions.cryostasis.desc": "??? - cryostasis",
       "painting.eva_additions.snap.author": "EvaKrusader",
       "painting.eva_additions_forge.uncomfortable_period.author": "Toby",
@@ -4193,9 +4375,9 @@
       "subtitles.record_libetsdelay": "",
       "item.eva_additions.higher_senses": "High Senses",
       "advancements.adv_spinyspider.title": "Tough Exoskeleton",
-      "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
-      "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
       "painting.eva_additions.antibody_test.author": "EvaKrusader",
+      "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
+      "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
       "item.eva_additions_forge.disc_isopod.desc": "camiidae - isopod",
       "item.eva_additions.disc_roundabout": "Music Disc",
       "painting.eva_additions.diane_3.title": "Diane 3",
@@ -4216,6 +4398,7 @@
       "subtitles.record_treehopper": "",
       "item.eva_additions.disc_spinyspider.desc": "camiidae - spiny spider",
       "key.eva_additions_forge.show_patch_notes": "Show Patch Notes",
+      "item_group.eva_additions.artifacts": "Artifacts",
       "advancements.adv_bumblebee.descr": "Get stung by a bee",
       "advancements.adv_treehopper.descr": "Cut down some trees",
       "subtitles.heartbeat": "",
@@ -4272,6 +4455,7 @@
       "item.eva_additions_forge.disc_scarab": "Music Disc",
       "item.eva_additions.disc_scarab.desc": "camiidae - scarab",
       "item.eva_additions.disc_weevil.desc": "camiidae - weevil",
+      "item.eva_additions.lava_walker": "Lava Walker",
       "advancements.adv_spinyspider.descr": "Smash 10 Spider eyes while wearing armor",
       "item.eva_additions_forge.disc_butterfly.desc": "camiidae - butterfly",
       "painting.eva_additions.bliss.author": "Charles O\u0027Rear",
@@ -4289,10 +4473,12 @@
       "biome.eva_additions.noctua": "Noctua",
       "item.eva_additions_forge.disc_spinyspider.desc": "camiidae - spiny spider",
       "item.eva_additions_forge.disc_tortoisebeetle": "Music Disc",
+      "advancements.curio_adv.descr": "Get your first bauble",
       "subtitles.record_scarab": "",
       "item.eva_additions_forge.disc_spinyspider": "Music Disc",
       "item.eva_additions.disc_tortoisebeetle.desc": "camiidae - tortoise beetle",
       "advancements.adv_pomni.title": "Your New Home",
+      "enchantment.eva_additions.plume_shield": "Plume Shield",
       "item.eva_additions.dev_liveleak": "Dev Liveleak",
       "subtitles.record_weevil": "",
       "item.eva_additions.smartass": "Cognition",
@@ -4303,7 +4489,417 @@
       "advancements.smartass_adv.title": "Superior Cognition",
       "advancements.adv_treehopper.title": "From Tree To Tree",
       "block.eva_additions.cracking_obsidian": "Cold Obsidian",
-      "advancements.ender_wings_adv.title": "Placebo"
+      "advancements.ender_wings_adv.title": "Too Close To The Void"
+    },
+    "pt_br": {
+      "item_group.eva_additions.dev_items": "Dev Items",
+      "painting.eva_additions.diane_2.author": "???",
+      "item.eva_additions.disc_roundabout.desc": "Yes - Roundabout",
+      "item.eva_additions.disc_treehopper.desc": "camiidae - treehopper",
+      "painting.eva_additions.diane_4.author": "???",
+      "item.eva_additions.disc_libet.desc": "The Caretaker - Libet\u0027s Delay",
+      "advancements.liveleak_death.title": "Quick \u0026 Painful",
+      "subtitles.record_tortoisebeetle": "",
+      "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
+      "advancements.adv_isopod.title": "Tough Shell",
+      "subtitles.record_spinyspider": "",
+      "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
+      "item.eva_additions.disc_butterfly": "Music Disc",
+      "item.eva_additions.cryostasis": "Music Disc",
+      "item.eva_additions.disc_butterfly.desc": "camiidae - butterfly",
+      "item.eva_additions.entomologist_epiphany": "Entomologist Epiphany",
+      "painting.eva_additions.snap.title": "The One Who Snaps",
+      "item.eva_additions_forge.disc_isopod": "Music Disc",
+      "advancements.adv_pomni.descr": "Wake up in your new home",
+      "painting.eva_additions.diane_6.author": "Flait13",
+      "advancements.smartass_max_lvl_adv.descr": "Be born enlightened",
+      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
+      "advancements.adv_roundabout.title": "To Be Continued",
+      "painting.eva_additions.great_attraction.title": "Great Attraction",
+      "painting.eva_additions.story_of_undertale.title": "Story Of Undertale",
+      "advancements.adv_moth.descr": "Get burned in a bug infested biome",
+      "painting.eva_additions_forge.story_of_undertale.author": "LHUGUENY",
+      "painting.eva_additions.great_attraction.author": "LHUGUENY",
+      "subtitles.record_yournewhome": "",
+      "subtitles.record_butterfly": "",
+      "advancements.adv_scarab.title": "Critter",
+      "painting.eva_additions_forge.bliss.title": "Bliss",
+      "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
+      "subtitles.record_cryostasis": "",
+      "painting.eva_additions.pomni_painting.author": "amba_si",
+      "painting.eva_additions.antibody_test.title": "Makeshift Infirmary",
+      "painting.eva_additions.pomni_painting.title": "Bridge",
+      "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
+      "curios.identifier.aptitude": "Aptitude",
+      "painting.eva_additions.black_hole.title": "Black Hole",
+      "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
+      "painting.eva_additions.einstein.title": "Einstein",
+      "subtitles.enderlink_ping": "",
+      "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
+      "item.eva_additions.enter_claustrophobia": "Enter Claustrophobia",
+      "item.eva_additions_forge.disc_treehopper": "Music Disc",
+      "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
+      "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
+      "item.eva_additions.disc_moth.desc": "camiidae - moth",
+      "item.eva_additions.aptitude_changer": "Aptitude Changer",
+      "item.eva_additions.power_upper": "Power Upper",
+      "advancements.adv_weevil.title": "Evil Weevil",
+      "item.eva_additions.disc_burningmemory": "Music Disc",
+      "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
+      "advancements.high_senses_max_lvl_adv.title": "Superior ",
+      "painting.eva_additions_forge.diane_2.author": "???",
+      "painting.eva_additions.poli.title": "Poli",
+      "painting.eva_additions_forge.diane_1.title": "Diane 1",
+      "block.eva_additions.cold_obsidian": "Cold Obsidian",
+      "advancements.requiem_adv.title": "Superior ",
+      "painting.eva_additions.bliss.title": "Bliss",
+      "item.eva_additions.disc_moth": "Music Disc",
+      "painting.eva_additions.diane_4.title": "Diane 4",
+      "painting.eva_additions.lcl_sea.author": "Hideaki Anno",
+      "advancements.ender_wings_adv.descr": "Save yourself from falling in the void",
+      "item.eva_additions.disc_pomni": "Music Disc",
+      "item.eva_additions.disc_isopod.desc": "camiidae - isopod",
+      "subtitles.record_isopod": "",
+      "item_group.eva_additions.aptitudes_tab": "Aptitudes",
+      "advancements.aptitude_adv.title": "Better Than Average",
+      "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
+      "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
+      "item.eva_additions.disc_weevil": "Music Disc",
+      "painting.eva_additions.diane_2.title": "Diane 2",
+      "item.eva_additions.give_new_aptitude": "Give New Aptitude",
+      "advancements.curio_adv.title": "Curio Adv",
+      "item.eva_additions.cryostasis.desc": "??? - cryostasis",
+      "painting.eva_additions.snap.author": "EvaKrusader",
+      "painting.eva_additions_forge.uncomfortable_period.author": "Toby",
+      "item.eva_additions.disc_scarab": "Music Disc",
+      "subtitles.record_buddyholly": "",
+      "item.eva_additions_forge.disc_bumblebee": "Music Disc",
+      "item.eva_additions.antibody": "Foreign Antibodies",
+      "advancements.discography.descr": "Obtain your first music disc",
+      "painting.eva_additions.lcl_sea.title": "Near Fourth Impact LCL Sea",
+      "subtitles.record_libetsdelay": "",
+      "item.eva_additions.higher_senses": "High Senses",
+      "advancements.adv_spinyspider.title": "Tough Exoskeleton",
+      "painting.eva_additions.antibody_test.author": "EvaKrusader",
+      "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
+      "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
+      "item.eva_additions_forge.disc_isopod.desc": "camiidae - isopod",
+      "item.eva_additions.disc_roundabout": "Music Disc",
+      "painting.eva_additions.diane_3.title": "Diane 3",
+      "advancements.adv_tortoisebeetle.title": "A Bouquet For You!",
+      "painting.eva_additions.diane_3.author": "???",
+      "item.eva_additions_forge.disc_scarab.desc": "camiidae - scarab",
+      "advancements.cryostasis_adv.title": "Cryostasis Adv",
+      "painting.eva_additions.diane_5.author": "???",
+      "painting.eva_additions.diane_1.author": "???",
+      "advancements.adv_weevil.descr": "Dig up some dirt",
+      "item.eva_additions_forge.disc_weevil.desc": "camiidae - weevil",
+      "item.eva_additions.dev_smartass_item": "Dev Antibody Item",
+      "advancements.high_senses_max_lvl_adv.descr": "Be born with higher sensitivity",
+      "advancements.high_senses_adv.title": "Superior ",
+      "painting.eva_additions.einstein.author": "Poli",
+      "item.eva_additions_forge.disc_moth": "Music Disc",
+      "painting.eva_additions_forge.diane_3.title": "Diane 3",
+      "subtitles.record_treehopper": "",
+      "item.eva_additions.disc_spinyspider.desc": "camiidae - spiny spider",
+      "key.eva_additions_forge.show_patch_notes": "Show Patch Notes",
+      "item_group.eva_additions.artifacts": "Artifacts",
+      "advancements.adv_bumblebee.descr": "Get stung by a bee",
+      "advancements.adv_treehopper.descr": "Cut down some trees",
+      "subtitles.heartbeat": "",
+      "block.eva_additions.mining_aid": "Mining Aid",
+      "item.eva_additions.disc_burningmemory.desc": "The Caretaker - It\u0027s just a burning memory",
+      "advancements.antibody_adv.descr": "Add some supplements to your immune system",
+      "advancements.smartass_adv.descr": "Be born enlightened",
+      "death.attack.liveleak_damage.item": "%1$s was killed by %2$s using %3$s",
+      "item.eva_additions_forge.discography_item": "Discography Item",
+      "item.eva_additions_forge.disc_weevil": "Music Disc",
+      "painting.eva_additions.diane_5.title": "Diane 5",
+      "painting.eva_additions_forge.diane_2.title": "Diane 2",
+      "item.eva_additions.disc_tortoisebeetle": "Music Disc",
+      "painting.eva_additions.diane_1.title": "Diane 1",
+      "block.eva_additions.mining_aid_stop": "Mining Aid",
+      "enchantment.eva_additions.meds": "Meds",
+      "painting.eva_additions.story_of_undertale.author": "LHUGUENY",
+      "subtitles.record_burningmemory": "",
+      "painting.eva_additions_forge.story_of_undertale.title": "Story Of Undertale",
+      "item.eva_additions_forge.disc_tortoisebeetle.desc": "camiidae - tortoise beetle",
+      "item.eva_additions.end_wings": "Void Wings",
+      "block.eva_additions.quartz_tiles_5": "Quartz Tiles",
+      "painting.eva_additions.uncomfortable_period.author": "Toby",
+      "advancements.requiem_adv.descr": "Be born with higher sensitivity",
+      "advancements.adv_bumblebee.title": "Buzz",
+      "item.eva_additions.disc_libet": "Music Disc",
+      "advancements.liveleak_death.descr": "Get too unlucky",
+      "item.eva_additions.requiem": "Requiem",
+      "advancements.equinox_adv.descr": "Be born with higher sensitivity",
+      "painting.eva_additions.diane_6.title": "A Handful",
+      "advancements.adv_roundabout.descr": "Continue playing later...",
+      "painting.eva_additions.black_hole.author": "Poli",
+      "painting.eva_additions_forge.bliss.author": "Charles O\u0027Rear",
+      "enchantment.eva_additions.blessing": "Blessing",
+      "painting.eva_additions_forge.diane_4.title": "Diane 4",
+      "key.eva_additions.gamemode_switcher": "Gamemode Switcher",
+      "item.eva_additions.dev_antibody_item": "Dev Antibody Item",
+      "item.eva_additions.disc_isopod": "Music Disc",
+      "item.eva_additions.night_vision": "Night Vision Goggles",
+      "advancements.equinox_adv.title": "Superior ",
+      "advancements.adv_butterfly.title": "Fly High",
+      "item.eva_additions.disc_treehopper": "Music Disc",
+      "subtitles.record_moth": "",
+      "advancements.high_senses_adv.descr": "Be born with higher sensitivity",
+      "item.eva_additions.discography_item": "Discography Item",
+      "painting.eva_additions_forge.diane_3.author": "???",
+      "painting.eva_additions_forge.diane_4.author": "???",
+      "painting.eva_additions_forge.diane_1.author": "???",
+      "item.eva_additions.disc_bumblebee": "Music Disc",
+      "advancements.adv_isopod.descr": "Dig up some wet sand",
+      "advancements.discography.title": "Discography",
+      "subtitles.record_roundabout": "",
+      "item.eva_additions.equinox": "Equinox",
+      "item.eva_additions_forge.disc_scarab": "Music Disc",
+      "item.eva_additions.disc_scarab.desc": "camiidae - scarab",
+      "item.eva_additions.disc_weevil.desc": "camiidae - weevil",
+      "item.eva_additions.lava_walker": "Lava Walker",
+      "advancements.adv_spinyspider.descr": "Smash 10 Spider eyes while wearing armor",
+      "item.eva_additions_forge.disc_butterfly.desc": "camiidae - butterfly",
+      "painting.eva_additions.bliss.author": "Charles O\u0027Rear",
+      "painting.eva_additions.poli.author": "Poli",
+      "effect.eva_additions.premature_death": "Premature Death",
+      "advancements.antibody_adv.title": "Placebo",
+      "advancements.entomologist.title": "Entomologist",
+      "painting.eva_additions_forge.uncomfortable_period.title": "Uncomfortable Period",
+      "subtitles.record_bumblebee": "",
+      "item.eva_additions.disc_spinyspider": "Music Disc",
+      "advancements.adv_scarab.descr": "Mow the lawn",
+      "item.eva_additions.disc_buddyholly": "Music Disc",
+      "item.eva_additions_forge.disc_butterfly": "Music Disc",
+      "advancements.adv_moth.title": "Too Close To The Sun",
+      "biome.eva_additions.noctua": "Noctua",
+      "item.eva_additions_forge.disc_spinyspider.desc": "camiidae - spiny spider",
+      "item.eva_additions_forge.disc_tortoisebeetle": "Music Disc",
+      "advancements.curio_adv.descr": "pl",
+      "subtitles.record_scarab": "",
+      "item.eva_additions_forge.disc_spinyspider": "Music Disc",
+      "item.eva_additions.disc_tortoisebeetle.desc": "camiidae - tortoise beetle",
+      "advancements.adv_pomni.title": "Your New Home",
+      "enchantment.eva_additions.plume_shield": "Plume Shield",
+      "item.eva_additions.dev_liveleak": "Dev Liveleak",
+      "subtitles.record_weevil": "",
+      "item.eva_additions.smartass": "Cognition",
+      "block.eva_additions.lapis_tiles_5": "Lapis Tiles",
+      "advancements.smartass_max_lvl_adv.title": "Superior Cognition",
+      "advancements.aptitude_adv.descr": "Discover your aptitude",
+      "painting.eva_additions.uncomfortable_period.title": "Uncomfortable Period",
+      "advancements.smartass_adv.title": "Superior Cognition",
+      "advancements.adv_treehopper.title": "From Tree To Tree",
+      "block.eva_additions.cracking_obsidian": "Cold Obsidian",
+      "advancements.ender_wings_adv.title": "Too Close To The Void"
+    },
+    "fr_fr": {
+      "item_group.eva_additions.dev_items": "Dev Items",
+      "painting.eva_additions.diane_2.author": "???",
+      "item.eva_additions.disc_roundabout.desc": "Yes - Roundabout",
+      "item.eva_additions.disc_treehopper.desc": "camiidae - treehopper",
+      "painting.eva_additions.diane_4.author": "???",
+      "item.eva_additions.disc_libet.desc": "The Caretaker - Libet\u0027s Delay",
+      "advancements.liveleak_death.title": "Quick \u0026 Painful",
+      "subtitles.record_tortoisebeetle": "",
+      "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
+      "advancements.adv_isopod.title": "Tough Shell",
+      "subtitles.record_spinyspider": "",
+      "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
+      "item.eva_additions.disc_butterfly": "Music Disc",
+      "item.eva_additions.cryostasis": "Music Disc",
+      "item.eva_additions.disc_butterfly.desc": "camiidae - butterfly",
+      "item.eva_additions.entomologist_epiphany": "Entomologist Epiphany",
+      "painting.eva_additions.snap.title": "The One Who Snaps",
+      "item.eva_additions_forge.disc_isopod": "Music Disc",
+      "advancements.adv_pomni.descr": "Wake up in your new home",
+      "painting.eva_additions.diane_6.author": "Flait13",
+      "advancements.smartass_max_lvl_adv.descr": "Be born enlightened",
+      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
+      "advancements.adv_roundabout.title": "To Be Continued",
+      "painting.eva_additions.great_attraction.title": "Great Attraction",
+      "painting.eva_additions.story_of_undertale.title": "Story Of Undertale",
+      "advancements.adv_moth.descr": "Get burned in a bug infested biome",
+      "painting.eva_additions_forge.story_of_undertale.author": "LHUGUENY",
+      "painting.eva_additions.great_attraction.author": "LHUGUENY",
+      "subtitles.record_yournewhome": "",
+      "subtitles.record_butterfly": "",
+      "advancements.adv_scarab.title": "Critter",
+      "painting.eva_additions_forge.bliss.title": "Bliss",
+      "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
+      "subtitles.record_cryostasis": "",
+      "painting.eva_additions.pomni_painting.author": "amba_si",
+      "painting.eva_additions.antibody_test.title": "Makeshift Infirmary",
+      "painting.eva_additions.pomni_painting.title": "Bridge",
+      "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
+      "curios.identifier.aptitude": "Aptitude",
+      "painting.eva_additions.black_hole.title": "Black Hole",
+      "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
+      "painting.eva_additions.einstein.title": "Einstein",
+      "subtitles.enderlink_ping": "",
+      "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
+      "item.eva_additions.enter_claustrophobia": "Enter Claustrophobia",
+      "item.eva_additions_forge.disc_treehopper": "Music Disc",
+      "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
+      "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
+      "item.eva_additions.disc_moth.desc": "camiidae - moth",
+      "item.eva_additions.aptitude_changer": "Aptitude Changer",
+      "item.eva_additions.power_upper": "Power Upper",
+      "advancements.adv_weevil.title": "Evil Weevil",
+      "item.eva_additions.disc_burningmemory": "Music Disc",
+      "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
+      "advancements.high_senses_max_lvl_adv.title": "Superior ",
+      "painting.eva_additions_forge.diane_2.author": "???",
+      "painting.eva_additions.poli.title": "Poli",
+      "painting.eva_additions_forge.diane_1.title": "Diane 1",
+      "block.eva_additions.cold_obsidian": "Cold Obsidian",
+      "advancements.requiem_adv.title": "Superior ",
+      "painting.eva_additions.bliss.title": "Bliss",
+      "item.eva_additions.disc_moth": "Music Disc",
+      "painting.eva_additions.diane_4.title": "Diane 4",
+      "painting.eva_additions.lcl_sea.author": "Hideaki Anno",
+      "advancements.ender_wings_adv.descr": "Save yourself from falling in the void",
+      "item.eva_additions.disc_pomni": "Music Disc",
+      "item.eva_additions.disc_isopod.desc": "camiidae - isopod",
+      "subtitles.record_isopod": "",
+      "item_group.eva_additions.aptitudes_tab": "Aptitudes",
+      "advancements.aptitude_adv.title": "Better Than Average",
+      "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
+      "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
+      "item.eva_additions.disc_weevil": "Music Disc",
+      "painting.eva_additions.diane_2.title": "Diane 2",
+      "item.eva_additions.give_new_aptitude": "Give New Aptitude",
+      "advancements.curio_adv.title": "Curio Adv",
+      "item.eva_additions.cryostasis.desc": "??? - cryostasis",
+      "painting.eva_additions.snap.author": "EvaKrusader",
+      "painting.eva_additions_forge.uncomfortable_period.author": "Toby",
+      "item.eva_additions.disc_scarab": "Music Disc",
+      "subtitles.record_buddyholly": "",
+      "item.eva_additions_forge.disc_bumblebee": "Music Disc",
+      "item.eva_additions.antibody": "Foreign Antibodies",
+      "advancements.discography.descr": "Obtain your first music disc",
+      "painting.eva_additions.lcl_sea.title": "Near Fourth Impact LCL Sea",
+      "subtitles.record_libetsdelay": "",
+      "item.eva_additions.higher_senses": "High Senses",
+      "advancements.adv_spinyspider.title": "Tough Exoskeleton",
+      "painting.eva_additions.antibody_test.author": "EvaKrusader",
+      "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
+      "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
+      "item.eva_additions_forge.disc_isopod.desc": "camiidae - isopod",
+      "item.eva_additions.disc_roundabout": "Music Disc",
+      "painting.eva_additions.diane_3.title": "Diane 3",
+      "advancements.adv_tortoisebeetle.title": "A Bouquet For You!",
+      "painting.eva_additions.diane_3.author": "???",
+      "item.eva_additions_forge.disc_scarab.desc": "camiidae - scarab",
+      "advancements.cryostasis_adv.title": "Cryostasis Adv",
+      "painting.eva_additions.diane_5.author": "???",
+      "painting.eva_additions.diane_1.author": "???",
+      "advancements.adv_weevil.descr": "Dig up some dirt",
+      "item.eva_additions_forge.disc_weevil.desc": "camiidae - weevil",
+      "item.eva_additions.dev_smartass_item": "Dev Antibody Item",
+      "advancements.high_senses_max_lvl_adv.descr": "Be born with higher sensitivity",
+      "advancements.high_senses_adv.title": "Superior ",
+      "painting.eva_additions.einstein.author": "Poli",
+      "item.eva_additions_forge.disc_moth": "Music Disc",
+      "painting.eva_additions_forge.diane_3.title": "Diane 3",
+      "subtitles.record_treehopper": "",
+      "item.eva_additions.disc_spinyspider.desc": "camiidae - spiny spider",
+      "key.eva_additions_forge.show_patch_notes": "Show Patch Notes",
+      "item_group.eva_additions.artifacts": "Artifacts",
+      "advancements.adv_bumblebee.descr": "Get stung by a bee",
+      "advancements.adv_treehopper.descr": "Cut down some trees",
+      "subtitles.heartbeat": "",
+      "block.eva_additions.mining_aid": "Mining Aid",
+      "item.eva_additions.disc_burningmemory.desc": "The Caretaker - It\u0027s just a burning memory",
+      "advancements.antibody_adv.descr": "Add some supplements to your immune system",
+      "advancements.smartass_adv.descr": "Be born enlightened",
+      "death.attack.liveleak_damage.item": "%1$s was killed by %2$s using %3$s",
+      "item.eva_additions_forge.discography_item": "Discography Item",
+      "item.eva_additions_forge.disc_weevil": "Music Disc",
+      "painting.eva_additions.diane_5.title": "Diane 5",
+      "painting.eva_additions_forge.diane_2.title": "Diane 2",
+      "item.eva_additions.disc_tortoisebeetle": "Music Disc",
+      "painting.eva_additions.diane_1.title": "Diane 1",
+      "block.eva_additions.mining_aid_stop": "Mining Aid",
+      "enchantment.eva_additions.meds": "Meds",
+      "painting.eva_additions.story_of_undertale.author": "LHUGUENY",
+      "subtitles.record_burningmemory": "",
+      "painting.eva_additions_forge.story_of_undertale.title": "Story Of Undertale",
+      "item.eva_additions_forge.disc_tortoisebeetle.desc": "camiidae - tortoise beetle",
+      "item.eva_additions.end_wings": "Void Wings",
+      "block.eva_additions.quartz_tiles_5": "Quartz Tiles",
+      "painting.eva_additions.uncomfortable_period.author": "Toby",
+      "advancements.requiem_adv.descr": "Be born with higher sensitivity",
+      "advancements.adv_bumblebee.title": "Buzz",
+      "item.eva_additions.disc_libet": "Music Disc",
+      "advancements.liveleak_death.descr": "Get too unlucky",
+      "item.eva_additions.requiem": "Requiem",
+      "advancements.equinox_adv.descr": "Be born with higher sensitivity",
+      "painting.eva_additions.diane_6.title": "A Handful",
+      "advancements.adv_roundabout.descr": "Continue playing later...",
+      "painting.eva_additions.black_hole.author": "Poli",
+      "painting.eva_additions_forge.bliss.author": "Charles O\u0027Rear",
+      "enchantment.eva_additions.blessing": "Blessing",
+      "painting.eva_additions_forge.diane_4.title": "Diane 4",
+      "key.eva_additions.gamemode_switcher": "Gamemode Switcher",
+      "item.eva_additions.dev_antibody_item": "Dev Antibody Item",
+      "item.eva_additions.disc_isopod": "Music Disc",
+      "item.eva_additions.night_vision": "Night Vision Goggles",
+      "advancements.equinox_adv.title": "Superior ",
+      "advancements.adv_butterfly.title": "Fly High",
+      "item.eva_additions.disc_treehopper": "Music Disc",
+      "subtitles.record_moth": "",
+      "advancements.high_senses_adv.descr": "Be born with higher sensitivity",
+      "item.eva_additions.discography_item": "Discography Item",
+      "painting.eva_additions_forge.diane_3.author": "???",
+      "painting.eva_additions_forge.diane_4.author": "???",
+      "painting.eva_additions_forge.diane_1.author": "???",
+      "item.eva_additions.disc_bumblebee": "Music Disc",
+      "advancements.adv_isopod.descr": "Dig up some wet sand",
+      "advancements.discography.title": "Discography",
+      "subtitles.record_roundabout": "",
+      "item.eva_additions.equinox": "Equinox",
+      "item.eva_additions_forge.disc_scarab": "Music Disc",
+      "item.eva_additions.disc_scarab.desc": "camiidae - scarab",
+      "item.eva_additions.disc_weevil.desc": "camiidae - weevil",
+      "item.eva_additions.lava_walker": "Lava Walker",
+      "advancements.adv_spinyspider.descr": "Smash 10 Spider eyes while wearing armor",
+      "item.eva_additions_forge.disc_butterfly.desc": "camiidae - butterfly",
+      "painting.eva_additions.bliss.author": "Charles O\u0027Rear",
+      "painting.eva_additions.poli.author": "Poli",
+      "effect.eva_additions.premature_death": "Premature Death",
+      "advancements.antibody_adv.title": "Placebo",
+      "advancements.entomologist.title": "Entomologist",
+      "painting.eva_additions_forge.uncomfortable_period.title": "Uncomfortable Period",
+      "subtitles.record_bumblebee": "",
+      "item.eva_additions.disc_spinyspider": "Music Disc",
+      "advancements.adv_scarab.descr": "Mow the lawn",
+      "item.eva_additions.disc_buddyholly": "Music Disc",
+      "item.eva_additions_forge.disc_butterfly": "Music Disc",
+      "advancements.adv_moth.title": "Too Close To The Sun",
+      "biome.eva_additions.noctua": "Noctua",
+      "item.eva_additions_forge.disc_spinyspider.desc": "camiidae - spiny spider",
+      "item.eva_additions_forge.disc_tortoisebeetle": "Music Disc",
+      "advancements.curio_adv.descr": "pl",
+      "subtitles.record_scarab": "",
+      "item.eva_additions_forge.disc_spinyspider": "Music Disc",
+      "item.eva_additions.disc_tortoisebeetle.desc": "camiidae - tortoise beetle",
+      "advancements.adv_pomni.title": "Your New Home",
+      "enchantment.eva_additions.plume_shield": "Plume Shield",
+      "item.eva_additions.dev_liveleak": "Dev Liveleak",
+      "subtitles.record_weevil": "",
+      "item.eva_additions.smartass": "Cognition",
+      "block.eva_additions.lapis_tiles_5": "Lapis Tiles",
+      "advancements.smartass_max_lvl_adv.title": "Superior Cognition",
+      "advancements.aptitude_adv.descr": "Discover your aptitude",
+      "painting.eva_additions.uncomfortable_period.title": "Uncomfortable Period",
+      "advancements.smartass_adv.title": "Superior Cognition",
+      "advancements.adv_treehopper.title": "From Tree To Tree",
+      "block.eva_additions.cracking_obsidian": "Cold Obsidian",
+      "advancements.ender_wings_adv.title": "Too Close To The Void"
     }
   },
   "foldersRoot": {
@@ -4431,6 +5027,19 @@
               },
               {
                 "name": "Requiem",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Mood",
+            "children": [
+              {
+                "name": "Rock",
+                "children": []
+              },
+              {
+                "name": "Crystal",
                 "children": []
               }
             ]

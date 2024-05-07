@@ -77,6 +77,8 @@ public class EvaAdditionsModVariables {
 			clone.aptitudePower = original.aptitudePower;
 			clone.aptitudeItem = original.aptitudeItem;
 			clone.playerCycle = original.playerCycle;
+			clone.dev_rarity = original.dev_rarity;
+			clone.dev_name = original.dev_name;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -147,6 +149,8 @@ public class EvaAdditionsModVariables {
 		public ItemStack aptitudeItem = ItemStack.EMPTY;
 		public boolean playerCycle = false;
 		public boolean VoidWingsSlow = false;
+		public String dev_rarity = "\"\"";
+		public String dev_name = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -177,6 +181,8 @@ public class EvaAdditionsModVariables {
 			nbt.put("aptitudeItem", aptitudeItem.save(new CompoundTag()));
 			nbt.putBoolean("playerCycle", playerCycle);
 			nbt.putBoolean("VoidWingsSlow", VoidWingsSlow);
+			nbt.putString("dev_rarity", dev_rarity);
+			nbt.putString("dev_name", dev_name);
 			return nbt;
 		}
 
@@ -204,6 +210,8 @@ public class EvaAdditionsModVariables {
 			aptitudeItem = ItemStack.of(nbt.getCompound("aptitudeItem"));
 			playerCycle = nbt.getBoolean("playerCycle");
 			VoidWingsSlow = nbt.getBoolean("VoidWingsSlow");
+			dev_rarity = nbt.getString("dev_rarity");
+			dev_name = nbt.getString("dev_name");
 		}
 	}
 
@@ -250,6 +258,8 @@ public class EvaAdditionsModVariables {
 					variables.aptitudeItem = message.data.aptitudeItem;
 					variables.playerCycle = message.data.playerCycle;
 					variables.VoidWingsSlow = message.data.VoidWingsSlow;
+					variables.dev_rarity = message.data.dev_rarity;
+					variables.dev_name = message.data.dev_name;
 				}
 			});
 			context.setPacketHandled(true);

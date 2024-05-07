@@ -26,6 +26,7 @@ public class HighSensesBaubleEquippedProcedure {
 		}
 		itemName = "Senses";
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 0) {
+			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.97) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 5);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.85) {
@@ -37,7 +38,6 @@ public class HighSensesBaubleEquippedProcedure {
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 1);
 			}
-			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
 		}
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A77" + "Deaf" + " \u00A7r\u00A7f" + itemName)));

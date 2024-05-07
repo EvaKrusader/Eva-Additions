@@ -10,7 +10,7 @@
     "name": "Power Upper",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:DevItems"
     },
     "stackSize": 1,
     "enchantability": 0,

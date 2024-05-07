@@ -3,7 +3,7 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "aptitude_dev0",
+    "texture": "aptitude_equinoxday0",
     "customModelName": "Normal",
     "name": "Equinox",
     "rarity": "COMMON",
@@ -11,7 +11,7 @@
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AptitudesTab"
     },
     "stackSize": 1,
     "enchantability": 0,

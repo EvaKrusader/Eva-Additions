@@ -34,7 +34,7 @@ public class EndWingsEnderlinkProcedure {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList()
 							.broadcastSystemMessage(Component.literal(((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).EnderlinkAssistant
-									+ "Did you know you can enchant your immune system? You can make it turn illnesses into powers!")), false);
+									+ "Did you know the void is no longer a problem to you? Those new wings will allow you to fly back up!")), false);
 			});
 		}
 	}

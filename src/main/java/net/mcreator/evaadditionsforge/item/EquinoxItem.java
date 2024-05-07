@@ -54,7 +54,7 @@ public class EquinoxItem extends Item implements ICurioItem {
 
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		EquinoxWhileBaubleIsEquippedTickProcedure.execute();
+		EquinoxWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
 	}
 
 	@Override

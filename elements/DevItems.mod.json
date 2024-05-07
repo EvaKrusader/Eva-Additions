@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "Dev Items",
+    "icon": {
+      "value": "CUSTOM:GiveNewAptitude"
+    },
+    "showSearch": false
+  }
+}

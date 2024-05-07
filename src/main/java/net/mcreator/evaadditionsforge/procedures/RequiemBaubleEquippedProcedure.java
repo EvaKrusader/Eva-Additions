@@ -26,6 +26,7 @@ public class RequiemBaubleEquippedProcedure {
 		}
 		itemName = "Requiem";
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 0) {
+			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.97) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 5);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.85) {
@@ -37,7 +38,6 @@ public class RequiemBaubleEquippedProcedure {
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 1);
 			}
-			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
 		}
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A77" + "Deaf" + " \u00A7r\u00A7f" + itemName)));
@@ -48,7 +48,7 @@ public class RequiemBaubleEquippedProcedure {
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7d" + "Keen" + " \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76" + "Psychic" + " \u00A7r\u00A7f" + itemName)));
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76" + "Golden" + " \u00A7r\u00A7f" + itemName)));
 		}
 		RequiemEnderlinkProcedure.execute(world, x, y, z, entity);
 		if (entity instanceof ServerPlayer _player) {

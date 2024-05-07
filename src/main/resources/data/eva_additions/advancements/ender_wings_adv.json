@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "eva_additions:end_wings"
     },
@@ -19,5 +18,6 @@
     "ender_wings_adv": {
       "trigger": "minecraft:impossible"
     }
-  }
+  },
+  "parent": "eva_additions:curio_adv"
 }

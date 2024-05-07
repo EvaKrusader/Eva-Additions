@@ -3,7 +3,7 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "aptitude_dev0",
+    "texture": "aptitude_senses0",
     "customModelName": "Normal",
     "name": "High Senses",
     "rarity": "COMMON",
@@ -11,7 +11,7 @@
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AptitudesTab"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -43,7 +43,7 @@
     "states": [
       {
         "renderType": 0,
-        "texture": "aptitude_dev0",
+        "texture": "aptitude_senses0",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -59,7 +59,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev1",
+        "texture": "aptitude_senses1",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -75,7 +75,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev2",
+        "texture": "aptitude_senses2",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -91,7 +91,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev3",
+        "texture": "aptitude_senses3",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -107,7 +107,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev4",
+        "texture": "aptitude_senses4",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -123,7 +123,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev5",
+        "texture": "aptitude_senses5",
         "customModelName": "Normal",
         "stateMap": [
           {

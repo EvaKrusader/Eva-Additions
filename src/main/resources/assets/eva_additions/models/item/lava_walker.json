@@ -1,0 +1,44 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/curio_lavawalker0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:lava_walker_baublepower": 0
+      },
+      "model": "eva_additions:item/lava_walker_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:lava_walker_baublepower": 1
+      },
+      "model": "eva_additions:item/lava_walker_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:lava_walker_baublepower": 2
+      },
+      "model": "eva_additions:item/lava_walker_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:lava_walker_baublepower": 3
+      },
+      "model": "eva_additions:item/lava_walker_3"
+    },
+    {
+      "predicate": {
+        "eva_additions:lava_walker_baublepower": 4
+      },
+      "model": "eva_additions:item/lava_walker_4"
+    },
+    {
+      "predicate": {
+        "eva_additions:lava_walker_baublepower": 5
+      },
+      "model": "eva_additions:item/lava_walker_5"
+    }
+  ]
+}

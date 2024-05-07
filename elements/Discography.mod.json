@@ -7,7 +7,7 @@
     "achievementIcon": {
       "value": "CUSTOM:DiscographyItem"
     },
-    "background": "Default",
+    "background": "jukebox.png",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
