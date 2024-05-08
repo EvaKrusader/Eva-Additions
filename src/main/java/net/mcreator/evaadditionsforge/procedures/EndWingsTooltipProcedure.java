@@ -57,8 +57,10 @@ public class EndWingsTooltipProcedure {
 						tooltip.add(Component.literal(("Will save you from falling in the void and will give you " + itemRarity + "Slow Falling II" + itemReset + ".")));
 					} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 						tooltip.add(Component.literal(("Will save you from falling in the void and will give you " + itemRarity + "Slow Falling III" + itemReset + ".")));
+					} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
+						tooltip.add(Component.literal((itemRarity + "Will" + itemReset + " save you from falling in the void.")));
 					} else {
-						tooltip.add(Component.literal("Will save you from falling in the void."));
+						tooltip.add(Component.literal(("Will " + itemRarity + "not" + itemReset + " save you from falling in the void.")));
 					}
 				} else if (Minecraft.getInstance().options.languageCode.equals("pt_br")) {
 					tooltip.add(Component.literal(

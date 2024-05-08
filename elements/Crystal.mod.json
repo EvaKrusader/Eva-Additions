@@ -1,0 +1,9 @@
+{
+  "_fv": 57,
+  "_type": "curiosslot",
+  "definition": {
+    "texture": "crystal.png",
+    "name": "Crystal",
+    "amount": 2
+  }
+}

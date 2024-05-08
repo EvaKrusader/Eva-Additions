@@ -27,6 +27,8 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.NIGHT_VISION.get());
 				tabData.accept(EvaAdditionsModItems.END_WINGS.get());
 				tabData.accept(EvaAdditionsModItems.LAVA_WALKER.get());
+				tabData.accept(EvaAdditionsModItems.MOOD_CRYSTAL.get());
+				tabData.accept(EvaAdditionsModItems.WEATHER_CRYSTAL.get());
 			})
 
 					.build());

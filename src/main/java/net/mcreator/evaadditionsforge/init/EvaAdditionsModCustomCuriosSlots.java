@@ -14,5 +14,6 @@ public class EvaAdditionsModCustomCuriosSlots {
 	@SubscribeEvent
 	public static void enqueueIMC(final InterModEnqueueEvent event) {
 		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("aptitude").icon(new ResourceLocation("curios:slot/aptitude")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("crystal").icon(new ResourceLocation("curios:slot/crystal")).size(2).build());
 	}
 }

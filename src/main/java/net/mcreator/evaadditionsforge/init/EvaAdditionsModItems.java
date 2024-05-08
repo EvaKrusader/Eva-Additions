@@ -19,10 +19,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.evaadditionsforge.procedures.EnterClaustrophobiaPropertyValueProviderProcedure;
+import net.mcreator.evaadditionsforge.item.WeatherCrystalItem;
 import net.mcreator.evaadditionsforge.item.SmartassItem;
 import net.mcreator.evaadditionsforge.item.RequiemItem;
 import net.mcreator.evaadditionsforge.item.PowerUpperItem;
 import net.mcreator.evaadditionsforge.item.NightVisionItem;
+import net.mcreator.evaadditionsforge.item.MoodCrystalItem;
 import net.mcreator.evaadditionsforge.item.LavaWalkerItem;
 import net.mcreator.evaadditionsforge.item.HigherSensesItem;
 import net.mcreator.evaadditionsforge.item.GiveNewAptitudeItem;
@@ -94,6 +96,8 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> COLD_OBSIDIAN = block(EvaAdditionsModBlocks.COLD_OBSIDIAN);
 	public static final RegistryObject<Item> CRACKING_OBSIDIAN = block(EvaAdditionsModBlocks.CRACKING_OBSIDIAN);
 	public static final RegistryObject<Item> DEV_SMARTASS_ITEM = REGISTRY.register("dev_smartass_item", () -> new DevSmartassItemItem());
+	public static final RegistryObject<Item> MOOD_CRYSTAL = REGISTRY.register("mood_crystal", () -> new MoodCrystalItem());
+	public static final RegistryObject<Item> WEATHER_CRYSTAL = REGISTRY.register("weather_crystal", () -> new WeatherCrystalItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

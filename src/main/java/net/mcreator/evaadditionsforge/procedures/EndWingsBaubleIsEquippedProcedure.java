@@ -54,6 +54,18 @@ public class EndWingsBaubleIsEquippedProcedure {
 			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 				itemstack.setHoverName(Component.literal(("\u00A7r\u00A76Remarkable\u00A7r\u00A7f " + itemName)));
 			}
+		} else if (Minecraft.getInstance().options.languageCode.equals("pt_br")) {
+			if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
+				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7f " + itemName + " \u00A7r\u00A77Fr\u00E1geis")));
+			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
+				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7f " + itemName + " \u00A7r\u00A7aFracas")));
+			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
+				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7f " + itemName + " \u00A7r\u00A7bM\u00E9dias")));
+			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
+				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7f " + itemName + " \u00A7r\u00A7dFortes")));
+			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
+				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7f " + itemName + " \u00A7r\u00A76Not\u00E1veis")));
+			}
 		} else if (Minecraft.getInstance().options.languageCode.equals("fr_fr")) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
 				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7f " + itemName + " \u00A7r\u00A77Fr\u00EAles")));

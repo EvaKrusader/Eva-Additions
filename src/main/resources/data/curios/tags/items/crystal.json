@@ -1,0 +1,8 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "eva_additions:mood_crystal",
+    "eva_additions:weather_crystal"
+  ]
+}
