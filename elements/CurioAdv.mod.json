@@ -2,12 +2,12 @@
   "_fv": 57,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Curio Adv",
+    "achievementName": "Exotic Artifact",
     "achievementDescription": "Get your first bauble",
     "achievementIcon": {
-      "value": "CUSTOM:LapisTiles5"
+      "value": "CUSTOM:DevCurioItem"
     },
-    "background": "aptitude.png",
+    "background": "curio_background3.png",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,

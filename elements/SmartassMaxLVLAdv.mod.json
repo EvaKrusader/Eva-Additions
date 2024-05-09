@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Superior Cognition",
-    "achievementDescription": "Be born enlightened",
+    "achievementDescription": "Reach maximum enlightenment",
     "achievementIcon": {
-      "value": "CUSTOM:Smartass"
+      "value": "CUSTOM:DevSmartassItem"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -16,7 +16,7 @@
     "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 0,
-    "achievementType": "task",
+    "achievementType": "goal",
     "parent": {
       "value": "CUSTOM:SmartassAdv"
     },

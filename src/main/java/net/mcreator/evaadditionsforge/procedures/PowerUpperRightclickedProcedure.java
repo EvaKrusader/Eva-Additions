@@ -27,6 +27,14 @@ public class PowerUpperRightclickedProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(EvaAdditionsModItems.SMARTASS.get(), 1);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(EvaAdditionsModItems.HIGHER_SENSES.get(), 1);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(EvaAdditionsModItems.REQUIEM.get(), 1);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(EvaAdditionsModItems.EQUINOX.get(), 1);
 			new ItemStack(EvaAdditionsModItems.SMARTASS.get()).getOrCreateTag().putDouble("baublePower",
 					((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
 			new ItemStack(EvaAdditionsModItems.HIGHER_SENSES.get()).getOrCreateTag().putDouble("baublePower",
@@ -36,14 +44,6 @@ public class PowerUpperRightclickedProcedure {
 			new ItemStack(EvaAdditionsModItems.EQUINOX.get()).getOrCreateTag().putDouble("baublePower",
 					((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(EvaAdditionsModItems.SMARTASS.get(), 1);
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(EvaAdditionsModItems.HIGHER_SENSES.get(), 1);
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(EvaAdditionsModItems.REQUIEM.get(), 1);
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(EvaAdditionsModItems.EQUINOX.get(), 1);
 		ChooseAptitudeProcedure.execute(entity);
 	}
 }

@@ -48,7 +48,7 @@ public class ChooseAptitudeProcedure {
 				});
 			}
 			{
-				double _setval = Math.random();
+				double _setval = -1;
 				entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.aptitudePower = _setval;
 					capability.syncPlayerVariables(entity);

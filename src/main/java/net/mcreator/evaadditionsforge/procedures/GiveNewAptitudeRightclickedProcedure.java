@@ -69,24 +69,25 @@ public class GiveNewAptitudeRightclickedProcedure {
 			}
 		}
 		{
-			String _setval = "Tier " + new java.text.DecimalFormat("##.##").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower);
+			String _setval = "Tier " + new java.text.DecimalFormat("##.##")
+					.format(((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getOrCreateTag().getDouble("baublePower") - 1);
 			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.dev_rarity = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		EvaAdditionsMod.queueServerWork(20, () -> {
+		EvaAdditionsMod.queueServerWork(10, () -> {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(
 						("knowledgeLVL = " + new java.text.DecimalFormat("##.##").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL))),
 						false);
 		});
-		EvaAdditionsMod.queueServerWork(20, () -> {
+		EvaAdditionsMod.queueServerWork(10, () -> {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(
 						("aptitudeChance = " + new java.text.DecimalFormat("##.##").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance))),
 						false);
-			EvaAdditionsMod.queueServerWork(20, () -> {
+			EvaAdditionsMod.queueServerWork(10, () -> {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList()
 							.broadcastSystemMessage(Component.literal(("You got a " + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).dev_rarity + " "

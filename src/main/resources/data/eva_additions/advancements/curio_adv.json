@@ -1,8 +1,8 @@
 {
   "display": {
-    "background": "eva_additions:textures/screens/aptitude.png",
+    "background": "eva_additions:textures/screens/curio_background3.png",
     "icon": {
-      "item": "eva_additions:lapis_tiles_5"
+      "item": "eva_additions:dev_curio_item"
     },
     "title": {
       "translate": "advancements.curio_adv.title"

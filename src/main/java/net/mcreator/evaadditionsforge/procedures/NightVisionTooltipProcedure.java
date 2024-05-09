@@ -35,21 +35,9 @@ public class NightVisionTooltipProcedure {
 			return;
 		if (itemstack.getItem() == EvaAdditionsModItems.NIGHT_VISION.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
-				if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
-					tooltip.add(Component.literal("\u00A77\u00A7nNever\u00A7r\u00A7f turns on."));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
-					tooltip.add(Component.literal(("Turns on under \u00A7a\u00A7nY:" + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("gogglesY")) + "\u00A7r\u00A7f.")));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-					tooltip.add(Component.literal(("Turns on under \u00A7b\u00A7nY:" + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("gogglesY")) + "\u00A7r\u00A7f.")));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-					tooltip.add(Component.literal(("Turns on under \u00A7d\u00A7nY:" + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("gogglesY")) + "\u00A7r\u00A7f.")));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-					tooltip.add(
-							Component.literal(("Turns on under \u00A76\u00A7nY:" + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("gogglesY")) + "\u00A7r\u00A7f and \u00A76\u00A7nduring the night\u00A7r\u00A7f.")));
-				}
+				GetItemRarityColorProcedure.execute(entity, itemstack);
 				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
-					tooltip.add(
-							Component.literal(("Turns on under \u00A76\u00A7nY:" + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("gogglesY")) + "\u00A7r\u00A7f and \u00A76\u00A7nduring the night\u00A7r\u00A7f.")));
+					NightVisionCognitionTooltipProcedure.execute(entity, itemstack, tooltip);
 				}
 			}
 		}

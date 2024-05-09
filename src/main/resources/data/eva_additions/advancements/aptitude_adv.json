@@ -1,8 +1,8 @@
 {
   "display": {
-    "background": "eva_additions:textures/screens/aptitude.png",
+    "background": "eva_additions:textures/screens/aptitude_background2.png",
     "icon": {
-      "item": "eva_additions:aptitude_changer"
+      "item": "eva_additions:dev_aptitude_item"
     },
     "title": {
       "translate": "advancements.aptitude_adv.title"

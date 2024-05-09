@@ -25,8 +25,8 @@ public class SmartassBaubleIsEquippedProcedure {
 			});
 		}
 		itemName = "Knowledge";
-		if (itemstack.getOrCreateTag().getDouble("baublePower") != 2) {
-			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
+		itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
+		if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.98) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 5);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.9) {
@@ -37,6 +37,13 @@ public class SmartassBaubleIsEquippedProcedure {
 				itemstack.getOrCreateTag().putDouble("baublePower", 2);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 1);
+			}
+			{
+				double _setval = itemstack.getOrCreateTag().getDouble("baublePower");
+				entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.aptitudePower = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {

@@ -22,7 +22,7 @@ public class NightVisionEnderlinkProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel
-				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:antibody_adv"))).isDone()) == false) {
+				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:night_vision_adv"))).isDone()) == false) {
 			EvaAdditionsMod.queueServerWork((int) (Mth.nextInt(RandomSource.create(), 5, 10) * 20), () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

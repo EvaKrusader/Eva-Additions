@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 import net.mcreator.evaadditionsforge.init.EvaAdditionsModItems;
 
 import javax.annotation.Nullable;
@@ -35,21 +36,8 @@ public class LavaWalkerTooltipProcedure {
 		if (itemstack.getItem() == EvaAdditionsModItems.LAVA_WALKER.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 				GetItemRarityColorProcedure.execute(entity, itemstack);
-				if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
-					tooltip.add(
-							Component.literal(("Has a \u00A77\u00A7n" + new java.text.DecimalFormat("##.##").format((itemstack.getOrCreateTag().getDouble("baublePower") - 1) * 25) + "%\u00A7r\u00A7f chance of curing illnesses when you get hurt.")));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
-					tooltip.add(
-							Component.literal(("Has a \u00A7a\u00A7n" + new java.text.DecimalFormat("##.##").format((itemstack.getOrCreateTag().getDouble("baublePower") - 1) * 25) + "%\u00A7r\u00A7f chance of curing illnesses when you get hurt.")));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-					tooltip.add(
-							Component.literal(("Has a \u00A7b\u00A7n" + new java.text.DecimalFormat("##.##").format((itemstack.getOrCreateTag().getDouble("baublePower") - 1) * 25) + "%\u00A7r\u00A7f chance of curing illnesses when you get hurt.")));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-					tooltip.add(
-							Component.literal(("Has a \u00A7d\u00A7n" + new java.text.DecimalFormat("##.##").format((itemstack.getOrCreateTag().getDouble("baublePower") - 1) * 25) + "%\u00A7r\u00A7f chance of curing illnesses when you get hurt.")));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-					tooltip.add(
-							Component.literal(("Has a \u00A76\u00A7n" + new java.text.DecimalFormat("##.##").format((itemstack.getOrCreateTag().getDouble("baublePower") - 1) * 25) + "%\u00A7r\u00A7f chance of curing illnesses when you get hurt.")));
+				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
+					LavaWalkerCognitionTooltipProcedure.execute(entity, itemstack, tooltip);
 				}
 			}
 		}

@@ -34,7 +34,7 @@ public class NightVisionItem extends Item implements ICurioItem {
 
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		NightVisionWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+		NightVisionWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
 	}
 
 	@Override

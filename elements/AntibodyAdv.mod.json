@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Placebo",
-    "achievementDescription": "Add some supplements to your immune system",
+    "achievementDescription": "Add some supplements to your metabolism",
     "achievementIcon": {
       "value": "CUSTOM:Antibody"
     },

@@ -19,6 +19,9 @@
       },
       {
         "value": "CUSTOM:UpgradedGPS"
+      },
+      {
+        "value": "CUSTOM:NightVision"
       }
     ],
     "excludeItems": false,

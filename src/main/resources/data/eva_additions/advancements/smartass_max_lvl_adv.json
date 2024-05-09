@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "eva_additions:smartass"
+      "item": "eva_additions:dev_smartass_item"
     },
     "title": {
       "translate": "advancements.smartass_max_lvl_adv.title"
@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.smartass_max_lvl_adv.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true

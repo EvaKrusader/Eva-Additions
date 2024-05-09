@@ -50,7 +50,10 @@ import net.mcreator.evaadditionsforge.item.DiscBurningmemoryItem;
 import net.mcreator.evaadditionsforge.item.DiscBumblebeeItem;
 import net.mcreator.evaadditionsforge.item.DiscBuddyhollyItem;
 import net.mcreator.evaadditionsforge.item.DevSmartassItemItem;
+import net.mcreator.evaadditionsforge.item.DevNightVisionItemItem;
 import net.mcreator.evaadditionsforge.item.DevLiveleakItem;
+import net.mcreator.evaadditionsforge.item.DevCurioItemItem;
+import net.mcreator.evaadditionsforge.item.DevAptitudeItemItem;
 import net.mcreator.evaadditionsforge.item.DevAntibodyItemItem;
 import net.mcreator.evaadditionsforge.item.CryostasisItem;
 import net.mcreator.evaadditionsforge.item.AptitudeChangerItem;
@@ -104,6 +107,9 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> ALTOMETER = REGISTRY.register("altometer", () -> new AltometerItem());
 	public static final RegistryObject<Item> GPS = REGISTRY.register("gps", () -> new GPSItem());
 	public static final RegistryObject<Item> UPGRADED_GPS = REGISTRY.register("upgraded_gps", () -> new UpgradedGPSItem());
+	public static final RegistryObject<Item> DEV_NIGHT_VISION_ITEM = REGISTRY.register("dev_night_vision_item", () -> new DevNightVisionItemItem());
+	public static final RegistryObject<Item> DEV_APTITUDE_ITEM = REGISTRY.register("dev_aptitude_item", () -> new DevAptitudeItemItem());
+	public static final RegistryObject<Item> DEV_CURIO_ITEM = REGISTRY.register("dev_curio_item", () -> new DevCurioItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
