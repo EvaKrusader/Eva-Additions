@@ -21,6 +21,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 import net.mcreator.evaadditionsforge.procedures.EnterClaustrophobiaPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.item.WeatherCrystalItem;
 import net.mcreator.evaadditionsforge.item.UpgradedGPSItem;
+import net.mcreator.evaadditionsforge.item.UpgradedAltomerItem;
 import net.mcreator.evaadditionsforge.item.SmartassItem;
 import net.mcreator.evaadditionsforge.item.RequiemItem;
 import net.mcreator.evaadditionsforge.item.PowerUpperItem;
@@ -55,6 +56,7 @@ import net.mcreator.evaadditionsforge.item.DevLiveleakItem;
 import net.mcreator.evaadditionsforge.item.DevCurioItemItem;
 import net.mcreator.evaadditionsforge.item.DevAptitudeItemItem;
 import net.mcreator.evaadditionsforge.item.DevAntibodyItemItem;
+import net.mcreator.evaadditionsforge.item.DepthCrystalItem;
 import net.mcreator.evaadditionsforge.item.CryostasisItem;
 import net.mcreator.evaadditionsforge.item.AptitudeChangerItem;
 import net.mcreator.evaadditionsforge.item.AntibodyItem;
@@ -79,9 +81,9 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> DISC_BURNINGMEMORY = REGISTRY.register("disc_burningmemory", () -> new DiscBurningmemoryItem());
 	public static final RegistryObject<Item> DISC_BUDDYHOLLY = REGISTRY.register("disc_buddyholly", () -> new DiscBuddyhollyItem());
 	public static final RegistryObject<Item> CRYOSTASIS = REGISTRY.register("cryostasis", () -> new CryostasisItem());
+	public static final RegistryObject<Item> ENTER_CLAUSTROPHOBIA = REGISTRY.register("enter_claustrophobia", () -> new EnterClaustrophobiaItem());
 	public static final RegistryObject<Item> POWER_UPPER = REGISTRY.register("power_upper", () -> new PowerUpperItem());
 	public static final RegistryObject<Item> APTITUDE_CHANGER = REGISTRY.register("aptitude_changer", () -> new AptitudeChangerItem());
-	public static final RegistryObject<Item> ENTER_CLAUSTROPHOBIA = REGISTRY.register("enter_claustrophobia", () -> new EnterClaustrophobiaItem());
 	public static final RegistryObject<Item> GIVE_NEW_APTITUDE = REGISTRY.register("give_new_aptitude", () -> new GiveNewAptitudeItem());
 	public static final RegistryObject<Item> ENTOMOLOGIST_EPIPHANY = REGISTRY.register("entomologist_epiphany", () -> new EntomologistEpiphanyItem());
 	public static final RegistryObject<Item> MINING_AID = block(EvaAdditionsModBlocks.MINING_AID);
@@ -89,6 +91,13 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> NIGHT_VISION = REGISTRY.register("night_vision", () -> new NightVisionItem());
 	public static final RegistryObject<Item> END_WINGS = REGISTRY.register("end_wings", () -> new EndWingsItem());
 	public static final RegistryObject<Item> LAVA_WALKER = REGISTRY.register("lava_walker", () -> new LavaWalkerItem());
+	public static final RegistryObject<Item> MOOD_CRYSTAL = REGISTRY.register("mood_crystal", () -> new MoodCrystalItem());
+	public static final RegistryObject<Item> WEATHER_CRYSTAL = REGISTRY.register("weather_crystal", () -> new WeatherCrystalItem());
+	public static final RegistryObject<Item> CRYSTAL_OXYGEN = REGISTRY.register("crystal_oxygen", () -> new AltometerItem());
+	public static final RegistryObject<Item> CRYSTAL_DEPTH = REGISTRY.register("crystal_depth", () -> new DepthCrystalItem());
+	public static final RegistryObject<Item> CRYSTAL_EARTH = REGISTRY.register("crystal_earth", () -> new UpgradedAltomerItem());
+	public static final RegistryObject<Item> GPS = REGISTRY.register("gps", () -> new GPSItem());
+	public static final RegistryObject<Item> UPGRADED_GPS = REGISTRY.register("upgraded_gps", () -> new UpgradedGPSItem());
 	public static final RegistryObject<Item> LAPIS_TILES_5 = block(EvaAdditionsModBlocks.LAPIS_TILES_5);
 	public static final RegistryObject<Item> QUARTZ_TILES_5 = block(EvaAdditionsModBlocks.QUARTZ_TILES_5);
 	public static final RegistryObject<Item> SMARTASS = REGISTRY.register("smartass", () -> new SmartassItem());
@@ -102,14 +111,10 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> COLD_OBSIDIAN = block(EvaAdditionsModBlocks.COLD_OBSIDIAN);
 	public static final RegistryObject<Item> CRACKING_OBSIDIAN = block(EvaAdditionsModBlocks.CRACKING_OBSIDIAN);
 	public static final RegistryObject<Item> DEV_SMARTASS_ITEM = REGISTRY.register("dev_smartass_item", () -> new DevSmartassItemItem());
-	public static final RegistryObject<Item> MOOD_CRYSTAL = REGISTRY.register("mood_crystal", () -> new MoodCrystalItem());
-	public static final RegistryObject<Item> WEATHER_CRYSTAL = REGISTRY.register("weather_crystal", () -> new WeatherCrystalItem());
-	public static final RegistryObject<Item> ALTOMETER = REGISTRY.register("altometer", () -> new AltometerItem());
-	public static final RegistryObject<Item> GPS = REGISTRY.register("gps", () -> new GPSItem());
-	public static final RegistryObject<Item> UPGRADED_GPS = REGISTRY.register("upgraded_gps", () -> new UpgradedGPSItem());
 	public static final RegistryObject<Item> DEV_NIGHT_VISION_ITEM = REGISTRY.register("dev_night_vision_item", () -> new DevNightVisionItemItem());
 	public static final RegistryObject<Item> DEV_APTITUDE_ITEM = REGISTRY.register("dev_aptitude_item", () -> new DevAptitudeItemItem());
 	public static final RegistryObject<Item> DEV_CURIO_ITEM = REGISTRY.register("dev_curio_item", () -> new DevCurioItemItem());
+	public static final RegistryObject<Item> APTITUDE_ORE = block(EvaAdditionsModBlocks.APTITUDE_ORE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

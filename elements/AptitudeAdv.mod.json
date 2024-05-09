@@ -5,7 +5,7 @@
     "achievementName": "Better Than Average",
     "achievementDescription": "Discover your aptitude",
     "achievementIcon": {
-      "value": "CUSTOM:DevAptitudeItem"
+      "value": "CUSTOM:AptitudeOre"
     },
     "background": "aptitude_background2.png",
     "disableDisplay": false,

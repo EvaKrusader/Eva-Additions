@@ -12,6 +12,9 @@
     "excludeEnchantments": false,
     "compatibleItems": [
       {
+        "value": "CUSTOM:NightVision"
+      },
+      {
         "value": "CUSTOM:Altometer"
       },
       {
@@ -21,7 +24,10 @@
         "value": "CUSTOM:UpgradedGPS"
       },
       {
-        "value": "CUSTOM:NightVision"
+        "value": "CUSTOM:DepthCrystal"
+      },
+      {
+        "value": "CUSTOM:UpgradedAltomer"
       }
     ],
     "excludeItems": false,

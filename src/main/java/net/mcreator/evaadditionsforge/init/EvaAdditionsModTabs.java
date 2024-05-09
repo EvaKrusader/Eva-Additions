@@ -29,7 +29,9 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.LAVA_WALKER.get());
 				tabData.accept(EvaAdditionsModItems.MOOD_CRYSTAL.get());
 				tabData.accept(EvaAdditionsModItems.WEATHER_CRYSTAL.get());
-				tabData.accept(EvaAdditionsModItems.ALTOMETER.get());
+				tabData.accept(EvaAdditionsModItems.CRYSTAL_OXYGEN.get());
+				tabData.accept(EvaAdditionsModItems.CRYSTAL_DEPTH.get());
+				tabData.accept(EvaAdditionsModItems.CRYSTAL_EARTH.get());
 				tabData.accept(EvaAdditionsModItems.GPS.get());
 				tabData.accept(EvaAdditionsModItems.UPGRADED_GPS.get());
 			})
@@ -86,6 +88,10 @@ public class EvaAdditionsModTabs {
 			tabData.accept(EvaAdditionsModItems.DISC_BUDDYHOLLY.get());
 			tabData.accept(EvaAdditionsModItems.CRYOSTASIS.get());
 			tabData.accept(EvaAdditionsModItems.ENTER_CLAUSTROPHOBIA.get());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(EvaAdditionsModBlocks.APTITUDE_ORE.get().asItem());
 		}
 	}
 }

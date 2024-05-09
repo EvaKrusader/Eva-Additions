@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/curio_oxygencrystal"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:crystal_oxygen_waterproof": 0
+      },
+      "model": "eva_additions:item/crystal_oxygen_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:crystal_oxygen_waterproof": 1
+      },
+      "model": "eva_additions:item/crystal_oxygen_1"
+    }
+  ]
+}

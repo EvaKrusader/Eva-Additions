@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/curio_depthcrystal"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:crystal_depth_waterproof": 0
+      },
+      "model": "eva_additions:item/crystal_depth_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:crystal_depth_waterproof": 1
+      },
+      "model": "eva_additions:item/crystal_depth_1"
+    }
+  ]
+}

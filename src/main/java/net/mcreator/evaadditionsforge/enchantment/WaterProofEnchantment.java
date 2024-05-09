@@ -16,7 +16,7 @@ public class WaterProofEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return Ingredient.of(new ItemStack(EvaAdditionsModItems.ALTOMETER.get()), new ItemStack(EvaAdditionsModItems.GPS.get()), new ItemStack(EvaAdditionsModItems.UPGRADED_GPS.get()), new ItemStack(EvaAdditionsModItems.NIGHT_VISION.get()))
-				.test(itemstack);
+		return Ingredient.of(new ItemStack(EvaAdditionsModItems.NIGHT_VISION.get()), new ItemStack(EvaAdditionsModItems.CRYSTAL_OXYGEN.get()), new ItemStack(EvaAdditionsModItems.GPS.get()), new ItemStack(EvaAdditionsModItems.UPGRADED_GPS.get()),
+				new ItemStack(EvaAdditionsModItems.CRYSTAL_DEPTH.get()), new ItemStack(EvaAdditionsModItems.CRYSTAL_EARTH.get())).test(itemstack);
 	}
 }

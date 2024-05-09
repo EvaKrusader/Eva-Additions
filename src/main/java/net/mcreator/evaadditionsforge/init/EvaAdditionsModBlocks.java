@@ -16,6 +16,7 @@ import net.mcreator.evaadditionsforge.block.MiningAidBlock;
 import net.mcreator.evaadditionsforge.block.LapisTiles5Block;
 import net.mcreator.evaadditionsforge.block.CrackingObsidianBlock;
 import net.mcreator.evaadditionsforge.block.ColdObsidianBlock;
+import net.mcreator.evaadditionsforge.block.AptitudeOreBlock;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 
 public class EvaAdditionsModBlocks {
@@ -26,4 +27,5 @@ public class EvaAdditionsModBlocks {
 	public static final RegistryObject<Block> MINING_AID_STOP = REGISTRY.register("mining_aid_stop", () -> new MiningAidStopBlock());
 	public static final RegistryObject<Block> COLD_OBSIDIAN = REGISTRY.register("cold_obsidian", () -> new ColdObsidianBlock());
 	public static final RegistryObject<Block> CRACKING_OBSIDIAN = REGISTRY.register("cracking_obsidian", () -> new CrackingObsidianBlock());
+	public static final RegistryObject<Block> APTITUDE_ORE = REGISTRY.register("aptitude_ore", () -> new AptitudeOreBlock());
 }

@@ -14,17 +14,19 @@ public class AltometerWhileBaubleIsEquippedTickProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity.isInWaterOrBubble()) {
-			if (EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.WATER_PROOF.get(), itemstack) != 0) {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal(("Y : " + new java.text.DecimalFormat("##.##").format(Math.round(entity.getY())))), true);
+		if (entity.getY() >= 0) {
+			if (entity.isInWaterOrBubble()) {
+				if (EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.WATER_PROOF.get(), itemstack) != 0) {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal(("Y : " + new java.text.DecimalFormat("##.##").format(Math.round(entity.getY())))), true);
+				} else {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal(("Y : " + new java.text.DecimalFormat("##.##").format(Math.round(entity.getY()) + Mth.nextInt(RandomSource.create(), -3, 3)))), true);
+				}
 			} else {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal(("Y : " + new java.text.DecimalFormat("##.##").format(Math.round(entity.getY()) + Mth.nextInt(RandomSource.create(), -3, 3)))), true);
+					_player.displayClientMessage(Component.literal(("Y : " + new java.text.DecimalFormat("##.##").format(Math.round(entity.getY())))), true);
 			}
-		} else {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("Y : " + new java.text.DecimalFormat("##.##").format(Math.round(entity.getY())))), true);
 		}
 	}
 }

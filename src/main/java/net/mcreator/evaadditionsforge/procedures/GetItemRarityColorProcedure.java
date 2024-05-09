@@ -58,5 +58,6 @@ public class GetItemRarityColorProcedure {
 		entity.getPersistentData().putString(("Tier4" + "AptitudeItemRarity"), "\u00A7d");
 		entity.getPersistentData().putString(("Tier5" + "AptitudeItemRarity"), "\u00A76");
 		entity.getPersistentData().putString(("Tier6" + "AptitudeItemRarity"), "\u00A7c");
+		entity.getPersistentData().putString(("Tier0" + "AptitudeItemRarity"), "\u00A7e");
 	}
 }

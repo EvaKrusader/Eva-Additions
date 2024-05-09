@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.evaadditionsforge.procedures.EquinoxPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.procedures.AntibodyPropertyValueProviderProcedure;
+import net.mcreator.evaadditionsforge.procedures.AltometerWaterproofReturnProcedure;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class EvaAdditionsModCuriosProperties {
@@ -24,6 +25,12 @@ public class EvaAdditionsModCuriosProperties {
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.LAVA_WALKER.get(), new ResourceLocation("eva_additions:lava_walker_baublepower"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(EvaAdditionsModItems.CRYSTAL_OXYGEN.get(), new ResourceLocation("eva_additions:crystal_oxygen_waterproof"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AltometerWaterproofReturnProcedure.execute(itemStackToRender));
+			ItemProperties.register(EvaAdditionsModItems.CRYSTAL_DEPTH.get(), new ResourceLocation("eva_additions:crystal_depth_waterproof"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AltometerWaterproofReturnProcedure.execute(itemStackToRender));
+			ItemProperties.register(EvaAdditionsModItems.CRYSTAL_EARTH.get(), new ResourceLocation("eva_additions:crystal_earth_waterproof"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AltometerWaterproofReturnProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.SMARTASS.get(), new ResourceLocation("eva_additions:smartass_baublepower"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.HIGHER_SENSES.get(), new ResourceLocation("eva_additions:higher_senses_baublepower"),

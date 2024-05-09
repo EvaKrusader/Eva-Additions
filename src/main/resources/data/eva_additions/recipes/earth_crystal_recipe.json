@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eva_additions:crystal_oxygen"
+    },
+    {
+      "item": "eva_additions:crystal_depth"
+    }
+  ],
+  "result": {
+    "item": "eva_additions:crystal_earth",
+    "count": 1
+  }
+}

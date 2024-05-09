@@ -4,7 +4,10 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
@@ -76,22 +79,34 @@ public class GiveNewAptitudeRightclickedProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		EvaAdditionsMod.queueServerWork(10, () -> {
+		EvaAdditionsMod.queueServerWork(5, () -> {
 			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(
-						("knowledgeLVL = " + new java.text.DecimalFormat("##.##").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL))),
-						false);
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A7n" + "knowledgeLVL = "
+						+ new java.text.DecimalFormat("##.##").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL))), false);
 		});
-		EvaAdditionsMod.queueServerWork(10, () -> {
+		EvaAdditionsMod.queueServerWork(5, () -> {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(
 						("aptitudeChance = " + new java.text.DecimalFormat("##.##").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance))),
 						false);
-			EvaAdditionsMod.queueServerWork(10, () -> {
+			EvaAdditionsMod.queueServerWork(5, () -> {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList()
 							.broadcastSystemMessage(Component.literal(("You got a " + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).dev_rarity + " "
 									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).dev_name)), false);
+				EvaAdditionsMod.queueServerWork(5, () -> {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("====="), false);
+					if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL >= 0.98) {
+						{
+							Entity _ent = entity;
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+										_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "kill");
+							}
+						}
+					}
+				});
 			});
 		});
 	}

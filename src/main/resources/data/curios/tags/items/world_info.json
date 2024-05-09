@@ -2,8 +2,10 @@
   "replace": "false",
   "values": [
     "minecraft:air",
-    "eva_additions:altometer",
+    "eva_additions:crystal_oxygen",
     "eva_additions:gps",
-    "eva_additions:upgraded_gps"
+    "eva_additions:upgraded_gps",
+    "eva_additions:crystal_depth",
+    "eva_additions:crystal_earth"
   ]
 }
