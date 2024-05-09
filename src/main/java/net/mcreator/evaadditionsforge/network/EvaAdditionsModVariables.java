@@ -79,6 +79,7 @@ public class EvaAdditionsModVariables {
 			clone.playerCycle = original.playerCycle;
 			clone.dev_rarity = original.dev_rarity;
 			clone.dev_name = original.dev_name;
+			clone.ItemColorReset = original.ItemColorReset;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -92,6 +93,7 @@ public class EvaAdditionsModVariables {
 				clone.AntibodyMedsLVL = original.AntibodyMedsLVL;
 				clone.hasMeds = original.hasMeds;
 				clone.VoidWingsSlow = original.VoidWingsSlow;
+				clone.gogglesDamage = original.gogglesDamage;
 			}
 		}
 	}
@@ -151,6 +153,8 @@ public class EvaAdditionsModVariables {
 		public boolean VoidWingsSlow = false;
 		public String dev_rarity = "\"\"";
 		public String dev_name = "\"\"";
+		public double gogglesDamage = 0;
+		public String ItemColorReset = "\u00A7r\u00A7f";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -183,6 +187,8 @@ public class EvaAdditionsModVariables {
 			nbt.putBoolean("VoidWingsSlow", VoidWingsSlow);
 			nbt.putString("dev_rarity", dev_rarity);
 			nbt.putString("dev_name", dev_name);
+			nbt.putDouble("gogglesDamage", gogglesDamage);
+			nbt.putString("ItemColorReset", ItemColorReset);
 			return nbt;
 		}
 
@@ -212,6 +218,8 @@ public class EvaAdditionsModVariables {
 			VoidWingsSlow = nbt.getBoolean("VoidWingsSlow");
 			dev_rarity = nbt.getString("dev_rarity");
 			dev_name = nbt.getString("dev_name");
+			gogglesDamage = nbt.getDouble("gogglesDamage");
+			ItemColorReset = nbt.getString("ItemColorReset");
 		}
 	}
 
@@ -260,6 +268,8 @@ public class EvaAdditionsModVariables {
 					variables.VoidWingsSlow = message.data.VoidWingsSlow;
 					variables.dev_rarity = message.data.dev_rarity;
 					variables.dev_name = message.data.dev_name;
+					variables.gogglesDamage = message.data.gogglesDamage;
+					variables.ItemColorReset = message.data.ItemColorReset;
 				}
 			});
 			context.setPacketHandled(true);

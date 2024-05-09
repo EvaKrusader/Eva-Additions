@@ -65,6 +65,10 @@ public class EquinoxTooltipProcedure {
 					}
 				}
 			}
+			tooltip.add(Component.literal(("baublePower = " + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("baublePower")))));
+			tooltip.add(Component.literal(("equinoxCycle = " + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("equinoxCycle")))));
+			tooltip.add(Component.literal(("equinoxTime = " + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("equinoxTime")))));
+			tooltip.add(Component.literal(("equinoxCycle Logic = " + itemstack.getOrCreateTag().getBoolean("equinoxCycle"))));
 		}
 	}
 }

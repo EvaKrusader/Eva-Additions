@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.evaadditionsforge.init.EvaAdditionsModItems;
@@ -21,18 +22,19 @@ public class LavaWalkerTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getItemStack(), event.getToolTip());
+		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(ItemStack itemstack, List<Component> tooltip) {
-		execute(null, itemstack, tooltip);
+	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
-		if (tooltip == null)
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.getItem() == EvaAdditionsModItems.LAVA_WALKER.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
+				GetItemRarityColorProcedure.execute(entity, itemstack);
 				if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
 					tooltip.add(
 							Component.literal(("Has a \u00A77\u00A7n" + new java.text.DecimalFormat("##.##").format((itemstack.getOrCreateTag().getDouble("baublePower") - 1) * 25) + "%\u00A7r\u00A7f chance of curing illnesses when you get hurt.")));

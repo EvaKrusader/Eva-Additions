@@ -20,6 +20,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.evaadditionsforge.procedures.EnterClaustrophobiaPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.item.WeatherCrystalItem;
+import net.mcreator.evaadditionsforge.item.UpgradedGPSItem;
 import net.mcreator.evaadditionsforge.item.SmartassItem;
 import net.mcreator.evaadditionsforge.item.RequiemItem;
 import net.mcreator.evaadditionsforge.item.PowerUpperItem;
@@ -28,6 +29,7 @@ import net.mcreator.evaadditionsforge.item.MoodCrystalItem;
 import net.mcreator.evaadditionsforge.item.LavaWalkerItem;
 import net.mcreator.evaadditionsforge.item.HigherSensesItem;
 import net.mcreator.evaadditionsforge.item.GiveNewAptitudeItem;
+import net.mcreator.evaadditionsforge.item.GPSItem;
 import net.mcreator.evaadditionsforge.item.EquinoxItem;
 import net.mcreator.evaadditionsforge.item.EntomologistEpiphanyItem;
 import net.mcreator.evaadditionsforge.item.EnterClaustrophobiaItem;
@@ -53,6 +55,7 @@ import net.mcreator.evaadditionsforge.item.DevAntibodyItemItem;
 import net.mcreator.evaadditionsforge.item.CryostasisItem;
 import net.mcreator.evaadditionsforge.item.AptitudeChangerItem;
 import net.mcreator.evaadditionsforge.item.AntibodyItem;
+import net.mcreator.evaadditionsforge.item.AltometerItem;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -98,6 +101,9 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> DEV_SMARTASS_ITEM = REGISTRY.register("dev_smartass_item", () -> new DevSmartassItemItem());
 	public static final RegistryObject<Item> MOOD_CRYSTAL = REGISTRY.register("mood_crystal", () -> new MoodCrystalItem());
 	public static final RegistryObject<Item> WEATHER_CRYSTAL = REGISTRY.register("weather_crystal", () -> new WeatherCrystalItem());
+	public static final RegistryObject<Item> ALTOMETER = REGISTRY.register("altometer", () -> new AltometerItem());
+	public static final RegistryObject<Item> GPS = REGISTRY.register("gps", () -> new GPSItem());
+	public static final RegistryObject<Item> UPGRADED_GPS = REGISTRY.register("upgraded_gps", () -> new UpgradedGPSItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
@@ -107,7 +113,7 @@ public class EvaAdditionsModItems {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			ItemProperties.register(ENTER_CLAUSTROPHOBIA.get(), new ResourceLocation("eva_additions:enter_claustrophobia_readytoenter"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnterClaustrophobiaPropertyValueProviderProcedure.execute(entity != null ? entity.level() : clientWorld, entity));
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnterClaustrophobiaPropertyValueProviderProcedure.execute(itemStackToRender));
 		});
 	}
 }

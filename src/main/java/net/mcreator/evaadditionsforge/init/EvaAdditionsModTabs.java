@@ -29,6 +29,9 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.LAVA_WALKER.get());
 				tabData.accept(EvaAdditionsModItems.MOOD_CRYSTAL.get());
 				tabData.accept(EvaAdditionsModItems.WEATHER_CRYSTAL.get());
+				tabData.accept(EvaAdditionsModItems.ALTOMETER.get());
+				tabData.accept(EvaAdditionsModItems.GPS.get());
+				tabData.accept(EvaAdditionsModItems.UPGRADED_GPS.get());
 			})
 
 					.build());

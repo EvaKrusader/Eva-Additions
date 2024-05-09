@@ -8,8 +8,10 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 import net.mcreator.evaadditionsforge.init.EvaAdditionsModItems;
 
 import javax.annotation.Nullable;
@@ -21,15 +23,15 @@ public class NightVisionTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getItemStack(), event.getToolTip());
+		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(ItemStack itemstack, List<Component> tooltip) {
-		execute(null, itemstack, tooltip);
+	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
-		if (tooltip == null)
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.getItem() == EvaAdditionsModItems.NIGHT_VISION.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
@@ -42,6 +44,10 @@ public class NightVisionTooltipProcedure {
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
 					tooltip.add(Component.literal(("Turns on under \u00A7d\u00A7nY:" + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("gogglesY")) + "\u00A7r\u00A7f.")));
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
+					tooltip.add(
+							Component.literal(("Turns on under \u00A76\u00A7nY:" + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("gogglesY")) + "\u00A7r\u00A7f and \u00A76\u00A7nduring the night\u00A7r\u00A7f.")));
+				}
+				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
 					tooltip.add(
 							Component.literal(("Turns on under \u00A76\u00A7nY:" + new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("gogglesY")) + "\u00A7r\u00A7f and \u00A76\u00A7nduring the night\u00A7r\u00A7f.")));
 				}

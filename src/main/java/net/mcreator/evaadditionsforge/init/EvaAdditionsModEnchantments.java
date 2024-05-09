@@ -10,8 +10,11 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.enchantment.Enchantment;
 
+import net.mcreator.evaadditionsforge.enchantment.WaterProofEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.PlumeShieldEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.MedsEnchantment;
+import net.mcreator.evaadditionsforge.enchantment.IncorrodibleEnchantment;
+import net.mcreator.evaadditionsforge.enchantment.FireWalkerEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.BlessingEnchantment;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 
@@ -20,4 +23,7 @@ public class EvaAdditionsModEnchantments {
 	public static final RegistryObject<Enchantment> BLESSING = REGISTRY.register("blessing", () -> new BlessingEnchantment());
 	public static final RegistryObject<Enchantment> MEDS = REGISTRY.register("meds", () -> new MedsEnchantment());
 	public static final RegistryObject<Enchantment> PLUME_SHIELD = REGISTRY.register("plume_shield", () -> new PlumeShieldEnchantment());
+	public static final RegistryObject<Enchantment> FIRE_WALKER = REGISTRY.register("fire_walker", () -> new FireWalkerEnchantment());
+	public static final RegistryObject<Enchantment> INCORRODIBLE = REGISTRY.register("incorrodible", () -> new IncorrodibleEnchantment());
+	public static final RegistryObject<Enchantment> WATER_PROOF = REGISTRY.register("water_proof", () -> new WaterProofEnchantment());
 }

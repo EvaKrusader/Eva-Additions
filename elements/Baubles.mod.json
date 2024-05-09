@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Antibody"
+      },
+      {
+        "value": "CUSTOM:NightVision"
+      },
+      {
+        "value": "CUSTOM:EndWings"
+      },
+      {
+        "value": "CUSTOM:LavaWalker"
+      },
+      {
+        "value": "CUSTOM:MoodCrystal"
+      },
+      {
+        "value": "CUSTOM:WeatherCrystal"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "baubles",
+    "namespace": "minecraft"
+  }
+}

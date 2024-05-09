@@ -23,7 +23,7 @@ public class HighSensesEnderlinProcedure {
 			return;
 		if ((entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel
 				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:high_senses_adv"))).isDone()) == false) {
-			EvaAdditionsMod.queueServerWork((int) (Mth.nextInt(RandomSource.create(), 3, 6) * 20), () -> {
+			EvaAdditionsMod.queueServerWork((int) (Mth.nextInt(RandomSource.create(), 1, 3) * 20), () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("eva_additions:enderlink_ping")), SoundSource.NEUTRAL, 1, 1);

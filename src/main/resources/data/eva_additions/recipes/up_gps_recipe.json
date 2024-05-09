@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eva_additions:gps"
+    },
+    {
+      "item": "eva_additions:power_upper"
+    },
+    {
+      "item": "eva_additions:altometer"
+    }
+  ],
+  "result": {
+    "item": "eva_additions:upgraded_gps",
+    "count": 1
+  }
+}

@@ -69,8 +69,7 @@ public class GiveNewAptitudeRightclickedProcedure {
 			}
 		}
 		{
-			String _setval = "Tier " + new java.text.DecimalFormat("##.##")
-					.format(((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getOrCreateTag().getDouble("baublePower") - 1);
+			String _setval = "Tier " + new java.text.DecimalFormat("##.##").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower);
 			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.dev_rarity = _setval;
 				capability.syncPlayerVariables(entity);

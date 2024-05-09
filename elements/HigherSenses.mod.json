@@ -142,9 +142,6 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "slotAmount": 1,
-    "onDroppedByPlayer": {
-      "name": "SmartassBaubleIsUnequipped"
-    },
     "onEquip": {
       "name": "HighSensesBaubleEquipped"
     },

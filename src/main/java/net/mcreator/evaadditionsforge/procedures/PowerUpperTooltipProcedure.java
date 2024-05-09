@@ -35,16 +35,16 @@ public class PowerUpperTooltipProcedure {
 			return;
 		if (itemstack.getItem() == EvaAdditionsModItems.POWER_UPPER.get()) {
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower != 0) {
-				if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 1) {
-					tooltip.add(Component.literal("Upgrades your \u00A77\u00A7naptitude\u00A7r\u00A7f to a \u00A7a\u00A7nhigher level\u00A7r\u00A7f."));
-				} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 2) {
-					tooltip.add(Component.literal("Upgrades your \u00A7a\u00A7naptitude\u00A7r\u00A7f to a \u00A7b\u00A7nhigher level\u00A7r\u00A7f."));
-				} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 3) {
-					tooltip.add(Component.literal("Upgrades your \u00A7b\u00A7naptitude\u00A7r\u00A7f to a \u00A7d\u00A7nhigher level\u00A7r\u00A7f."));
-				} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 4) {
-					tooltip.add(Component.literal("Upgrades your \u00A7d\u00A7naptitude\u00A7r\u00A7f to a \u00A76\u00A7nhigher level\u00A7r\u00A7f."));
-				} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 5) {
-					tooltip.add(Component.literal("Upgrades your \u00A76\u00A7naptitude\u00A7r\u00A7f to a \u00A7c\u00A7nhigher level\u00A7r\u00A7f?"));
+				if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 5) {
+					tooltip.add(Component.literal(("Upgrades your " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "aptitude"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " to a "
+							+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "higher level"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "?")));
+				} else {
+					tooltip.add(Component.literal(("Upgrades your " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "aptitude"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " to a "
+							+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "higher level"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 				}
 			}
 		}

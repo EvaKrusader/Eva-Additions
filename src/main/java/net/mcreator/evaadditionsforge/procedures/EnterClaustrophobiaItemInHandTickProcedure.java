@@ -9,7 +9,7 @@ public class EnterClaustrophobiaItemInHandTickProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((world instanceof Level _lvl0 && _lvl0.isDay()) == false && entity.getY() < -40) {
+		if ((world instanceof Level _lvl0 && _lvl0.isDay()) == false && entity.getY() < -40 && (entity.level().dimension()) == Level.OVERWORLD) {
 			itemstack.getOrCreateTag().putDouble("canNoctua", 1);
 		} else {
 			itemstack.getOrCreateTag().putDouble("canNoctua", 0);

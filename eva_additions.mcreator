@@ -2688,6 +2688,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -2848,6 +2852,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -2918,26 +2926,6 @@
           {
             "name": "world",
             "type": "world"
-          }
-        ]
-      },
-      "path": "~/Curio/Aptitudes/Smartass"
-    },
-    {
-      "name": "SmartassBaubleIsUnequipped",
-      "type": "procedure",
-      "sortid": 166,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "smartass_bauble_is_unequipped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/evaadditionsforge/procedures/SmartassBaubleIsUnequippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -3148,6 +3136,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -3331,6 +3323,10 @@
           "src/main/java/net/mcreator/evaadditionsforge/procedures/RequiemTooltipProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -3652,12 +3648,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -3719,8 +3711,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "world",
@@ -3923,6 +3915,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -4041,6 +4037,441 @@
         ]
       },
       "path": "~/Curio/Crystals"
+    },
+    {
+      "name": "Herobrine",
+      "type": "painting",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herobrine",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "WorldInfo",
+      "type": "curiosslot",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_info",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curios/tags/items/world_info.json"
+        ]
+      },
+      "path": "~/Curio/World"
+    },
+    {
+      "name": "Altometer",
+      "type": "curiosbauble",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altometer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/AltometerItem.java",
+          "src/main/resources/assets/eva_additions/models/item/altometer.json"
+        ]
+      },
+      "path": "~/Curio/World"
+    },
+    {
+      "name": "GPS",
+      "type": "curiosbauble",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gps",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/gps.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/GPSItem.java"
+        ]
+      },
+      "path": "~/Curio/World"
+    },
+    {
+      "name": "UpgradedGPS",
+      "type": "curiosbauble",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgraded_gps",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/UpgradedGPSItem.java",
+          "src/main/resources/assets/eva_additions/models/item/upgraded_gps.json"
+        ]
+      },
+      "path": "~/Curio/World"
+    },
+    {
+      "name": "AltometerWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altometer_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AltometerWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/World"
+    },
+    {
+      "name": "GPSWhileEquippedTick",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gps_while_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GPSWhileEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/World"
+    },
+    {
+      "name": "UpgradedGPSTick",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgraded_gps_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/UpgradedGPSTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/World"
+    },
+    {
+      "name": "UpGPSRecipe",
+      "type": "recipe",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "up_gps_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/recipes/up_gps_recipe.json"
+        ]
+      },
+      "path": "~/Curio/World"
+    },
+    {
+      "name": "LavaWalkerWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_walker_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/LavaWalkerWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "FireWalker",
+      "type": "enchantment",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_walker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/FireWalkerEnchantment.java"
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "LavaWalkerAdv",
+      "type": "achievement",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_walker_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/lava_walker_adv.json"
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "LavaWalkerEnderlink",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_walker_enderlink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/LavaWalkerEnderlinkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "LavaWalkerEnchant",
+      "type": "achievement",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_walker_enchant",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/lava_walker_enchant.json"
+        ]
+      },
+      "path": "~/Curio/LavaWalker"
+    },
+    {
+      "name": "Baubles",
+      "type": "tag",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baubles",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/baubles.json"
+        ]
+      },
+      "path": "~/Curio"
+    },
+    {
+      "name": "GiveBaubleAdv",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_bauble_adv",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GiveBaubleAdvProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio"
+    },
+    {
+      "name": "GogglesDamageEffectExpires",
+      "type": "procedure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goggles_damage_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GogglesDamageEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/NightVision"
+    },
+    {
+      "name": "GogglesDamage",
+      "type": "potioneffect",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goggles_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/potion/GogglesDamageMobEffect.java"
+        ]
+      },
+      "path": "~/Curio/NightVision"
+    },
+    {
+      "name": "Incorrodible",
+      "type": "enchantment",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incorrodible",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/IncorrodibleEnchantment.java"
+        ]
+      },
+      "path": "~/Curio/NightVision"
+    },
+    {
+      "name": "NightVisionEnderlink",
+      "type": "procedure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_vision_enderlink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/NightVisionEnderlinkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/Antibodies"
+    },
+    {
+      "name": "GetItemRarityColor",
+      "type": "procedure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_item_rarity_color",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetItemRarityColorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio"
+    },
+    {
+      "name": "WaterProof",
+      "type": "enchantment",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_proof",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/WaterProofEnchantment.java"
+        ]
+      },
+      "path": "~/Curio/World"
     }
   ],
   "variable_elements": [
@@ -4187,6 +4618,18 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "gogglesDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "ItemColorReset",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "§r§f"
     }
   ],
   "sound_elements": [
@@ -4341,6 +4784,8 @@
       "subtitles.record_tortoisebeetle": "",
       "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
       "advancements.adv_isopod.title": "Tough Shell",
+      "advancements.lava_walker_adv.descr": "Turn lava into cold obsidian",
+      "effect.eva_additions.goggles_damage": "Goggles Eye Damage",
       "subtitles.record_spinyspider": "",
       "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
       "item.eva_additions.cryostasis": "Music Disc",
@@ -4412,6 +4857,7 @@
       "painting.eva_additions.snap.author": "EvaKrusader",
       "painting.eva_additions_forge.uncomfortable_period.author": "Toby",
       "item.eva_additions.disc_scarab": "Music Disc",
+      "advancements.lava_walker_enchant.descr": "Enchant your necklace",
       "subtitles.record_buddyholly": "",
       "item.eva_additions_forge.disc_bumblebee": "Music Disc",
       "item.eva_additions.antibody": "Foreign Antibodies",
@@ -4420,6 +4866,7 @@
       "subtitles.record_libetsdelay": "",
       "item.eva_additions.higher_senses": "High Senses",
       "advancements.adv_spinyspider.title": "Tough Exoskeleton",
+      "enchantment.eva_additions.incorrodible": "Incorrodible",
       "painting.eva_additions.antibody_test.author": "EvaKrusader",
       "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
       "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
@@ -4434,8 +4881,11 @@
       "painting.eva_additions.diane_1.author": "???",
       "advancements.adv_weevil.descr": "Dig up some dirt",
       "item.eva_additions_forge.disc_weevil.desc": "camiidae - weevil",
+      "enchantment.eva_additions.water_proof": "Water Proof",
       "item.eva_additions.dev_smartass_item": "Dev Antibody Item",
       "advancements.high_senses_max_lvl_adv.descr": "Be born with higher sensitivity",
+      "item.eva_additions.upgraded_gps": "Upgraded GPS",
+      "advancements.lava_walker_enchant.title": "Burning Soul",
       "advancements.high_senses_adv.title": "Superior ",
       "painting.eva_additions.einstein.author": "Poli",
       "item.eva_additions_forge.disc_moth": "Music Disc",
@@ -4448,6 +4898,7 @@
       "advancements.adv_treehopper.descr": "Cut down some trees",
       "subtitles.heartbeat": "",
       "block.eva_additions.mining_aid": "Mining Aid",
+      "item.eva_additions.altometer": "Oxygen Crystal",
       "item.eva_additions.disc_burningmemory.desc": "The Caretaker - It\u0027s just a burning memory",
       "advancements.antibody_adv.descr": "Add some supplements to your immune system",
       "advancements.smartass_adv.descr": "Be born enlightened",
@@ -4459,7 +4910,7 @@
       "item.eva_additions.disc_tortoisebeetle": "Music Disc",
       "painting.eva_additions.diane_1.title": "Diane 1",
       "block.eva_additions.mining_aid_stop": "Mining Aid",
-      "enchantment.eva_additions.meds": "Meds",
+      "enchantment.eva_additions.meds": "Self-Regulation",
       "painting.eva_additions.story_of_undertale.author": "LHUGUENY",
       "subtitles.record_burningmemory": "",
       "painting.eva_additions_forge.story_of_undertale.title": "Story Of Undertale",
@@ -4469,6 +4920,7 @@
       "painting.eva_additions.uncomfortable_period.author": "Toby",
       "advancements.requiem_adv.descr": "Be born with higher sensitivity",
       "advancements.adv_bumblebee.title": "Buzz",
+      "advancements.lava_walker_adv.title": "Got Cold Feet?",
       "item.eva_additions.disc_libet": "Music Disc",
       "advancements.liveleak_death.descr": "Get too unlucky",
       "item.eva_additions.requiem": "Requiem",
@@ -4485,6 +4937,7 @@
       "item.eva_additions.night_vision": "Night Vision Goggles",
       "advancements.equinox_adv.title": "Superior ",
       "advancements.adv_butterfly.title": "Fly High",
+      "curios.identifier.world_info": "World Info",
       "item.eva_additions.disc_treehopper": "Music Disc",
       "subtitles.record_moth": "",
       "advancements.high_senses_adv.descr": "Be born with higher sensitivity",
@@ -4497,6 +4950,7 @@
       "advancements.adv_isopod.descr": "Dig up some wet sand",
       "advancements.discography.title": "Discography",
       "subtitles.record_roundabout": "",
+      "item.eva_additions.gps": "GPS",
       "item.eva_additions.equinox": "Equinox",
       "item.eva_additions_forge.disc_scarab": "Music Disc",
       "item.eva_additions.disc_scarab.desc": "camiidae - scarab",
@@ -4509,9 +4963,12 @@
       "painting.eva_additions.poli.author": "Poli",
       "effect.eva_additions.premature_death": "Premature Death",
       "advancements.antibody_adv.title": "Placebo",
+      "painting.eva_additions.herobrine.title": "White Eyes",
       "advancements.entomologist.title": "Entomologist",
       "painting.eva_additions_forge.uncomfortable_period.title": "Uncomfortable Period",
       "subtitles.record_bumblebee": "",
+      "painting.eva_additions.herobrine.author": "Flaky",
+      "enchantment.eva_additions.fire_walker": "Fire Walker",
       "item.eva_additions.disc_spinyspider": "Music Disc",
       "advancements.adv_scarab.descr": "Mow the lawn",
       "item.eva_additions.disc_buddyholly": "Music Disc",
@@ -4549,6 +5006,8 @@
       "subtitles.record_tortoisebeetle": "",
       "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
       "advancements.adv_isopod.title": "Tough Shell",
+      "advancements.lava_walker_adv.descr": "pl",
+      "effect.eva_additions.goggles_damage": "Goggles Eye Damage",
       "subtitles.record_spinyspider": "",
       "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
       "item.eva_additions.cryostasis": "Music Disc",
@@ -4620,6 +5079,7 @@
       "painting.eva_additions.snap.author": "EvaKrusader",
       "painting.eva_additions_forge.uncomfortable_period.author": "Toby",
       "item.eva_additions.disc_scarab": "Music Disc",
+      "advancements.lava_walker_enchant.descr": "pl",
       "subtitles.record_buddyholly": "",
       "item.eva_additions_forge.disc_bumblebee": "Music Disc",
       "item.eva_additions.antibody": "Foreign Antibodies",
@@ -4628,6 +5088,7 @@
       "subtitles.record_libetsdelay": "",
       "item.eva_additions.higher_senses": "High Senses",
       "advancements.adv_spinyspider.title": "Tough Exoskeleton",
+      "enchantment.eva_additions.incorrodible": "Incorrodible",
       "painting.eva_additions.antibody_test.author": "EvaKrusader",
       "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
       "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
@@ -4642,8 +5103,11 @@
       "painting.eva_additions.diane_1.author": "???",
       "advancements.adv_weevil.descr": "Dig up some dirt",
       "item.eva_additions_forge.disc_weevil.desc": "camiidae - weevil",
+      "enchantment.eva_additions.water_proof": "Water Proof",
       "item.eva_additions.dev_smartass_item": "Dev Antibody Item",
       "advancements.high_senses_max_lvl_adv.descr": "Be born with higher sensitivity",
+      "item.eva_additions.upgraded_gps": "GPS",
+      "advancements.lava_walker_enchant.title": "Lava Walker Adv",
       "advancements.high_senses_adv.title": "Superior ",
       "painting.eva_additions.einstein.author": "Poli",
       "item.eva_additions_forge.disc_moth": "Music Disc",
@@ -4656,6 +5120,7 @@
       "advancements.adv_treehopper.descr": "Cut down some trees",
       "subtitles.heartbeat": "",
       "block.eva_additions.mining_aid": "Mining Aid",
+      "item.eva_additions.altometer": "Altometer",
       "item.eva_additions.disc_burningmemory.desc": "The Caretaker - It\u0027s just a burning memory",
       "advancements.antibody_adv.descr": "Add some supplements to your immune system",
       "advancements.smartass_adv.descr": "Be born enlightened",
@@ -4677,6 +5142,7 @@
       "painting.eva_additions.uncomfortable_period.author": "Toby",
       "advancements.requiem_adv.descr": "Be born with higher sensitivity",
       "advancements.adv_bumblebee.title": "Buzz",
+      "advancements.lava_walker_adv.title": "Lava Walker Adv",
       "item.eva_additions.disc_libet": "Music Disc",
       "advancements.liveleak_death.descr": "Get too unlucky",
       "item.eva_additions.requiem": "Requiem",
@@ -4693,6 +5159,7 @@
       "item.eva_additions.night_vision": "Night Vision Goggles",
       "advancements.equinox_adv.title": "Superior ",
       "advancements.adv_butterfly.title": "Fly High",
+      "curios.identifier.world_info": "World Info",
       "item.eva_additions.disc_treehopper": "Music Disc",
       "subtitles.record_moth": "",
       "advancements.high_senses_adv.descr": "Be born with higher sensitivity",
@@ -4705,6 +5172,7 @@
       "advancements.adv_isopod.descr": "Dig up some wet sand",
       "advancements.discography.title": "Discography",
       "subtitles.record_roundabout": "",
+      "item.eva_additions.gps": "Altometer",
       "item.eva_additions.equinox": "Equinox",
       "item.eva_additions_forge.disc_scarab": "Music Disc",
       "item.eva_additions.disc_scarab.desc": "camiidae - scarab",
@@ -4717,9 +5185,12 @@
       "painting.eva_additions.poli.author": "Poli",
       "effect.eva_additions.premature_death": "Premature Death",
       "advancements.antibody_adv.title": "Placebo",
+      "painting.eva_additions.herobrine.title": "White Eyes",
       "advancements.entomologist.title": "Entomologist",
       "painting.eva_additions_forge.uncomfortable_period.title": "Uncomfortable Period",
       "subtitles.record_bumblebee": "",
+      "painting.eva_additions.herobrine.author": "Flaky",
+      "enchantment.eva_additions.fire_walker": "Fire Walker",
       "item.eva_additions.disc_spinyspider": "Music Disc",
       "advancements.adv_scarab.descr": "Mow the lawn",
       "item.eva_additions.disc_buddyholly": "Music Disc",
@@ -4757,6 +5228,8 @@
       "subtitles.record_tortoisebeetle": "",
       "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
       "advancements.adv_isopod.title": "Tough Shell",
+      "advancements.lava_walker_adv.descr": "pl",
+      "effect.eva_additions.goggles_damage": "Goggles Eye Damage",
       "subtitles.record_spinyspider": "",
       "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
       "item.eva_additions.cryostasis": "Music Disc",
@@ -4828,6 +5301,7 @@
       "painting.eva_additions.snap.author": "EvaKrusader",
       "painting.eva_additions_forge.uncomfortable_period.author": "Toby",
       "item.eva_additions.disc_scarab": "Music Disc",
+      "advancements.lava_walker_enchant.descr": "pl",
       "subtitles.record_buddyholly": "",
       "item.eva_additions_forge.disc_bumblebee": "Music Disc",
       "item.eva_additions.antibody": "Foreign Antibodies",
@@ -4836,6 +5310,7 @@
       "subtitles.record_libetsdelay": "",
       "item.eva_additions.higher_senses": "High Senses",
       "advancements.adv_spinyspider.title": "Tough Exoskeleton",
+      "enchantment.eva_additions.incorrodible": "Incorrodible",
       "painting.eva_additions.antibody_test.author": "EvaKrusader",
       "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
       "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
@@ -4850,8 +5325,11 @@
       "painting.eva_additions.diane_1.author": "???",
       "advancements.adv_weevil.descr": "Dig up some dirt",
       "item.eva_additions_forge.disc_weevil.desc": "camiidae - weevil",
+      "enchantment.eva_additions.water_proof": "Water Proof",
       "item.eva_additions.dev_smartass_item": "Dev Antibody Item",
       "advancements.high_senses_max_lvl_adv.descr": "Be born with higher sensitivity",
+      "item.eva_additions.upgraded_gps": "GPS",
+      "advancements.lava_walker_enchant.title": "Lava Walker Adv",
       "advancements.high_senses_adv.title": "Superior ",
       "painting.eva_additions.einstein.author": "Poli",
       "item.eva_additions_forge.disc_moth": "Music Disc",
@@ -4864,6 +5342,7 @@
       "advancements.adv_treehopper.descr": "Cut down some trees",
       "subtitles.heartbeat": "",
       "block.eva_additions.mining_aid": "Mining Aid",
+      "item.eva_additions.altometer": "Altometer",
       "item.eva_additions.disc_burningmemory.desc": "The Caretaker - It\u0027s just a burning memory",
       "advancements.antibody_adv.descr": "Add some supplements to your immune system",
       "advancements.smartass_adv.descr": "Be born enlightened",
@@ -4885,6 +5364,7 @@
       "painting.eva_additions.uncomfortable_period.author": "Toby",
       "advancements.requiem_adv.descr": "Be born with higher sensitivity",
       "advancements.adv_bumblebee.title": "Buzz",
+      "advancements.lava_walker_adv.title": "Lava Walker Adv",
       "item.eva_additions.disc_libet": "Music Disc",
       "advancements.liveleak_death.descr": "Get too unlucky",
       "item.eva_additions.requiem": "Requiem",
@@ -4901,6 +5381,7 @@
       "item.eva_additions.night_vision": "Night Vision Goggles",
       "advancements.equinox_adv.title": "Superior ",
       "advancements.adv_butterfly.title": "Fly High",
+      "curios.identifier.world_info": "World Info",
       "item.eva_additions.disc_treehopper": "Music Disc",
       "subtitles.record_moth": "",
       "advancements.high_senses_adv.descr": "Be born with higher sensitivity",
@@ -4913,6 +5394,7 @@
       "advancements.adv_isopod.descr": "Dig up some wet sand",
       "advancements.discography.title": "Discography",
       "subtitles.record_roundabout": "",
+      "item.eva_additions.gps": "Altometer",
       "item.eva_additions.equinox": "Equinox",
       "item.eva_additions_forge.disc_scarab": "Music Disc",
       "item.eva_additions.disc_scarab.desc": "camiidae - scarab",
@@ -4925,9 +5407,12 @@
       "painting.eva_additions.poli.author": "Poli",
       "effect.eva_additions.premature_death": "Premature Death",
       "advancements.antibody_adv.title": "Placebo",
+      "painting.eva_additions.herobrine.title": "White Eyes",
       "advancements.entomologist.title": "Entomologist",
       "painting.eva_additions_forge.uncomfortable_period.title": "Uncomfortable Period",
       "subtitles.record_bumblebee": "",
+      "painting.eva_additions.herobrine.author": "Flaky",
+      "enchantment.eva_additions.fire_walker": "Fire Walker",
       "item.eva_additions.disc_spinyspider": "Music Disc",
       "advancements.adv_scarab.descr": "Mow the lawn",
       "item.eva_additions.disc_buddyholly": "Music Disc",
@@ -5100,6 +5585,10 @@
           {
             "name": "Crystals",
             "children": []
+          },
+          {
+            "name": "World",
+            "children": []
           }
         ]
       },
@@ -5116,7 +5605,7 @@
   "workspaceSettings": {
     "modid": "eva_additions",
     "modName": "Eva Additions Forge",
-    "version": "1.8.5",
+    "version": "1.8.7",
     "author": "saver, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",

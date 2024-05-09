@@ -352,11 +352,8 @@
     "onItemInInventoryTick": {
       "name": "EquinoxItemInInventoryTick"
     },
-    "onDroppedByPlayer": {
-      "name": "SmartassBaubleIsUnequipped"
-    },
     "curioTick": {
-      "name": "EquinoxWhileBaubleIsEquippedTick"
+      "name": "CycleChange"
     },
     "onEquip": {
       "name": "EquinoxBaubleEquipped"

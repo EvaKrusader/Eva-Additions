@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class ColdObsidianBlock extends Block {
 	public ColdObsidianBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(50f, 10f));
 	}
 
 	@Override

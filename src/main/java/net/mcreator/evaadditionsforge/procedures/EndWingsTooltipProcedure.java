@@ -34,40 +34,26 @@ public class EndWingsTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		String itemRarity = "";
-		String itemReset = "";
-		itemReset = "\u00A7r\u00A7f";
 		if (itemstack.getItem() == EvaAdditionsModItems.END_WINGS.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
-				if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
-					itemRarity = "\u00A77\u00A7n";
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
-					itemRarity = "\u00A7a\u00A7n";
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-					itemRarity = "\u00A7b\u00A7n";
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-					itemRarity = "\u00A7d\u00A7n";
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-					itemRarity = "\u00A76\u00A7n";
-				}
+				GetItemRarityColorProcedure.execute(entity, itemstack);
 				if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
 					if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-						tooltip.add(Component.literal(("Will save you from falling in the void and will give you " + itemRarity + "Slow Falling I" + itemReset + ".")));
+						tooltip.add(Component.literal(("Will save you from falling in the void and will give you " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "Slow Falling I"
+								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 					} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-						tooltip.add(Component.literal(("Will save you from falling in the void and will give you " + itemRarity + "Slow Falling II" + itemReset + ".")));
+						tooltip.add(Component.literal(("Will save you from falling in the void and will give you " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "Slow Falling II"
+								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 					} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-						tooltip.add(Component.literal(("Will save you from falling in the void and will give you " + itemRarity + "Slow Falling III" + itemReset + ".")));
+						tooltip.add(Component.literal(("Will save you from falling in the void and will give you " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "Slow Falling III"
+								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 					} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
-						tooltip.add(Component.literal((itemRarity + "Will" + itemReset + " save you from falling in the void.")));
+						tooltip.add(Component.literal((entity.getPersistentData().getString(("current" + "ItemRarity")) + "Will"
+								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " save you from falling in the void.")));
 					} else {
-						tooltip.add(Component.literal(("Will " + itemRarity + "not" + itemReset + " save you from falling in the void.")));
+						tooltip.add(Component.literal(("Will " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "not"
+								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " save you from falling in the void.")));
 					}
-				} else if (Minecraft.getInstance().options.languageCode.equals("pt_br")) {
-					tooltip.add(Component.literal(
-							("H\u00E1 uma chande de " + itemRarity + new java.text.DecimalFormat("##.##").format((itemstack.getOrCreateTag().getDouble("baublePower") - 1) * 25) + "%" + itemReset + " de curar uma doen\u00E7a quando leva dano.")));
-				} else if (Minecraft.getInstance().options.languageCode.equals("fr_fr")) {
-					tooltip.add(Component.literal(
-							("A une chance de" + itemRarity + new java.text.DecimalFormat("##.##").format((itemstack.getOrCreateTag().getDouble("baublePower") - 1) * 25) + "%" + itemReset + " de soigner vos maladies quand vous vous blessez")));
 				}
 				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
 					tooltip.add(Component.literal(("I HAVE KNOWLEDGE "

@@ -4,6 +4,11 @@ import net.minecraft.world.item.ItemStack;
 
 public class EquinoxPropertyValueProviderProcedure {
 	public static double execute(ItemStack itemstack) {
-		return itemstack.getOrCreateTag().getDouble("equinoxCycle");
+		if (itemstack.getOrCreateTag().getDouble("equinoxCycle") == 1) {
+			return 1;
+		} else if (itemstack.getOrCreateTag().getDouble("equinoxCycle") == 2) {
+			return 2;
+		}
+		return 0;
 	}
 }

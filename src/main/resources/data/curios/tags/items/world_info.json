@@ -1,0 +1,9 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "eva_additions:altometer",
+    "eva_additions:gps",
+    "eva_additions:upgraded_gps"
+  ]
+}

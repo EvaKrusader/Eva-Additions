@@ -11,9 +11,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.evaadditionsforge.potion.PrematureDeathMobEffect;
+import net.mcreator.evaadditionsforge.potion.GogglesDamageMobEffect;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 
 public class EvaAdditionsModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, EvaAdditionsMod.MODID);
 	public static final RegistryObject<MobEffect> PREMATURE_DEATH = REGISTRY.register("premature_death", () -> new PrematureDeathMobEffect());
+	public static final RegistryObject<MobEffect> GOGGLES_DAMAGE = REGISTRY.register("goggles_damage", () -> new GogglesDamageMobEffect());
 }

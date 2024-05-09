@@ -12,14 +12,12 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.evaadditionsforge.procedures.SmartassBaubleIsUnequippedProcedure;
-import net.mcreator.evaadditionsforge.procedures.EquinoxWhileBaubleIsEquippedTickProcedure;
 import net.mcreator.evaadditionsforge.procedures.EquinoxItemInInventoryTickProcedure;
 import net.mcreator.evaadditionsforge.procedures.EquinoxBaubleEquippedProcedure;
+import net.mcreator.evaadditionsforge.procedures.CycleChangeProcedure;
 import net.mcreator.evaadditionsforge.procedures.AptitudesRemoveGlowProcedure;
 
 import java.util.List;
@@ -47,14 +45,8 @@ public class EquinoxItem extends Item implements ICurioItem {
 	}
 
 	@Override
-	public boolean onDroppedByPlayer(ItemStack itemstack, Player entity) {
-		SmartassBaubleIsUnequippedProcedure.execute(itemstack);
-		return true;
-	}
-
-	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		EquinoxWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+		CycleChangeProcedure.execute(slotContext.entity().level(), stack);
 	}
 
 	@Override

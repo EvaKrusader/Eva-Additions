@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "eva_additions:textures/screens/jukebox.png",
+    "background": "eva_additions:textures/screens/jukebox2.png",
     "icon": {
       "item": "eva_additions:discography_item"
     },

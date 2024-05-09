@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "eva_additions:antibody",
+    "eva_additions:night_vision",
+    "eva_additions:end_wings",
+    "eva_additions:lava_walker",
+    "eva_additions:mood_crystal",
+    "eva_additions:weather_crystal"
+  ]
+}
