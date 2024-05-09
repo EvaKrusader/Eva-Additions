@@ -10,7 +10,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 import net.mcreator.evaadditionsforge.init.EvaAdditionsModItems;
@@ -37,21 +36,20 @@ public class PowerUpperTooltipProcedure {
 		if (itemstack.getItem() == EvaAdditionsModItems.POWER_UPPER.get()) {
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower != 0) {
 				if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 5) {
-					if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-						tooltip.add(Component.literal(("Upgrades your " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "aptitude"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " to a "
-								+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "higher level"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "?")));
-					}
+					tooltip.add(Component.literal(("Upgrades your " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "aptitude"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " to a "
+							+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "higher level"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "?")));
 				} else {
-					if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-						tooltip.add(Component.literal(("Upgrades your " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "aptitude"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " to a "
-								+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "higher level"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
-					}
+					tooltip.add(Component.literal(("Upgrades your " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "aptitude"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " to a "
+							+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "higher level"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 				}
 			}
+			itemstack.setHoverName(Component.literal(
+					(entity.getPersistentData().getString(("current" + "ItemRarity")) + "Power" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
+							+ " " + entity.getPersistentData().getString(("next" + "ItemRarity")) + "Upper")));
 		}
 	}
 }

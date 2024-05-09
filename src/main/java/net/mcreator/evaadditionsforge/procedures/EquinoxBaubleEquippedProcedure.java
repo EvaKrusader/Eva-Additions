@@ -7,7 +7,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.Minecraft;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
@@ -26,15 +25,9 @@ public class EquinoxBaubleEquippedProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-			itemName = "Equinox";
-		} else if (Minecraft.getInstance().options.languageCode.equals("pt_br")) {
-			itemName = "Equin\u00F3cio";
-		} else if (Minecraft.getInstance().options.languageCode.equals("fr_fr")) {
-			itemName = "\u00C9quinoxe";
-		}
-		if (itemstack.getOrCreateTag().getDouble("baublePower") == 0) {
-			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
+		itemName = "Equinox";
+		itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
+		if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.97) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 5);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.85) {
@@ -46,21 +39,26 @@ public class EquinoxBaubleEquippedProcedure {
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 1);
 			}
-		}
-		if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-			if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
-				itemstack.setHoverName(Component.literal(("\u00A7r\u00A77" + "Tier 1" + " \u00A7r\u00A7f" + itemName)));
-			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
-				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7a" + "Tier 2" + " \u00A7r\u00A7f" + itemName)));
-			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7b" + "Tier 3" + " \u00A7r\u00A7f" + itemName)));
-			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-				itemstack.setHoverName(Component.literal(("\u00A7r\u00A7d" + "Tier 4" + " \u00A7r\u00A7f" + itemName)));
-			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-				itemstack.setHoverName(Component.literal(("\u00A7r\u00A76" + "Solstice" + " \u00A7r\u00A7f" + itemName)));
+			{
+				double _setval = itemstack.getOrCreateTag().getDouble("baublePower");
+				entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.knowledgeLVL = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
-		if ((world instanceof Level _lvl39 && _lvl39.isDay()) == true) {
+		if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A77" + "Tier 1" + " \u00A7r\u00A7f" + itemName)));
+		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7a" + "Tier 2" + " \u00A7r\u00A7f" + itemName)));
+		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7b" + "Tier 3" + " \u00A7r\u00A7f" + itemName)));
+		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7d" + "Tier 4" + " \u00A7r\u00A7f" + itemName)));
+		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
+			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76" + "Solstice" + " \u00A7r\u00A7f" + itemName)));
+		}
+		if ((world instanceof Level _lvl37 && _lvl37.isDay()) == true) {
 			itemstack.getOrCreateTag().putDouble("equinoxCycle", 1);
 		} else {
 			itemstack.getOrCreateTag().putDouble("equinoxCycle", 2);

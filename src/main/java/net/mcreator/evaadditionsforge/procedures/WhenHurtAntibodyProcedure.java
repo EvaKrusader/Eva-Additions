@@ -35,7 +35,7 @@ public class WhenHurtAntibodyProcedure {
 		if (entity == null)
 			return;
 		double cureChance = 0;
-		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(EvaAdditionsModItems.ANTIBODY.get(), lv).isPresent() : false == true) {
+		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(EvaAdditionsModItems.METABOLISM.get(), lv).isPresent() : false == true) {
 			cureChance = Math.random();
 			if (cureChance < (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).AntibodyLevel / 4) {
 				if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(MobEffects.WEAKNESS)) {

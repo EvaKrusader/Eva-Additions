@@ -25,8 +25,8 @@ public class RequiemBaubleEquippedProcedure {
 			});
 		}
 		itemName = "Requiem";
-		if (itemstack.getOrCreateTag().getDouble("baublePower") == 0) {
-			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
+		itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
+		if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.97) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 5);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.85) {
@@ -37,6 +37,13 @@ public class RequiemBaubleEquippedProcedure {
 				itemstack.getOrCreateTag().putDouble("baublePower", 2);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 1);
+			}
+			{
+				double _setval = itemstack.getOrCreateTag().getDouble("baublePower");
+				entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.knowledgeLVL = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 		if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {

@@ -11,6 +11,13 @@ public class PowerUpperRightclickedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
+		{
+			String _setval = "\u00A7r\u00A7f";
+			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.ItemColorReset = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 5) {
 			{
 				double _setval = 1;
@@ -28,16 +35,16 @@ public class PowerUpperRightclickedProcedure {
 				});
 			}
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(EvaAdditionsModItems.SMARTASS.get(), 1);
+				_player.getCooldowns().addCooldown(EvaAdditionsModItems.COGNITION.get(), 1);
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(EvaAdditionsModItems.HIGHER_SENSES.get(), 1);
+				_player.getCooldowns().addCooldown(EvaAdditionsModItems.PERCEPTION.get(), 1);
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(EvaAdditionsModItems.REQUIEM.get(), 1);
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(EvaAdditionsModItems.EQUINOX.get(), 1);
-			new ItemStack(EvaAdditionsModItems.SMARTASS.get()).getOrCreateTag().putDouble("baublePower",
+			new ItemStack(EvaAdditionsModItems.COGNITION.get()).getOrCreateTag().putDouble("baublePower",
 					((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
-			new ItemStack(EvaAdditionsModItems.HIGHER_SENSES.get()).getOrCreateTag().putDouble("baublePower",
+			new ItemStack(EvaAdditionsModItems.PERCEPTION.get()).getOrCreateTag().putDouble("baublePower",
 					((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
 			new ItemStack(EvaAdditionsModItems.REQUIEM.get()).getOrCreateTag().putDouble("baublePower",
 					((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/curio_night_vision0_shine"
+  }
+}

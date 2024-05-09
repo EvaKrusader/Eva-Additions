@@ -3,7 +3,7 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "disk_oncemore",
+    "texture": "curio_voidwings0",
     "customModelName": "Normal",
     "name": "Void Wings",
     "rarity": "COMMON",

@@ -36,7 +36,7 @@ public class NightVisionTooltipProcedure {
 		if (itemstack.getItem() == EvaAdditionsModItems.NIGHT_VISION.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 				GetItemRarityColorProcedure.execute(entity, itemstack);
-				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
+				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.COGNITION.get()) {
 					NightVisionCognitionTooltipProcedure.execute(entity, itemstack, tooltip);
 				}
 			}

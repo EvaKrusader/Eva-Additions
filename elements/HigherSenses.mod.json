@@ -142,6 +142,9 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "slotAmount": 1,
+    "curioTick": {
+      "name": "HigherSensesWhileBaubleIsEquippedTick"
+    },
     "onEquip": {
       "name": "HighSensesBaubleEquipped"
     },

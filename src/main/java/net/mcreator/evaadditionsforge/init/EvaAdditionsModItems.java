@@ -87,9 +87,9 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> GIVE_NEW_APTITUDE = REGISTRY.register("give_new_aptitude", () -> new GiveNewAptitudeItem());
 	public static final RegistryObject<Item> ENTOMOLOGIST_EPIPHANY = REGISTRY.register("entomologist_epiphany", () -> new EntomologistEpiphanyItem());
 	public static final RegistryObject<Item> MINING_AID = block(EvaAdditionsModBlocks.MINING_AID);
-	public static final RegistryObject<Item> ANTIBODY = REGISTRY.register("antibody", () -> new AntibodyItem());
+	public static final RegistryObject<Item> METABOLISM = REGISTRY.register("metabolism", () -> new AntibodyItem());
 	public static final RegistryObject<Item> NIGHT_VISION = REGISTRY.register("night_vision", () -> new NightVisionItem());
-	public static final RegistryObject<Item> END_WINGS = REGISTRY.register("end_wings", () -> new EndWingsItem());
+	public static final RegistryObject<Item> VOID_WINGS = REGISTRY.register("void_wings", () -> new EndWingsItem());
 	public static final RegistryObject<Item> LAVA_WALKER = REGISTRY.register("lava_walker", () -> new LavaWalkerItem());
 	public static final RegistryObject<Item> MOOD_CRYSTAL = REGISTRY.register("mood_crystal", () -> new MoodCrystalItem());
 	public static final RegistryObject<Item> WEATHER_CRYSTAL = REGISTRY.register("weather_crystal", () -> new WeatherCrystalItem());
@@ -100,8 +100,8 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> UPGRADED_GPS = REGISTRY.register("upgraded_gps", () -> new UpgradedGPSItem());
 	public static final RegistryObject<Item> LAPIS_TILES_5 = block(EvaAdditionsModBlocks.LAPIS_TILES_5);
 	public static final RegistryObject<Item> QUARTZ_TILES_5 = block(EvaAdditionsModBlocks.QUARTZ_TILES_5);
-	public static final RegistryObject<Item> SMARTASS = REGISTRY.register("smartass", () -> new SmartassItem());
-	public static final RegistryObject<Item> HIGHER_SENSES = REGISTRY.register("higher_senses", () -> new HigherSensesItem());
+	public static final RegistryObject<Item> COGNITION = REGISTRY.register("cognition", () -> new SmartassItem());
+	public static final RegistryObject<Item> PERCEPTION = REGISTRY.register("perception", () -> new HigherSensesItem());
 	public static final RegistryObject<Item> REQUIEM = REGISTRY.register("requiem", () -> new RequiemItem());
 	public static final RegistryObject<Item> EQUINOX = REGISTRY.register("equinox", () -> new EquinoxItem());
 	public static final RegistryObject<Item> DISCOGRAPHY_ITEM = REGISTRY.register("discography_item", () -> new DiscographyItemItem());

@@ -21,7 +21,7 @@ import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 public class EvaAdditionsModEnchantments {
 	public static final DeferredRegister<Enchantment> REGISTRY = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, EvaAdditionsMod.MODID);
 	public static final RegistryObject<Enchantment> BLESSING = REGISTRY.register("blessing", () -> new BlessingEnchantment());
-	public static final RegistryObject<Enchantment> MEDS = REGISTRY.register("meds", () -> new MedsEnchantment());
+	public static final RegistryObject<Enchantment> SELF_REGULATION = REGISTRY.register("self_regulation", () -> new MedsEnchantment());
 	public static final RegistryObject<Enchantment> PLUME_SHIELD = REGISTRY.register("plume_shield", () -> new PlumeShieldEnchantment());
 	public static final RegistryObject<Enchantment> FIRE_WALKER = REGISTRY.register("fire_walker", () -> new FireWalkerEnchantment());
 	public static final RegistryObject<Enchantment> INCORRODIBLE = REGISTRY.register("incorrodible", () -> new IncorrodibleEnchantment());

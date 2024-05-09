@@ -32,7 +32,7 @@ public class HighSensesTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.getItem() == EvaAdditionsModItems.HIGHER_SENSES.get()) {
+		if (itemstack.getItem() == EvaAdditionsModItems.PERCEPTION.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 				GetItemRarityColorProcedure.execute(entity, itemstack);
 				if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {

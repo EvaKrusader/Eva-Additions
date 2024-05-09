@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "eva_additions:smartass",
-    "eva_additions:higher_senses",
+    "eva_additions:cognition",
+    "eva_additions:perception",
     "eva_additions:requiem",
     "eva_additions:equinox"
   ]

@@ -1,0 +1,44 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/dev_antibody_anim"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:metabolism_antibody_level": 0
+      },
+      "model": "eva_additions:item/metabolism_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:metabolism_antibody_level": 1
+      },
+      "model": "eva_additions:item/metabolism_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:metabolism_antibody_level": 2
+      },
+      "model": "eva_additions:item/metabolism_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:metabolism_antibody_level": 3
+      },
+      "model": "eva_additions:item/metabolism_3"
+    },
+    {
+      "predicate": {
+        "eva_additions:metabolism_antibody_level": 4
+      },
+      "model": "eva_additions:item/metabolism_4"
+    },
+    {
+      "predicate": {
+        "eva_additions:metabolism_antibody_level": 5
+      },
+      "model": "eva_additions:item/metabolism_5"
+    }
+  ]
+}

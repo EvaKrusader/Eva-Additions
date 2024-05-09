@@ -33,10 +33,10 @@ public class EndWingsTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.getItem() == EvaAdditionsModItems.END_WINGS.get()) {
+		if (itemstack.getItem() == EvaAdditionsModItems.VOID_WINGS.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 				GetItemRarityColorProcedure.execute(entity, itemstack);
-				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
+				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.COGNITION.get()) {
 					VoidWingsCognitionTooltipProcedure.execute(entity, itemstack, tooltip);
 				}
 			}

@@ -24,14 +24,14 @@ public class AntibodyWhileBaubleIsEquippedTickProcedure {
 			});
 		}
 		{
-			double _setval = itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.MEDS.get()) - 1;
+			double _setval = itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.SELF_REGULATION.get()) - 1;
 			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.AntibodyMedsLVL = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.MEDS.get(), itemstack) != 0;
+			boolean _setval = EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.SELF_REGULATION.get(), itemstack) != 0;
 			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.hasMeds = _setval;
 				capability.syncPlayerVariables(entity);

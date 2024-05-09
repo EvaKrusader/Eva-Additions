@@ -36,7 +36,7 @@ public class LavaWalkerTooltipProcedure {
 		if (itemstack.getItem() == EvaAdditionsModItems.LAVA_WALKER.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 				GetItemRarityColorProcedure.execute(entity, itemstack);
-				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
+				if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.COGNITION.get()) {
 					LavaWalkerCognitionTooltipProcedure.execute(entity, itemstack, tooltip);
 				}
 			}

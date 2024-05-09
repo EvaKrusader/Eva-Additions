@@ -34,7 +34,7 @@ public class UpgrGPSTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.getItem() == EvaAdditionsModItems.UPGRADED_GPS.get()) {
-			if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
+			if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.COGNITION.get()) {
 				UpgrGPSCognitionTooltipProcedure.execute(entity, itemstack, tooltip);
 			}
 		}

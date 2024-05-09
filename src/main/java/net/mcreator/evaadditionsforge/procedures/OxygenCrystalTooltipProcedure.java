@@ -34,7 +34,7 @@ public class OxygenCrystalTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.getItem() == EvaAdditionsModItems.CRYSTAL_OXYGEN.get()) {
-			if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.SMARTASS.get()) {
+			if (((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem).getItem() == EvaAdditionsModItems.COGNITION.get()) {
 				OxygenCrystalCognitionTooltipProcedure.execute(entity, itemstack, tooltip);
 			}
 		}

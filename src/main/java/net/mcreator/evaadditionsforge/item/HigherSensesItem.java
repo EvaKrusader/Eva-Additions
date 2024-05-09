@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.evaadditionsforge.procedures.HigherSensesWhileBaubleIsEquippedTickProcedure;
 import net.mcreator.evaadditionsforge.procedures.HighSensesBaubleEquippedProcedure;
 import net.mcreator.evaadditionsforge.procedures.AptitudesRemoveGlowProcedure;
 
@@ -33,6 +34,11 @@ public class HigherSensesItem extends Item implements ICurioItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+	}
+
+	@Override
+	public void curioTick(SlotContext slotContext, ItemStack stack) {
+		HigherSensesWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
 	}
 
 	@Override

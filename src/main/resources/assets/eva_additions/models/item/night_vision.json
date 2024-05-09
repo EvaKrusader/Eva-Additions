@@ -6,39 +6,87 @@
   "overrides": [
     {
       "predicate": {
-        "eva_additions:night_vision_baublepower": 0
+        "eva_additions:night_vision_baublepower": 0,
+        "eva_additions:night_vision_shine": 0
       },
       "model": "eva_additions:item/night_vision_0"
     },
     {
       "predicate": {
-        "eva_additions:night_vision_baublepower": 1
+        "eva_additions:night_vision_baublepower": 1,
+        "eva_additions:night_vision_shine": 0
       },
       "model": "eva_additions:item/night_vision_1"
     },
     {
       "predicate": {
-        "eva_additions:night_vision_baublepower": 2
+        "eva_additions:night_vision_baublepower": 2,
+        "eva_additions:night_vision_shine": 0
       },
       "model": "eva_additions:item/night_vision_2"
     },
     {
       "predicate": {
-        "eva_additions:night_vision_baublepower": 3
+        "eva_additions:night_vision_baublepower": 3,
+        "eva_additions:night_vision_shine": 0
       },
       "model": "eva_additions:item/night_vision_3"
     },
     {
       "predicate": {
-        "eva_additions:night_vision_baublepower": 4
+        "eva_additions:night_vision_baublepower": 4,
+        "eva_additions:night_vision_shine": 0
       },
       "model": "eva_additions:item/night_vision_4"
     },
     {
       "predicate": {
-        "eva_additions:night_vision_baublepower": 5
+        "eva_additions:night_vision_baublepower": 5,
+        "eva_additions:night_vision_shine": 0
       },
       "model": "eva_additions:item/night_vision_5"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 0,
+        "eva_additions:night_vision_shine": 1
+      },
+      "model": "eva_additions:item/night_vision_6"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 1,
+        "eva_additions:night_vision_shine": 1
+      },
+      "model": "eva_additions:item/night_vision_7"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 2,
+        "eva_additions:night_vision_shine": 1
+      },
+      "model": "eva_additions:item/night_vision_8"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 3,
+        "eva_additions:night_vision_shine": 1
+      },
+      "model": "eva_additions:item/night_vision_9"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 4,
+        "eva_additions:night_vision_shine": 1
+      },
+      "model": "eva_additions:item/night_vision_10"
+    },
+    {
+      "predicate": {
+        "eva_additions:night_vision_baublepower": 5,
+        "eva_additions:night_vision_shine": 1
+      },
+      "model": "eva_additions:item/night_vision_11"
     }
   ]
 }

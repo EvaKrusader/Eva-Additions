@@ -1,0 +1,44 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/curio_voidwings0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 0
+      },
+      "model": "eva_additions:item/void_wings_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 1
+      },
+      "model": "eva_additions:item/void_wings_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 2
+      },
+      "model": "eva_additions:item/void_wings_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 3
+      },
+      "model": "eva_additions:item/void_wings_3"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 4
+      },
+      "model": "eva_additions:item/void_wings_4"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 5
+      },
+      "model": "eva_additions:item/void_wings_5"
+    }
+  ]
+}

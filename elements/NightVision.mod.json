@@ -35,6 +35,9 @@
     "customProperties": {
       "baublepower": {
         "name": "AntibodyPropertyValueProvider"
+      },
+      "shine": {
+        "name": "NightVisionPropertyValueProvider"
       }
     },
     "states": [
@@ -48,6 +51,15 @@
               "min": -1.7976931348623157E308,
               "max": 1.7976931348623157E308,
               "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 0.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
               "type": "number"
             },
             "value": 0.0
@@ -67,6 +79,15 @@
               "type": "number"
             },
             "value": 1.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 0.0
           }
         ]
       },
@@ -83,6 +104,15 @@
               "type": "number"
             },
             "value": 2.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 0.0
           }
         ]
       },
@@ -99,6 +129,15 @@
               "type": "number"
             },
             "value": 3.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 0.0
           }
         ]
       },
@@ -115,6 +154,15 @@
               "type": "number"
             },
             "value": 4.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 0.0
           }
         ]
       },
@@ -131,6 +179,165 @@
               "type": "number"
             },
             "value": 5.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "curio_night_vision0_shine",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 0.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "curio_night_vision1_shine",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 1.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "curio_night_vision2_shine",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 2.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "curio_night_vision3_shine",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 3.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "curio_night_vision4_shine",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 4.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "curio_night_vision5_shine",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:baublepower",
+              "type": "number"
+            },
+            "value": 5.0
+          },
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shine",
+              "type": "number"
+            },
+            "value": 1.0
           }
         ]
       }

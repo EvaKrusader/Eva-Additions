@@ -21,6 +21,6 @@ public class MedsEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return Ingredient.of(new ItemStack(EvaAdditionsModItems.ANTIBODY.get())).test(itemstack);
+		return Ingredient.of(new ItemStack(EvaAdditionsModItems.METABOLISM.get())).test(itemstack);
 	}
 }

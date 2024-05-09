@@ -22,10 +22,10 @@ import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 public class EvaAdditionsModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EvaAdditionsMod.MODID);
 	public static final RegistryObject<CreativeModeTab> ARTIFACTS = REGISTRY.register("artifacts",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.eva_additions.artifacts")).icon(() -> new ItemStack(EvaAdditionsModItems.ANTIBODY.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(EvaAdditionsModItems.ANTIBODY.get());
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.eva_additions.artifacts")).icon(() -> new ItemStack(EvaAdditionsModItems.METABOLISM.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(EvaAdditionsModItems.METABOLISM.get());
 				tabData.accept(EvaAdditionsModItems.NIGHT_VISION.get());
-				tabData.accept(EvaAdditionsModItems.END_WINGS.get());
+				tabData.accept(EvaAdditionsModItems.VOID_WINGS.get());
 				tabData.accept(EvaAdditionsModItems.LAVA_WALKER.get());
 				tabData.accept(EvaAdditionsModItems.MOOD_CRYSTAL.get());
 				tabData.accept(EvaAdditionsModItems.WEATHER_CRYSTAL.get());
@@ -38,9 +38,9 @@ public class EvaAdditionsModTabs {
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> APTITUDES_TAB = REGISTRY.register("aptitudes_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.eva_additions.aptitudes_tab")).icon(() -> new ItemStack(EvaAdditionsModItems.SMARTASS.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(EvaAdditionsModItems.SMARTASS.get());
-				tabData.accept(EvaAdditionsModItems.HIGHER_SENSES.get());
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.eva_additions.aptitudes_tab")).icon(() -> new ItemStack(EvaAdditionsModItems.COGNITION.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(EvaAdditionsModItems.COGNITION.get());
+				tabData.accept(EvaAdditionsModItems.PERCEPTION.get());
 				tabData.accept(EvaAdditionsModItems.REQUIEM.get());
 				tabData.accept(EvaAdditionsModItems.EQUINOX.get());
 			})

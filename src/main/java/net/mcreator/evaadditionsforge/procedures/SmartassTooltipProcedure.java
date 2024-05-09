@@ -10,7 +10,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 import net.mcreator.evaadditionsforge.init.EvaAdditionsModItems;
@@ -34,41 +33,31 @@ public class SmartassTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.getItem() == EvaAdditionsModItems.SMARTASS.get()) {
+		if (itemstack.getItem() == EvaAdditionsModItems.COGNITION.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
 				GetItemRarityColorProcedure.execute(entity, itemstack);
 				if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
-					if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-						tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "nothing"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
-								+ " about those weird artifacts, you can only guess what they can do.")));
-					}
+					tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "nothing"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
+							+ " about those weird artifacts, you can only guess what they can do.")));
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
-					if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-						tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "some things"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " about artifacts but you will miss "
-								+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "important details"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
-					}
+					tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "some things"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " about artifacts but you will miss "
+							+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "important details"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-					if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-						tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "most things"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " about artifacts but you will miss "
-								+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "some details"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
-					}
+					tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "most things"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " about artifacts but you will miss "
+							+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "some details"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-					if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-						tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "almost everything"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " about artifacts but you can miss "
-								+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "some finer details"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
-					}
+					tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "almost everything"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " about artifacts but you can miss "
+							+ entity.getPersistentData().getString(("next" + "ItemRarity")) + "some finer details"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-					if (Minecraft.getInstance().options.languageCode.equals("en_us")) {
-						tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "everything perfectly"
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ", nothing is a problem to you.")));
-					}
+					tooltip.add(Component.literal(("You understand " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "everything perfectly"
+							+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ", nothing is a problem to you.")));
 				}
 			}
 		}

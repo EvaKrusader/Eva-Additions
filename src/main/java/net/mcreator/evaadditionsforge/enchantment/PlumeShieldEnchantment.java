@@ -21,6 +21,6 @@ public class PlumeShieldEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return Ingredient.of(new ItemStack(EvaAdditionsModItems.END_WINGS.get())).test(itemstack);
+		return Ingredient.of(new ItemStack(EvaAdditionsModItems.VOID_WINGS.get())).test(itemstack);
 	}
 }
