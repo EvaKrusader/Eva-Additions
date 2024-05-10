@@ -32,6 +32,13 @@ public class GiveNewAptitudeRightclickedProcedure {
 			});
 		}
 		{
+			double _setval = 0;
+			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.HasAptitudeUpped = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
 			boolean _setval = false;
 			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.hasAptitude = _setval;
@@ -72,7 +79,7 @@ public class GiveNewAptitudeRightclickedProcedure {
 				});
 			}
 		}
-		EvaAdditionsMod.queueServerWork(2, () -> {
+		EvaAdditionsMod.queueServerWork(1, () -> {
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0.75) {
 				{
 					String _setval = "Knowledge (Cognition)";
@@ -270,7 +277,7 @@ public class GiveNewAptitudeRightclickedProcedure {
 					}
 				}
 			}
-			EvaAdditionsMod.queueServerWork(2, () -> {
+			EvaAdditionsMod.queueServerWork(1, () -> {
 				if (new Object() {
 					public boolean checkGamemode(Entity _ent) {
 						if (_ent instanceof ServerPlayer _serverPlayer) {

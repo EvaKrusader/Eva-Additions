@@ -80,6 +80,8 @@ public class EvaAdditionsModVariables {
 			clone.dev_rarity = original.dev_rarity;
 			clone.dev_name = original.dev_name;
 			clone.ItemColorReset = original.ItemColorReset;
+			clone.justPowered = original.justPowered;
+			clone.HasAptitudeUpped = original.HasAptitudeUpped;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -155,6 +157,8 @@ public class EvaAdditionsModVariables {
 		public String dev_name = "\"\"";
 		public double gogglesDamage = 0;
 		public String ItemColorReset = "\u00A7r\u00A7f";
+		public boolean justPowered = false;
+		public double HasAptitudeUpped = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -189,6 +193,8 @@ public class EvaAdditionsModVariables {
 			nbt.putString("dev_name", dev_name);
 			nbt.putDouble("gogglesDamage", gogglesDamage);
 			nbt.putString("ItemColorReset", ItemColorReset);
+			nbt.putBoolean("justPowered", justPowered);
+			nbt.putDouble("HasAptitudeUpped", HasAptitudeUpped);
 			return nbt;
 		}
 
@@ -220,6 +226,8 @@ public class EvaAdditionsModVariables {
 			dev_name = nbt.getString("dev_name");
 			gogglesDamage = nbt.getDouble("gogglesDamage");
 			ItemColorReset = nbt.getString("ItemColorReset");
+			justPowered = nbt.getBoolean("justPowered");
+			HasAptitudeUpped = nbt.getDouble("HasAptitudeUpped");
 		}
 	}
 
@@ -270,6 +278,8 @@ public class EvaAdditionsModVariables {
 					variables.dev_name = message.data.dev_name;
 					variables.gogglesDamage = message.data.gogglesDamage;
 					variables.ItemColorReset = message.data.ItemColorReset;
+					variables.justPowered = message.data.justPowered;
+					variables.HasAptitudeUpped = message.data.HasAptitudeUpped;
 				}
 			});
 			context.setPacketHandled(true);

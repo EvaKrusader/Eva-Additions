@@ -14,7 +14,7 @@
     },
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 10,
+    "useDuration": 100,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -51,6 +51,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "eat"
+    "animation": "bow"
   }
 }

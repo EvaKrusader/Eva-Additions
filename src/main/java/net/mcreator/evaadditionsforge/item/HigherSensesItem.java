@@ -38,7 +38,7 @@ public class HigherSensesItem extends Item implements ICurioItem {
 
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
-		HigherSensesWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
+		HigherSensesWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity(), stack);
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "eva_additions:perception"
+      "item": "eva_additions:dev_senses_item"
     },
     "title": {
       "translate": "advancements.high_senses_max_lvl_adv.title"

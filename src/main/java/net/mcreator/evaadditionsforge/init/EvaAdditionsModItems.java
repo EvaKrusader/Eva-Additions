@@ -51,6 +51,7 @@ import net.mcreator.evaadditionsforge.item.DiscBurningmemoryItem;
 import net.mcreator.evaadditionsforge.item.DiscBumblebeeItem;
 import net.mcreator.evaadditionsforge.item.DiscBuddyhollyItem;
 import net.mcreator.evaadditionsforge.item.DevSmartassItemItem;
+import net.mcreator.evaadditionsforge.item.DevSensesItemItem;
 import net.mcreator.evaadditionsforge.item.DevNightVisionItemItem;
 import net.mcreator.evaadditionsforge.item.DevLiveleakItem;
 import net.mcreator.evaadditionsforge.item.DevCurioItemItem;
@@ -115,6 +116,7 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> DEV_APTITUDE_ITEM = REGISTRY.register("dev_aptitude_item", () -> new DevAptitudeItemItem());
 	public static final RegistryObject<Item> DEV_CURIO_ITEM = REGISTRY.register("dev_curio_item", () -> new DevCurioItemItem());
 	public static final RegistryObject<Item> APTITUDE_ORE = block(EvaAdditionsModBlocks.APTITUDE_ORE);
+	public static final RegistryObject<Item> DEV_SENSES_ITEM = REGISTRY.register("dev_senses_item", () -> new DevSensesItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

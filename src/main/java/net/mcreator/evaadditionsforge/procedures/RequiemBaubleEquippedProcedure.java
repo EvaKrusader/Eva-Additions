@@ -26,7 +26,8 @@ public class RequiemBaubleEquippedProcedure {
 		}
 		itemName = "Requiem";
 		itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
-		if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
+		if (itemstack.getOrCreateTag().getDouble("baublePower") != 0 && (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).justPowered == false
+				&& (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).HasAptitudeUpped == 0) {
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.97) {
 				itemstack.getOrCreateTag().putDouble("baublePower", 5);
 			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).knowledgeLVL > 0.85) {
@@ -41,7 +42,30 @@ public class RequiemBaubleEquippedProcedure {
 			{
 				double _setval = itemstack.getOrCreateTag().getDouble("baublePower");
 				entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.knowledgeLVL = _setval;
+					capability.aptitudePower = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if (itemstack.getOrCreateTag().getDouble("baublePower") != 0 && (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).justPowered == true) {
+			{
+				double _setval = (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).HasAptitudeUpped + 1;
+				entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.HasAptitudeUpped = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			itemstack.getOrCreateTag().putDouble("baublePower", ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower));
+			{
+				double _setval = itemstack.getOrCreateTag().getDouble("baublePower");
+				entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.aptitudePower = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				boolean _setval = false;
+				entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.justPowered = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "disk_nerv",
+    "texture": "dev_senses_anim",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Aptitude Changer",
+    "name": "Dev Curio Item",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:DevItems"
+      "value": "No creative tab entry"
     },
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 100,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -35,22 +35,19 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "AptitudeChangerRightClicked"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
       "value": "Arrow"
     },
-    "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.0,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
-    "animation": "bow"
+    "isAlwaysEdible": false,
+    "animation": "none"
   }
 }
