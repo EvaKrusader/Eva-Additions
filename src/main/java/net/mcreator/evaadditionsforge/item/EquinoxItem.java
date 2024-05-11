@@ -51,6 +51,6 @@ public class EquinoxItem extends Item implements ICurioItem {
 
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		EquinoxBaubleEquippedProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
+		EquinoxBaubleEquippedProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
 	}
 }

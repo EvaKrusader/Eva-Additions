@@ -1,6 +1,5 @@
 package net.mcreator.evaadditionsforge.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
@@ -12,7 +11,7 @@ import net.minecraft.advancements.Advancement;
 import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 
 public class HighSensesBaubleEquippedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		String itemName = "";
@@ -81,7 +80,7 @@ public class HighSensesBaubleEquippedProcedure {
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76" + "Golden" + " \u00A7r\u00A7f" + itemName)));
 		}
-		HighSensesEnderlinProcedure.execute(world, x, y, z, entity);
+		HighSensesEnderlinProcedure.execute();
 		if (entity instanceof ServerPlayer _player) {
 			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:high_senses_adv"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

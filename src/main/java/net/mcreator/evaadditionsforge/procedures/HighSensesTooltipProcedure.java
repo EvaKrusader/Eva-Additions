@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 import net.mcreator.evaadditionsforge.init.EvaAdditionsModItems;
 
 import javax.annotation.Nullable;
@@ -32,20 +33,53 @@ public class HighSensesTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
+		double speedPower = 0;
+		double cooldown = 0;
+		double speedDuration = 0;
+		double glowDistance = 0;
+		double glowDuration = 0;
+		double speedHealth = 0;
 		if (itemstack.getItem() == EvaAdditionsModItems.PERCEPTION.get()) {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") != 0) {
-				GetItemRarityColorProcedure.execute(entity, itemstack);
-				if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
-					tooltip.add(Component.literal("You understand \u00A77\u00A7nnothing\u00A7r\u00A7f about those weird artifacts, you can only guess what they can do."));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
-					tooltip.add(Component.literal("You understand \u00A7a\u00A7nsome stuff\u00A7r\u00A7f about artifacts but you will miss some \u00A7b\u00A7nimportant parts\u00A7r\u00A7f."));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
-					tooltip.add(Component.literal("You understand \u00A7b\u00A7nmost things\u00A7r\u00A7f about artifacts but you will miss some \u00A7d\u00A7ndetails\u00A7r\u00A7f."));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
-					tooltip.add(Component.literal("You understand \u00A7d\u00A7nalmost everything\u00A7r\u00A7f about artifacts but you can miss some \u00A76\u00A7nfiner details\u00A7r\u00A7f."));
-				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
-					tooltip.add(Component.literal("You understand \u00A76\u00A7neverything perfectly\u00A7r\u00A7f, nothing is a problem to you."));
+				if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 1) {
+					glowDistance = 3;
+					glowDuration = 5;
+					speedDuration = 1;
+					speedHealth = 3;
+					cooldown = 5;
+				} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 2) {
+					glowDistance = 5;
+					glowDuration = 10;
+					speedDuration = 1;
+					speedHealth = 5;
+					cooldown = 10;
+				} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 3) {
+					glowDistance = 10;
+					glowDuration = 15;
+					speedDuration = 1;
+					speedHealth = 7;
+					cooldown = 15;
+				} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 4) {
+					glowDistance = 15;
+					glowDuration = 20;
+					speedDuration = 1;
+					speedHealth = 9;
+					cooldown = 20;
+				} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 5) {
+					glowDistance = 25;
+					glowDuration = 30;
+					speedDuration = 1;
+					speedHealth = 11;
+					cooldown = 30;
 				}
+				speedPower = (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower;
+				GetItemRarityColorProcedure.execute(entity, itemstack);
+				tooltip.add(Component.literal(("You can mark entities in a " + entity.getPersistentData().getString(("current" + "AptitudeItemRarity")) + new java.text.DecimalFormat("##.##").format(glowDistance) + " " + "block radius"
+						+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " and you get an "
+						+ entity.getPersistentData().getString(("current" + "AptitudeItemRarity")) + "adrenaline boost"
+						+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " if your health falls under "
+						+ entity.getPersistentData().getString(("current" + "AptitudeItemRarity")) + new java.text.DecimalFormat("##.##").format(speedHealth / 2) + " hearts"
+						+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")));
 			}
 		}
 	}

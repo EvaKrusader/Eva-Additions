@@ -1,14 +1,10 @@
 package net.mcreator.evaadditionsforge.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
 public class AntibodyBaubleIsEquippedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
-		if (entity == null)
-			return;
+	public static void execute(ItemStack itemstack) {
 		boolean hasTried = false;
 		boolean triedWither = false;
 		boolean FixNext = false;
@@ -40,6 +36,6 @@ public class AntibodyBaubleIsEquippedProcedure {
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76Perfect \u00A7r\u00A7f" + itemName)));
 		}
-		AntibodyEnderlinkProcedure.execute(world, x, y, z, entity);
+		AntibodyEnderlinkProcedure.execute();
 	}
 }

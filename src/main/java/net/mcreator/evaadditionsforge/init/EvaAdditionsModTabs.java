@@ -61,6 +61,7 @@ public class EvaAdditionsModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(EvaAdditionsModBlocks.LAPIS_TILES_5.get().asItem());
 			tabData.accept(EvaAdditionsModBlocks.QUARTZ_TILES_5.get().asItem());
+			tabData.accept(EvaAdditionsModBlocks.XDBFG_2.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {

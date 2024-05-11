@@ -9,7 +9,7 @@
     "rarity": "COMMON",
     "slotType": "WorldInfo",
     "baubleModel": "Default",
-    "baubleModelTexture": "",
+    "baubleModelTexture": "crystal_oxygen.png",
     "creativeTab": {
       "value": "CUSTOM:Artifacts"
     },

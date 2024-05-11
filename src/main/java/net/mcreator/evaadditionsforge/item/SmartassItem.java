@@ -37,6 +37,6 @@ public class SmartassItem extends Item implements ICurioItem {
 
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		SmartassBaubleIsEquippedProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
+		SmartassBaubleIsEquippedProcedure.execute(slotContext.entity(), stack);
 	}
 }

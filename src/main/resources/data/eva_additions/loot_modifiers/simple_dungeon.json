@@ -1,0 +1,10 @@
+{
+  "type": "eva_additions:eva_additions_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+  ],
+  "lootTable": "eva_additions:gameplay/simple_dungeon_inject"
+}

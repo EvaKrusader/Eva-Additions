@@ -37,6 +37,6 @@ public class RequiemItem extends Item implements ICurioItem {
 
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		RequiemBaubleEquippedProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
+		RequiemBaubleEquippedProcedure.execute(slotContext.entity(), stack);
 	}
 }

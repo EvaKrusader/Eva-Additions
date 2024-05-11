@@ -39,6 +39,6 @@ public class NightVisionItem extends Item implements ICurioItem {
 
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		NightVisionBaubleIsEquippedProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
+		NightVisionBaubleIsEquippedProcedure.execute(stack);
 	}
 }

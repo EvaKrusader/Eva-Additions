@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.evaadditionsforge.block.Xdbfg2Block;
 import net.mcreator.evaadditionsforge.block.QuartzTiles5Block;
 import net.mcreator.evaadditionsforge.block.MiningAidStopBlock;
 import net.mcreator.evaadditionsforge.block.MiningAidBlock;
@@ -28,4 +29,5 @@ public class EvaAdditionsModBlocks {
 	public static final RegistryObject<Block> COLD_OBSIDIAN = REGISTRY.register("cold_obsidian", () -> new ColdObsidianBlock());
 	public static final RegistryObject<Block> CRACKING_OBSIDIAN = REGISTRY.register("cracking_obsidian", () -> new CrackingObsidianBlock());
 	public static final RegistryObject<Block> APTITUDE_ORE = REGISTRY.register("aptitude_ore", () -> new AptitudeOreBlock());
+	public static final RegistryObject<Block> XDBFG_2 = REGISTRY.register("xdbfg_2", () -> new Xdbfg2Block());
 }

@@ -1,0 +1,10 @@
+{
+  "_fv": 57,
+  "_type": "toast",
+  "definition": {
+    "title": "Plus Ultra!",
+    "description": "Upgrade your aptitude!",
+    "icon": "aptitdue_background.png",
+    "durationTime": 5000
+  }
+}

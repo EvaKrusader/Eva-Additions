@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "eva_additions:aptitude_adv"
+  "parent": "eva_additions:reset_aptitude_adv"
 }

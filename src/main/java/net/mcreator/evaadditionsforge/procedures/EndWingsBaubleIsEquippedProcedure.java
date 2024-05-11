@@ -1,14 +1,10 @@
 package net.mcreator.evaadditionsforge.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
 public class EndWingsBaubleIsEquippedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
-		if (entity == null)
-			return;
+	public static void execute(ItemStack itemstack) {
 		double baubleChance = 0;
 		String itemName = "";
 		String itemRarity = "";
@@ -44,6 +40,6 @@ public class EndWingsBaubleIsEquippedProcedure {
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76Remarkable\u00A7r\u00A7f " + itemName)));
 		}
-		EndWingsEnderlinkProcedure.execute(world, x, y, z, entity);
+		EndWingsEnderlinkProcedure.execute();
 	}
 }

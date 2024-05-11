@@ -38,6 +38,6 @@ public class LavaWalkerItem extends Item implements ICurioItem {
 
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		LavaWalkerBaubleIsEquippedProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
+		LavaWalkerBaubleIsEquippedProcedure.execute(stack);
 	}
 }

@@ -13,7 +13,7 @@ import net.minecraft.advancements.Advancement;
 import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 
 public class EquinoxBaubleEquippedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		String itemName = "";
@@ -87,7 +87,7 @@ public class EquinoxBaubleEquippedProcedure {
 		} else {
 			itemstack.getOrCreateTag().putDouble("equinoxCycle", 2);
 		}
-		EquinoxEnderlinkProcedure.execute(world, x, y, z, entity);
+		EquinoxEnderlinkProcedure.execute();
 		if (entity instanceof ServerPlayer _player) {
 			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:equinox_adv"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

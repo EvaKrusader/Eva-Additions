@@ -1,0 +1,10 @@
+{
+  "type": "eva_additions:eva_additions_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ruined_portal"
+    }
+  ],
+  "lootTable": "eva_additions:gameplay/ruined_portal_inject"
+}

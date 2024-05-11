@@ -1,0 +1,10 @@
+{
+  "entries": [
+    "eva_additions:simple_dungeon",
+    "eva_additions:nether_bridge",
+    "eva_additions:ruined_portal",
+    "eva_additions:stronghold_library",
+    "eva_additions:abandonned_mineshaft"
+  ],
+  "replace": false
+}

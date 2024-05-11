@@ -41,8 +41,8 @@ public class VersionCheckProcedure {
 		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
 		String url = "";
 		ver1 = 0;
-		ver2 = 1;
-		ver3 = 5;
+		ver2 = 2;
+		ver3 = 0;
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
 		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
 		try {

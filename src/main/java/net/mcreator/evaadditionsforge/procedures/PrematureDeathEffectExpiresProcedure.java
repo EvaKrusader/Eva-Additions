@@ -13,12 +13,12 @@ import net.minecraft.advancements.Advancement;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
 
 public class PrematureDeathEffectExpiresProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("eva_additions:liveleak_damage")))), 50);
 		EvaAdditionsMod.queueServerWork(60, () -> {
-			EnderlinkLiveleakProcedure.execute(world, x, y, z, entity);
+			EnderlinkLiveleakProcedure.execute();
 			EvaAdditionsMod.queueServerWork(40, () -> {
 				if (entity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:liveleak_death"));

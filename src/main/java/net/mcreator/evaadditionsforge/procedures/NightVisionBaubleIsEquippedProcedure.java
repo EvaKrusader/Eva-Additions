@@ -1,14 +1,10 @@
 package net.mcreator.evaadditionsforge.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
 public class NightVisionBaubleIsEquippedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
-		if (entity == null)
-			return;
+	public static void execute(ItemStack itemstack) {
 		String itemName = "";
 		double baubleChance = 0;
 		itemName = "Night Vision Goggles";
@@ -42,6 +38,6 @@ public class NightVisionBaubleIsEquippedProcedure {
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76Elite \u00A7r\u00A7f" + itemName)));
 		}
-		NightVisionEnderlinkProcedure.execute(world, x, y, z, entity);
+		NightVisionEnderlinkProcedure.execute();
 	}
 }

@@ -1595,18 +1595,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -1795,28 +1783,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -1923,19 +1891,6 @@
         ]
       },
       "path": "~/Blocks"
-    },
-    {
-      "name": "Dungeon",
-      "type": "loottable",
-      "sortid": 130,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "dungeon",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/loot_tables/chests/simple_dungeon.json"
-        ]
-      }
     },
     {
       "name": "NightVision",
@@ -2311,28 +2266,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/EnderlinkLiveleakProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Liveleak"
     },
@@ -2347,28 +2281,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/AntibodyEnderlinkProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Curio/Antibodies"
     },
@@ -2602,28 +2515,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2670,28 +2563,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2840,22 +2713,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2928,28 +2785,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/SmartassEnderlinkProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Curio/Aptitudes/Smartass"
     },
@@ -3128,22 +2964,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3188,28 +3008,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/HighSensesEnderlinProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Curio/Aptitudes/Hightened Senses"
     },
@@ -3316,22 +3115,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3376,28 +3159,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/RequiemEnderlinkProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Curio/Aptitudes/Requiem"
     },
@@ -3463,18 +3225,6 @@
             "type": "itemstack"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -3517,28 +3267,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/EquinoxEnderlinkProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Curio/Aptitudes/Equinox"
     },
@@ -3810,28 +3539,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/EndWingsEnderlinkProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Curio/EndWings"
     },
@@ -3901,28 +3609,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -4302,28 +3990,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/LavaWalkerEnderlinkProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Curio/LavaWalker"
     },
@@ -4438,28 +4105,7 @@
         "files": [
           "src/main/java/net/mcreator/evaadditionsforge/procedures/NightVisionEnderlinkProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Curio/NightVision"
     },
@@ -5198,6 +4844,196 @@
         ]
       },
       "path": "~/Dev"
+    },
+    {
+      "name": "SimpleDungeon",
+      "type": "lootmodifier",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_dungeon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_modifiers/simple_dungeon.json"
+        ]
+      }
+    },
+    {
+      "name": "NetherBridge",
+      "type": "lootmodifier",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_bridge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_modifiers/nether_bridge.json"
+        ]
+      }
+    },
+    {
+      "name": "RuinedPortal",
+      "type": "lootmodifier",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruined_portal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_modifiers/ruined_portal.json"
+        ]
+      }
+    },
+    {
+      "name": "StrongholdLibrary",
+      "type": "lootmodifier",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stronghold_library",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_modifiers/stronghold_library.json"
+        ]
+      }
+    },
+    {
+      "name": "SimpleDungeonInject",
+      "type": "loottable",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_dungeon_inject",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/gameplay/simple_dungeon_inject.json"
+        ]
+      }
+    },
+    {
+      "name": "NetherBridgeInject",
+      "type": "loottable",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_bridge_inject",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/gameplay/nether_bridge_inject.json"
+        ]
+      }
+    },
+    {
+      "name": "RuinedPortalInject",
+      "type": "loottable",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruined_portal_inject",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/gameplay/ruined_portal_inject.json"
+        ]
+      }
+    },
+    {
+      "name": "StrongholdLibraryInject",
+      "type": "loottable",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stronghold_library_inject",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/gameplay/stronghold_library_inject.json"
+        ]
+      }
+    },
+    {
+      "name": "Xdbfg2",
+      "type": "block",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xdbfg_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/xdbfg_2.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/Xdbfg2Block.java",
+          "src/main/resources/assets/eva_additions/models/block/xdbfg_2.json",
+          "src/main/resources/assets/eva_additions/blockstates/xdbfg_2.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PowerUpperToast",
+      "type": "toast",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_upper_toast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/client/toasts/PowerUpperToastToast.java"
+        ]
+      },
+      "path": "~/Curio"
+    },
+    {
+      "name": "AptitudeOreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitude_ore_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/AptitudeOreBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Curio"
+    },
+    {
+      "name": "ResetAptitudeAdv",
+      "type": "achievement",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_aptitude_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/reset_aptitude_adv.json"
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "AbandonnedMineshaft",
+      "type": "lootmodifier",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abandonned_mineshaft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_modifiers/abandonned_mineshaft.json"
+        ]
+      }
+    },
+    {
+      "name": "AbandonnedMineshaftInject",
+      "type": "loottable",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abandonned_mineshaft_inject",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/abandonned_mineshaft_inject.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5520,8 +5356,8 @@
       "advancements.night_vision_adv.descr": "Turn on your night vision goggles",
       "painting.eva_additions.diane_4.author": "???",
       "item.eva_additions.disc_libet.desc": "The Caretaker - Libet\u0027s Delay",
-      "advancements.liveleak_death.title": "Quick \u0026 Painful",
       "block.eva_additions.aptitude_ore": "Aptitude Ore",
+      "advancements.liveleak_death.title": "Quick \u0026 Painful",
       "subtitles.record_tortoisebeetle": "",
       "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
       "advancements.adv_isopod.title": "Tough Shell",
@@ -5529,55 +5365,58 @@
       "effect.eva_additions.goggles_damage": "Goggles Eye Damage",
       "subtitles.record_spinyspider": "",
       "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
-      "item.eva_additions.cryostasis": "Music Disc",
       "item.eva_additions.disc_butterfly": "Music Disc",
+      "item.eva_additions.cryostasis": "Music Disc",
       "item.eva_additions.disc_butterfly.desc": "camiidae - butterfly",
       "item.eva_additions.entomologist_epiphany": "Entomologist Epiphany",
       "painting.eva_additions.snap.title": "The One Who Snaps",
       "item.eva_additions.metabolism": "Foreign Antibodies",
       "item.eva_additions_forge.disc_isopod": "Music Disc",
+      "toasts.eva_additions.power_upper_toast.description": "Upgrade your aptitude!",
       "advancements.adv_pomni.descr": "Wake up in your new home",
       "painting.eva_additions.diane_6.author": "Flait13",
       "item.eva_additions.perception": "High Senses",
       "advancements.smartass_max_lvl_adv.descr": "Reach maximum enlightenment",
-      "advancements.adv_roundabout.title": "To Be Continued",
       "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
+      "advancements.adv_roundabout.title": "To Be Continued",
       "painting.eva_additions.great_attraction.title": "Great Attraction",
       "painting.eva_additions.story_of_undertale.title": "Story Of Undertale",
       "advancements.adv_moth.descr": "Get burned in a bug infested biome",
-      "painting.eva_additions.great_attraction.author": "LHUGUENY",
       "painting.eva_additions_forge.story_of_undertale.author": "LHUGUENY",
+      "painting.eva_additions.great_attraction.author": "LHUGUENY",
       "subtitles.record_yournewhome": "",
       "subtitles.record_butterfly": "",
-      "painting.eva_additions_forge.bliss.title": "Bliss",
       "advancements.adv_scarab.title": "Critter",
-      "subtitles.record_cryostasis": "",
+      "painting.eva_additions_forge.bliss.title": "Bliss",
       "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
+      "subtitles.record_cryostasis": "",
       "item.eva_additions.cognition": "Cognition",
       "painting.eva_additions.pomni_painting.author": "amba_si",
       "painting.eva_additions.antibody_test.title": "Makeshift Infirmary",
       "painting.eva_additions.pomni_painting.title": "Bridge",
       "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
+      "advancements.reset_aptitude_adv.title": "Blank Slate",
       "curios.identifier.aptitude": "Aptitude",
       "painting.eva_additions.black_hole.title": "Black Hole",
       "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
       "painting.eva_additions.einstein.title": "Einstein",
-      "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
       "subtitles.enderlink_ping": "",
+      "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
       "item.eva_additions.enter_claustrophobia": "Enter Claustrophobia",
       "item.eva_additions_forge.disc_treehopper": "Music Disc",
       "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
       "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
       "item.eva_additions.disc_moth.desc": "camiidae - moth",
-      "advancements.adv_weevil.title": "Evil Weevil",
-      "item.eva_additions.power_upper": "Power Upper",
       "item.eva_additions.aptitude_changer": "Aptitude Changer",
+      "item.eva_additions.power_upper": "Power Upper",
+      "advancements.adv_weevil.title": "Evil Weevil",
       "item.eva_additions.disc_burningmemory": "Music Disc",
-      "advancements.high_senses_max_lvl_adv.title": "Superior ",
+      "toasts.eva_additions.power_upper_toast.title": "Plus Ultra!",
       "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
+      "advancements.high_senses_max_lvl_adv.title": "Superior ",
       "item.eva_additions.dev_night_vision_item": "Dev NightVision Item",
-      "painting.eva_additions.poli.title": "Poli",
       "painting.eva_additions_forge.diane_2.author": "???",
+      "painting.eva_additions.poli.title": "Poli",
       "painting.eva_additions_forge.diane_1.title": "Diane 1",
       "block.eva_additions.cold_obsidian": "Cold Obsidian",
       "advancements.requiem_adv.title": "Superior Power",
@@ -5631,6 +5470,7 @@
       "advancements.high_senses_max_lvl_adv.descr": "Be born with higher sensitivity",
       "item.eva_additions.upgraded_gps": "Upgraded GPS",
       "advancements.lava_walker_enchant.title": "Burning Soul",
+      "block.eva_additions.xdbfg_2": "Quartz Tiles",
       "advancements.high_senses_adv.title": "Superior Senses",
       "painting.eva_additions.einstein.author": "Poli",
       "item.eva_additions_forge.disc_moth": "Music Disc",
@@ -5640,6 +5480,7 @@
       "item.eva_additions.disc_spinyspider.desc": "camiidae - spiny spider",
       "key.eva_additions_forge.show_patch_notes": "Show Patch Notes",
       "item_group.eva_additions.artifacts": "Artifacts",
+      "advancements.reset_aptitude_adv.descr": "Reset your aptitude to it\u0027s lowest level",
       "advancements.adv_bumblebee.descr": "Get stung by a bee",
       "advancements.adv_treehopper.descr": "Cut down some trees",
       "subtitles.heartbeat": "",
@@ -5910,7 +5751,7 @@
   "workspaceSettings": {
     "modid": "eva_additions",
     "modName": "Eva Additions Forge",
-    "version": "0.1.5",
+    "version": "0.2.0",
     "author": "saver, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
