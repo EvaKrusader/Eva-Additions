@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Entomologist Epiphany",
-    "rarity": "COMMON",
+    "name": "Entomologist's Epiphany",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -35,6 +35,12 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "EntomologistEpiphanyItemInInventoryTick"
+    },
+    "onItemInUseTick": {
+      "name": "EntomologistEpiphanyItemInHandTick"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

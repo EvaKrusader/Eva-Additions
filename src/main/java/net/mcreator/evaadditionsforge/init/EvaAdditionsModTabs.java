@@ -27,13 +27,13 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.NIGHT_VISION.get());
 				tabData.accept(EvaAdditionsModItems.VOID_WINGS.get());
 				tabData.accept(EvaAdditionsModItems.LAVA_WALKER.get());
-				tabData.accept(EvaAdditionsModItems.MOOD_CRYSTAL.get());
-				tabData.accept(EvaAdditionsModItems.WEATHER_CRYSTAL.get());
 				tabData.accept(EvaAdditionsModItems.CRYSTAL_OXYGEN.get());
 				tabData.accept(EvaAdditionsModItems.CRYSTAL_DEPTH.get());
 				tabData.accept(EvaAdditionsModItems.CRYSTAL_EARTH.get());
 				tabData.accept(EvaAdditionsModItems.GPS.get());
 				tabData.accept(EvaAdditionsModItems.UPGRADED_GPS.get());
+				tabData.accept(EvaAdditionsModItems.MOOD_CRYSTAL.get());
+				tabData.accept(EvaAdditionsModItems.WEATHER_CRYSTAL.get());
 			})
 
 					.build());
@@ -49,7 +49,6 @@ public class EvaAdditionsModTabs {
 	public static final RegistryObject<CreativeModeTab> DEV_ITEMS = REGISTRY.register("dev_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.eva_additions.dev_items")).icon(() -> new ItemStack(EvaAdditionsModItems.GIVE_NEW_APTITUDE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(EvaAdditionsModItems.POWER_UPPER.get());
-				tabData.accept(EvaAdditionsModItems.APTITUDE_CHANGER.get());
 				tabData.accept(EvaAdditionsModItems.GIVE_NEW_APTITUDE.get());
 				tabData.accept(EvaAdditionsModItems.ITEM_UPPER.get());
 			})
@@ -93,7 +92,6 @@ public class EvaAdditionsModTabs {
 			tabData.accept(EvaAdditionsModItems.DISC_LIBET.get());
 			tabData.accept(EvaAdditionsModItems.DISC_BURNINGMEMORY.get());
 			tabData.accept(EvaAdditionsModItems.DISC_BUDDYHOLLY.get());
-			tabData.accept(EvaAdditionsModItems.CRYOSTASIS.get());
 			tabData.accept(EvaAdditionsModItems.ENTER_CLAUSTROPHOBIA.get());
 		}
 

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dev_antibody_anim",
+    "texture": "dev_upper_anim",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Power Upper",
+    "name": "Item Upper",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:DevItems"
@@ -35,9 +35,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "PowerUpperRightclicked"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

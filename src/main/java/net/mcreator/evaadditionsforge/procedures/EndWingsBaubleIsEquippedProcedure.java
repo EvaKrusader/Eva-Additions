@@ -56,6 +56,7 @@ public class EndWingsBaubleIsEquippedProcedure {
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
 					itemstack.getOrCreateTag().putDouble("wingDamager", 4);
 				}
+				itemstack.setHoverName(Component.literal(((itemstack.getDisplayName().getString()).substring(1, (int) ((itemstack.getDisplayName().getString()).length() - 1)) + " " + "\u00A7b\u00A7n(Loob Coating)")));
 			} else if (itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.WING_GEL.get()) == 2) {
 				if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
@@ -68,6 +69,7 @@ public class EndWingsBaubleIsEquippedProcedure {
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
 					itemstack.getOrCreateTag().putDouble("wingDamager", 3);
 				}
+				itemstack.setHoverName(Component.literal(((itemstack.getDisplayName().getString()).substring(1, (int) ((itemstack.getDisplayName().getString()).length() - 1)) + " " + "\u00A7d\u00A7n(Waks Coating)")));
 			} else if (itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.WING_GEL.get()) == 3) {
 				if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
@@ -80,6 +82,7 @@ public class EndWingsBaubleIsEquippedProcedure {
 				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
 					itemstack.getOrCreateTag().putDouble("wingDamager", 2);
 				}
+				itemstack.setHoverName(Component.literal(((itemstack.getDisplayName().getString()).substring(1, (int) ((itemstack.getDisplayName().getString()).length() - 1)) + " " + "\u00A76\u00A7n(Viveldop Coating)")));
 			}
 		} else {
 			if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {

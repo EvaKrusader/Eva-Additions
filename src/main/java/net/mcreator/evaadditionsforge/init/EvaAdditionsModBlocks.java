@@ -25,9 +25,9 @@ public class EvaAdditionsModBlocks {
 	public static final RegistryObject<Block> MINING_AID = REGISTRY.register("mining_aid", () -> new MiningAidBlock());
 	public static final RegistryObject<Block> LAPIS_TILES_5 = REGISTRY.register("lapis_tiles_5", () -> new LapisTiles5Block());
 	public static final RegistryObject<Block> QUARTZ_TILES_5 = REGISTRY.register("quartz_tiles_5", () -> new QuartzTiles5Block());
+	public static final RegistryObject<Block> XDBFG_2 = REGISTRY.register("xdbfg_2", () -> new Xdbfg2Block());
+	public static final RegistryObject<Block> APTITUDE_ORE = REGISTRY.register("aptitude_ore", () -> new AptitudeOreBlock());
 	public static final RegistryObject<Block> MINING_AID_STOP = REGISTRY.register("mining_aid_stop", () -> new MiningAidStopBlock());
 	public static final RegistryObject<Block> COLD_OBSIDIAN = REGISTRY.register("cold_obsidian", () -> new ColdObsidianBlock());
 	public static final RegistryObject<Block> CRACKING_OBSIDIAN = REGISTRY.register("cracking_obsidian", () -> new CrackingObsidianBlock());
-	public static final RegistryObject<Block> APTITUDE_ORE = REGISTRY.register("aptitude_ore", () -> new AptitudeOreBlock());
-	public static final RegistryObject<Block> XDBFG_2 = REGISTRY.register("xdbfg_2", () -> new Xdbfg2Block());
 }

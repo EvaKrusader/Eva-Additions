@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "eva_additions:item/dev_antibody_anim"
+    "layer0": "eva_additions:item/dev_upper_anim"
   }
 }

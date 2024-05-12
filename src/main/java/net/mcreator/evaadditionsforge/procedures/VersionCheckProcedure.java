@@ -84,6 +84,7 @@ public class VersionCheckProcedure {
 				e.printStackTrace();
 			}
 		}
+		VersionCheckDateProcedure.execute(world);
 		ChooseAptitudeProcedure.execute(entity);
 	}
 }

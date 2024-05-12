@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:wing_gel_item"
+    },
+    "title": {
+      "translate": "advancements.wing_gel_adv.title"
+    },
+    "description": {
+      "translate": "advancements.wing_gel_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "wing_gel_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "eva_additions:ender_wings_adv"
+}

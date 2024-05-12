@@ -7,7 +7,7 @@
     "achievementIcon": {
       "value": "CUSTOM:AptitudeOre"
     },
-    "background": "aptitude_background2.png",
+    "background": "aptitude_background3.png",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,

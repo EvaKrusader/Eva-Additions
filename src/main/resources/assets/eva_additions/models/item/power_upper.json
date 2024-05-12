@@ -1,6 +1,44 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "eva_additions:item/dev_antibody_anim"
-  }
+    "layer0": "eva_additions:item/dev_anim_powerupper"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:power_upper_returnaptitude": 0
+      },
+      "model": "eva_additions:item/power_upper_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:power_upper_returnaptitude": 1
+      },
+      "model": "eva_additions:item/power_upper_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:power_upper_returnaptitude": 2
+      },
+      "model": "eva_additions:item/power_upper_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:power_upper_returnaptitude": 3
+      },
+      "model": "eva_additions:item/power_upper_3"
+    },
+    {
+      "predicate": {
+        "eva_additions:power_upper_returnaptitude": 4
+      },
+      "model": "eva_additions:item/power_upper_4"
+    },
+    {
+      "predicate": {
+        "eva_additions:power_upper_returnaptitude": 5
+      },
+      "model": "eva_additions:item/power_upper_5"
+    }
+  ]
 }

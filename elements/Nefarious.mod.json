@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "painting",
+  "definition": {
+    "texture": "nefarious.png",
+    "width": 32,
+    "height": 32,
+    "title": "Nefarious Creature",
+    "author": "EvaKrusader"
+  }
+}

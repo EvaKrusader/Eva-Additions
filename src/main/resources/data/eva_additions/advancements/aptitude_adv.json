@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "eva_additions:textures/screens/aptitude_background2.png",
+    "background": "eva_additions:textures/screens/aptitude_background3.png",
     "icon": {
       "item": "eva_additions:aptitude_ore"
     },

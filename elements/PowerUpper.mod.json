@@ -3,10 +3,111 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dev_antibody_anim",
+    "texture": "dev_anim_powerupper",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "returnaptitude": {
+        "name": "PowerUpperPropertyValueProvider"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "aptitude_upper0",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:returnaptitude",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "aptitude_upper1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:returnaptitude",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "aptitude_upper2",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:returnaptitude",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "aptitude_upper3",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:returnaptitude",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "aptitude_upper4",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:returnaptitude",
+              "type": "number"
+            },
+            "value": 4.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "aptitude_upper5",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:returnaptitude",
+              "type": "number"
+            },
+            "value": 5.0
+          }
+        ]
+      }
+    ],
     "name": "Power Upper",
     "rarity": "COMMON",
     "creativeTab": {

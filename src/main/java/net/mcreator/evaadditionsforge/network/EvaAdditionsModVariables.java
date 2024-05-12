@@ -104,6 +104,7 @@ public class EvaAdditionsModVariables {
 				clone.gogglesDamage = original.gogglesDamage;
 				clone.wingersss = original.wingersss;
 				clone.lastWalked5seconds = original.lastWalked5seconds;
+				clone.extraWingDamage = original.extraWingDamage;
 			}
 		}
 	}
@@ -171,6 +172,7 @@ public class EvaAdditionsModVariables {
 		public double obsidianTimer = 0;
 		public ItemStack wingersss = ItemStack.EMPTY;
 		public BlockState lastWalked5seconds = Blocks.AIR.defaultBlockState();
+		public double extraWingDamage = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -211,6 +213,7 @@ public class EvaAdditionsModVariables {
 			nbt.putDouble("obsidianTimer", obsidianTimer);
 			nbt.put("wingersss", wingersss.save(new CompoundTag()));
 			nbt.put("lastWalked5seconds", NbtUtils.writeBlockState(lastWalked5seconds));
+			nbt.putDouble("extraWingDamage", extraWingDamage);
 			return nbt;
 		}
 
@@ -248,6 +251,7 @@ public class EvaAdditionsModVariables {
 			obsidianTimer = nbt.getDouble("obsidianTimer");
 			wingersss = ItemStack.of(nbt.getCompound("wingersss"));
 			lastWalked5seconds = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), nbt.getCompound("lastWalked5seconds"));
+			extraWingDamage = nbt.getDouble("extraWingDamage");
 		}
 	}
 
@@ -304,6 +308,7 @@ public class EvaAdditionsModVariables {
 					variables.obsidianTimer = message.data.obsidianTimer;
 					variables.wingersss = message.data.wingersss;
 					variables.lastWalked5seconds = message.data.lastWalked5seconds;
+					variables.extraWingDamage = message.data.extraWingDamage;
 				}
 			});
 			context.setPacketHandled(true);

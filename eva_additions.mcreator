@@ -138,7 +138,7 @@
     {
       "name": "LootWeevil",
       "type": "loottable",
-      "sortid": 40,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_weevil",
@@ -152,7 +152,7 @@
     {
       "name": "LootButterfly",
       "type": "loottable",
-      "sortid": 41,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_butterfly",
@@ -166,7 +166,7 @@
     {
       "name": "LootTreehopper",
       "type": "loottable",
-      "sortid": 42,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_treehopper",
@@ -180,7 +180,7 @@
     {
       "name": "LootMoth",
       "type": "loottable",
-      "sortid": 43,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_moth",
@@ -194,7 +194,7 @@
     {
       "name": "LootIsopod",
       "type": "loottable",
-      "sortid": 44,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_isopod",
@@ -208,7 +208,7 @@
     {
       "name": "LootBumblebee",
       "type": "loottable",
-      "sortid": 45,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_bumblebee",
@@ -222,7 +222,7 @@
     {
       "name": "LootScarab",
       "type": "loottable",
-      "sortid": 46,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_scarab",
@@ -236,7 +236,7 @@
     {
       "name": "LootSpinyspider",
       "type": "loottable",
-      "sortid": 47,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_spinyspider",
@@ -250,7 +250,7 @@
     {
       "name": "LootTortoisebeetle",
       "type": "loottable",
-      "sortid": 48,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_tortoisebeetle",
@@ -264,7 +264,7 @@
     {
       "name": "AdvWeevil",
       "type": "achievement",
-      "sortid": 49,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_weevil",
@@ -278,7 +278,7 @@
     {
       "name": "AdvButterfly",
       "type": "achievement",
-      "sortid": 50,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_butterfly",
@@ -292,7 +292,7 @@
     {
       "name": "AdvTreehopper",
       "type": "achievement",
-      "sortid": 51,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_treehopper",
@@ -306,7 +306,7 @@
     {
       "name": "AdvMoth",
       "type": "achievement",
-      "sortid": 52,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_moth",
@@ -320,7 +320,7 @@
     {
       "name": "AdvIsopod",
       "type": "achievement",
-      "sortid": 53,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_isopod",
@@ -334,7 +334,7 @@
     {
       "name": "AdvBumblebee",
       "type": "achievement",
-      "sortid": 54,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_bumblebee",
@@ -348,7 +348,7 @@
     {
       "name": "AdvScarab",
       "type": "achievement",
-      "sortid": 55,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_scarab",
@@ -362,7 +362,7 @@
     {
       "name": "AdvSpinyspider",
       "type": "achievement",
-      "sortid": 56,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_spinyspider",
@@ -376,7 +376,7 @@
     {
       "name": "AdvTortoisebeetle",
       "type": "achievement",
-      "sortid": 57,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_tortoisebeetle",
@@ -390,7 +390,7 @@
     {
       "name": "DiscographyItem",
       "type": "item",
-      "sortid": 58,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "discography_item",
@@ -405,7 +405,7 @@
     {
       "name": "Discography",
       "type": "achievement",
-      "sortid": 59,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "discography",
@@ -419,7 +419,7 @@
     {
       "name": "EntomologistEpiphany",
       "type": "item",
-      "sortid": 21,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "entomologist_epiphany",
@@ -434,7 +434,7 @@
     {
       "name": "Entomologist",
       "type": "achievement",
-      "sortid": 60,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "entomologist",
@@ -448,7 +448,7 @@
     {
       "name": "DiscItems",
       "type": "tag",
-      "sortid": 61,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "disc_items",
@@ -462,7 +462,7 @@
     {
       "name": "LootEntomologist",
       "type": "loottable",
-      "sortid": 62,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_entomologist",
@@ -476,7 +476,7 @@
     {
       "name": "GetEntomologist",
       "type": "procedure",
-      "sortid": 63,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_entomologist",
@@ -496,7 +496,7 @@
     {
       "name": "WeevilBlocks",
       "type": "tag",
-      "sortid": 64,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "weevil_blocks",
@@ -510,7 +510,7 @@
     {
       "name": "GetWeevil",
       "type": "procedure",
-      "sortid": 65,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_weevil",
@@ -534,7 +534,7 @@
     {
       "name": "GetButterfly",
       "type": "procedure",
-      "sortid": 66,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_butterfly",
@@ -570,7 +570,7 @@
     {
       "name": "GetTreehopper",
       "type": "procedure",
-      "sortid": 67,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_treehopper",
@@ -594,7 +594,7 @@
     {
       "name": "GetMoth",
       "type": "procedure",
-      "sortid": 68,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_moth",
@@ -634,7 +634,7 @@
     {
       "name": "Treeblocks",
       "type": "tag",
-      "sortid": 69,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "treeblocks",
@@ -648,7 +648,7 @@
     {
       "name": "GetIsopod",
       "type": "procedure",
-      "sortid": 70,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_isopod",
@@ -688,7 +688,7 @@
     {
       "name": "GetBumblebee",
       "type": "procedure",
-      "sortid": 71,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_bumblebee",
@@ -728,7 +728,7 @@
     {
       "name": "GetScarab",
       "type": "procedure",
-      "sortid": 72,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_scarab",
@@ -752,7 +752,7 @@
     {
       "name": "ScarabBlocks",
       "type": "tag",
-      "sortid": 73,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "scarab_blocks",
@@ -766,7 +766,7 @@
     {
       "name": "GetSpinyspider",
       "type": "procedure",
-      "sortid": 74,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_spinyspider",
@@ -786,7 +786,7 @@
     {
       "name": "GetTortoisebeetle",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_tortoisebeetle",
@@ -810,7 +810,7 @@
     {
       "name": "Flowers",
       "type": "tag",
-      "sortid": 76,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flowers",
@@ -824,7 +824,7 @@
     {
       "name": "BugBiomes",
       "type": "tag",
-      "sortid": 77,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bug_biomes",
@@ -838,7 +838,7 @@
     {
       "name": "GamemodeSwitcherOnKeyPressed",
       "type": "procedure",
-      "sortid": 78,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gamemode_switcher_on_key_pressed",
@@ -874,7 +874,7 @@
     {
       "name": "GamemodeSwitcher",
       "type": "keybind",
-      "sortid": 79,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gamemode_switcher",
@@ -888,7 +888,7 @@
     {
       "name": "GetEnderlink",
       "type": "procedure",
-      "sortid": 80,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_enderlink",
@@ -908,7 +908,7 @@
     {
       "name": "UncomfortablePeriod",
       "type": "painting",
-      "sortid": 81,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "uncomfortable_period",
@@ -920,7 +920,7 @@
     {
       "name": "StoryOfUndertale",
       "type": "painting",
-      "sortid": 82,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "story_of_undertale",
@@ -932,7 +932,7 @@
     {
       "name": "Bliss",
       "type": "painting",
-      "sortid": 83,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bliss",
@@ -944,7 +944,7 @@
     {
       "name": "Diane1",
       "type": "painting",
-      "sortid": 84,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_1",
@@ -956,7 +956,7 @@
     {
       "name": "Diane2",
       "type": "painting",
-      "sortid": 85,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_2",
@@ -968,7 +968,7 @@
     {
       "name": "Diane3",
       "type": "painting",
-      "sortid": 86,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_3",
@@ -980,7 +980,7 @@
     {
       "name": "Diane4",
       "type": "painting",
-      "sortid": 87,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_4",
@@ -1007,7 +1007,7 @@
     {
       "name": "LootPomni",
       "type": "loottable",
-      "sortid": 88,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_pomni",
@@ -1021,7 +1021,7 @@
     {
       "name": "AdvPomni",
       "type": "achievement",
-      "sortid": 89,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_pomni",
@@ -1035,7 +1035,7 @@
     {
       "name": "GetPomni",
       "type": "procedure",
-      "sortid": 90,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_pomni",
@@ -1055,7 +1055,7 @@
     {
       "name": "MiningAid",
       "type": "block",
-      "sortid": 22,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid",
@@ -1072,7 +1072,7 @@
     {
       "name": "MiningAidStop",
       "type": "block",
-      "sortid": 91,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_stop",
@@ -1089,7 +1089,7 @@
     {
       "name": "Poli",
       "type": "painting",
-      "sortid": 92,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poli",
@@ -1101,7 +1101,7 @@
     {
       "name": "MiningAidNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 93,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_neighbour_block_changes",
@@ -1133,7 +1133,7 @@
     {
       "name": "MiningAidBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 94,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_block_destroyed_by_player",
@@ -1165,7 +1165,7 @@
     {
       "name": "MiningAidStopNeighbourBlockChanges",
       "type": "procedure",
-      "sortid": 95,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_stop_neighbour_block_changes",
@@ -1197,7 +1197,7 @@
     {
       "name": "MiningAidOff",
       "type": "tag",
-      "sortid": 96,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_off",
@@ -1211,7 +1211,7 @@
     {
       "name": "MiningAidBlocks",
       "type": "tag",
-      "sortid": 97,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mining_aid_blocks",
@@ -1225,7 +1225,7 @@
     {
       "name": "GetDiscography",
       "type": "procedure",
-      "sortid": 98,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_discography",
@@ -1245,7 +1245,7 @@
     {
       "name": "AdvRoundabout",
       "type": "achievement",
-      "sortid": 99,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adv_roundabout",
@@ -1274,7 +1274,7 @@
     {
       "name": "LootRoundabout",
       "type": "loottable",
-      "sortid": 100,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "loot_roundabout",
@@ -1288,7 +1288,7 @@
     {
       "name": "GetRoundabout",
       "type": "procedure",
-      "sortid": 101,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_roundabout",
@@ -1308,7 +1308,7 @@
     {
       "name": "BlackHole",
       "type": "painting",
-      "sortid": 102,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_hole",
@@ -1320,7 +1320,7 @@
     {
       "name": "Einstein",
       "type": "painting",
-      "sortid": 103,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "einstein",
@@ -1347,7 +1347,7 @@
     {
       "name": "Diane5",
       "type": "painting",
-      "sortid": 104,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_5",
@@ -1359,7 +1359,7 @@
     {
       "name": "Diane6",
       "type": "painting",
-      "sortid": 105,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diane_6",
@@ -1371,7 +1371,7 @@
     {
       "name": "GreatAttraction",
       "type": "painting",
-      "sortid": 106,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "great_attraction",
@@ -1383,7 +1383,7 @@
     {
       "name": "LCLSea",
       "type": "painting",
-      "sortid": 107,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lcl_sea",
@@ -1425,7 +1425,7 @@
     {
       "name": "CreeperDropMusicDiscs",
       "type": "tag",
-      "sortid": 108,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "creeper_drop_music_discs",
@@ -1435,73 +1435,6 @@
         ]
       },
       "path": "~/Discs"
-    },
-    {
-      "name": "Cryostasis",
-      "type": "musicdisc",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryostasis",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/eva_additions/models/item/cryostasis.json",
-          "src/main/java/net/mcreator/evaadditionsforge/item/CryostasisItem.java"
-        ]
-      },
-      "path": "~/Discs/Fake Music"
-    },
-    {
-      "name": "CryostasisAdv",
-      "type": "achievement",
-      "sortid": 109,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryostasis_adv",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/eva_additions/advancements/cryostasis_adv.json"
-        ]
-      },
-      "path": "~/Discs/Fake Music"
-    },
-    {
-      "name": "GetCryostasis",
-      "type": "procedure",
-      "sortid": 110,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_cryostasis",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/evaadditionsforge/procedures/GetCryostasisProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Discs/Fake Music"
-    },
-    {
-      "name": "GiveCryostasis",
-      "type": "loottable",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "give_cryostasis",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/eva_additions/loot_tables/entities/give_cryostasis.json"
-        ]
-      },
-      "path": "~/Discs/Fake Music"
     },
     {
       "name": "Snap",
@@ -1727,7 +1660,7 @@
     {
       "name": "Antibody",
       "type": "curiosbauble",
-      "sortid": 23,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "metabolism",
@@ -1878,7 +1811,7 @@
     {
       "name": "LapisTiles5",
       "type": "block",
-      "sortid": 34,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lapis_tiles_5",
@@ -1895,7 +1828,7 @@
     {
       "name": "NightVision",
       "type": "curiosbauble",
-      "sortid": 24,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision",
@@ -1923,7 +1856,7 @@
     {
       "name": "AntibodyHurtOverlayDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 131,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_hurt_overlay_display_overlay_ingame",
@@ -1944,7 +1877,7 @@
     {
       "name": "AntibodyHurtOverlay",
       "type": "overlay",
-      "sortid": 132,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_hurt_overlay",
@@ -1958,7 +1891,7 @@
     {
       "name": "NightVisionWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 133,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_while_bauble_is_equipped_tick",
@@ -1998,7 +1931,7 @@
     {
       "name": "DisplayAntibody",
       "type": "procedure",
-      "sortid": 134,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "display_antibody",
@@ -2018,7 +1951,7 @@
     {
       "name": "DoHurtAntibody",
       "type": "procedure",
-      "sortid": 135,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "do_hurt_antibody",
@@ -2054,7 +1987,7 @@
     {
       "name": "AntibodyFullDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 136,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_full_display_overlay_ingame",
@@ -2075,7 +2008,7 @@
     {
       "name": "AntibodyFull",
       "type": "overlay",
-      "sortid": 137,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_full",
@@ -2089,7 +2022,7 @@
     {
       "name": "AntibodyStep1",
       "type": "overlay",
-      "sortid": 138,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_step_1",
@@ -2103,7 +2036,7 @@
     {
       "name": "AntibodyStep2",
       "type": "overlay",
-      "sortid": 139,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_step_2",
@@ -2117,7 +2050,7 @@
     {
       "name": "AntibodyStep3",
       "type": "overlay",
-      "sortid": 140,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_step_3",
@@ -2131,7 +2064,7 @@
     {
       "name": "AntibodyStep4",
       "type": "overlay",
-      "sortid": 141,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_step_4",
@@ -2145,7 +2078,7 @@
     {
       "name": "AntibodyOVLStep1",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_ovl_step_1",
@@ -2166,7 +2099,7 @@
     {
       "name": "AntibodyOVLStep2",
       "type": "procedure",
-      "sortid": 143,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_ovl_step_2",
@@ -2187,7 +2120,7 @@
     {
       "name": "AntibodyOVLStep3",
       "type": "procedure",
-      "sortid": 144,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_ovl_step_3",
@@ -2208,7 +2141,7 @@
     {
       "name": "AntibodyOVLStep4",
       "type": "procedure",
-      "sortid": 145,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_ovl_step_4",
@@ -2229,7 +2162,7 @@
     {
       "name": "AntibodyAdv",
       "type": "achievement",
-      "sortid": 146,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_adv",
@@ -2243,7 +2176,7 @@
     {
       "name": "DevAntibodyItem",
       "type": "item",
-      "sortid": 147,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_antibody_item",
@@ -2258,7 +2191,7 @@
     {
       "name": "EnderlinkLiveleak",
       "type": "procedure",
-      "sortid": 148,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderlink_liveleak",
@@ -2273,7 +2206,7 @@
     {
       "name": "AntibodyEnderlink",
       "type": "procedure",
-      "sortid": 149,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_enderlink",
@@ -2288,7 +2221,7 @@
     {
       "name": "Blessing",
       "type": "enchantment",
-      "sortid": 150,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blessing",
@@ -2302,7 +2235,7 @@
     {
       "name": "UnholyMobs",
       "type": "tag",
-      "sortid": 151,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "unholy_mobs",
@@ -2316,7 +2249,7 @@
     {
       "name": "BlessingEnchProd",
       "type": "procedure",
-      "sortid": 152,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blessing_ench_prod",
@@ -2340,7 +2273,7 @@
     {
       "name": "Meds",
       "type": "enchantment",
-      "sortid": 153,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "self_regulation",
@@ -2354,7 +2287,7 @@
     {
       "name": "AntibodyTest",
       "type": "painting",
-      "sortid": 154,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_test",
@@ -2366,7 +2299,7 @@
     {
       "name": "VersionCheck",
       "type": "procedure",
-      "sortid": 155,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "version_check",
@@ -2406,7 +2339,7 @@
     {
       "name": "EndWings",
       "type": "curiosbauble",
-      "sortid": 25,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_wings",
@@ -2427,7 +2360,7 @@
     {
       "name": "EndWingsWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 156,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_while_bauble_is_equipped_tick",
@@ -2467,7 +2400,7 @@
     {
       "name": "EndWingsUppies",
       "type": "procedure",
-      "sortid": 157,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_uppies",
@@ -2487,7 +2420,7 @@
     {
       "name": "ColdObsidian",
       "type": "block",
-      "sortid": 158,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cold_obsidian",
@@ -2504,7 +2437,7 @@
     {
       "name": "CrackingObsidian",
       "type": "block",
-      "sortid": 159,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cracking_obsidian",
@@ -2521,7 +2454,7 @@
     {
       "name": "EndWingsBaubleIsEquipped",
       "type": "procedure",
-      "sortid": 160,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_bauble_is_equipped",
@@ -2541,7 +2474,7 @@
     {
       "name": "EndWingsTooltip",
       "type": "procedure",
-      "sortid": 161,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_tooltip",
@@ -2569,7 +2502,7 @@
     {
       "name": "NightVisionBaubleIsEquipped",
       "type": "procedure",
-      "sortid": 162,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_bauble_is_equipped",
@@ -2589,7 +2522,7 @@
     {
       "name": "NightVisionTooltip",
       "type": "procedure",
-      "sortid": 163,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_tooltip",
@@ -2617,7 +2550,7 @@
     {
       "name": "Aptitude",
       "type": "curiosslot",
-      "sortid": 164,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitude",
@@ -2652,7 +2585,7 @@
     {
       "name": "ChooseAptitude",
       "type": "procedure",
-      "sortid": 165,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "choose_aptitude",
@@ -2672,7 +2605,7 @@
     {
       "name": "AptitudesRemoveGlow",
       "type": "procedure",
-      "sortid": 166,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitudes_remove_glow",
@@ -2693,7 +2626,7 @@
     {
       "name": "PlayerDiesAptitude",
       "type": "procedure",
-      "sortid": 167,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_dies_aptitude",
@@ -2713,7 +2646,7 @@
     {
       "name": "SmartassBaubleIsEquipped",
       "type": "procedure",
-      "sortid": 168,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_bauble_is_equipped",
@@ -2737,7 +2670,7 @@
     {
       "name": "SmartassTooltip",
       "type": "procedure",
-      "sortid": 169,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_tooltip",
@@ -2765,7 +2698,7 @@
     {
       "name": "SmartassAdv",
       "type": "achievement",
-      "sortid": 170,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_adv",
@@ -2779,7 +2712,7 @@
     {
       "name": "AptitudeAdv",
       "type": "achievement",
-      "sortid": 171,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitude_adv",
@@ -2793,7 +2726,7 @@
     {
       "name": "SmartassEnderlink",
       "type": "procedure",
-      "sortid": 172,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_enderlink",
@@ -2808,7 +2741,7 @@
     {
       "name": "Aptitudes",
       "type": "tag",
-      "sortid": 173,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitudes",
@@ -2822,14 +2755,20 @@
     {
       "name": "PowerUpper",
       "type": "item",
-      "sortid": 18,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "power_upper",
       "metadata": {
         "files": [
           "src/main/resources/assets/eva_additions/models/item/power_upper.json",
-          "src/main/java/net/mcreator/evaadditionsforge/item/PowerUpperItem.java"
+          "src/main/resources/assets/eva_additions/models/item/power_upper_1.json",
+          "src/main/resources/assets/eva_additions/models/item/power_upper_3.json",
+          "src/main/resources/assets/eva_additions/models/item/power_upper_2.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/PowerUpperItem.java",
+          "src/main/resources/assets/eva_additions/models/item/power_upper_5.json",
+          "src/main/resources/assets/eva_additions/models/item/power_upper_0.json",
+          "src/main/resources/assets/eva_additions/models/item/power_upper_4.json"
         ]
       },
       "path": "~/Curio/Aptitudes"
@@ -2837,7 +2776,7 @@
     {
       "name": "PowerUpperRightclicked",
       "type": "procedure",
-      "sortid": 174,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "power_upper_rightclicked",
@@ -2861,7 +2800,7 @@
     {
       "name": "AtributePropertyValue",
       "type": "procedure",
-      "sortid": 175,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "atribute_property_value",
@@ -2882,7 +2821,7 @@
     {
       "name": "PowerUpperTooltip",
       "type": "procedure",
-      "sortid": 176,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "power_upper_tooltip",
@@ -2908,48 +2847,9 @@
       "path": "~/Curio/Aptitudes"
     },
     {
-      "name": "AptitudeChanger",
-      "type": "item",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aptitude_changer",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/eva_additions/models/item/aptitude_changer.json",
-          "src/main/java/net/mcreator/evaadditionsforge/item/AptitudeChangerItem.java"
-        ]
-      },
-      "path": "~/Curio/Aptitudes"
-    },
-    {
-      "name": "AptitudeChangerRightClicked",
-      "type": "procedure",
-      "sortid": 177,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aptitude_changer_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/evaadditionsforge/procedures/AptitudeChangerRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Curio/Aptitudes"
-    },
-    {
       "name": "DevSmartassItem",
       "type": "item",
-      "sortid": 178,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_smartass_item",
@@ -2964,7 +2864,7 @@
     {
       "name": "HighSensesBaubleEquipped",
       "type": "procedure",
-      "sortid": 179,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_bauble_equipped",
@@ -2988,7 +2888,7 @@
     {
       "name": "HighSensesTooltip",
       "type": "procedure",
-      "sortid": 180,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_tooltip",
@@ -3016,7 +2916,7 @@
     {
       "name": "HighSensesEnderlin",
       "type": "procedure",
-      "sortid": 181,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_enderlin",
@@ -3031,7 +2931,7 @@
     {
       "name": "HighSensesAdv",
       "type": "achievement",
-      "sortid": 182,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_adv",
@@ -3066,7 +2966,7 @@
     {
       "name": "HighSensesMaxLVLAdv",
       "type": "achievement",
-      "sortid": 183,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_senses_max_lvl_adv",
@@ -3080,7 +2980,7 @@
     {
       "name": "SmartassMaxLVLAdv",
       "type": "achievement",
-      "sortid": 184,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "smartass_max_lvl_adv",
@@ -3115,7 +3015,7 @@
     {
       "name": "RequiemBaubleEquipped",
       "type": "procedure",
-      "sortid": 185,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem_bauble_equipped",
@@ -3139,7 +3039,7 @@
     {
       "name": "RequiemTooltip",
       "type": "procedure",
-      "sortid": 186,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem_tooltip",
@@ -3167,7 +3067,7 @@
     {
       "name": "RequiemEnderlink",
       "type": "procedure",
-      "sortid": 187,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem_enderlink",
@@ -3182,7 +3082,7 @@
     {
       "name": "RequiemAdv",
       "type": "achievement",
-      "sortid": 188,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "requiem_adv",
@@ -3223,7 +3123,7 @@
     {
       "name": "EquinoxBaubleEquipped",
       "type": "procedure",
-      "sortid": 189,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_bauble_equipped",
@@ -3251,7 +3151,7 @@
     {
       "name": "EquinoxTooltip",
       "type": "procedure",
-      "sortid": 190,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_tooltip",
@@ -3275,7 +3175,7 @@
     {
       "name": "EquinoxEnderlink",
       "type": "procedure",
-      "sortid": 191,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_enderlink",
@@ -3290,7 +3190,7 @@
     {
       "name": "EquinoxAdv",
       "type": "achievement",
-      "sortid": 192,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_adv",
@@ -3304,7 +3204,7 @@
     {
       "name": "EquinoxPropertyValueProvider",
       "type": "procedure",
-      "sortid": 193,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_property_value_provider",
@@ -3325,7 +3225,7 @@
     {
       "name": "EquinoxWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 194,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_while_bauble_is_equipped_tick",
@@ -3353,7 +3253,7 @@
     {
       "name": "CactusRightClick",
       "type": "procedure",
-      "sortid": 195,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_right_click",
@@ -3377,7 +3277,7 @@
     {
       "name": "Noctua",
       "type": "biome",
-      "sortid": 196,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "noctua",
@@ -3391,7 +3291,7 @@
     {
       "name": "EnterClaustrophobia",
       "type": "item",
-      "sortid": 17,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enter_claustrophobia",
@@ -3408,7 +3308,7 @@
     {
       "name": "EnterClaustrophobiaPropertyValueProvider",
       "type": "procedure",
-      "sortid": 197,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enter_claustrophobia_property_value_provider",
@@ -3429,7 +3329,7 @@
     {
       "name": "EnterClaustrophobiaItemInHandTick",
       "type": "procedure",
-      "sortid": 198,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enter_claustrophobia_item_in_hand_tick",
@@ -3457,7 +3357,7 @@
     {
       "name": "EquinoxItemInInventoryTick",
       "type": "procedure",
-      "sortid": 199,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "equinox_item_in_inventory_tick",
@@ -3472,7 +3372,7 @@
     {
       "name": "CycleChange",
       "type": "procedure",
-      "sortid": 200,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cycle_change",
@@ -3496,7 +3396,7 @@
     {
       "name": "GiveNewAptitude",
       "type": "item",
-      "sortid": 20,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "give_new_aptitude",
@@ -3511,7 +3411,7 @@
     {
       "name": "GiveNewAptitudeRightclicked",
       "type": "procedure",
-      "sortid": 201,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "give_new_aptitude_rightclicked",
@@ -3535,7 +3435,7 @@
     {
       "name": "PomniPainting",
       "type": "painting",
-      "sortid": 202,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pomni_painting",
@@ -3547,7 +3447,7 @@
     {
       "name": "EndWingsEnderlink",
       "type": "procedure",
-      "sortid": 203,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_wings_enderlink",
@@ -3562,7 +3462,7 @@
     {
       "name": "EnderWingsAdv",
       "type": "achievement",
-      "sortid": 204,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ender_wings_adv",
@@ -3576,7 +3476,7 @@
     {
       "name": "QuartzTiles5",
       "type": "block",
-      "sortid": 35,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quartz_tiles_5",
@@ -3593,7 +3493,7 @@
     {
       "name": "LavaWalker",
       "type": "curiosbauble",
-      "sortid": 26,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_walker",
@@ -3615,7 +3515,7 @@
     {
       "name": "LavaWalkerBaubleIsEquipped",
       "type": "procedure",
-      "sortid": 205,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_walker_bauble_is_equipped",
@@ -3635,7 +3535,7 @@
     {
       "name": "LavaWalkerTooltip",
       "type": "procedure",
-      "sortid": 206,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_walker_tooltip",
@@ -3663,7 +3563,7 @@
     {
       "name": "Artifacts",
       "type": "tab",
-      "sortid": 207,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "artifacts",
@@ -3675,7 +3575,7 @@
     {
       "name": "AptitudesTab",
       "type": "tab",
-      "sortid": 208,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitudes_tab",
@@ -3687,7 +3587,7 @@
     {
       "name": "DevItems",
       "type": "tab",
-      "sortid": 209,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_items",
@@ -3699,7 +3599,7 @@
     {
       "name": "PlumeShield",
       "type": "enchantment",
-      "sortid": 210,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plume_shield",
@@ -3713,7 +3613,7 @@
     {
       "name": "CurioAdv",
       "type": "achievement",
-      "sortid": 211,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "curio_adv",
@@ -3727,7 +3627,7 @@
     {
       "name": "Crystal",
       "type": "curiosslot",
-      "sortid": 212,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal",
@@ -3741,7 +3641,7 @@
     {
       "name": "MoodCrystal",
       "type": "curiosbauble",
-      "sortid": 27,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mood_crystal",
@@ -3756,7 +3656,7 @@
     {
       "name": "WeatherCrystal",
       "type": "curiosbauble",
-      "sortid": 28,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "weather_crystal",
@@ -3771,7 +3671,7 @@
     {
       "name": "Herobrine",
       "type": "painting",
-      "sortid": 213,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "herobrine",
@@ -3783,7 +3683,7 @@
     {
       "name": "WorldInfo",
       "type": "curiosslot",
-      "sortid": 214,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "world_info",
@@ -3797,7 +3697,7 @@
     {
       "name": "Altometer",
       "type": "curiosbauble",
-      "sortid": 29,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_oxygen",
@@ -3814,7 +3714,7 @@
     {
       "name": "GPS",
       "type": "curiosbauble",
-      "sortid": 32,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gps",
@@ -3829,7 +3729,7 @@
     {
       "name": "UpgradedGPS",
       "type": "curiosbauble",
-      "sortid": 33,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "upgraded_gps",
@@ -3844,7 +3744,7 @@
     {
       "name": "AltometerWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 215,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "altometer_while_bauble_is_equipped_tick",
@@ -3868,7 +3768,7 @@
     {
       "name": "GPSWhileEquippedTick",
       "type": "procedure",
-      "sortid": 216,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gps_while_equipped_tick",
@@ -3892,7 +3792,7 @@
     {
       "name": "UpgradedGPSTick",
       "type": "procedure",
-      "sortid": 217,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "upgraded_gps_tick",
@@ -3916,7 +3816,7 @@
     {
       "name": "UpGPSRecipe",
       "type": "recipe",
-      "sortid": 218,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "registry_name": "up_gps_recipe",
@@ -3930,7 +3830,7 @@
     {
       "name": "LavaWalkerWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 219,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_walker_while_bauble_is_equipped_tick",
@@ -3970,7 +3870,7 @@
     {
       "name": "FireWalker",
       "type": "enchantment",
-      "sortid": 220,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fire_walker",
@@ -3984,7 +3884,7 @@
     {
       "name": "LavaWalkerAdv",
       "type": "achievement",
-      "sortid": 221,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_walker_adv",
@@ -3998,7 +3898,7 @@
     {
       "name": "LavaWalkerEnderlink",
       "type": "procedure",
-      "sortid": 222,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_walker_enderlink",
@@ -4013,7 +3913,7 @@
     {
       "name": "LavaWalkerEnchant",
       "type": "achievement",
-      "sortid": 223,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_walker_enchant",
@@ -4027,7 +3927,7 @@
     {
       "name": "Baubles",
       "type": "tag",
-      "sortid": 224,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baubles",
@@ -4041,7 +3941,7 @@
     {
       "name": "GiveBaubleAdv",
       "type": "procedure",
-      "sortid": 225,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "registry_name": "give_bauble_adv",
@@ -4065,7 +3965,7 @@
     {
       "name": "GogglesDamageEffectExpires",
       "type": "procedure",
-      "sortid": 226,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "registry_name": "goggles_damage_effect_expires",
@@ -4085,7 +3985,7 @@
     {
       "name": "GogglesDamage",
       "type": "potioneffect",
-      "sortid": 227,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "registry_name": "goggles_damage",
@@ -4099,7 +3999,7 @@
     {
       "name": "Incorrodible",
       "type": "enchantment",
-      "sortid": 228,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "registry_name": "incorrodible",
@@ -4113,7 +4013,7 @@
     {
       "name": "NightVisionEnderlink",
       "type": "procedure",
-      "sortid": 229,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_enderlink",
@@ -4128,7 +4028,7 @@
     {
       "name": "GetItemRarityColor",
       "type": "procedure",
-      "sortid": 230,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_item_rarity_color",
@@ -4152,7 +4052,7 @@
     {
       "name": "WaterProof",
       "type": "enchantment",
-      "sortid": 231,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_proof",
@@ -4166,7 +4066,7 @@
     {
       "name": "NightVisionAdv",
       "type": "achievement",
-      "sortid": 232,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_adv",
@@ -4180,7 +4080,7 @@
     {
       "name": "DevNightVisionItem",
       "type": "item",
-      "sortid": 233,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_night_vision_item",
@@ -4195,7 +4095,7 @@
     {
       "name": "DevAptitudeItem",
       "type": "item",
-      "sortid": 234,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_aptitude_item",
@@ -4210,7 +4110,7 @@
     {
       "name": "DevCurioItem",
       "type": "item",
-      "sortid": 235,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_curio_item",
@@ -4225,7 +4125,7 @@
     {
       "name": "NightVisionCognitionTooltip",
       "type": "procedure",
-      "sortid": 236,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_cognition_tooltip",
@@ -4253,7 +4153,7 @@
     {
       "name": "AntibodyCognitionTooltip",
       "type": "procedure",
-      "sortid": 237,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antibody_cognition_tooltip",
@@ -4281,7 +4181,7 @@
     {
       "name": "VoidWingsCognitionTooltip",
       "type": "procedure",
-      "sortid": 238,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_wings_cognition_tooltip",
@@ -4309,7 +4209,7 @@
     {
       "name": "LavaWalkerCognitionTooltip",
       "type": "procedure",
-      "sortid": 239,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_walker_cognition_tooltip",
@@ -4337,7 +4237,7 @@
     {
       "name": "Crystals",
       "type": "tag",
-      "sortid": 240,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystals",
@@ -4351,7 +4251,7 @@
     {
       "name": "OxygenCrystalTooltip",
       "type": "procedure",
-      "sortid": 241,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oxygen_crystal_tooltip",
@@ -4379,7 +4279,7 @@
     {
       "name": "OxygenCrystalCognitionTooltip",
       "type": "procedure",
-      "sortid": 242,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oxygen_crystal_cognition_tooltip",
@@ -4407,7 +4307,7 @@
     {
       "name": "GPSCognitionTooltip",
       "type": "procedure",
-      "sortid": 243,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gps_cognition_tooltip",
@@ -4435,7 +4335,7 @@
     {
       "name": "UpgrGPSCognitionTooltip",
       "type": "procedure",
-      "sortid": 244,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "upgr_gps_cognition_tooltip",
@@ -4463,7 +4363,7 @@
     {
       "name": "GPSTooltip",
       "type": "procedure",
-      "sortid": 245,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gps_tooltip",
@@ -4491,7 +4391,7 @@
     {
       "name": "UpgrGPSTooltip",
       "type": "procedure",
-      "sortid": 246,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "upgr_gps_tooltip",
@@ -4519,7 +4419,7 @@
     {
       "name": "DepthCrystal",
       "type": "curiosbauble",
-      "sortid": 30,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_depth",
@@ -4536,7 +4436,7 @@
     {
       "name": "DepthCrystalWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 247,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "depth_crystal_while_bauble_is_equipped_tick",
@@ -4560,7 +4460,7 @@
     {
       "name": "AltometerWaterproofReturn",
       "type": "procedure",
-      "sortid": 248,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "registry_name": "altometer_waterproof_return",
@@ -4581,7 +4481,7 @@
     {
       "name": "UpgradedAltomer",
       "type": "curiosbauble",
-      "sortid": 31,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_earth",
@@ -4598,7 +4498,7 @@
     {
       "name": "UpgradedAltomerWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 249,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "upgraded_altomer_while_bauble_is_equipped_tick",
@@ -4622,7 +4522,7 @@
     {
       "name": "DepthCrystalTooltip",
       "type": "procedure",
-      "sortid": 250,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "depth_crystal_tooltip",
@@ -4650,7 +4550,7 @@
     {
       "name": "DepthCrystalCognitionTooltip",
       "type": "procedure",
-      "sortid": 251,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "depth_crystal_cognition_tooltip",
@@ -4678,7 +4578,7 @@
     {
       "name": "EarthCrystalTooltip",
       "type": "procedure",
-      "sortid": 252,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "earth_crystal_tooltip",
@@ -4706,7 +4606,7 @@
     {
       "name": "EarthCrystalCognitionTooltip",
       "type": "procedure",
-      "sortid": 253,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "earth_crystal_cognition_tooltip",
@@ -4734,7 +4634,7 @@
     {
       "name": "EarthCrystalRecipe",
       "type": "recipe",
-      "sortid": 254,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "earth_crystal_recipe",
@@ -4748,7 +4648,7 @@
     {
       "name": "AptitudeOre",
       "type": "block",
-      "sortid": 255,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aptitude_ore",
@@ -4768,7 +4668,7 @@
     {
       "name": "AlwaysRarity",
       "type": "procedure",
-      "sortid": 256,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "always_rarity",
@@ -4792,7 +4692,7 @@
     {
       "name": "StripedSausage",
       "type": "painting",
-      "sortid": 257,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "striped_sausage",
@@ -4804,7 +4704,7 @@
     {
       "name": "NightVisionPropertyValueProvider",
       "type": "procedure",
-      "sortid": 258,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_vision_property_value_provider",
@@ -4825,7 +4725,7 @@
     {
       "name": "HigherSensesWhileBaubleIsEquippedTick",
       "type": "procedure",
-      "sortid": 259,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "higher_senses_while_bauble_is_equipped_tick",
@@ -4849,7 +4749,7 @@
     {
       "name": "DevSensesItem",
       "type": "item",
-      "sortid": 260,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_senses_item",
@@ -4864,7 +4764,7 @@
     {
       "name": "SimpleDungeon",
       "type": "lootmodifier",
-      "sortid": 261,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "simple_dungeon",
@@ -4877,7 +4777,7 @@
     {
       "name": "NetherBridge",
       "type": "lootmodifier",
-      "sortid": 262,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nether_bridge",
@@ -4890,7 +4790,7 @@
     {
       "name": "RuinedPortal",
       "type": "lootmodifier",
-      "sortid": 263,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ruined_portal",
@@ -4903,7 +4803,7 @@
     {
       "name": "StrongholdLibrary",
       "type": "lootmodifier",
-      "sortid": 264,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stronghold_library",
@@ -4916,7 +4816,7 @@
     {
       "name": "SimpleDungeonInject",
       "type": "loottable",
-      "sortid": 265,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "registry_name": "simple_dungeon_inject",
@@ -4929,7 +4829,7 @@
     {
       "name": "NetherBridgeInject",
       "type": "loottable",
-      "sortid": 266,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nether_bridge_inject",
@@ -4942,7 +4842,7 @@
     {
       "name": "RuinedPortalInject",
       "type": "loottable",
-      "sortid": 267,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ruined_portal_inject",
@@ -4955,7 +4855,7 @@
     {
       "name": "StrongholdLibraryInject",
       "type": "loottable",
-      "sortid": 268,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stronghold_library_inject",
@@ -4968,7 +4868,7 @@
     {
       "name": "Xdbfg2",
       "type": "block",
-      "sortid": 269,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "xdbfg_2",
@@ -4983,38 +4883,9 @@
       "path": "~/Blocks"
     },
     {
-      "name": "PowerUpperToast",
-      "type": "toast",
-      "sortid": 270,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "power_upper_toast",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/evaadditionsforge/client/toasts/PowerUpperToastToast.java"
-        ]
-      },
-      "path": "~/Curio"
-    },
-    {
-      "name": "AptitudeOreBlockDestroyedByPlayer",
-      "type": "procedure",
-      "sortid": 271,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aptitude_ore_block_destroyed_by_player",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/evaadditionsforge/procedures/AptitudeOreBlockDestroyedByPlayerProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Curio"
-    },
-    {
       "name": "ResetAptitudeAdv",
       "type": "achievement",
-      "sortid": 272,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reset_aptitude_adv",
@@ -5028,7 +4899,7 @@
     {
       "name": "AbandonnedMineshaft",
       "type": "lootmodifier",
-      "sortid": 273,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "abandonned_mineshaft",
@@ -5041,7 +4912,7 @@
     {
       "name": "AbandonnedMineshaftInject",
       "type": "loottable",
-      "sortid": 274,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "abandonned_mineshaft_inject",
@@ -5054,7 +4925,7 @@
     {
       "name": "ItemUpper",
       "type": "item",
-      "sortid": 275,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "item_upper",
@@ -5069,7 +4940,7 @@
     {
       "name": "DevStuff",
       "type": "tag",
-      "sortid": 276,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_stuff",
@@ -5083,7 +4954,7 @@
     {
       "name": "DevTooltip",
       "type": "procedure",
-      "sortid": 277,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dev_tooltip",
@@ -5111,7 +4982,7 @@
     {
       "name": "WingGel",
       "type": "enchantment",
-      "sortid": 278,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wing_gel",
@@ -5125,7 +4996,7 @@
     {
       "name": "GelPackaging",
       "type": "item",
-      "sortid": 279,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gel_packaging",
@@ -5140,7 +5011,7 @@
     {
       "name": "WingGelItemPropertyValueProvider",
       "type": "procedure",
-      "sortid": 280,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wing_gel_item_property_value_provider",
@@ -5161,7 +5032,7 @@
     {
       "name": "WingGelItem",
       "type": "item",
-      "sortid": 281,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wing_gel_item",
@@ -5180,7 +5051,7 @@
     {
       "name": "WingGelItemPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 282,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wing_gel_item_player_finishes_using_item",
@@ -5208,7 +5079,7 @@
     {
       "name": "GelPackagingPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 283,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gel_packaging_player_finishes_using_item",
@@ -5228,7 +5099,7 @@
     {
       "name": "WingGelItemItemInInventoryTick",
       "type": "procedure",
-      "sortid": 284,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wing_gel_item_item_in_inventory_tick",
@@ -5252,7 +5123,7 @@
     {
       "name": "WingGelItemTooltip",
       "type": "procedure",
-      "sortid": 285,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wing_gel_item_tooltip",
@@ -5280,7 +5151,7 @@
     {
       "name": "WingGelItemCognitionTooltip",
       "type": "procedure",
-      "sortid": 286,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wing_gel_item_cognition_tooltip",
@@ -5308,7 +5179,7 @@
     {
       "name": "WingGelPackingCognitionTooltip",
       "type": "procedure",
-      "sortid": 287,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wing_gel_packing_cognition_tooltip",
@@ -5323,7 +5194,7 @@
     {
       "name": "Akari",
       "type": "painting",
-      "sortid": 288,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "registry_name": "akari",
@@ -5335,7 +5206,7 @@
     {
       "name": "PillarScraper",
       "type": "enchantment",
-      "sortid": 289,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pillar_scraper",
@@ -5345,6 +5216,189 @@
         ]
       },
       "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "EntomologistEpiphanyItemInHandTick",
+      "type": "procedure",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entomologist_epiphany_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/EntomologistEpiphanyItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs"
+    },
+    {
+      "name": "AptitudeOreLoot",
+      "type": "loottable",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aptitude_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/blocks/aptitude_ore.json"
+        ]
+      },
+      "path": "~/Curio"
+    },
+    {
+      "name": "EntomologistEpiphanyItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entomologist_epiphany_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/EntomologistEpiphanyItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Discs/music for bugs"
+    },
+    {
+      "name": "Nefarious",
+      "type": "painting",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nefarious",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "WingGelAdv",
+      "type": "achievement",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/advancements/wing_gel_adv.json"
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "PowerUpperPropertyValueProvider",
+      "type": "procedure",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_upper_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/PowerUpperPropertyValueProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "SpawnChestInject",
+      "type": "loottable",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_chest_inject",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_tables/gameplay/spawn_chest_inject.json"
+        ]
+      }
+    },
+    {
+      "name": "Spawnbonuschest",
+      "type": "lootmodifier",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnbonuschest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/loot_modifiers/spawnbonuschest.json"
+        ]
+      }
+    },
+    {
+      "name": "VersionCheckDate",
+      "type": "procedure",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "version_check_date",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/VersionCheckDateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dev"
     }
   ],
   "variable_elements": [
@@ -5539,6 +5593,12 @@
       "type": "blockstate",
       "scope": "player_lifetime",
       "value": "Blocks.AIR.defaultBlockState()"
+    },
+    {
+      "name": "extraWingDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -5701,14 +5761,13 @@
       "subtitles.record_spinyspider": "",
       "advancements.adv_butterfly.descr": "Go up in the air in a bug infested biome",
       "item.eva_additions.disc_butterfly": "Music Disc",
-      "item.eva_additions.cryostasis": "Music Disc",
       "item.eva_additions.disc_butterfly.desc": "camiidae - butterfly",
-      "item.eva_additions.entomologist_epiphany": "Entomologist Epiphany",
+      "item.eva_additions.entomologist_epiphany": "Entomologist\u0027s Epiphany",
       "painting.eva_additions.snap.title": "The One Who Snaps",
       "item.eva_additions.metabolism": "Foreign Antibodies",
       "item.eva_additions_forge.disc_isopod": "Music Disc",
-      "toasts.eva_additions.power_upper_toast.description": "Upgrade your aptitude!",
       "advancements.adv_pomni.descr": "Wake up in your new home",
+      "advancements.wing_gel_adv.descr": "Coat your wings in protecting gel",
       "painting.eva_additions.diane_6.author": "Flait13",
       "item.eva_additions.perception": "High Senses",
       "advancements.smartass_max_lvl_adv.descr": "Reach maximum enlightenment",
@@ -5743,11 +5802,9 @@
       "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
       "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
       "item.eva_additions.disc_moth.desc": "camiidae - moth",
-      "item.eva_additions.aptitude_changer": "Aptitude Changer",
       "item.eva_additions.power_upper": "Power Upper",
       "advancements.adv_weevil.title": "Evil Weevil",
       "item.eva_additions.disc_burningmemory": "Music Disc",
-      "toasts.eva_additions.power_upper_toast.title": "Plus Ultra!",
       "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
       "advancements.high_senses_max_lvl_adv.title": "Superior ",
       "item.eva_additions.dev_night_vision_item": "Dev NightVision Item",
@@ -5772,11 +5829,11 @@
       "advancements.aptitude_adv.title": "Better Than Average",
       "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
       "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
+      "painting.eva_additions.nefarious.author": "EvaKrusader",
       "item.eva_additions.disc_weevil": "Music Disc",
       "painting.eva_additions.diane_2.title": "Diane 2",
-      "item.eva_additions.give_new_aptitude": "Give New Aptitude",
+      "item.eva_additions.give_new_aptitude": "Eye of Pandora",
       "advancements.curio_adv.title": "Exotic Artifact",
-      "item.eva_additions.cryostasis.desc": "??? - cryostasis",
       "painting.eva_additions.snap.author": "EvaKrusader",
       "painting.eva_additions_forge.uncomfortable_period.author": "Toby",
       "item.eva_additions.disc_scarab": "Music Disc",
@@ -5791,7 +5848,6 @@
       "enchantment.eva_additions.incorrodible": "Incorrodible",
       "painting.eva_additions.antibody_test.author": "EvaKrusader",
       "key.eva_additions_forge.gamemode_switcher": "Gamemode Switcher",
-      "advancements.cryostasis_adv.descr": "Freeze to death in a neutral biome",
       "item.eva_additions_forge.disc_isopod.desc": "camiidae - isopod",
       "item.eva_additions.disc_roundabout": "Music Disc",
       "item.eva_additions.dev_aptitude_item": "Dev Aptitude Item",
@@ -5799,8 +5855,7 @@
       "advancements.adv_tortoisebeetle.title": "A Bouquet For You!",
       "painting.eva_additions.diane_3.author": "???",
       "item.eva_additions_forge.disc_scarab.desc": "camiidae - scarab",
-      "advancements.cryostasis_adv.title": "Cryostasis Adv",
-      "item.eva_additions.item_upper": "Power Upper",
+      "item.eva_additions.item_upper": "Item Upper",
       "painting.eva_additions.diane_5.author": "???",
       "painting.eva_additions.diane_1.author": "???",
       "advancements.adv_weevil.descr": "Dig up some dirt",
@@ -5837,6 +5892,7 @@
       "painting.eva_additions.diane_5.title": "Diane 5",
       "painting.eva_additions_forge.diane_2.title": "Diane 2",
       "item.eva_additions.disc_tortoisebeetle": "Music Disc",
+      "painting.eva_additions.nefarious.title": "Nefarious Creature",
       "painting.eva_additions.diane_1.title": "Diane 1",
       "block.eva_additions.mining_aid_stop": "Mining Aid",
       "painting.eva_additions.story_of_undertale.author": "LHUGUENY",
@@ -5925,6 +5981,7 @@
       "advancements.smartass_adv.title": "Superior Cognition",
       "advancements.adv_treehopper.title": "From Tree To Tree",
       "block.eva_additions.cracking_obsidian": "Cold Obsidian",
+      "advancements.wing_gel_adv.title": "Wing Gel Adv",
       "advancements.ender_wings_adv.title": "Too Close To The Void"
     }
   },

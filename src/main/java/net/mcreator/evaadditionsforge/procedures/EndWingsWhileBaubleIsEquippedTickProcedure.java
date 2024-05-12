@@ -25,11 +25,38 @@ public class EndWingsWhileBaubleIsEquippedTickProcedure {
 		if ((entity.level().dimension()) == Level.END) {
 			if (entity.getY() <= 0) {
 				EndWingsUppiesProcedure.execute(entity);
-				{
-					ItemStack _ist = itemstack;
-					if (_ist.hurt((int) itemstack.getOrCreateTag().getDouble("wingDamager"), RandomSource.create(), null)) {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				if ((EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.WING_GEL.get(), itemstack) != 0) == true) {
+					{
+						double _setval = (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).extraWingDamage + 1;
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.extraWingDamage = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).extraWingDamage == itemstack
+							.getEnchantmentLevel(EvaAdditionsModEnchantments.WING_GEL.get())) {
+						{
+							double _setval = 0;
+							entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.extraWingDamage = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
+						{
+							ItemStack _ist = itemstack;
+							if (_ist.hurt((int) itemstack.getOrCreateTag().getDouble("wingDamager"), RandomSource.create(), null)) {
+								_ist.shrink(1);
+								_ist.setDamageValue(0);
+							}
+						}
+					}
+				} else {
+					{
+						ItemStack _ist = itemstack;
+						if (_ist.hurt((int) itemstack.getOrCreateTag().getDouble("wingDamager"), RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
 					}
 				}
 			}

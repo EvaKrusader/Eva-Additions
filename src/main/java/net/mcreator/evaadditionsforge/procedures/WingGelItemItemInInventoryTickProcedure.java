@@ -16,15 +16,15 @@ public class WingGelItemItemInInventoryTickProcedure {
 			if (gelChance > 0.66) {
 				itemstack.getOrCreateTag().putDouble("gelPower", 3);
 				itemstack.setHoverName(
-						Component.literal(("\u00A76\u00A7n" + "Rarity" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " Wing Gel")));
+						Component.literal(("\u00A76\u00A7n" + "Viveldop" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " Wing Gel")));
 			} else if (gelChance > 0.33) {
 				itemstack.getOrCreateTag().putDouble("gelPower", 2);
 				itemstack.setHoverName(
-						Component.literal(("\u00A7d\u00A7n" + "Rarity" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " Wing Gel")));
+						Component.literal(("\u00A7d\u00A7n" + "Waks" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " Wing Gel")));
 			} else {
 				itemstack.getOrCreateTag().putDouble("gelPower", 1);
 				itemstack.setHoverName(
-						Component.literal(("\u00A7b\u00A7n" + "Rarity" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " Wing Gel")));
+						Component.literal(("\u00A7b\u00A7n" + "Loob" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " Wing Gel")));
 			}
 		}
 	}

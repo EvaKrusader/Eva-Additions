@@ -34,7 +34,7 @@ public class PowerUpperTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.getItem() == EvaAdditionsModItems.POWER_UPPER.get()) {
-			GetItemRarityColorProcedure.execute(entity, itemstack);
+			AlwaysRarityProcedure.execute(entity, itemstack);
 			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower != 0) {
 				if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower == 5) {
 					tooltip.add(Component.literal(("Upgrades your " + entity.getPersistentData().getString(("current" + "ItemRarity")) + "aptitude"

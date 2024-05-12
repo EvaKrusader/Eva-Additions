@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "aptitude_dev1",
+    "texture": "wing_gel0",
     "customModelName": "Normal",
     "customProperties": {
       "winggelpower": {
@@ -13,7 +13,7 @@
     "states": [
       {
         "renderType": 0,
-        "texture": "aptitude_dev2",
+        "texture": "wing_gel1",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -29,7 +29,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev3",
+        "texture": "wing_gel2",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -45,7 +45,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev4",
+        "texture": "wing_gel3",
         "customModelName": "Normal",
         "stateMap": [
           {
@@ -61,7 +61,7 @@
       },
       {
         "renderType": 0,
-        "texture": "aptitude_dev5",
+        "texture": "wing_gel4",
         "customModelName": "Normal",
         "stateMap": [
           {
