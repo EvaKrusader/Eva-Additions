@@ -3,6 +3,8 @@ package net.mcreator.evaadditionsforge.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.network.chat.Component;
 
+import java.util.Calendar;
+
 import java.net.URL;
 
 import java.io.IOException;
@@ -20,9 +22,9 @@ public class VersionCheckDateProcedure {
 		double day = 0;
 		double month = 0;
 		double year = 0;
-		day = 20;
-		month = 5;
-		year = 2024;
+		day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+		month = Calendar.getInstance().get(Calendar.MONTH);
+		year = Calendar.getInstance().get(Calendar.YEAR);
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
 		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
 		try {
@@ -40,25 +42,20 @@ public class VersionCheckDateProcedure {
 				}
 				bufferedReader.close();
 				json = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-				if (json.get("day").getAsDouble() > day || json.get("month").getAsDouble() > month && json.get("day").getAsDouble() >= day
-						|| json.get("year").getAsDouble() > year && json.get("month").getAsDouble() >= month && json.get("day").getAsDouble() >= day) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList()
-								.broadcastSystemMessage(
-										Component.literal((("This version of the mod is outdated. The version " + Math.round(json.get("day").getAsDouble()) + "." + Math.round(json.get("month").getAsDouble()) + "."
-												+ Math.round(json.get("year").getAsDouble()) + " of this mod is out!") + "" + (" (You are using the version " + Math.round(day) + "." + Math.round(month) + "." + Math.round(year) + " of this mod)"))),
-										false);
-				}
-				if (json.get("day").getAsDouble() == day && json.get("month").getAsDouble() == month && json.get("year").getAsDouble() == year) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(
-								Component.literal(("You are using the right version (" + Math.round(json.get("day").getAsDouble()) + "." + Math.round(json.get("month").getAsDouble()) + "." + Math.round(json.get("year").getAsDouble()) + ")")), false);
-				}
-				if (json.get("day").getAsDouble() < day || json.get("month").getAsDouble() < month && json.get("day").getAsDouble() <= day
-						|| json.get("year").getAsDouble() < year && json.get("month").getAsDouble() <= month && json.get("day").getAsDouble() <= day) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((("What??? You are using the version " + Math.round(day) + "." + Math.round(month) + "." + Math.round(year) + " of this mod???") + ""
-								+ ("The version " + Math.round(json.get("day").getAsDouble()) + "." + Math.round(json.get("month").getAsDouble()) + "." + Math.round(json.get("year").getAsDouble()) + " of this mod is out!"))), false);
+				if (json.get("send").getAsDouble() == 1) {
+					if (json.get("day").getAsDouble() > day || json.get("month").getAsDouble() > month && json.get("day").getAsDouble() >= day
+							|| json.get("year").getAsDouble() > year && json.get("month").getAsDouble() >= month && json.get("day").getAsDouble() >= day) {
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((""
+									+ ("The next update of Eva Additions will release on " + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/" + Math.round(json.get("year").getAsDouble()) + "!"))),
+									false);
+					}
+					if (json.get("day").getAsDouble() == day && json.get("month").getAsDouble() == month && json.get("year").getAsDouble() == year) {
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList().broadcastSystemMessage(
+									Component.literal(("You are using the right version (" + Math.round(json.get("day").getAsDouble()) + "." + Math.round(json.get("month").getAsDouble()) + "." + Math.round(json.get("year").getAsDouble()) + ")")),
+									false);
+					}
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
