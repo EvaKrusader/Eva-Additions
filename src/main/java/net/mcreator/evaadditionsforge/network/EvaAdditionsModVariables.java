@@ -15,6 +15,8 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
@@ -22,7 +24,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
+import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
@@ -82,6 +86,8 @@ public class EvaAdditionsModVariables {
 			clone.ItemColorReset = original.ItemColorReset;
 			clone.justPowered = original.justPowered;
 			clone.HasAptitudeUpped = original.HasAptitudeUpped;
+			clone.realAptitude = original.realAptitude;
+			clone.obsidianTimer = original.obsidianTimer;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -96,6 +102,8 @@ public class EvaAdditionsModVariables {
 				clone.hasMeds = original.hasMeds;
 				clone.VoidWingsSlow = original.VoidWingsSlow;
 				clone.gogglesDamage = original.gogglesDamage;
+				clone.wingersss = original.wingersss;
+				clone.lastWalked5seconds = original.lastWalked5seconds;
 			}
 		}
 	}
@@ -159,6 +167,10 @@ public class EvaAdditionsModVariables {
 		public String ItemColorReset = "\u00A7r\u00A7f";
 		public boolean justPowered = false;
 		public double HasAptitudeUpped = 0;
+		public ItemStack realAptitude = ItemStack.EMPTY;
+		public double obsidianTimer = 0;
+		public ItemStack wingersss = ItemStack.EMPTY;
+		public BlockState lastWalked5seconds = Blocks.AIR.defaultBlockState();
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -195,6 +207,10 @@ public class EvaAdditionsModVariables {
 			nbt.putString("ItemColorReset", ItemColorReset);
 			nbt.putBoolean("justPowered", justPowered);
 			nbt.putDouble("HasAptitudeUpped", HasAptitudeUpped);
+			nbt.put("realAptitude", realAptitude.save(new CompoundTag()));
+			nbt.putDouble("obsidianTimer", obsidianTimer);
+			nbt.put("wingersss", wingersss.save(new CompoundTag()));
+			nbt.put("lastWalked5seconds", NbtUtils.writeBlockState(lastWalked5seconds));
 			return nbt;
 		}
 
@@ -228,6 +244,10 @@ public class EvaAdditionsModVariables {
 			ItemColorReset = nbt.getString("ItemColorReset");
 			justPowered = nbt.getBoolean("justPowered");
 			HasAptitudeUpped = nbt.getDouble("HasAptitudeUpped");
+			realAptitude = ItemStack.of(nbt.getCompound("realAptitude"));
+			obsidianTimer = nbt.getDouble("obsidianTimer");
+			wingersss = ItemStack.of(nbt.getCompound("wingersss"));
+			lastWalked5seconds = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), nbt.getCompound("lastWalked5seconds"));
 		}
 	}
 
@@ -280,6 +300,10 @@ public class EvaAdditionsModVariables {
 					variables.ItemColorReset = message.data.ItemColorReset;
 					variables.justPowered = message.data.justPowered;
 					variables.HasAptitudeUpped = message.data.HasAptitudeUpped;
+					variables.realAptitude = message.data.realAptitude;
+					variables.obsidianTimer = message.data.obsidianTimer;
+					variables.wingersss = message.data.wingersss;
+					variables.lastWalked5seconds = message.data.lastWalked5seconds;
 				}
 			});
 			context.setPacketHandled(true);

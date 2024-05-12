@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "eva_additions:requiem",
+    "eva_additions:equinox",
+    "eva_additions:mood_crystal",
+    "eva_additions:weather_crystal",
+    "eva_additions:lapis_tiles_5",
+    "eva_additions:quartz_tiles_5",
+    "eva_additions:xdbfg_2",
+    "eva_additions:dev_liveleak",
+    "eva_additions:dev_antibody_item",
+    "eva_additions:dev_smartass_item",
+    "eva_additions:dev_night_vision_item",
+    "eva_additions:dev_aptitude_item",
+    "eva_additions:dev_curio_item",
+    "eva_additions:dev_senses_item"
+  ]
+}

@@ -23,7 +23,7 @@ public class EarthCrystalCognitionTooltipProcedure {
 		item1 = new ItemStack(EvaAdditionsModItems.CRYSTAL_EARTH.get());
 		item2 = new ItemStack(EvaAdditionsModItems.GPS.get());
 		item3 = new ItemStack(EvaAdditionsModItems.UPGRADED_GPS.get());
-		item4 = new ItemStack(EvaAdditionsModItems.POWER_UPPER.get());
+		item4 = new ItemStack(EvaAdditionsModItems.ITEM_UPPER.get());
 		if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudePower > 1) {
 			tooltip.add(Component.literal(((entity.getPersistentData().getString(("Tier2" + "AptitudeItemRarity")) + "*"
 					+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " ") + "This crystal shows your "

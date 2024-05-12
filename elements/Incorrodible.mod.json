@@ -13,6 +13,9 @@
     "compatibleItems": [
       {
         "value": "CUSTOM:NightVision"
+      },
+      {
+        "value": "CUSTOM:LavaWalker"
       }
     ],
     "excludeItems": false,

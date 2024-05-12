@@ -1,0 +1,58 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Requiem"
+      },
+      {
+        "value": "CUSTOM:Equinox"
+      },
+      {
+        "value": "CUSTOM:MoodCrystal"
+      },
+      {
+        "value": "CUSTOM:WeatherCrystal"
+      },
+      {
+        "value": "CUSTOM:LapisTiles5"
+      },
+      {
+        "value": "CUSTOM:QuartzTiles5"
+      },
+      {
+        "value": "CUSTOM:Xdbfg2"
+      },
+      {
+        "value": "CUSTOM:DevLiveleak"
+      },
+      {
+        "value": "CUSTOM:DevAntibodyItem"
+      },
+      {
+        "value": "CUSTOM:DevSmartassItem"
+      },
+      {
+        "value": "CUSTOM:DevNightVisionItem"
+      },
+      {
+        "value": "CUSTOM:DevAptitudeItem"
+      },
+      {
+        "value": "CUSTOM:DevCurioItem"
+      },
+      {
+        "value": "CUSTOM:DevSensesItem"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "dev_stuff",
+    "namespace": "minecraft"
+  }
+}

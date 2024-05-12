@@ -1,8 +1,13 @@
 package net.mcreator.evaadditionsforge.procedures;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
@@ -26,7 +31,22 @@ public class PowerUpperRightclickedProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			if (entity instanceof ServerPlayer _player) {
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:reset_aptitude_adv"));
+				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+				if (!_ap.isDone()) {
+					for (String criteria : _ap.getRemainingCriteria())
+						_player.getAdvancements().award(_adv, criteria);
+				}
+			}
 			EvaAdditionsMod.queueServerWork(10, () -> {
+				{
+					ItemStack _setval = ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem);
+					entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.realAptitude = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				{
 					boolean _setval = true;
 					entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -36,7 +56,14 @@ public class PowerUpperRightclickedProcedure {
 				}
 				EvaAdditionsMod.queueServerWork(10, () -> {
 					{
-						ItemStack _setval = ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem);
+						ItemStack _setval = new ItemStack(Blocks.AIR);
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.aptitudeItem = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						ItemStack _setval = ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).realAptitude);
 						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.aptitudeItem = _setval;
 							capability.syncPlayerVariables(entity);
@@ -54,6 +81,13 @@ public class PowerUpperRightclickedProcedure {
 			}
 			EvaAdditionsMod.queueServerWork(10, () -> {
 				{
+					ItemStack _setval = ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem);
+					entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.realAptitude = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
 					boolean _setval = true;
 					entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.justPowered = _setval;
@@ -62,7 +96,14 @@ public class PowerUpperRightclickedProcedure {
 				}
 				EvaAdditionsMod.queueServerWork(10, () -> {
 					{
-						ItemStack _setval = ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeItem);
+						ItemStack _setval = new ItemStack(Blocks.AIR);
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.aptitudeItem = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						ItemStack _setval = ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).realAptitude);
 						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.aptitudeItem = _setval;
 							capability.syncPlayerVariables(entity);
@@ -71,5 +112,6 @@ public class PowerUpperRightclickedProcedure {
 				});
 			});
 		}
+		ChooseAptitudeProcedure.execute(entity);
 	}
 }

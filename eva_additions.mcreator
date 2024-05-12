@@ -2443,6 +2443,22 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5034,6 +5050,301 @@
           "src/main/resources/data/eva_additions/loot_tables/abandonned_mineshaft_inject.json"
         ]
       }
+    },
+    {
+      "name": "ItemUpper",
+      "type": "item",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_upper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/item_upper.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/ItemUpperItem.java"
+        ]
+      },
+      "path": "~/Curio/Aptitudes"
+    },
+    {
+      "name": "DevStuff",
+      "type": "tag",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_stuff",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/dev_stuff.json"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "DevTooltip",
+      "type": "procedure",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/DevTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "WingGel",
+      "type": "enchantment",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/WingGelEnchantment.java"
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "GelPackaging",
+      "type": "item",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gel_packaging",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/GelPackagingItem.java",
+          "src/main/resources/assets/eva_additions/models/item/gel_packaging.json"
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "WingGelItemPropertyValueProvider",
+      "type": "procedure",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel_item_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/WingGelItemPropertyValueProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "WingGelItem",
+      "type": "item",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/wing_gel_item_1.json",
+          "src/main/resources/assets/eva_additions/models/item/wing_gel_item_3.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/WingGelItemItem.java",
+          "src/main/resources/assets/eva_additions/models/item/wing_gel_item.json",
+          "src/main/resources/assets/eva_additions/models/item/wing_gel_item_2.json",
+          "src/main/resources/assets/eva_additions/models/item/wing_gel_item_0.json"
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "WingGelItemPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel_item_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/WingGelItemPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "GelPackagingPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gel_packaging_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GelPackagingPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "WingGelItemItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel_item_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/WingGelItemItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "WingGelItemTooltip",
+      "type": "procedure",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel_item_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/WingGelItemTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "WingGelItemCognitionTooltip",
+      "type": "procedure",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel_item_cognition_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/WingGelItemCognitionTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "WingGelPackingCognitionTooltip",
+      "type": "procedure",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wing_gel_packing_cognition_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/WingGelPackingCognitionTooltipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Curio/EndWings"
+    },
+    {
+      "name": "Akari",
+      "type": "painting",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "akari",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "PillarScraper",
+      "type": "enchantment",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_scraper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/PillarScraperEnchantment.java"
+        ]
+      },
+      "path": "~/Curio/EndWings"
     }
   ],
   "variable_elements": [
@@ -5204,6 +5515,30 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "realAptitude",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "obsidianTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "wingersss",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "lastWalked5seconds",
+      "type": "blockstate",
+      "scope": "player_lifetime",
+      "value": "Blocks.AIR.defaultBlockState()"
     }
   ],
   "sound_elements": [
@@ -5356,8 +5691,8 @@
       "advancements.night_vision_adv.descr": "Turn on your night vision goggles",
       "painting.eva_additions.diane_4.author": "???",
       "item.eva_additions.disc_libet.desc": "The Caretaker - Libet\u0027s Delay",
-      "block.eva_additions.aptitude_ore": "Aptitude Ore",
       "advancements.liveleak_death.title": "Quick \u0026 Painful",
+      "block.eva_additions.aptitude_ore": "Aptitude Ore",
       "subtitles.record_tortoisebeetle": "",
       "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
       "advancements.adv_isopod.title": "Tough Shell",
@@ -5380,6 +5715,7 @@
       "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
       "advancements.adv_roundabout.title": "To Be Continued",
       "painting.eva_additions.great_attraction.title": "Great Attraction",
+      "enchantment.eva_additions.pillar_scraper": "Pillar Scraper",
       "painting.eva_additions.story_of_undertale.title": "Story Of Undertale",
       "advancements.adv_moth.descr": "Get burned in a bug infested biome",
       "painting.eva_additions_forge.story_of_undertale.author": "LHUGUENY",
@@ -5421,11 +5757,13 @@
       "block.eva_additions.cold_obsidian": "Cold Obsidian",
       "advancements.requiem_adv.title": "Superior Power",
       "painting.eva_additions.bliss.title": "Bliss",
+      "painting.eva_additions.akari.author": "EvaKrusader",
       "item.eva_additions.mood_crystal": "Mood Crystal",
       "item.eva_additions.disc_moth": "Music Disc",
       "painting.eva_additions.diane_4.title": "Diane 4",
       "painting.eva_additions.lcl_sea.author": "Hideaki Anno",
       "advancements.ender_wings_adv.descr": "Save yourself from falling in the void",
+      "item.eva_additions.gel_packaging": "Gel Packaging",
       "item.eva_additions.disc_pomni": "Music Disc",
       "item.eva_additions.disc_isopod.desc": "camiidae - isopod",
       "item.eva_additions.dev_curio_item": "Dev Curio Item",
@@ -5445,6 +5783,7 @@
       "advancements.lava_walker_enchant.descr": "Enchant your necklace",
       "subtitles.record_buddyholly": "",
       "item.eva_additions_forge.disc_bumblebee": "Music Disc",
+      "enchantment.eva_additions.wing_gel": "Coating",
       "advancements.discography.descr": "Obtain your first music disc",
       "painting.eva_additions.lcl_sea.title": "Near Fourth Impact LCL Sea",
       "subtitles.record_libetsdelay": "",
@@ -5461,6 +5800,7 @@
       "painting.eva_additions.diane_3.author": "???",
       "item.eva_additions_forge.disc_scarab.desc": "camiidae - scarab",
       "advancements.cryostasis_adv.title": "Cryostasis Adv",
+      "item.eva_additions.item_upper": "Power Upper",
       "painting.eva_additions.diane_5.author": "???",
       "painting.eva_additions.diane_1.author": "???",
       "advancements.adv_weevil.descr": "Dig up some dirt",
@@ -5517,6 +5857,7 @@
       "painting.eva_additions.black_hole.author": "Poli",
       "painting.eva_additions_forge.bliss.author": "Charles O\u0027Rear",
       "enchantment.eva_additions.blessing": "Blessing",
+      "item.eva_additions.wing_gel_item": "Wing Gel",
       "painting.eva_additions_forge.diane_4.title": "Diane 4",
       "key.eva_additions.gamemode_switcher": "Gamemode Switcher",
       "item.eva_additions.dev_antibody_item": "Dev Antibody Item",
@@ -5546,6 +5887,7 @@
       "item.eva_additions.weather_crystal": "Weather Crystal",
       "item.eva_additions.disc_weevil.desc": "camiidae - weevil",
       "item.eva_additions.lava_walker": "Lava Walker",
+      "painting.eva_additions.akari.title": "Poker Face",
       "advancements.adv_spinyspider.descr": "Smash 10 Spider eyes while wearing armor",
       "painting.eva_additions.striped_sausage.author": "mgs3",
       "item.eva_additions_forge.disc_butterfly.desc": "camiidae - butterfly",

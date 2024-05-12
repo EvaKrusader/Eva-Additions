@@ -65,30 +65,20 @@ public class VersionCheckProcedure {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList()
 								.broadcastSystemMessage(
-										Component.literal((("Hey Poli!!! This version of the mod is outdated! The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
+										Component.literal((("This version of the mod is outdated. The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
 												+ Math.round(json.get("ver3").getAsDouble()) + " of this mod is out!") + "" + (" (You are using the version " + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3) + " of this mod)"))),
 										false);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Please send me \"Lalatina.\" if this message appeared, so I know if this worked correctly"), false);
 				}
 				if (json.get("ver1").getAsDouble() == ver1 && json.get("ver2").getAsDouble() == ver2 && json.get("ver3").getAsDouble() == ver3) {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(
 								Component.literal(("You are using the right version (" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble()) + ")")), false);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("You will probably never see this message, but in case you do, it's cool :)"), false);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Please send me \"Mcdowell.\" if this message appeared, so I know if this worked correctly"), false);
 				}
 				if (json.get("ver1").getAsDouble() < ver1 || json.get("ver2").getAsDouble() < ver2 && json.get("ver1").getAsDouble() <= ver1
 						|| json.get("ver3").getAsDouble() < ver3 && json.get("ver2").getAsDouble() <= ver2 && json.get("ver1").getAsDouble() <= ver1) {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((("What??? You are using the version " + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3) + " of this mod???") + ""
 								+ ("The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble()) + " of this mod is out!"))), false);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("You will probably never see this message, but in case you do, it's cool :)"), false);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Please send me \"Tachibana.\" if this message appeared, so I know if this worked correctly"), false);
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

@@ -1,0 +1,32 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/aptitude_dev1"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:wing_gel_item_winggelpower": 0
+      },
+      "model": "eva_additions:item/wing_gel_item_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:wing_gel_item_winggelpower": 1
+      },
+      "model": "eva_additions:item/wing_gel_item_1"
+    },
+    {
+      "predicate": {
+        "eva_additions:wing_gel_item_winggelpower": 2
+      },
+      "model": "eva_additions:item/wing_gel_item_2"
+    },
+    {
+      "predicate": {
+        "eva_additions:wing_gel_item_winggelpower": 3
+      },
+      "model": "eva_additions:item/wing_gel_item_3"
+    }
+  ]
+}

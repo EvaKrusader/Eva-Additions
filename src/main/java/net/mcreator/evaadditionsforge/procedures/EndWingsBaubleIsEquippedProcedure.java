@@ -1,7 +1,10 @@
 package net.mcreator.evaadditionsforge.procedures;
 
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
+
+import net.mcreator.evaadditionsforge.init.EvaAdditionsModEnchantments;
 
 public class EndWingsBaubleIsEquippedProcedure {
 	public static void execute(ItemStack itemstack) {
@@ -39,6 +42,57 @@ public class EndWingsBaubleIsEquippedProcedure {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7dStrong\u00A7r\u00A7f " + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76Remarkable\u00A7r\u00A7f " + itemName)));
+		}
+		if (EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.WING_GEL.get(), itemstack) != 0) {
+			if (itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.WING_GEL.get()) == 1) {
+				if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 2);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 3);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 4);
+				}
+			} else if (itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.WING_GEL.get()) == 2) {
+				if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 2);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 3);
+				}
+			} else if (itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.WING_GEL.get()) == 3) {
+				if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+				} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
+					itemstack.getOrCreateTag().putDouble("wingDamager", 2);
+				}
+			}
+		} else {
+			if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
+				itemstack.getOrCreateTag().putDouble("wingDamager", 1);
+			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 4) {
+				itemstack.getOrCreateTag().putDouble("wingDamager", 2);
+			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 3) {
+				itemstack.getOrCreateTag().putDouble("wingDamager", 3);
+			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 2) {
+				itemstack.getOrCreateTag().putDouble("wingDamager", 4);
+			} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 1) {
+				itemstack.getOrCreateTag().putDouble("wingDamager", 5);
+			}
 		}
 		EndWingsEnderlinkProcedure.execute();
 	}

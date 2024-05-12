@@ -33,7 +33,6 @@ public class LavaWalkerRenderer implements ICurioRenderer {
 			float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 		LivingEntity entity = slotContext.entity();
 		ICurioRenderer.translateIfSneaking(matrixStack, entity);
-		ICurioRenderer.rotateIfSneaking(matrixStack, entity);
 		this.model.prepareMobModel(entity, limbSwing, limbSwingAmount, partialTicks);
 		this.model.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
 		VertexConsumer vertexconsumer = ItemRenderer.getArmorFoilBuffer(renderTypeBuffer, RenderType.armorCutoutNoCull(TEXTURE), false, stack.hasFoil());

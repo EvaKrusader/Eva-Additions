@@ -21,6 +21,6 @@ public class IncorrodibleEnchantment extends Enchantment {
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return Ingredient.of(new ItemStack(EvaAdditionsModItems.NIGHT_VISION.get())).test(itemstack);
+		return Ingredient.of(new ItemStack(EvaAdditionsModItems.NIGHT_VISION.get()), new ItemStack(EvaAdditionsModItems.LAVA_WALKER.get())).test(itemstack);
 	}
 }

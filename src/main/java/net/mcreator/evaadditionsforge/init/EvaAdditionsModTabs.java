@@ -51,6 +51,7 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.POWER_UPPER.get());
 				tabData.accept(EvaAdditionsModItems.APTITUDE_CHANGER.get());
 				tabData.accept(EvaAdditionsModItems.GIVE_NEW_APTITUDE.get());
+				tabData.accept(EvaAdditionsModItems.ITEM_UPPER.get());
 			})
 
 					.build());
@@ -70,6 +71,11 @@ public class EvaAdditionsModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(EvaAdditionsModItems.ENTOMOLOGIST_EPIPHANY.get());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(EvaAdditionsModItems.GEL_PACKAGING.get());
+			tabData.accept(EvaAdditionsModItems.WING_GEL_ITEM.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

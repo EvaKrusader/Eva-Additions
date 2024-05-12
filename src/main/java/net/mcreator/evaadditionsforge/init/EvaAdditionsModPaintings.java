@@ -33,4 +33,5 @@ public class EvaAdditionsModPaintings {
 	public static final RegistryObject<PaintingVariant> POMNI_PAINTING = REGISTRY.register("pomni_painting", () -> new PaintingVariant(48, 64));
 	public static final RegistryObject<PaintingVariant> HEROBRINE = REGISTRY.register("herobrine", () -> new PaintingVariant(64, 32));
 	public static final RegistryObject<PaintingVariant> STRIPED_SAUSAGE = REGISTRY.register("striped_sausage", () -> new PaintingVariant(32, 16));
+	public static final RegistryObject<PaintingVariant> AKARI = REGISTRY.register("akari", () -> new PaintingVariant(64, 32));
 }

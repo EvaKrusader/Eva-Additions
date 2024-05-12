@@ -23,6 +23,7 @@ public class NightVisionWhileBaubleIsEquippedTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		double sendDamage = 0;
 		if (entity.getY() <= itemstack.getOrCreateTag().getDouble("gogglesY")) {
 			if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) <= 7) {
 				if (entity.isInWaterRainOrBubble()) {

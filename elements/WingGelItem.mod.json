@@ -1,0 +1,128 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "aptitude_dev1",
+    "customModelName": "Normal",
+    "customProperties": {
+      "winggelpower": {
+        "name": "WingGelItemPropertyValueProvider"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "aptitude_dev2",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:winggelpower",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "aptitude_dev3",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:winggelpower",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "aptitude_dev4",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:winggelpower",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "aptitude_dev5",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:winggelpower",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      }
+    ],
+    "name": "Wing Gel",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "MATERIALS"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 30,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "WingGelItemItemInInventoryTick"
+    },
+    "onFinishUsingItem": {
+      "name": "WingGelItemPlayerFinishesUsingItem"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "isFood": true,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "eat"
+  }
+}

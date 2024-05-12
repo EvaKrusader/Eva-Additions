@@ -148,7 +148,7 @@
     "isFood": false,
     "friendlyPigs": true,
     "enderMask": false,
-    "rotateModel": true,
+    "rotateModel": false,
     "translateModel": true,
     "nutritionalValue": 4,
     "saturation": 0.3,

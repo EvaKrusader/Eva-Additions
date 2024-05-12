@@ -18,7 +18,9 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
+import net.mcreator.evaadditionsforge.procedures.WingGelItemPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.procedures.EnterClaustrophobiaPropertyValueProviderProcedure;
+import net.mcreator.evaadditionsforge.item.WingGelItemItem;
 import net.mcreator.evaadditionsforge.item.WeatherCrystalItem;
 import net.mcreator.evaadditionsforge.item.UpgradedGPSItem;
 import net.mcreator.evaadditionsforge.item.UpgradedAltomerItem;
@@ -28,8 +30,10 @@ import net.mcreator.evaadditionsforge.item.PowerUpperItem;
 import net.mcreator.evaadditionsforge.item.NightVisionItem;
 import net.mcreator.evaadditionsforge.item.MoodCrystalItem;
 import net.mcreator.evaadditionsforge.item.LavaWalkerItem;
+import net.mcreator.evaadditionsforge.item.ItemUpperItem;
 import net.mcreator.evaadditionsforge.item.HigherSensesItem;
 import net.mcreator.evaadditionsforge.item.GiveNewAptitudeItem;
+import net.mcreator.evaadditionsforge.item.GelPackagingItem;
 import net.mcreator.evaadditionsforge.item.GPSItem;
 import net.mcreator.evaadditionsforge.item.EquinoxItem;
 import net.mcreator.evaadditionsforge.item.EntomologistEpiphanyItem;
@@ -118,6 +122,9 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> APTITUDE_ORE = block(EvaAdditionsModBlocks.APTITUDE_ORE);
 	public static final RegistryObject<Item> DEV_SENSES_ITEM = REGISTRY.register("dev_senses_item", () -> new DevSensesItemItem());
 	public static final RegistryObject<Item> XDBFG_2 = block(EvaAdditionsModBlocks.XDBFG_2);
+	public static final RegistryObject<Item> ITEM_UPPER = REGISTRY.register("item_upper", () -> new ItemUpperItem());
+	public static final RegistryObject<Item> GEL_PACKAGING = REGISTRY.register("gel_packaging", () -> new GelPackagingItem());
+	public static final RegistryObject<Item> WING_GEL_ITEM = REGISTRY.register("wing_gel_item", () -> new WingGelItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
@@ -128,6 +135,8 @@ public class EvaAdditionsModItems {
 		event.enqueueWork(() -> {
 			ItemProperties.register(ENTER_CLAUSTROPHOBIA.get(), new ResourceLocation("eva_additions:enter_claustrophobia_readytoenter"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EnterClaustrophobiaPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(WING_GEL_ITEM.get(), new ResourceLocation("eva_additions:wing_gel_item_winggelpower"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) WingGelItemPropertyValueProviderProcedure.execute(itemStackToRender));
 		});
 	}
 }
