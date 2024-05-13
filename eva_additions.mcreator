@@ -4782,7 +4782,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/simple_dungeon.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "NetherBridge",
@@ -4795,7 +4796,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/nether_bridge.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "RuinedPortal",
@@ -4808,7 +4810,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/ruined_portal.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "StrongholdLibrary",
@@ -4821,7 +4824,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/stronghold_library.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "SimpleDungeonInject",
@@ -4834,7 +4838,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_tables/gameplay/simple_dungeon_inject.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "NetherBridgeInject",
@@ -4847,7 +4852,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_tables/gameplay/nether_bridge_inject.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "RuinedPortalInject",
@@ -4860,7 +4866,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_tables/gameplay/ruined_portal_inject.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "StrongholdLibraryInject",
@@ -4873,7 +4880,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_tables/gameplay/stronghold_library_inject.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "Xdbfg2",
@@ -4917,7 +4925,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/abandonned_mineshaft.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "AbandonnedMineshaftInject",
@@ -4930,7 +4939,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_tables/abandonned_mineshaft_inject.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "ItemUpper",
@@ -5375,7 +5385,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_tables/gameplay/spawn_chest_inject.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "Spawnbonuschest",
@@ -5388,7 +5399,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/spawnbonuschest.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "VersionCheckDate",
@@ -5516,7 +5528,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/ancient_city.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "AbandonnedMineshaftCrystals",
@@ -5529,7 +5542,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/abandonned_mineshaft_crystals.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "BuriedChest",
@@ -5542,7 +5556,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/buried_chest.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "Pillager",
@@ -5555,7 +5570,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/pillager.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "DesertPyramid",
@@ -5568,7 +5584,8 @@
         "files": [
           "src/main/resources/data/eva_additions/loot_modifiers/desert_pyramid.json"
         ]
-      }
+      },
+      "path": "~/Loot Tables"
     },
     {
       "name": "Arabe",
@@ -5953,8 +5970,8 @@
       "painting.eva_additions.diane_6.author": "Flait13",
       "item.eva_additions.perception": "High Senses",
       "advancements.smartass_max_lvl_adv.descr": "Reach maximum enlightenment",
-      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
       "advancements.adv_roundabout.title": "To Be Continued",
+      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
       "painting.eva_additions.great_attraction.title": "Great Attraction",
       "enchantment.eva_additions.pillar_scraper": "Pillar Scraper",
       "painting.eva_additions.story_of_undertale.title": "Story Of Undertale",
@@ -5963,10 +5980,10 @@
       "painting.eva_additions.great_attraction.author": "LHUGUENY",
       "subtitles.record_yournewhome": "",
       "subtitles.record_butterfly": "",
-      "advancements.adv_scarab.title": "Critter",
       "painting.eva_additions_forge.bliss.title": "Bliss",
-      "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
+      "advancements.adv_scarab.title": "Critter",
       "subtitles.record_cryostasis": "",
+      "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
       "painting.eva_additions.arabe.author": "EvaKrusader",
       "item.eva_additions.cognition": "Cognition",
       "painting.eva_additions.pomni_painting.author": "amba_si",
@@ -5975,29 +5992,29 @@
       "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
       "advancements.reset_aptitude_adv.title": "Blank Slate",
       "curios.identifier.aptitude": "Aptitude",
-      "painting.eva_additions.black_hole.title": "Black Hole",
       "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
+      "painting.eva_additions.black_hole.title": "Black Hole",
       "painting.eva_additions.einstein.title": "Einstein",
-      "subtitles.enderlink_ping": "",
       "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
+      "subtitles.enderlink_ping": "",
       "item.eva_additions.enter_claustrophobia": "Enter Claustrophobia",
       "item.eva_additions_forge.disc_treehopper": "Music Disc",
       "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
       "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
       "item.eva_additions.disc_moth.desc": "camiidae - moth",
-      "item.eva_additions.power_upper": "Power Upper",
       "advancements.adv_weevil.title": "Evil Weevil",
+      "item.eva_additions.power_upper": "Power Upper",
       "item.eva_additions.disc_burningmemory": "Music Disc",
-      "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
       "advancements.high_senses_max_lvl_adv.title": "Superior ",
+      "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
       "item.eva_additions.dev_night_vision_item": "Dev NightVision Item",
-      "painting.eva_additions_forge.diane_2.author": "???",
       "painting.eva_additions.poli.title": "Poli",
+      "painting.eva_additions_forge.diane_2.author": "???",
       "painting.eva_additions_forge.diane_1.title": "Diane 1",
       "block.eva_additions.cold_obsidian": "Cold Obsidian",
       "advancements.requiem_adv.title": "Superior Power",
-      "painting.eva_additions.bliss.title": "Bliss",
       "painting.eva_additions.akari.author": "EvaKrusader",
+      "painting.eva_additions.bliss.title": "Bliss",
       "item.eva_additions.mood_crystal": "Mood Crystal",
       "item.eva_additions.disc_moth": "Music Disc",
       "painting.eva_additions.diane_4.title": "Diane 4",
@@ -6327,6 +6344,10 @@
       },
       {
         "name": "Claustrophobia",
+        "children": []
+      },
+      {
+        "name": "Loot Tables",
         "children": []
       }
     ]
