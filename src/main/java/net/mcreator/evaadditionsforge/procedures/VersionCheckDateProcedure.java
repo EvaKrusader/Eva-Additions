@@ -52,14 +52,13 @@ public class VersionCheckDateProcedure {
 				bufferedReader.close();
 				json = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
 				if (json.get("send").getAsDouble() >= 1) {
-					if (json.get("day").getAsDouble() > day || json.get("month").getAsDouble() > month && json.get("day").getAsDouble() >= day
-							|| json.get("year").getAsDouble() > year && json.get("month").getAsDouble() >= month && json.get("day").getAsDouble() >= day) {
+					if (json.get("day").getAsDouble() > day || json.get("month").getAsDouble() > month || json.get("year").getAsDouble() > year) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()
 									.broadcastSystemMessage(Component.literal(("" + ("The next update of Eva Additions will release on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
 											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
 											+ "!"))), false);
-					} else {
+					} else if (json.get("month").getAsDouble() < month && json.get("day").getAsDouble() <= day || json.get("year").getAsDouble() <= year && json.get("month").getAsDouble() <= month) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()
 									.broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
