@@ -1,0 +1,10 @@
+{
+  "type": "eva_additions:eva_additions_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+  ],
+  "lootTable": "eva_additions:gameplay/spawn_chest_inject"
+}

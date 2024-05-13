@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "eva_additions:night_vision",
+    "eva_additions:void_wings",
+    "eva_additions:crystal_oxygen",
+    "eva_additions:gps",
+    "eva_additions:upgraded_gps",
+    "eva_additions:crystal_depth",
+    "eva_additions:crystal_earth"
+  ]
+}

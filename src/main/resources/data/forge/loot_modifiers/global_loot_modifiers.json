@@ -5,7 +5,12 @@
     "eva_additions:ruined_portal",
     "eva_additions:stronghold_library",
     "eva_additions:abandonned_mineshaft",
-    "eva_additions:spawnbonuschest"
+    "eva_additions:spawnbonuschest",
+    "eva_additions:ancient_city",
+    "eva_additions:abandonned_mineshaft_crystals",
+    "eva_additions:buried_chest",
+    "eva_additions:pillager",
+    "eva_additions:desert_pyramid"
   ],
   "replace": false
 }

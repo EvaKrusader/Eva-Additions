@@ -43,7 +43,7 @@ public class VersionCheckProcedure {
 		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
 		String url = "";
 		ver1 = 0;
-		ver2 = 2;
+		ver2 = 1;
 		ver3 = 0;
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
 		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
@@ -65,30 +65,31 @@ public class VersionCheckProcedure {
 				if (json.get("ver1").getAsDouble() > ver1 || json.get("ver2").getAsDouble() > ver2 && json.get("ver1").getAsDouble() >= ver1
 						|| json.get("ver3").getAsDouble() > ver3 && json.get("ver2").getAsDouble() >= ver2 && json.get("ver1").getAsDouble() >= ver1) {
 					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("This version of the mod is outdated."), false);
+					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList()
-								.broadcastSystemMessage(
-										Component
-												.literal(
-														(("This version of the mod is outdated. The version " + "\u00A7b" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
-																+ Math.round(json.get("ver3").getAsDouble())
-																+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")
-																+ ""
-																+ (" (You are using the version " + "\u00A7b" + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
-																		+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod)"))),
-										false);
+								.broadcastSystemMessage(Component.literal(("The version " + "\u00A7a" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble())
+										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")), false);
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("You are using the version " + "\u00A7c" + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
+								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod")), false);
 				}
 				if (json.get("ver1").getAsDouble() == ver1 && json.get("ver2").getAsDouble() == ver2 && json.get("ver3").getAsDouble() == ver3) {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList()
-								.broadcastSystemMessage(Component.literal(("You are using the right version (" + "\u00A7b" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
+								.broadcastSystemMessage(Component.literal(("You are using the right version of this mod! (" + "\u00A7b" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
 										+ Math.round(json.get("ver3").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ")")),
 										false);
 				}
 				if (json.get("ver1").getAsDouble() < ver1 || json.get("ver2").getAsDouble() < ver2 && json.get("ver1").getAsDouble() <= ver1
 						|| json.get("ver3").getAsDouble() < ver3 && json.get("ver2").getAsDouble() <= ver2 && json.get("ver1").getAsDouble() <= ver1) {
 					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((("What??? You are using the version " + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3) + " of this mod???") + ""
-								+ ("The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble()) + " of this mod is out!"))), false);
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("You are somehow using an unreleased version of this mod (\u00A7e" + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
+								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ")")), false);
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList()
+								.broadcastSystemMessage(Component.literal(("The version " + "\u00A7a" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble())
+										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")), false);
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

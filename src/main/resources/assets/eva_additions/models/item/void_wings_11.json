@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eva_additions:item/curio_voidwings_gel5"
+  }
+}

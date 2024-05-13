@@ -6,39 +6,87 @@
   "overrides": [
     {
       "predicate": {
-        "eva_additions:void_wings_baublepower": 0
+        "eva_additions:void_wings_baublepower": 0,
+        "eva_additions:void_wings_gel": 0
       },
       "model": "eva_additions:item/void_wings_0"
     },
     {
       "predicate": {
-        "eva_additions:void_wings_baublepower": 1
+        "eva_additions:void_wings_baublepower": 1,
+        "eva_additions:void_wings_gel": 0
       },
       "model": "eva_additions:item/void_wings_1"
     },
     {
       "predicate": {
-        "eva_additions:void_wings_baublepower": 2
+        "eva_additions:void_wings_baublepower": 2,
+        "eva_additions:void_wings_gel": 0
       },
       "model": "eva_additions:item/void_wings_2"
     },
     {
       "predicate": {
-        "eva_additions:void_wings_baublepower": 3
+        "eva_additions:void_wings_baublepower": 3,
+        "eva_additions:void_wings_gel": 0
       },
       "model": "eva_additions:item/void_wings_3"
     },
     {
       "predicate": {
-        "eva_additions:void_wings_baublepower": 4
+        "eva_additions:void_wings_baublepower": 4,
+        "eva_additions:void_wings_gel": 0
       },
       "model": "eva_additions:item/void_wings_4"
     },
     {
       "predicate": {
-        "eva_additions:void_wings_baublepower": 5
+        "eva_additions:void_wings_baublepower": 5,
+        "eva_additions:void_wings_gel": 0
       },
       "model": "eva_additions:item/void_wings_5"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 0,
+        "eva_additions:void_wings_gel": 1
+      },
+      "model": "eva_additions:item/void_wings_6"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 1,
+        "eva_additions:void_wings_gel": 1
+      },
+      "model": "eva_additions:item/void_wings_7"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 2,
+        "eva_additions:void_wings_gel": 1
+      },
+      "model": "eva_additions:item/void_wings_8"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 3,
+        "eva_additions:void_wings_gel": 1
+      },
+      "model": "eva_additions:item/void_wings_9"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 4,
+        "eva_additions:void_wings_gel": 1
+      },
+      "model": "eva_additions:item/void_wings_10"
+    },
+    {
+      "predicate": {
+        "eva_additions:void_wings_baublepower": 5,
+        "eva_additions:void_wings_gel": 1
+      },
+      "model": "eva_additions:item/void_wings_11"
     }
   ]
 }

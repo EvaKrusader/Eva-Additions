@@ -65,7 +65,7 @@ public class EarthCrystalCognitionTooltipProcedure {
 				tooltip.add(Component.literal(((entity.getPersistentData().getString(("Tier5" + "AptitudeItemRarity")) + "*"
 						+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " ") + "This "
 						+ entity.getPersistentData().getString(("Tier0" + "AptitudeItemRarity")) + "\u00A7n" + (item1.getDisplayName().getString()).substring(1, (int) ((item1.getDisplayName().getString()).length() - 1))
-						+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " can be fused with a "
+						+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " can be fused with an "
 						+ entity.getPersistentData().getString(("Tier0" + "AptitudeItemRarity")) + "\u00A7n" + (item2.getDisplayName().getString()).substring(1, (int) ((item2.getDisplayName().getString()).length() - 1))
 						+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
 						+ (" and a " + entity.getPersistentData().getString(("Tier0" + "AptitudeItemRarity")) + "\u00A7n" + (item4.getDisplayName().getString()).substring(1, (int) ((item4.getDisplayName().getString()).length() - 1))

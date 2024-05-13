@@ -31,7 +31,10 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hasGlow": false,
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "CurioRemoveGlow"
+    },
     "customProperties": {
       "waterproof": {
         "name": "AltometerWaterproofReturn"

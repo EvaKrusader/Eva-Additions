@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NightVision"
+      },
+      {
+        "value": "CUSTOM:EndWings"
+      },
+      {
+        "value": "CUSTOM:Altometer"
+      },
+      {
+        "value": "CUSTOM:GPS"
+      },
+      {
+        "value": "CUSTOM:UpgradedGPS"
+      },
+      {
+        "value": "CUSTOM:DepthCrystal"
+      },
+      {
+        "value": "CUSTOM:UpgradedAltomer"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "remove_glow",
+    "namespace": "minecraft"
+  }
+}

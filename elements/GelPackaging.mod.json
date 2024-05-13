@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "aptitude_dev0",
+    "texture": "gel_packing",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "lootmodifier",
   "definition": {
-    "modifiedTable": "minecraft:chests/ruined_portal",
+    "modifiedTable": "minecraft:chests/abandonned_mineshaft",
     "modifierTable": "AbandonnedMineshaftInject"
   }
 }

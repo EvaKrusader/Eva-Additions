@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:chests/ruined_portal"
+      "loot_table_id": "minecraft:chests/abandonned_mineshaft"
     }
   ],
   "lootTable": "eva_additions:abandonned_mineshaft_inject"

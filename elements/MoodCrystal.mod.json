@@ -32,6 +32,9 @@
       "fixedValue": []
     },
     "hasGlow": false,
+    "glowCondition": {
+      "name": "CurioRemoveGlow"
+    },
     "customProperties": {},
     "states": [],
     "guiBoundTo": "<NONE>",

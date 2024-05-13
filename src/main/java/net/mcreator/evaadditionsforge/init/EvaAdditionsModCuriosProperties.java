@@ -8,8 +8,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
+import net.mcreator.evaadditionsforge.procedures.UpgradedGPSPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.procedures.NightVisionPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.procedures.EquinoxPropertyValueProviderProcedure;
+import net.mcreator.evaadditionsforge.procedures.EndWingsPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.procedures.AntibodyPropertyValueProviderProcedure;
 import net.mcreator.evaadditionsforge.procedures.AltometerWaterproofReturnProcedure;
 
@@ -26,6 +28,8 @@ public class EvaAdditionsModCuriosProperties {
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) NightVisionPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.VOID_WINGS.get(), new ResourceLocation("eva_additions:void_wings_baublepower"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(EvaAdditionsModItems.VOID_WINGS.get(), new ResourceLocation("eva_additions:void_wings_gel"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) EndWingsPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.LAVA_WALKER.get(), new ResourceLocation("eva_additions:lava_walker_baublepower"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.CRYSTAL_OXYGEN.get(), new ResourceLocation("eva_additions:crystal_oxygen_waterproof"),
@@ -34,6 +38,10 @@ public class EvaAdditionsModCuriosProperties {
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AltometerWaterproofReturnProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.CRYSTAL_EARTH.get(), new ResourceLocation("eva_additions:crystal_earth_waterproof"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AltometerWaterproofReturnProcedure.execute(itemStackToRender));
+			ItemProperties.register(EvaAdditionsModItems.GPS.get(), new ResourceLocation("eva_additions:gps_waterproof"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) UpgradedGPSPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(EvaAdditionsModItems.UPGRADED_GPS.get(), new ResourceLocation("eva_additions:upgraded_gps_waterproof"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) UpgradedGPSPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.COGNITION.get(), new ResourceLocation("eva_additions:cognition_baublepower"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AntibodyPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(EvaAdditionsModItems.PERCEPTION.get(), new ResourceLocation("eva_additions:perception_baublepower"),

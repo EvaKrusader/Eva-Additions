@@ -3,9 +3,9 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "aptitude_dev5",
+    "texture": "curio_upgps_anim",
     "customModelName": "Normal",
-    "name": "Upgraded GPS",
+    "name": "Elite GPS",
     "rarity": "COMMON",
     "slotType": "WorldInfo",
     "baubleModel": "Default",
@@ -31,9 +31,49 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hasGlow": false,
-    "customProperties": {},
-    "states": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "CurioRemoveGlow"
+    },
+    "customProperties": {
+      "waterproof": {
+        "name": "UpgradedGPSPropertyValueProvider"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "curio_upgps_anim",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:waterproof",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "curio_upgps_waterproof_anim",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:waterproof",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      }
+    ],
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,

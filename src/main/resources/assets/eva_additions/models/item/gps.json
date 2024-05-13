@@ -1,6 +1,20 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "eva_additions:item/aptitude_dev4"
-  }
+    "layer0": "eva_additions:item/curio_gps_anim"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "eva_additions:gps_waterproof": 0
+      },
+      "model": "eva_additions:item/gps_0"
+    },
+    {
+      "predicate": {
+        "eva_additions:gps_waterproof": 1
+      },
+      "model": "eva_additions:item/gps_1"
+    }
+  ]
 }

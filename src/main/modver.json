@@ -1,10 +1,10 @@
 {
   "ver1" : 0,
-  "ver2" : 2,
+  "ver2" : 1,
   "ver3" : 0,
-  "day" : 20,
+  "day" : 30,
   "month" : 5,
   "year" : 2024,
-  "send" : 1,
+  "send" : 0,
   "update":"https://www.mediafire.com/file/d6vjr6cki5qun6b/eva_additions-0.1.5.jar/file"
 }
