@@ -7,6 +7,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
+
 import java.util.Calendar;
 
 import java.net.URL;
@@ -28,11 +30,9 @@ public class VersionCheckDateProcedure {
 		double month = 0;
 		double year = 0;
 		String url = "";
-		String Update = "";
 		day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		month = Calendar.getInstance().get(Calendar.MONTH);
 		year = Calendar.getInstance().get(Calendar.YEAR);
-		Update = "https://www.mediafire.com/file/d6vjr6cki5qun6b/eva_additions-0.1.5.jar/file";
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
 		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
 		try {
@@ -54,15 +54,10 @@ public class VersionCheckDateProcedure {
 					if (json.get("day").getAsDouble() > day || json.get("month").getAsDouble() > month && json.get("day").getAsDouble() >= day
 							|| json.get("year").getAsDouble() > year && json.get("month").getAsDouble() >= month && json.get("day").getAsDouble() >= day) {
 						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((""
-									+ ("The next update of Eva Additions will release on " + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/" + Math.round(json.get("year").getAsDouble()) + "!"))),
-									false);
-					}
-					if (json.get("day").getAsDouble() == day && json.get("month").getAsDouble() == month && json.get("year").getAsDouble() == year) {
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(
-									Component.literal(("You are using the right version (" + Math.round(json.get("day").getAsDouble()) + "." + Math.round(json.get("month").getAsDouble()) + "." + Math.round(json.get("year").getAsDouble()) + ")")),
-									false);
+							world.getServer().getPlayerList()
+									.broadcastSystemMessage(Component.literal(("" + ("The next update of Eva Additions will release on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
+											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
+											+ "!"))), false);
 					}
 					if (json.get("send").getAsDouble() == 2) {
 						{
@@ -71,7 +66,8 @@ public class VersionCheckDateProcedure {
 								_ent.getServer().getCommands().performPrefixedCommand(
 										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
 												_ent.getDisplayName(), _ent.level().getServer(), _ent),
-										("tellraw @a {\"text\":\"Click here to download the new version!\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"" + "" + json.get("update").getAsString() + "\"}}"));
+										("tellraw @a {\"text\":\"Click here to download the new version!\",\"underlined\":true,\"color\":\"green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"" + "" + json.get("update").getAsString()
+												+ "\"}}"));
 							}
 						}
 					}

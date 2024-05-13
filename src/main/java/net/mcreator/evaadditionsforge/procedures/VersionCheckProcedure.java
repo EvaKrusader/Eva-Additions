@@ -9,6 +9,8 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
+
 import javax.annotation.Nullable;
 
 import java.net.URL;
@@ -65,14 +67,22 @@ public class VersionCheckProcedure {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList()
 								.broadcastSystemMessage(
-										Component.literal((("This version of the mod is outdated. The version " + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
-												+ Math.round(json.get("ver3").getAsDouble()) + " of this mod is out!") + "" + (" (You are using the version " + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3) + " of this mod)"))),
+										Component
+												.literal(
+														(("This version of the mod is outdated. The version " + "\u00A7b" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
+																+ Math.round(json.get("ver3").getAsDouble())
+																+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")
+																+ ""
+																+ (" (You are using the version " + "\u00A7b" + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
+																		+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod)"))),
 										false);
 				}
 				if (json.get("ver1").getAsDouble() == ver1 && json.get("ver2").getAsDouble() == ver2 && json.get("ver3").getAsDouble() == ver3) {
 					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(
-								Component.literal(("You are using the right version (" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble()) + ")")), false);
+						world.getServer().getPlayerList()
+								.broadcastSystemMessage(Component.literal(("You are using the right version (" + "\u00A7b" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "."
+										+ Math.round(json.get("ver3").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ")")),
+										false);
 				}
 				if (json.get("ver1").getAsDouble() < ver1 || json.get("ver2").getAsDouble() < ver2 && json.get("ver1").getAsDouble() <= ver1
 						|| json.get("ver3").getAsDouble() < ver3 && json.get("ver2").getAsDouble() <= ver2 && json.get("ver1").getAsDouble() <= ver1) {
