@@ -58,6 +58,13 @@ public class VersionCheckDateProcedure {
 									.broadcastSystemMessage(Component.literal(("" + ("The next update of Eva Additions will release on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
 											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
 											+ "!"))), false);
+					} else if (json.get("day").getAsDouble() == day || json.get("month").getAsDouble() == month || json.get("year").getAsDouble() == year) {
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList()
+									.broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7b" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
+											+ Math.round(json.get("year").getAsDouble()) + " (today)"
+											+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!"))), false);
+						sendDownload = true;
 					} else if (json.get("month").getAsDouble() < month && json.get("day").getAsDouble() <= day || json.get("year").getAsDouble() <= year && json.get("month").getAsDouble() <= month) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()
