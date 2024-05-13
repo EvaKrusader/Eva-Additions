@@ -30,6 +30,7 @@ public class VersionCheckDateProcedure {
 		double month = 0;
 		double year = 0;
 		String url = "";
+		boolean sendDownload = false;
 		day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		month = Calendar.getInstance().get(Calendar.MONTH);
 		year = Calendar.getInstance().get(Calendar.YEAR);
@@ -58,8 +59,18 @@ public class VersionCheckDateProcedure {
 									.broadcastSystemMessage(Component.literal(("" + ("The next update of Eva Additions will release on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
 											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
 											+ "!"))), false);
+					} else {
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList()
+									.broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
+											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
+											+ "!"))), false);
+						sendDownload = true;
 					}
 					if (json.get("send").getAsDouble() == 2) {
+						sendDownload = true;
+					}
+					if (sendDownload == true) {
 						{
 							Entity _ent = entity;
 							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
