@@ -1,6 +1,9 @@
 package net.mcreator.evaadditionsforge.procedures;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
@@ -33,9 +36,15 @@ public class VersionCheckDateProcedure {
 		double len1 = 0;
 		double len2 = 0;
 		double len3 = 0;
+		double tdLen1 = 0;
+		double tdLen2 = 0;
 		String url = "";
 		String p1 = "";
 		String p2 = "";
+		String tdP1 = "";
+		String tdP2 = "";
+		String ACurrentDate = "";
+		String ANextDate = "";
 		day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		month = Calendar.getInstance().get(Calendar.MONTH);
 		year = Calendar.getInstance().get(Calendar.YEAR);
@@ -56,39 +65,104 @@ public class VersionCheckDateProcedure {
 				}
 				bufferedReader.close();
 				json = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-				len1 = (new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()))).length();
-				len2 = (new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()))).length();
-				len3 = (new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).length();
-				if (len1 == 1) {
-					p1 = "00" + new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()));
-				} else if (len1 == 2) {
-					p1 = "0" + new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()));
+				if (entity instanceof Player) {
+					len1 = (new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()))).length();
+					len2 = (new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()))).length();
+					len3 = (new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).length();
+					tdLen1 = (new java.text.DecimalFormat("##").format(Calendar.getInstance().get(Calendar.DAY_OF_MONTH))).length();
+					tdLen2 = (new java.text.DecimalFormat("##").format(Calendar.getInstance().get(Calendar.MONTH))).length();
+					if (len1 == 1) {
+						p1 = "00" + new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()));
+					} else if (len1 == 2) {
+						p1 = "0" + new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()));
+					}
+					if (len2 == 1) {
+						p2 = "00" + new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()));
+					} else if (len2 == 2) {
+						p2 = "0" + new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()));
+					}
+					if (tdLen1 == 1) {
+						tdP1 = "00" + new java.text.DecimalFormat("##").format(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+					} else if (tdLen1 == 2) {
+						tdP1 = "0" + new java.text.DecimalFormat("##").format(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+					}
+					if (tdLen2 == 1) {
+						tdP2 = "00" + new java.text.DecimalFormat("##").format(Calendar.getInstance().get(Calendar.MONTH) + 1);
+					} else if (tdLen2 == 2) {
+						tdP2 = "0" + new java.text.DecimalFormat("##").format(Calendar.getInstance().get(Calendar.MONTH) + 1);
+					}
+					{
+						double _setval = new Object() {
+							double convert(String s) {
+								try {
+									return Double.parseDouble(s.trim());
+								} catch (Exception e) {
+								}
+								return 0;
+							}
+						}.convert(new java.text.DecimalFormat("####").format(Math.round(Calendar.getInstance().get(Calendar.YEAR))) + ""
+								+ (tdP1 + "/" + tdP2 + "/" + new java.text.DecimalFormat("##").format(Math.round(Calendar.getInstance().get(Calendar.YEAR)))).substring(5, 7)
+								+ (tdP1 + "/" + tdP2 + "/" + new java.text.DecimalFormat("##").format(Math.round(Calendar.getInstance().get(Calendar.YEAR)))).substring(1, 3));
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.currentDateNum = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						double _setval = new Object() {
+							double convert(String s) {
+								try {
+									return Double.parseDouble(s.trim());
+								} catch (Exception e) {
+								}
+								return 0;
+							}
+						}.convert(new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble())) + "" + (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(5, 7)
+								+ (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(1, 3));
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.nextDateNum = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = (tdP1 + "/" + tdP2 + "/" + new java.text.DecimalFormat("##").format(Math.round(Calendar.getInstance().get(Calendar.YEAR)))).substring(1, 3) + "/"
+								+ (tdP1 + "/" + tdP2 + "/" + new java.text.DecimalFormat("##").format(Math.round(Calendar.getInstance().get(Calendar.YEAR)))).substring(5, 7) + "/"
+								+ new java.text.DecimalFormat("##").format(Math.round(Calendar.getInstance().get(Calendar.YEAR)));
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.currentDate = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(1, 3) + "/"
+								+ (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(5, 7) + "/"
+								+ new java.text.DecimalFormat("####").format(Math.round(json.get("year").getAsDouble()));
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.nextDate = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					ACurrentDate = (tdP1 + "/" + tdP2 + "/" + new java.text.DecimalFormat("##").format(Math.round(Calendar.getInstance().get(Calendar.YEAR)))).substring(1, 3) + "/"
+							+ (tdP1 + "/" + tdP2 + "/" + new java.text.DecimalFormat("##").format(Math.round(Calendar.getInstance().get(Calendar.YEAR)))).substring(5, 7) + "/"
+							+ new java.text.DecimalFormat("##").format(Math.round(Calendar.getInstance().get(Calendar.YEAR)));
+					ANextDate = (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(1, 3) + "/"
+							+ (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(5, 7) + "/" + new java.text.DecimalFormat("####").format(Math.round(json.get("year").getAsDouble()));
 				}
-				if (len2 == 1) {
-					p2 = "00" + new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()));
-				} else if (len2 == 2) {
-					p2 = "0" + new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()));
-				}
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("DATE TEST " + (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))))), false);
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("SUBSTRING" + ((p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(1, 3) + "/"
-							+ (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(5, 7)))), false);
 				if (json.get("send").getAsDouble() >= 1) {
-					if (json.get("day").getAsDouble() > day || json.get("month").getAsDouble() > month || json.get("year").getAsDouble() > year) {
+					if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextDateNum > (entity
+							.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentDateNum) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()
-									.broadcastSystemMessage(Component.literal((("The next update of Eva Additions will release on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
-											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!")
-											+ "" + (" (" + "\u00A7a" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble())
+									.broadcastSystemMessage(Component.literal((("The next update of Eva Additions will release on " + "\u00A7a" + ANextDate
+											+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!") + ""
+											+ (" (" + "\u00A7a" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextVersion
 													+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ")"))),
 											false);
-					} else if (json.get("day").getAsDouble() == day || json.get("month").getAsDouble() == month || json.get("year").getAsDouble() == year) {
+					} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextDateNum == (entity
+							.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentDateNum) {
 						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList()
-									.broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7b" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
-											+ Math.round(json.get("year").getAsDouble()) + " (today)"
-											+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!"))), false);
+							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7b" + ANextDate + " (today)"
+									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!"))), false);
 						SendDownload = true;
 					} else if (json.get("month").getAsDouble() < month && json.get("day").getAsDouble() <= day || json.get("year").getAsDouble() <= year && json.get("month").getAsDouble() <= month) {
 						if (!world.isClientSide() && world.getServer() != null)

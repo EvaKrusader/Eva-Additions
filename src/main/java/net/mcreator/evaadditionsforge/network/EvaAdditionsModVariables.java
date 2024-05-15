@@ -88,6 +88,13 @@ public class EvaAdditionsModVariables {
 			clone.HasAptitudeUpped = original.HasAptitudeUpped;
 			clone.realAptitude = original.realAptitude;
 			clone.obsidianTimer = original.obsidianTimer;
+			clone.currentDate = original.currentDate;
+			clone.nextDate = original.nextDate;
+			clone.currentVersion = original.currentVersion;
+			clone.nextVersion = original.nextVersion;
+			clone.showNewOutMessage = original.showNewOutMessage;
+			clone.currentDateNum = original.currentDateNum;
+			clone.nextDateNum = original.nextDateNum;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -173,6 +180,13 @@ public class EvaAdditionsModVariables {
 		public ItemStack wingersss = ItemStack.EMPTY;
 		public BlockState lastWalked5seconds = Blocks.AIR.defaultBlockState();
 		public double extraWingDamage = 0;
+		public String currentDate = "\"\"";
+		public String nextDate = "\"\"";
+		public String currentVersion = "\"\"";
+		public String nextVersion = "\"\"";
+		public boolean showNewOutMessage = false;
+		public double currentDateNum = 0;
+		public double nextDateNum = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -214,6 +228,13 @@ public class EvaAdditionsModVariables {
 			nbt.put("wingersss", wingersss.save(new CompoundTag()));
 			nbt.put("lastWalked5seconds", NbtUtils.writeBlockState(lastWalked5seconds));
 			nbt.putDouble("extraWingDamage", extraWingDamage);
+			nbt.putString("currentDate", currentDate);
+			nbt.putString("nextDate", nextDate);
+			nbt.putString("currentVersion", currentVersion);
+			nbt.putString("nextVersion", nextVersion);
+			nbt.putBoolean("showNewOutMessage", showNewOutMessage);
+			nbt.putDouble("currentDateNum", currentDateNum);
+			nbt.putDouble("nextDateNum", nextDateNum);
 			return nbt;
 		}
 
@@ -252,6 +273,13 @@ public class EvaAdditionsModVariables {
 			wingersss = ItemStack.of(nbt.getCompound("wingersss"));
 			lastWalked5seconds = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), nbt.getCompound("lastWalked5seconds"));
 			extraWingDamage = nbt.getDouble("extraWingDamage");
+			currentDate = nbt.getString("currentDate");
+			nextDate = nbt.getString("nextDate");
+			currentVersion = nbt.getString("currentVersion");
+			nextVersion = nbt.getString("nextVersion");
+			showNewOutMessage = nbt.getBoolean("showNewOutMessage");
+			currentDateNum = nbt.getDouble("currentDateNum");
+			nextDateNum = nbt.getDouble("nextDateNum");
 		}
 	}
 
@@ -309,6 +337,13 @@ public class EvaAdditionsModVariables {
 					variables.wingersss = message.data.wingersss;
 					variables.lastWalked5seconds = message.data.lastWalked5seconds;
 					variables.extraWingDamage = message.data.extraWingDamage;
+					variables.currentDate = message.data.currentDate;
+					variables.nextDate = message.data.nextDate;
+					variables.currentVersion = message.data.currentVersion;
+					variables.nextVersion = message.data.nextVersion;
+					variables.showNewOutMessage = message.data.showNewOutMessage;
+					variables.currentDateNum = message.data.currentDateNum;
+					variables.nextDateNum = message.data.nextDateNum;
 				}
 			});
 			context.setPacketHandled(true);
