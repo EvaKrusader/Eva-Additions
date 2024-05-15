@@ -26,11 +26,16 @@ public class VersionCheckDateProcedure {
 			return;
 		File file = new File("");
 		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
+		boolean SendDownload = false;
 		double day = 0;
 		double month = 0;
 		double year = 0;
+		double len1 = 0;
+		double len2 = 0;
+		double len3 = 0;
 		String url = "";
-		boolean SendDownload = false;
+		String p1 = "";
+		String p2 = "";
 		day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		month = Calendar.getInstance().get(Calendar.MONTH);
 		year = Calendar.getInstance().get(Calendar.YEAR);
@@ -51,6 +56,24 @@ public class VersionCheckDateProcedure {
 				}
 				bufferedReader.close();
 				json = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
+				len1 = (new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()))).length();
+				len2 = (new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()))).length();
+				len3 = (new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).length();
+				if (len1 == 1) {
+					p1 = "00" + new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()));
+				} else if (len1 == 2) {
+					p1 = "0" + new java.text.DecimalFormat("##").format(Math.round(json.get("day").getAsDouble()));
+				}
+				if (len2 == 1) {
+					p2 = "00" + new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()));
+				} else if (len2 == 2) {
+					p2 = "0" + new java.text.DecimalFormat("##").format(Math.round(json.get("month").getAsDouble()));
+				}
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("DATE TEST " + (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))))), false);
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("SUBSTRING" + ((p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(1, 3) + "/"
+							+ (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(5, 7)))), false);
 				if (json.get("send").getAsDouble() >= 1) {
 					if (json.get("day").getAsDouble() > day || json.get("month").getAsDouble() > month || json.get("year").getAsDouble() > year) {
 						if (!world.isClientSide() && world.getServer() != null)
