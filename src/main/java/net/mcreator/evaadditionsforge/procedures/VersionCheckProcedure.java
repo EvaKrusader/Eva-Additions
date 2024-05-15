@@ -46,27 +46,6 @@ public class VersionCheckProcedure {
 		double ver3 = 0;
 		double currentVersion = 0;
 		double nextVersion = 0;
-		{
-			double _setval = 0;
-			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.ver1 = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			double _setval = 1;
-			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.ver2 = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			double _setval = 1;
-			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.ver3 = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
 		ver1 = 0;
 		ver2 = 1;
 		ver3 = 1;
@@ -125,33 +104,33 @@ public class VersionCheckProcedure {
 					}
 				}.convert(Math.round(json.get("ver1").getAsDouble()) + "" + Math.round(json.get("ver2").getAsDouble()) + Math.round(json.get("ver3").getAsDouble()));
 				if (nextVersion > currentVersion) {
-					{
-						boolean _setval = true;
-						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.showNewOutMessage = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("This version of the mod is outdated."), false);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(
-								Component.literal(("The version " + "\u00A7a" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextVersion
-										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")),
-								false);
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(
 								Component.literal(("You are using the version " + "\u00A7c" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentVersion
 										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod.")),
 								false);
-				} else if (nextVersion == currentVersion) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(
+								Component.literal(("The version " + "\u00A7a" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextVersion
+										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")),
+								false);
 					{
 						boolean _setval = true;
 						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.showNewOutMessage = _setval;
+							capability.sendOutMessage = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						boolean _setval = true;
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.SendDOwnloadLink = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				} else if (nextVersion == currentVersion) {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList()
 								.broadcastSystemMessage(Component.literal(("You are using the right version of this mod! (" + "\u00A7b"
@@ -164,10 +143,18 @@ public class VersionCheckProcedure {
 										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentVersion
 										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ")")), false);
 					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(
-								Component.literal(("The version " + "\u00A7a" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextVersion
-										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")),
-								false);
+						world.getServer().getPlayerList()
+								.broadcastSystemMessage(Component.literal(
+										("The current version of this mod is " + "\u00A7a" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextVersion
+												+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ".")),
+										false);
+					{
+						boolean _setval = false;
+						entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.sendOutMessage = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

@@ -148,9 +148,10 @@ public class VersionCheckDateProcedure {
 					ANextDate = (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(1, 3) + "/"
 							+ (p1 + "/" + p2 + "/" + new java.text.DecimalFormat("##").format(Math.round(json.get("year").getAsDouble()))).substring(5, 7) + "/" + new java.text.DecimalFormat("####").format(Math.round(json.get("year").getAsDouble()));
 				}
-				if (json.get("send").getAsDouble() >= 1) {
+				if (json.get("send").getAsDouble() >= 1 || (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).sendOutMessage == true) {
 					if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextDateNum > (entity
-							.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentDateNum) {
+							.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentDateNum
+							&& (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).SendDOwnloadLink == false) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()
 									.broadcastSystemMessage(Component.literal((("The next update of Eva Additions will release on " + "\u00A7a" + ANextDate
@@ -163,19 +164,36 @@ public class VersionCheckDateProcedure {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7b" + ANextDate + " (today)"
 									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!"))), false);
-						SendDownload = true;
-					} else if (json.get("month").getAsDouble() < month && json.get("day").getAsDouble() <= day || json.get("year").getAsDouble() <= year && json.get("month").getAsDouble() <= month) {
+						{
+							boolean _setval = true;
+							entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.SendDOwnloadLink = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
+					} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentDateNum > (entity
+							.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextDateNum) {
 						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList()
-									.broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7c" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
-											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
-											+ "!"))), false);
-						SendDownload = true;
+							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7c" + ANextDate
+									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!"))), false);
+						{
+							boolean _setval = true;
+							entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.SendDOwnloadLink = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
 					}
 					if (json.get("send").getAsDouble() == 2) {
-						SendDownload = true;
+						{
+							boolean _setval = true;
+							entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.SendDOwnloadLink = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
 					}
-					if (SendDownload == true) {
+					if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).SendDOwnloadLink == true) {
 						{
 							Entity _ent = entity;
 							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -187,6 +205,20 @@ public class VersionCheckDateProcedure {
 							}
 						}
 					}
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.SendDOwnloadLink = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.sendOutMessage = _setval;
+						capability.syncPlayerVariables(entity);
+					});
 				}
 			} catch (IOException e) {
 				e.printStackTrace();

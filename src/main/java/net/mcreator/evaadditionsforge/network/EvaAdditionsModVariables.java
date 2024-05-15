@@ -92,12 +92,12 @@ public class EvaAdditionsModVariables {
 			clone.nextDate = original.nextDate;
 			clone.currentVersion = original.currentVersion;
 			clone.nextVersion = original.nextVersion;
-			clone.showNewOutMessage = original.showNewOutMessage;
 			clone.currentDateNum = original.currentDateNum;
 			clone.nextDateNum = original.nextDateNum;
 			clone.ver1 = original.ver1;
 			clone.ver2 = original.ver2;
 			clone.ver3 = original.ver3;
+			clone.SendDOwnloadLink = original.SendDOwnloadLink;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -115,6 +115,7 @@ public class EvaAdditionsModVariables {
 				clone.wingersss = original.wingersss;
 				clone.lastWalked5seconds = original.lastWalked5seconds;
 				clone.extraWingDamage = original.extraWingDamage;
+				clone.sendOutMessage = original.sendOutMessage;
 			}
 		}
 	}
@@ -187,12 +188,13 @@ public class EvaAdditionsModVariables {
 		public String nextDate = "\"\"";
 		public String currentVersion = "\"\"";
 		public String nextVersion = "\"\"";
-		public boolean showNewOutMessage = false;
 		public double currentDateNum = 0;
 		public double nextDateNum = 0;
 		public double ver1 = 0.0;
 		public double ver2 = 1.0;
 		public double ver3 = 1.0;
+		public boolean SendDOwnloadLink = false;
+		public boolean sendOutMessage = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -238,12 +240,13 @@ public class EvaAdditionsModVariables {
 			nbt.putString("nextDate", nextDate);
 			nbt.putString("currentVersion", currentVersion);
 			nbt.putString("nextVersion", nextVersion);
-			nbt.putBoolean("showNewOutMessage", showNewOutMessage);
 			nbt.putDouble("currentDateNum", currentDateNum);
 			nbt.putDouble("nextDateNum", nextDateNum);
 			nbt.putDouble("ver1", ver1);
 			nbt.putDouble("ver2", ver2);
 			nbt.putDouble("ver3", ver3);
+			nbt.putBoolean("SendDOwnloadLink", SendDOwnloadLink);
+			nbt.putBoolean("sendOutMessage", sendOutMessage);
 			return nbt;
 		}
 
@@ -286,12 +289,13 @@ public class EvaAdditionsModVariables {
 			nextDate = nbt.getString("nextDate");
 			currentVersion = nbt.getString("currentVersion");
 			nextVersion = nbt.getString("nextVersion");
-			showNewOutMessage = nbt.getBoolean("showNewOutMessage");
 			currentDateNum = nbt.getDouble("currentDateNum");
 			nextDateNum = nbt.getDouble("nextDateNum");
 			ver1 = nbt.getDouble("ver1");
 			ver2 = nbt.getDouble("ver2");
 			ver3 = nbt.getDouble("ver3");
+			SendDOwnloadLink = nbt.getBoolean("SendDOwnloadLink");
+			sendOutMessage = nbt.getBoolean("sendOutMessage");
 		}
 	}
 
@@ -353,12 +357,13 @@ public class EvaAdditionsModVariables {
 					variables.nextDate = message.data.nextDate;
 					variables.currentVersion = message.data.currentVersion;
 					variables.nextVersion = message.data.nextVersion;
-					variables.showNewOutMessage = message.data.showNewOutMessage;
 					variables.currentDateNum = message.data.currentDateNum;
 					variables.nextDateNum = message.data.nextDateNum;
 					variables.ver1 = message.data.ver1;
 					variables.ver2 = message.data.ver2;
 					variables.ver3 = message.data.ver3;
+					variables.SendDOwnloadLink = message.data.SendDOwnloadLink;
+					variables.sendOutMessage = message.data.sendOutMessage;
 				}
 			});
 			context.setPacketHandled(true);
