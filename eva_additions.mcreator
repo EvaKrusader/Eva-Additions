@@ -850,22 +850,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -5810,12 +5794,6 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
-    },
-    {
-      "name": "sendDownload",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
     }
   ],
   "sound_elements": [
@@ -5988,9 +5966,9 @@
       "painting.eva_additions.diane_6.author": "Flait13",
       "item.eva_additions.perception": "High Senses",
       "advancements.smartass_max_lvl_adv.descr": "Reach maximum enlightenment",
-      "advancements.adv_roundabout.title": "To Be Continued",
-      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
       "painting.eva_additions.asbestos.title": "Asbestos Factory Worker",
+      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
+      "advancements.adv_roundabout.title": "To Be Continued",
       "painting.eva_additions.great_attraction.title": "Great Attraction",
       "enchantment.eva_additions.pillar_scraper": "Pillar Scraper",
       "painting.eva_additions.story_of_undertale.title": "Story Of Undertale",
@@ -5999,10 +5977,10 @@
       "painting.eva_additions.great_attraction.author": "LHUGUENY",
       "subtitles.record_yournewhome": "",
       "subtitles.record_butterfly": "",
-      "painting.eva_additions_forge.bliss.title": "Bliss",
       "advancements.adv_scarab.title": "Critter",
-      "subtitles.record_cryostasis": "",
+      "painting.eva_additions_forge.bliss.title": "Bliss",
       "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
+      "subtitles.record_cryostasis": "",
       "painting.eva_additions.arabe.author": "EvaKrusader",
       "item.eva_additions.cognition": "Cognition",
       "painting.eva_additions.pomni_painting.author": "amba_si",
@@ -6011,25 +5989,25 @@
       "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
       "advancements.reset_aptitude_adv.title": "Blank Slate",
       "curios.identifier.aptitude": "Aptitude",
-      "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
       "painting.eva_additions.black_hole.title": "Black Hole",
+      "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
       "painting.eva_additions.einstein.title": "Einstein",
-      "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
       "subtitles.enderlink_ping": "",
+      "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
       "item.eva_additions.enter_claustrophobia": "Enter Claustrophobia",
       "item.eva_additions_forge.disc_treehopper": "Music Disc",
       "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
       "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
       "item.eva_additions.disc_moth.desc": "camiidae - moth",
-      "advancements.adv_weevil.title": "Evil Weevil",
       "item.eva_additions.power_upper": "Power Upper",
+      "advancements.adv_weevil.title": "Evil Weevil",
       "item.eva_additions.disc_burningmemory": "Music Disc",
       "painting.eva_additions.asbestos.author": "EvaKrusader",
-      "advancements.high_senses_max_lvl_adv.title": "Superior ",
       "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
+      "advancements.high_senses_max_lvl_adv.title": "Superior ",
       "item.eva_additions.dev_night_vision_item": "Dev NightVision Item",
-      "painting.eva_additions.poli.title": "Poli",
       "painting.eva_additions_forge.diane_2.author": "???",
+      "painting.eva_additions.poli.title": "Poli",
       "painting.eva_additions_forge.diane_1.title": "Diane 1",
       "block.eva_additions.cold_obsidian": "Cold Obsidian",
       "advancements.requiem_adv.title": "Superior Power",

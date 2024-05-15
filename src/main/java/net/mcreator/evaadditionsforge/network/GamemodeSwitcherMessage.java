@@ -52,7 +52,7 @@ public class GamemodeSwitcherMessage {
 			return;
 		if (type == 0) {
 
-			GamemodeSwitcherOnKeyPressedProcedure.execute(world, x, y, z, entity);
+			GamemodeSwitcherOnKeyPressedProcedure.execute(entity);
 		}
 	}
 
