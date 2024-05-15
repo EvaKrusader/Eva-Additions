@@ -42,9 +42,10 @@ public class VersionCheckProcedure {
 		File file = new File("");
 		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
 		String url = "";
+		VersionCheckDateProcedure.execute(world, entity);
 		ver1 = 0;
 		ver2 = 1;
-		ver3 = 0;
+		ver3 = 1;
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
 		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
 		try {
@@ -64,15 +65,18 @@ public class VersionCheckProcedure {
 				json = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
 				if (json.get("ver1").getAsDouble() > ver1 || json.get("ver2").getAsDouble() > ver2 && json.get("ver1").getAsDouble() >= ver1
 						|| json.get("ver3").getAsDouble() > ver3 && json.get("ver2").getAsDouble() >= ver2 && json.get("ver1").getAsDouble() >= ver1) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("This version of the mod is outdated."), false);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList()
-								.broadcastSystemMessage(Component.literal(("The version " + "\u00A7a" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble())
-										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")), false);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("You are using the version " + "\u00A7c" + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
-								+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod")), false);
+					if (json.get("send").getAsDouble() >= 1 || (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).sendDownload == true) {
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("This version of the mod is outdated."), false);
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList().broadcastSystemMessage(
+									Component.literal(("The version " + "\u00A7a" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble())
+											+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")),
+									false);
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("You are using the version " + "\u00A7c" + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
+									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod")), false);
+					}
 				}
 				if (json.get("ver1").getAsDouble() == ver1 && json.get("ver2").getAsDouble() == ver2 && json.get("ver3").getAsDouble() == ver3) {
 					if (!world.isClientSide() && world.getServer() != null)
@@ -95,7 +99,6 @@ public class VersionCheckProcedure {
 				e.printStackTrace();
 			}
 		}
-		VersionCheckDateProcedure.execute(world, entity);
 		ChooseAptitudeProcedure.execute(entity);
 	}
 }

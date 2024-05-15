@@ -88,6 +88,7 @@ public class EvaAdditionsModVariables {
 			clone.HasAptitudeUpped = original.HasAptitudeUpped;
 			clone.realAptitude = original.realAptitude;
 			clone.obsidianTimer = original.obsidianTimer;
+			clone.sendDownload = original.sendDownload;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -173,6 +174,7 @@ public class EvaAdditionsModVariables {
 		public ItemStack wingersss = ItemStack.EMPTY;
 		public BlockState lastWalked5seconds = Blocks.AIR.defaultBlockState();
 		public double extraWingDamage = 0;
+		public boolean sendDownload = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -214,6 +216,7 @@ public class EvaAdditionsModVariables {
 			nbt.put("wingersss", wingersss.save(new CompoundTag()));
 			nbt.put("lastWalked5seconds", NbtUtils.writeBlockState(lastWalked5seconds));
 			nbt.putDouble("extraWingDamage", extraWingDamage);
+			nbt.putBoolean("sendDownload", sendDownload);
 			return nbt;
 		}
 
@@ -252,6 +255,7 @@ public class EvaAdditionsModVariables {
 			wingersss = ItemStack.of(nbt.getCompound("wingersss"));
 			lastWalked5seconds = NbtUtils.readBlockState(BuiltInRegistries.BLOCK.asLookup(), nbt.getCompound("lastWalked5seconds"));
 			extraWingDamage = nbt.getDouble("extraWingDamage");
+			sendDownload = nbt.getBoolean("sendDownload");
 		}
 	}
 
@@ -309,6 +313,7 @@ public class EvaAdditionsModVariables {
 					variables.wingersss = message.data.wingersss;
 					variables.lastWalked5seconds = message.data.lastWalked5seconds;
 					variables.extraWingDamage = message.data.extraWingDamage;
+					variables.sendDownload = message.data.sendDownload;
 				}
 			});
 			context.setPacketHandled(true);
