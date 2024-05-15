@@ -42,7 +42,6 @@ public class VersionCheckProcedure {
 		File file = new File("");
 		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
 		String url = "";
-		VersionCheckDateProcedure.execute(world, entity);
 		ver1 = 0;
 		ver2 = 1;
 		ver3 = 1;
@@ -99,6 +98,7 @@ public class VersionCheckProcedure {
 				e.printStackTrace();
 			}
 		}
+		VersionCheckDateProcedure.execute(world, entity);
 		ChooseAptitudeProcedure.execute(entity);
 	}
 }

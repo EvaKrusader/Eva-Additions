@@ -30,6 +30,7 @@ public class VersionCheckDateProcedure {
 		double month = 0;
 		double year = 0;
 		String url = "";
+		boolean SendDownload = false;
 		day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		month = Calendar.getInstance().get(Calendar.MONTH);
 		year = Calendar.getInstance().get(Calendar.YEAR);
@@ -63,37 +64,19 @@ public class VersionCheckDateProcedure {
 									.broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7b" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
 											+ Math.round(json.get("year").getAsDouble()) + " (today)"
 											+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!"))), false);
-						{
-							boolean _setval = true;
-							entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.sendDownload = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
+						SendDownload = true;
 					} else if (json.get("month").getAsDouble() < month && json.get("day").getAsDouble() <= day || json.get("year").getAsDouble() <= year && json.get("month").getAsDouble() <= month) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()
 									.broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7c" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
 											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
 											+ "!"))), false);
-						{
-							boolean _setval = true;
-							entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.sendDownload = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
+						SendDownload = true;
 					}
 					if (json.get("send").getAsDouble() == 2) {
-						{
-							boolean _setval = true;
-							entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.sendDownload = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
+						SendDownload = true;
 					}
-					if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).sendDownload == true) {
+					if (SendDownload == true) {
 						{
 							Entity _ent = entity;
 							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
