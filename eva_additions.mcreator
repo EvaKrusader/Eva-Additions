@@ -5661,6 +5661,80 @@
         ]
       },
       "path": "~/Curio/World/Y"
+    },
+    {
+      "name": "SendVersionCheckRightclicked",
+      "type": "procedure",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_version_check_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/SendVersionCheckRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "SendVersionCheck",
+      "type": "item",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_version_check",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/send_version_check.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/SendVersionCheckItem.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "UpdateVersion",
+      "type": "item",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_version",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/UpdateVersionItem.java",
+          "src/main/resources/assets/eva_additions/models/item/update_version.json"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "UpdateVersionRightclicked",
+      "type": "procedure",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_version_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/UpdateVersionRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dev"
     }
   ],
   "variable_elements": [
@@ -5903,6 +5977,24 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "ver1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "ver2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "ver3",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
     }
   ],
   "sound_elements": [
@@ -6058,6 +6150,7 @@
       "advancements.liveleak_death.title": "Quick \u0026 Painful",
       "block.eva_additions.aptitude_ore": "Aptitude Ore",
       "subtitles.record_tortoisebeetle": "",
+      "item.eva_additions.send_version_check": "Send Version Check",
       "item.eva_additions_forge.disc_bumblebee.desc": "camiidae - bumblebee",
       "advancements.adv_isopod.title": "Tough Shell",
       "advancements.lava_walker_adv.descr": "Turn lava into cold obsidian",
@@ -6075,9 +6168,9 @@
       "painting.eva_additions.diane_6.author": "Flait13",
       "item.eva_additions.perception": "High Senses",
       "advancements.smartass_max_lvl_adv.descr": "Reach maximum enlightenment",
-      "painting.eva_additions.asbestos.title": "Asbestos Factory Worker",
-      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
       "advancements.adv_roundabout.title": "To Be Continued",
+      "item.eva_additions_forge.disc_treehopper.desc": "camiidae - treehopper",
+      "painting.eva_additions.asbestos.title": "Asbestos Factory Worker",
       "painting.eva_additions.great_attraction.title": "Great Attraction",
       "enchantment.eva_additions.pillar_scraper": "Pillar Scraper",
       "painting.eva_additions.story_of_undertale.title": "Story Of Undertale",
@@ -6086,10 +6179,10 @@
       "painting.eva_additions.great_attraction.author": "LHUGUENY",
       "subtitles.record_yournewhome": "",
       "subtitles.record_butterfly": "",
-      "advancements.adv_scarab.title": "Critter",
       "painting.eva_additions_forge.bliss.title": "Bliss",
-      "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
+      "advancements.adv_scarab.title": "Critter",
       "subtitles.record_cryostasis": "",
+      "item.eva_additions.disc_bumblebee.desc": "camiidae - bumblebee",
       "painting.eva_additions.arabe.author": "EvaKrusader",
       "item.eva_additions.cognition": "Cognition",
       "painting.eva_additions.pomni_painting.author": "amba_si",
@@ -6098,25 +6191,25 @@
       "death.attack.liveleak_damage": "%1$s is now being shared in groupchats",
       "advancements.reset_aptitude_adv.title": "Blank Slate",
       "curios.identifier.aptitude": "Aptitude",
-      "painting.eva_additions.black_hole.title": "Black Hole",
       "item.eva_additions_forge.entomologist_epiphany": "Entomologist Epiphany",
+      "painting.eva_additions.black_hole.title": "Black Hole",
       "painting.eva_additions.einstein.title": "Einstein",
-      "subtitles.enderlink_ping": "",
       "item.eva_additions_forge.disc_moth.desc": "camiidae - moth",
+      "subtitles.enderlink_ping": "",
       "item.eva_additions.enter_claustrophobia": "Enter Claustrophobia",
       "item.eva_additions_forge.disc_treehopper": "Music Disc",
       "death.attack.liveleak_damage.player": "%1$s died whilst trying to escape %2$s",
       "advancements.adv_tortoisebeetle.descr": "Pick some pretty flowers",
       "item.eva_additions.disc_moth.desc": "camiidae - moth",
-      "item.eva_additions.power_upper": "Power Upper",
       "advancements.adv_weevil.title": "Evil Weevil",
+      "item.eva_additions.power_upper": "Power Upper",
       "item.eva_additions.disc_burningmemory": "Music Disc",
       "painting.eva_additions.asbestos.author": "EvaKrusader",
-      "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
       "advancements.high_senses_max_lvl_adv.title": "Superior ",
+      "item.eva_additions.disc_buddyholly.desc": "Weezer - Buddy Holly",
       "item.eva_additions.dev_night_vision_item": "Dev NightVision Item",
-      "painting.eva_additions_forge.diane_2.author": "???",
       "painting.eva_additions.poli.title": "Poli",
+      "painting.eva_additions_forge.diane_2.author": "???",
       "painting.eva_additions_forge.diane_1.title": "Diane 1",
       "block.eva_additions.cold_obsidian": "Cold Obsidian",
       "advancements.requiem_adv.title": "Superior Power",
@@ -6136,6 +6229,7 @@
       "advancements.aptitude_adv.title": "Better Than Average",
       "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
       "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
+      "item.eva_additions.update_version": "Update Version Check",
       "block.eva_additions.oxygen_crystal_ore": "Oxygen Crystal Ore",
       "painting.eva_additions.nefarious.author": "EvaKrusader",
       "item.eva_additions.disc_weevil": "Music Disc",

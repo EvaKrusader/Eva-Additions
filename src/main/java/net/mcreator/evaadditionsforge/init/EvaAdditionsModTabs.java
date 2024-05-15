@@ -51,6 +51,8 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.POWER_UPPER.get());
 				tabData.accept(EvaAdditionsModItems.GIVE_NEW_APTITUDE.get());
 				tabData.accept(EvaAdditionsModItems.ITEM_UPPER.get());
+				tabData.accept(EvaAdditionsModItems.SEND_VERSION_CHECK.get());
+				tabData.accept(EvaAdditionsModItems.UPDATE_VERSION.get());
 			})
 
 					.build());

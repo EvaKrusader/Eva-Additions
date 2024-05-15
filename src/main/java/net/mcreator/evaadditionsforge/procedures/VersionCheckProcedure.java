@@ -46,11 +46,34 @@ public class VersionCheckProcedure {
 		double ver3 = 0;
 		double currentVersion = 0;
 		double nextVersion = 0;
+		{
+			double _setval = 0;
+			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.ver1 = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			double _setval = 1;
+			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.ver2 = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			double _setval = 1;
+			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.ver3 = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		ver1 = 0;
 		ver2 = 1;
 		ver3 = 1;
 		{
-			String _setval = (new java.text.DecimalFormat("#").format(ver1) + ".") + "" + (new java.text.DecimalFormat("#").format(ver2) + ".") + new java.text.DecimalFormat("#").format(ver3);
+			String _setval = (new java.text.DecimalFormat("#").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ver1) + ".") + ""
+					+ (new java.text.DecimalFormat("#").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ver2) + ".")
+					+ new java.text.DecimalFormat("#").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ver3);
 			entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.currentVersion = _setval;
 				capability.syncPlayerVariables(entity);
@@ -89,7 +112,9 @@ public class VersionCheckProcedure {
 						}
 						return 0;
 					}
-				}.convert(new java.text.DecimalFormat("#").format(ver1) + "" + new java.text.DecimalFormat("#").format(ver2) + new java.text.DecimalFormat("#").format(ver3));
+				}.convert(new java.text.DecimalFormat("#").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ver1) + ""
+						+ new java.text.DecimalFormat("#").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ver2)
+						+ new java.text.DecimalFormat("#").format((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ver3));
 				nextVersion = new Object() {
 					double convert(String s) {
 						try {

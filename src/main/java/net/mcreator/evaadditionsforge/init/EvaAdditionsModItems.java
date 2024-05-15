@@ -25,7 +25,9 @@ import net.mcreator.evaadditionsforge.item.WingGelItemItem;
 import net.mcreator.evaadditionsforge.item.WeatherCrystalItem;
 import net.mcreator.evaadditionsforge.item.UpgradedGPSItem;
 import net.mcreator.evaadditionsforge.item.UpgradedAltomerItem;
+import net.mcreator.evaadditionsforge.item.UpdateVersionItem;
 import net.mcreator.evaadditionsforge.item.SmartassItem;
+import net.mcreator.evaadditionsforge.item.SendVersionCheckItem;
 import net.mcreator.evaadditionsforge.item.RequiemItem;
 import net.mcreator.evaadditionsforge.item.PowerUpperItem;
 import net.mcreator.evaadditionsforge.item.NightVisionItem;
@@ -123,6 +125,8 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> DEV_CURIO_ITEM = REGISTRY.register("dev_curio_item", () -> new DevCurioItemItem());
 	public static final RegistryObject<Item> DEV_SENSES_ITEM = REGISTRY.register("dev_senses_item", () -> new DevSensesItemItem());
 	public static final RegistryObject<Item> OXYGEN_CRYSTAL_ORE = block(EvaAdditionsModBlocks.OXYGEN_CRYSTAL_ORE);
+	public static final RegistryObject<Item> SEND_VERSION_CHECK = REGISTRY.register("send_version_check", () -> new SendVersionCheckItem());
+	public static final RegistryObject<Item> UPDATE_VERSION = REGISTRY.register("update_version", () -> new UpdateVersionItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
