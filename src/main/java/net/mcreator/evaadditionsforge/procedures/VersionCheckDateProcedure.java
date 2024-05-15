@@ -55,9 +55,11 @@ public class VersionCheckDateProcedure {
 					if (json.get("day").getAsDouble() > day || json.get("month").getAsDouble() > month || json.get("year").getAsDouble() > year) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()
-									.broadcastSystemMessage(Component.literal(("" + ("The next update of Eva Additions will release on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
-											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset
-											+ "!"))), false);
+									.broadcastSystemMessage(Component.literal((("The next update of Eva Additions will release on " + "\u00A7a" + Math.round(json.get("day").getAsDouble()) + "/" + Math.round(json.get("month").getAsDouble()) + "/"
+											+ Math.round(json.get("year").getAsDouble()) + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!")
+											+ "" + (" (" + "\u00A7a" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble())
+													+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ")"))),
+											false);
 					} else if (json.get("day").getAsDouble() == day || json.get("month").getAsDouble() == month || json.get("year").getAsDouble() == year) {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList()

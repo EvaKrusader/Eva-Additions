@@ -13,6 +13,8 @@ import net.mcreator.evaadditionsforge.network.EvaAdditionsModVariables;
 
 import javax.annotation.Nullable;
 
+import java.util.Calendar;
+
 import java.net.URL;
 
 import java.io.IOException;
@@ -62,19 +64,22 @@ public class VersionCheckProcedure {
 				}
 				bufferedReader.close();
 				json = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-				if (json.get("ver1").getAsDouble() > ver1 || json.get("ver2").getAsDouble() > ver2 && json.get("ver1").getAsDouble() >= ver1
-						|| json.get("ver3").getAsDouble() > ver3 && json.get("ver2").getAsDouble() >= ver2 && json.get("ver1").getAsDouble() >= ver1) {
-					if (json.get("send").getAsDouble() >= 1) {
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("This version of the mod is outdated."), false);
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(
-									Component.literal(("The version " + "\u00A7a" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble())
-											+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")),
-									false);
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("You are using the version " + "\u00A7c" + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
-									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod")), false);
+				if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) >= json.get("day").getAsDouble() || Calendar.getInstance().get(Calendar.MONTH) >= json.get("month").getAsDouble()
+						|| Calendar.getInstance().get(Calendar.YEAR) >= json.get("year").getAsDouble()) {
+					if (json.get("ver1").getAsDouble() > ver1 || json.get("ver2").getAsDouble() > ver2 && json.get("ver1").getAsDouble() >= ver1
+							|| json.get("ver3").getAsDouble() > ver3 && json.get("ver2").getAsDouble() >= ver2 && json.get("ver1").getAsDouble() >= ver1) {
+						if (json.get("send").getAsDouble() >= 1) {
+							if (!world.isClientSide() && world.getServer() != null)
+								world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("This version of the mod is outdated."), false);
+							if (!world.isClientSide() && world.getServer() != null)
+								world.getServer().getPlayerList().broadcastSystemMessage(
+										Component.literal(("The version " + "\u00A7a" + Math.round(json.get("ver1").getAsDouble()) + "." + Math.round(json.get("ver2").getAsDouble()) + "." + Math.round(json.get("ver3").getAsDouble())
+												+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod is out!")),
+										false);
+							if (!world.isClientSide() && world.getServer() != null)
+								world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("You are using the version " + "\u00A7c" + Math.round(ver1) + "." + Math.round(ver2) + "." + Math.round(ver3)
+										+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + " of this mod")), false);
+						}
 					}
 				}
 				if (json.get("ver1").getAsDouble() == ver1 && json.get("ver2").getAsDouble() == ver2 && json.get("ver3").getAsDouble() == ver3) {

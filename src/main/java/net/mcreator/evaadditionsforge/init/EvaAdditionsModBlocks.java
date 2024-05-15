@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.evaadditionsforge.block.Xdbfg2Block;
 import net.mcreator.evaadditionsforge.block.QuartzTiles5Block;
+import net.mcreator.evaadditionsforge.block.OxygenCrystalOreBlock;
 import net.mcreator.evaadditionsforge.block.MiningAidStopBlock;
 import net.mcreator.evaadditionsforge.block.MiningAidBlock;
 import net.mcreator.evaadditionsforge.block.LapisTiles5Block;
@@ -30,4 +31,5 @@ public class EvaAdditionsModBlocks {
 	public static final RegistryObject<Block> MINING_AID_STOP = REGISTRY.register("mining_aid_stop", () -> new MiningAidStopBlock());
 	public static final RegistryObject<Block> COLD_OBSIDIAN = REGISTRY.register("cold_obsidian", () -> new ColdObsidianBlock());
 	public static final RegistryObject<Block> CRACKING_OBSIDIAN = REGISTRY.register("cracking_obsidian", () -> new CrackingObsidianBlock());
+	public static final RegistryObject<Block> OXYGEN_CRYSTAL_ORE = REGISTRY.register("oxygen_crystal_ore", () -> new OxygenCrystalOreBlock());
 }

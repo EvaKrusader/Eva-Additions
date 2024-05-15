@@ -5594,6 +5594,73 @@
         "files": []
       },
       "path": "~/Paintings"
+    },
+    {
+      "name": "MiningAidRecipe",
+      "type": "recipe",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_aid_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/recipes/mining_aid_recipe.json"
+        ]
+      },
+      "path": "~/MiningAid"
+    },
+    {
+      "name": "OxygenCrystalOre",
+      "type": "block",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oxygen_crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eva_additions/forge/biome_modifier/oxygen_crystal_ore_biome_modifier.json",
+          "src/main/resources/assets/eva_additions/models/item/oxygen_crystal_ore.json",
+          "src/main/resources/assets/eva_additions/models/block/oxygen_crystal_ore.json",
+          "src/main/resources/data/eva_additions/worldgen/configured_feature/oxygen_crystal_ore.json",
+          "src/main/resources/assets/eva_additions/blockstates/oxygen_crystal_ore.json",
+          "src/main/resources/data/eva_additions/worldgen/placed_feature/oxygen_crystal_ore.json",
+          "src/main/java/net/mcreator/evaadditionsforge/block/OxygenCrystalOreBlock.java"
+        ]
+      },
+      "path": "~/Curio/World/Y"
+    },
+    {
+      "name": "OxygenCrystalOreGenerationAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oxygen_crystal_ore_generation_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/OxygenCrystalOreGenerationAdditionalGenerationConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Curio/World/Y"
     }
   ],
   "variable_elements": [
@@ -6027,6 +6094,7 @@
       "advancements.aptitude_adv.title": "Better Than Average",
       "advancements.entomologist.descr": "Rest after obtaining every \u0027music for bugs\u0027 music disc",
       "item.eva_additions.disc_pomni.desc": "Evan Alderete - Your New Home",
+      "block.eva_additions.oxygen_crystal_ore": "Oxygen Crystal Ore",
       "painting.eva_additions.nefarious.author": "EvaKrusader",
       "item.eva_additions.disc_weevil": "Music Disc",
       "painting.eva_additions.diane_2.title": "Diane 2",

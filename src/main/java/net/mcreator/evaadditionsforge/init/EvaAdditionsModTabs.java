@@ -97,6 +97,7 @@ public class EvaAdditionsModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(EvaAdditionsModBlocks.APTITUDE_ORE.get().asItem());
+			tabData.accept(EvaAdditionsModBlocks.OXYGEN_CRYSTAL_ORE.get().asItem());
 		}
 	}
 }

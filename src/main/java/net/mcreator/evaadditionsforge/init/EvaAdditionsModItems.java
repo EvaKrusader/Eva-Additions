@@ -122,6 +122,7 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> DEV_APTITUDE_ITEM = REGISTRY.register("dev_aptitude_item", () -> new DevAptitudeItemItem());
 	public static final RegistryObject<Item> DEV_CURIO_ITEM = REGISTRY.register("dev_curio_item", () -> new DevCurioItemItem());
 	public static final RegistryObject<Item> DEV_SENSES_ITEM = REGISTRY.register("dev_senses_item", () -> new DevSensesItemItem());
+	public static final RegistryObject<Item> OXYGEN_CRYSTAL_ORE = block(EvaAdditionsModBlocks.OXYGEN_CRYSTAL_ORE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
