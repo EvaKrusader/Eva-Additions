@@ -197,7 +197,7 @@ public class EvaAdditionsModVariables {
 		public double nextDateNum = 0;
 		public double ver1 = 0.0;
 		public double ver2 = 1.0;
-		public double ver3 = 2.0;
+		public double ver3 = 3.0;
 		public boolean SendDOwnloadLink = false;
 		public boolean sendOutMessage = false;
 		public boolean canLocation = false;
