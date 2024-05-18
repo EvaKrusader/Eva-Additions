@@ -29,10 +29,10 @@
       },
       {
         "minrolls": 0,
-        "maxrolls": 1,
-        "minbonusrolls": 1,
+        "maxrolls": 2,
+        "minbonusrolls": 0,
         "maxbonusrolls": 1,
-        "hasbonusrolls": false,
+        "hasbonusrolls": true,
         "entries": [
           {
             "type": "item",

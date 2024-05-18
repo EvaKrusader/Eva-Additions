@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dev_nightvision_anim",
+    "texture": "dev_anim_powerupper",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

@@ -14,6 +14,9 @@
     "eva_additions:dev_night_vision_item",
     "eva_additions:dev_aptitude_item",
     "eva_additions:dev_curio_item",
-    "eva_additions:dev_senses_item"
+    "eva_additions:dev_senses_item",
+    "eva_additions:oxygen_crystal_ore",
+    "eva_additions:send_version_check",
+    "eva_additions:update_version"
   ]
 }

@@ -55,7 +55,7 @@ public class ChooseAptitudeProcedure {
 				});
 			}
 		} else {
-			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0.5) {
+			if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0.66) {
 				{
 					Entity _ent = entity;
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -65,7 +65,7 @@ public class ChooseAptitudeProcedure {
 								("curios replace aptitude 0 @s with " + ForgeRegistries.ITEMS.getKey(EvaAdditionsModItems.COGNITION.get()).toString() + "{Enchantments:[{lvl:1,id:binding_curse},{lvl:1,id:vanishing_curse}],HideFlags:1}"));
 					}
 				}
-			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0) {
+			} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).aptitudeChance > 0.33) {
 				{
 					Entity _ent = entity;
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {

@@ -98,6 +98,11 @@ public class EvaAdditionsModVariables {
 			clone.ver2 = original.ver2;
 			clone.ver3 = original.ver3;
 			clone.SendDOwnloadLink = original.SendDOwnloadLink;
+			clone.canLocation = original.canLocation;
+			clone.LocationLVL = original.LocationLVL;
+			clone.locX = original.locX;
+			clone.locY = original.locY;
+			clone.locZ = original.locZ;
 			if (!event.isWasDeath()) {
 				clone.ShowLiveleak = original.ShowLiveleak;
 				clone.WillFixNextIllness = original.WillFixNextIllness;
@@ -192,9 +197,14 @@ public class EvaAdditionsModVariables {
 		public double nextDateNum = 0;
 		public double ver1 = 0.0;
 		public double ver2 = 1.0;
-		public double ver3 = 1.0;
+		public double ver3 = 2.0;
 		public boolean SendDOwnloadLink = false;
 		public boolean sendOutMessage = false;
+		public boolean canLocation = false;
+		public double LocationLVL = 0;
+		public String locX = "";
+		public String locY = "\"\"";
+		public String locZ = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -247,6 +257,11 @@ public class EvaAdditionsModVariables {
 			nbt.putDouble("ver3", ver3);
 			nbt.putBoolean("SendDOwnloadLink", SendDOwnloadLink);
 			nbt.putBoolean("sendOutMessage", sendOutMessage);
+			nbt.putBoolean("canLocation", canLocation);
+			nbt.putDouble("LocationLVL", LocationLVL);
+			nbt.putString("locX", locX);
+			nbt.putString("locY", locY);
+			nbt.putString("locZ", locZ);
 			return nbt;
 		}
 
@@ -296,6 +311,11 @@ public class EvaAdditionsModVariables {
 			ver3 = nbt.getDouble("ver3");
 			SendDOwnloadLink = nbt.getBoolean("SendDOwnloadLink");
 			sendOutMessage = nbt.getBoolean("sendOutMessage");
+			canLocation = nbt.getBoolean("canLocation");
+			LocationLVL = nbt.getDouble("LocationLVL");
+			locX = nbt.getString("locX");
+			locY = nbt.getString("locY");
+			locZ = nbt.getString("locZ");
 		}
 	}
 
@@ -364,6 +384,11 @@ public class EvaAdditionsModVariables {
 					variables.ver3 = message.data.ver3;
 					variables.SendDOwnloadLink = message.data.SendDOwnloadLink;
 					variables.sendOutMessage = message.data.sendOutMessage;
+					variables.canLocation = message.data.canLocation;
+					variables.LocationLVL = message.data.LocationLVL;
+					variables.locX = message.data.locX;
+					variables.locY = message.data.locY;
+					variables.locZ = message.data.locZ;
 				}
 			});
 			context.setPacketHandled(true);

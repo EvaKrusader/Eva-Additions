@@ -2295,10 +2295,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -5401,10 +5397,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -5677,10 +5669,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -5735,6 +5723,255 @@
         ]
       },
       "path": "~/Dev"
+    },
+    {
+      "name": "Fragility",
+      "type": "enchantment",
+      "sortid": 310,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragility",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/FragilityEnchantment.java"
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "FragilityEnchant",
+      "type": "procedure",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragility_enchant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/FragilityEnchantProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "Teleport",
+      "type": "enchantment",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/enchantment/TeleportEnchantment.java"
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "TeleportEnchProd",
+      "type": "procedure",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_ench_prod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/TeleportEnchProdProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "GroundRulesRightclicked",
+      "type": "procedure",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_rules_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/GroundRulesRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "GroundRules",
+      "type": "item",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_rules",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/ground_rules.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/GroundRulesItem.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "TeleportRightClick",
+      "type": "procedure",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/TeleportRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "ExportItems",
+      "type": "procedure",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "export_items",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/procedures/ExportItemsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "Export",
+      "type": "tag",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "export",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/export.json"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "SmartassTreasure",
+      "type": "curiosbauble",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartass_treasure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/SmartassTreasureItem.java",
+          "src/main/resources/assets/eva_additions/models/item/smartass_treasure.json"
+        ]
+      },
+      "path": "~/Treasures"
+    },
+    {
+      "name": "SensesTreasure",
+      "type": "curiosbauble",
+      "sortid": 334,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senses_treasure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eva_additions/models/item/senses_treasure.json",
+          "src/main/java/net/mcreator/evaadditionsforge/item/SensesTreasureItem.java"
+        ]
+      },
+      "path": "~/Treasures"
+    },
+    {
+      "name": "RequiemTreasure",
+      "type": "curiosbauble",
+      "sortid": 335,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "requiem_treasure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/RequiemTreasureItem.java",
+          "src/main/resources/assets/eva_additions/models/item/requiem_treasure.json"
+        ]
+      },
+      "path": "~/Treasures"
+    },
+    {
+      "name": "EquinoxTreasure",
+      "type": "curiosbauble",
+      "sortid": 336,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equinox_treasure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/evaadditionsforge/item/EquinoxTreasureItem.java",
+          "src/main/resources/assets/eva_additions/models/item/equinox_treasure.json"
+        ]
+      },
+      "path": "~/Treasures"
     }
   ],
   "variable_elements": [
@@ -5988,7 +6225,7 @@
       "name": "ver3",
       "type": "number",
       "scope": "player_persistent",
-      "value": "1.0"
+      "value": "2.0"
     },
     {
       "name": "SendDOwnloadLink",
@@ -6001,6 +6238,36 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "canLocation",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "LocationLVL",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "locX",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "locY",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "locZ",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -6252,6 +6519,7 @@
       "advancements.discography.descr": "Obtain your first music disc",
       "painting.eva_additions.lcl_sea.title": "Near Fourth Impact LCL Sea",
       "subtitles.record_libetsdelay": "",
+      "item.eva_additions.smartass_treasure": "Smartass Treasure",
       "advancements.adv_spinyspider.title": "Tough Exoskeleton",
       "enchantment.eva_additions.incorrodible": "Incorrodible",
       "painting.eva_additions.antibody_test.author": "EvaKrusader",
@@ -6273,6 +6541,7 @@
       "item.eva_additions.dev_smartass_item": "Dev Smartass Item",
       "advancements.high_senses_max_lvl_adv.descr": "Be born with higher sensitivity",
       "item.eva_additions.upgraded_gps": "Elite GPS",
+      "enchantment.eva_additions.teleport": "Teleport",
       "advancements.lava_walker_enchant.title": "Burning Soul",
       "block.eva_additions.xdbfg_2": "Quartz Tiles",
       "advancements.high_senses_adv.title": "Superior Senses",
@@ -6297,6 +6566,7 @@
       "death.attack.liveleak_damage.item": "%1$s was killed by %2$s using %3$s",
       "item.eva_additions_forge.discography_item": "Discography Item",
       "item.eva_additions.dev_senses_item": "Dev Curio Item",
+      "item.eva_additions.equinox_treasure": "Equinox Treasure",
       "item.eva_additions_forge.disc_weevil": "Music Disc",
       "painting.eva_additions.diane_5.title": "Diane 5",
       "painting.eva_additions_forge.diane_2.title": "Diane 2",
@@ -6308,10 +6578,12 @@
       "subtitles.record_burningmemory": "",
       "painting.eva_additions_forge.story_of_undertale.title": "Story Of Undertale",
       "item.eva_additions_forge.disc_tortoisebeetle.desc": "camiidae - tortoise beetle",
+      "enchantment.eva_additions.fragility": "Curse of Fragility",
       "block.eva_additions.quartz_tiles_5": "Quartz Tiles",
       "painting.eva_additions.uncomfortable_period.author": "Toby",
       "advancements.requiem_adv.descr": "Be born with higher sensitivity",
       "advancements.adv_bumblebee.title": "Buzz",
+      "item.eva_additions.ground_rules": "Ground Rules",
       "advancements.lava_walker_adv.title": "Got Cold Feet?",
       "item.eva_additions.disc_libet": "Music Disc",
       "advancements.liveleak_death.descr": "Get too unlucky",
@@ -6351,6 +6623,7 @@
       "item.eva_additions.disc_scarab.desc": "camiidae - scarab",
       "item.eva_additions.weather_crystal": "Weather Crystal",
       "item.eva_additions.disc_weevil.desc": "camiidae - weevil",
+      "item.eva_additions.senses_treasure": "Senses Treasure",
       "item.eva_additions.lava_walker": "Lava Walker",
       "painting.eva_additions.akari.title": "Poker Face",
       "advancements.adv_spinyspider.descr": "Smash 10 Spider eyes while wearing armor",
@@ -6382,6 +6655,7 @@
       "enchantment.eva_additions.plume_shield": "Plume Shield",
       "item.eva_additions.crystal_depth": "Depth Crystal",
       "item.eva_additions.dev_liveleak": "Dev Liveleak",
+      "item.eva_additions.requiem_treasure": "Requiem Treasure",
       "subtitles.record_weevil": "",
       "block.eva_additions.lapis_tiles_5": "Lapis Tiles",
       "advancements.smartass_max_lvl_adv.title": "Superior Cognition",
@@ -6557,13 +6831,17 @@
       {
         "name": "Loot Tables",
         "children": []
+      },
+      {
+        "name": "Treasures",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "eva_additions",
     "modName": "Eva Additions Forge",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "saver, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",

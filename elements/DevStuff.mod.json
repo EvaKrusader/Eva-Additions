@@ -45,6 +45,15 @@
       },
       {
         "value": "CUSTOM:DevSensesItem"
+      },
+      {
+        "value": "CUSTOM:OxygenCrystalOre"
+      },
+      {
+        "value": "CUSTOM:SendVersionCheck"
+      },
+      {
+        "value": "CUSTOM:UpdateVersion"
       }
     ],
     "blocks": [],

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:smartass_treasure"
+    },
+    "title": {
+      "translate": "advancements.smartass_reset_adv.title"
+    },
+    "description": {
+      "translate": "advancements.smartass_reset_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "smartass_reset_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eva_additions:smartass_treasure"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "eva_additions:smartass_max_lvl_adv"
+}

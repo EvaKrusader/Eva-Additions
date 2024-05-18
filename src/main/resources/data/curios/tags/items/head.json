@@ -2,6 +2,10 @@
   "replace": "false",
   "values": [
     "minecraft:air",
-    "eva_additions:night_vision"
+    "eva_additions:night_vision",
+    "eva_additions:smartass_treasure",
+    "eva_additions:senses_treasure",
+    "eva_additions:requiem_treasure",
+    "eva_additions:equinox_treasure"
   ]
 }

@@ -12,10 +12,12 @@ import net.minecraft.world.item.enchantment.Enchantment;
 
 import net.mcreator.evaadditionsforge.enchantment.WingGelEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.WaterProofEnchantment;
+import net.mcreator.evaadditionsforge.enchantment.TeleportEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.PlumeShieldEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.PillarScraperEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.MedsEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.IncorrodibleEnchantment;
+import net.mcreator.evaadditionsforge.enchantment.FragilityEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.FireWalkerEnchantment;
 import net.mcreator.evaadditionsforge.enchantment.BlessingEnchantment;
 import net.mcreator.evaadditionsforge.EvaAdditionsMod;
@@ -30,4 +32,6 @@ public class EvaAdditionsModEnchantments {
 	public static final RegistryObject<Enchantment> WATER_PROOF = REGISTRY.register("water_proof", () -> new WaterProofEnchantment());
 	public static final RegistryObject<Enchantment> WING_GEL = REGISTRY.register("wing_gel", () -> new WingGelEnchantment());
 	public static final RegistryObject<Enchantment> PILLAR_SCRAPER = REGISTRY.register("pillar_scraper", () -> new PillarScraperEnchantment());
+	public static final RegistryObject<Enchantment> FRAGILITY = REGISTRY.register("fragility", () -> new FragilityEnchantment());
+	public static final RegistryObject<Enchantment> TELEPORT = REGISTRY.register("teleport", () -> new TeleportEnchantment());
 }

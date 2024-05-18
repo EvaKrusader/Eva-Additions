@@ -2,7 +2,6 @@ package net.mcreator.evaadditionsforge.procedures;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
@@ -24,12 +23,19 @@ import java.io.BufferedReader;
 import com.google.gson.Gson;
 
 public class VersionCheckDateProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		File file = new File("");
 		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
 		boolean SendDownload = false;
+		String url = "";
+		String p1 = "";
+		String p2 = "";
+		String tdP1 = "";
+		String tdP2 = "";
+		String ACurrentDate = "";
+		String ANextDate = "";
 		double day = 0;
 		double month = 0;
 		double year = 0;
@@ -38,18 +44,11 @@ public class VersionCheckDateProcedure {
 		double len3 = 0;
 		double tdLen1 = 0;
 		double tdLen2 = 0;
-		String url = "";
-		String p1 = "";
-		String p2 = "";
-		String tdP1 = "";
-		String tdP2 = "";
-		String ACurrentDate = "";
-		String ANextDate = "";
 		day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		month = Calendar.getInstance().get(Calendar.MONTH);
 		year = Calendar.getInstance().get(Calendar.YEAR);
 		file = new File(System.getProperty("java.io.tmpdir"), File.separator + "modver.json");
-		url = "https://raw.githubusercontent.com/EvaKrusader/Eva-Additions/master/src/main/modver.json";
+		url = "https://raw.githubusercontent.com/EvaKrusader/" + "Eva-Additions" + "/master/src/main/modver.json";
 		try {
 			org.apache.commons.io.FileUtils.copyURLToFile(new URL(url), file, 1000, 1000);
 		} catch (IOException e) {
@@ -152,17 +151,16 @@ public class VersionCheckDateProcedure {
 					if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextDateNum > (entity
 							.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentDateNum
 							&& (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).SendDOwnloadLink == false) {
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList()
-									.broadcastSystemMessage(Component.literal((("The next update of Eva Additions will release on " + "\u00A7a" + ANextDate
-											+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!") + ""
-											+ (" (" + "\u00A7a" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextVersion
-													+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ")"))),
-											false);
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal((("The next update of Eva Additions will release on " + "\u00A7a" + ANextDate
+									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!") + ""
+									+ (" (" + "\u00A7a" + (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextVersion
+											+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + ")"))),
+									false);
 					} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextDateNum == (entity
 							.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentDateNum) {
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7b" + ANextDate + " (today)"
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7b" + ANextDate + " (today)"
 									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!"))), false);
 						{
 							boolean _setval = true;
@@ -173,8 +171,8 @@ public class VersionCheckDateProcedure {
 						}
 					} else if ((entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).currentDateNum > (entity
 							.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).nextDateNum) {
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7c" + ANextDate
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal(("" + ("The latest update of Eva Additions released on " + "\u00A7c" + ANextDate
 									+ (entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EvaAdditionsModVariables.PlayerVariables())).ItemColorReset + "!"))), false);
 						{
 							boolean _setval = true;
@@ -224,5 +222,6 @@ public class VersionCheckDateProcedure {
 				e.printStackTrace();
 			}
 		}
+		ExportItemsProcedure.execute(entity);
 	}
 }

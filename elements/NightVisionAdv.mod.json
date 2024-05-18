@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Bravo Six Going Dark",
+    "achievementName": "Going Dark",
     "achievementDescription": "Turn on your night vision goggles",
     "achievementIcon": {
       "value": "CUSTOM:NightVision"

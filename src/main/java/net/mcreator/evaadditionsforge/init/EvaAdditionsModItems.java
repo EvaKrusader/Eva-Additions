@@ -26,8 +26,11 @@ import net.mcreator.evaadditionsforge.item.WeatherCrystalItem;
 import net.mcreator.evaadditionsforge.item.UpgradedGPSItem;
 import net.mcreator.evaadditionsforge.item.UpgradedAltomerItem;
 import net.mcreator.evaadditionsforge.item.UpdateVersionItem;
+import net.mcreator.evaadditionsforge.item.SmartassTreasureItem;
 import net.mcreator.evaadditionsforge.item.SmartassItem;
+import net.mcreator.evaadditionsforge.item.SensesTreasureItem;
 import net.mcreator.evaadditionsforge.item.SendVersionCheckItem;
+import net.mcreator.evaadditionsforge.item.RequiemTreasureItem;
 import net.mcreator.evaadditionsforge.item.RequiemItem;
 import net.mcreator.evaadditionsforge.item.PowerUpperItem;
 import net.mcreator.evaadditionsforge.item.NightVisionItem;
@@ -35,9 +38,11 @@ import net.mcreator.evaadditionsforge.item.MoodCrystalItem;
 import net.mcreator.evaadditionsforge.item.LavaWalkerItem;
 import net.mcreator.evaadditionsforge.item.ItemUpperItem;
 import net.mcreator.evaadditionsforge.item.HigherSensesItem;
+import net.mcreator.evaadditionsforge.item.GroundRulesItem;
 import net.mcreator.evaadditionsforge.item.GiveNewAptitudeItem;
 import net.mcreator.evaadditionsforge.item.GelPackagingItem;
 import net.mcreator.evaadditionsforge.item.GPSItem;
+import net.mcreator.evaadditionsforge.item.EquinoxTreasureItem;
 import net.mcreator.evaadditionsforge.item.EquinoxItem;
 import net.mcreator.evaadditionsforge.item.EntomologistEpiphanyItem;
 import net.mcreator.evaadditionsforge.item.EnterClaustrophobiaItem;
@@ -127,6 +132,11 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> OXYGEN_CRYSTAL_ORE = block(EvaAdditionsModBlocks.OXYGEN_CRYSTAL_ORE);
 	public static final RegistryObject<Item> SEND_VERSION_CHECK = REGISTRY.register("send_version_check", () -> new SendVersionCheckItem());
 	public static final RegistryObject<Item> UPDATE_VERSION = REGISTRY.register("update_version", () -> new UpdateVersionItem());
+	public static final RegistryObject<Item> GROUND_RULES = REGISTRY.register("ground_rules", () -> new GroundRulesItem());
+	public static final RegistryObject<Item> SMARTASS_TREASURE = REGISTRY.register("smartass_treasure", () -> new SmartassTreasureItem());
+	public static final RegistryObject<Item> SENSES_TREASURE = REGISTRY.register("senses_treasure", () -> new SensesTreasureItem());
+	public static final RegistryObject<Item> REQUIEM_TREASURE = REGISTRY.register("requiem_treasure", () -> new RequiemTreasureItem());
+	public static final RegistryObject<Item> EQUINOX_TREASURE = REGISTRY.register("equinox_treasure", () -> new EquinoxTreasureItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

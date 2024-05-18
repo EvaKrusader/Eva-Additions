@@ -81,8 +81,16 @@ public class EquinoxBaubleEquippedProcedure {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A7d" + "Tier 4" + " \u00A7r\u00A7f" + itemName)));
 		} else if (itemstack.getOrCreateTag().getDouble("baublePower") == 5) {
 			itemstack.setHoverName(Component.literal(("\u00A7r\u00A76" + "Solstice" + " \u00A7r\u00A7f" + itemName)));
+			if (entity instanceof ServerPlayer _player) {
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:equinox_max_lvl_adv"));
+				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+				if (!_ap.isDone()) {
+					for (String criteria : _ap.getRemainingCriteria())
+						_player.getAdvancements().award(_adv, criteria);
+				}
+			}
 		}
-		if ((world instanceof Level _lvl43 && _lvl43.isDay()) == true) {
+		if ((world instanceof Level _lvl44 && _lvl44.isDay()) == true) {
 			itemstack.getOrCreateTag().putDouble("equinoxCycle", 1);
 		} else {
 			itemstack.getOrCreateTag().putDouble("equinoxCycle", 2);

@@ -1,0 +1,46 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DiscWeevil"
+      },
+      {
+        "value": "CUSTOM:DiscButterfly"
+      },
+      {
+        "value": "CUSTOM:DiscTreehopper"
+      },
+      {
+        "value": "CUSTOM:DiscMoth"
+      },
+      {
+        "value": "CUSTOM:DiscIsopod"
+      },
+      {
+        "value": "CUSTOM:DiscBumblebee"
+      },
+      {
+        "value": "CUSTOM:DiscScarab"
+      },
+      {
+        "value": "CUSTOM:DiscSpinyspider"
+      },
+      {
+        "value": "CUSTOM:DiscTortoisebeetle"
+      },
+      {
+        "value": "CUSTOM:EntomologistEpiphany"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "export",
+    "namespace": "minecraft"
+  }
+}

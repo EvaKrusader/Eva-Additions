@@ -34,6 +34,10 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.UPGRADED_GPS.get());
 				tabData.accept(EvaAdditionsModItems.MOOD_CRYSTAL.get());
 				tabData.accept(EvaAdditionsModItems.WEATHER_CRYSTAL.get());
+				tabData.accept(EvaAdditionsModItems.SMARTASS_TREASURE.get());
+				tabData.accept(EvaAdditionsModItems.SENSES_TREASURE.get());
+				tabData.accept(EvaAdditionsModItems.REQUIEM_TREASURE.get());
+				tabData.accept(EvaAdditionsModItems.EQUINOX_TREASURE.get());
 			})
 
 					.build());
@@ -53,6 +57,7 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.ITEM_UPPER.get());
 				tabData.accept(EvaAdditionsModItems.SEND_VERSION_CHECK.get());
 				tabData.accept(EvaAdditionsModItems.UPDATE_VERSION.get());
+				tabData.accept(EvaAdditionsModItems.GROUND_RULES.get());
 			})
 
 					.build());

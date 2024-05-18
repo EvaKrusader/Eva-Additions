@@ -28,7 +28,7 @@ public class SendVersionCheckItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		SendVersionCheckRightclickedProcedure.execute(world, entity);
+		SendVersionCheckRightclickedProcedure.execute(entity);
 		return ar;
 	}
 }

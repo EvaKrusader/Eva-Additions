@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "eva_additions:requiem_treasure"
+    },
+    "title": {
+      "translate": "advancements.requiem_reset_adv.title"
+    },
+    "description": {
+      "translate": "advancements.requiem_reset_adv.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "requiem_reset_adv": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eva_additions:requiem_treasure"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "eva_additions:requiem_max_lvl_adv"
+}

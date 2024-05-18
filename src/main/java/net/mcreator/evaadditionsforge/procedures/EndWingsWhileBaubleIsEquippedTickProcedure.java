@@ -88,7 +88,7 @@ public class EndWingsWhileBaubleIsEquippedTickProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					EvaAdditionsMod.queueServerWork(100, () -> {
+					EvaAdditionsMod.queueServerWork(300, () -> {
 						{
 							BlockState _setval = Blocks.AIR.defaultBlockState();
 							entity.getCapability(EvaAdditionsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

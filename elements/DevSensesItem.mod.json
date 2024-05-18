@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dev_senses_anim",
+    "texture": "aptitude_senses5",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
