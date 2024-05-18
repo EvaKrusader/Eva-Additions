@@ -5,7 +5,7 @@
     "achievementName": "Superior Cognition",
     "achievementDescription": "Reach maximum enlightenment",
     "achievementIcon": {
-      "value": "CUSTOM:Equinox"
+      "value": "CUSTOM:DevSmartassItem"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -63,11 +63,19 @@ public class NightVisionWhileBaubleIsEquippedTickProcedure {
 									_player.getAdvancements().award(_adv, criteria);
 							}
 						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:night_vision_water_adv"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 					}
 				} else {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 220, 0, false, false));
-					if ((entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get())) == false) {
+					if ((entity instanceof LivingEntity _livEnt20 && _livEnt20.hasEffect(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get())) == false) {
 						if (EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.INCORRODIBLE.get(), itemstack) != 0) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get(), (int) (20 * (itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.INCORRODIBLE.get()) + 1)), 0, false, false));
@@ -103,13 +111,13 @@ public class NightVisionWhileBaubleIsEquippedTickProcedure {
 				}
 			}
 		}
-		if (itemstack.getOrCreateTag().getDouble("gogglesY") == 86 && (world instanceof Level _lvl31 && _lvl31.isDay()) == false) {
+		if (itemstack.getOrCreateTag().getDouble("gogglesY") == 86 && (world instanceof Level _lvl32 && _lvl32.isDay()) == false) {
 			if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) <= 7) {
 				if (entity.isInWaterRainOrBubble()) {
 					if (EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.WATER_PROOF.get(), itemstack) != 0) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 220, 0, false, false));
-						if ((entity instanceof LivingEntity _livEnt37 && _livEnt37.hasEffect(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get())) == false) {
+						if ((entity instanceof LivingEntity _livEnt38 && _livEnt38.hasEffect(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get())) == false) {
 							if (EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.INCORRODIBLE.get(), itemstack) != 0) {
 								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 									_entity.addEffect(new MobEffectInstance(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get(), (int) (20 * (itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.INCORRODIBLE.get()) + 1)), 0, false, false));
@@ -142,11 +150,19 @@ public class NightVisionWhileBaubleIsEquippedTickProcedure {
 									_player.getAdvancements().award(_adv, criteria);
 							}
 						}
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:night_vision_water_adv"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 					}
 				} else {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 220, 0, false, false));
-					if ((entity instanceof LivingEntity _livEnt48 && _livEnt48.hasEffect(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get())) == false) {
+					if ((entity instanceof LivingEntity _livEnt50 && _livEnt50.hasEffect(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get())) == false) {
 						if (EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.INCORRODIBLE.get(), itemstack) != 0) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(EvaAdditionsModMobEffects.GOGGLES_DAMAGE.get(), (int) (20 * (itemstack.getEnchantmentLevel(EvaAdditionsModEnchantments.INCORRODIBLE.get()) + 1)), 0, false, false));

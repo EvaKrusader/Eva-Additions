@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "eva_additions:requiem"
+      "item": "eva_additions:dev_smartass_item"
     },
     "title": {
       "translate": "advancements.requiem_max_lvl_adv.title"

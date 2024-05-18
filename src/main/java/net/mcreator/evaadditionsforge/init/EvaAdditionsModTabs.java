@@ -38,6 +38,7 @@ public class EvaAdditionsModTabs {
 				tabData.accept(EvaAdditionsModItems.SENSES_TREASURE.get());
 				tabData.accept(EvaAdditionsModItems.REQUIEM_TREASURE.get());
 				tabData.accept(EvaAdditionsModItems.EQUINOX_TREASURE.get());
+				tabData.accept(EvaAdditionsModItems.MEDICINE.get());
 			})
 
 					.build());

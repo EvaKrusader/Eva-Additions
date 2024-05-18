@@ -16,20 +16,7 @@
   },
   "criteria": {
     "requiem_reset_adv": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "eva_additions:requiem_treasure"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "parent": "eva_additions:requiem_max_lvl_adv"

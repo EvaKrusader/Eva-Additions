@@ -35,6 +35,7 @@ import net.mcreator.evaadditionsforge.item.RequiemItem;
 import net.mcreator.evaadditionsforge.item.PowerUpperItem;
 import net.mcreator.evaadditionsforge.item.NightVisionItem;
 import net.mcreator.evaadditionsforge.item.MoodCrystalItem;
+import net.mcreator.evaadditionsforge.item.MedicineItem;
 import net.mcreator.evaadditionsforge.item.LavaWalkerItem;
 import net.mcreator.evaadditionsforge.item.ItemUpperItem;
 import net.mcreator.evaadditionsforge.item.HigherSensesItem;
@@ -137,6 +138,7 @@ public class EvaAdditionsModItems {
 	public static final RegistryObject<Item> SENSES_TREASURE = REGISTRY.register("senses_treasure", () -> new SensesTreasureItem());
 	public static final RegistryObject<Item> REQUIEM_TREASURE = REGISTRY.register("requiem_treasure", () -> new RequiemTreasureItem());
 	public static final RegistryObject<Item> EQUINOX_TREASURE = REGISTRY.register("equinox_treasure", () -> new EquinoxTreasureItem());
+	public static final RegistryObject<Item> MEDICINE = REGISTRY.register("medicine", () -> new MedicineItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

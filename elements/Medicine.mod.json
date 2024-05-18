@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "curio_night_vision0_shine",
+    "texture": "aptitude_dev0",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Dev NightVision Item",
+    "name": "Medicine",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:Artifacts"
     },
     "stackSize": 64,
     "enchantability": 0,

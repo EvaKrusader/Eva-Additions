@@ -46,6 +46,16 @@ public class AntibodyWhileBaubleIsEquippedTickProcedure {
 						_player.getAdvancements().award(_adv, criteria);
 				}
 			}
+			if (EnchantmentHelper.getItemEnchantmentLevel(EvaAdditionsModEnchantments.SELF_REGULATION.get(), itemstack) != 0) {
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("eva_additions:antibody_meds_adv"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.hurt(1, RandomSource.create(), null)) {
